@@ -11,4 +11,5 @@ cache/
 tests/
 .aider*
 visualize
-.DS_Store
+.DS_Storekimina-lean-server/
+logs/

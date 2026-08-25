@@ -2,13 +2,27 @@ name: async_hilbert
 
 # LLM configurations
 prover_llm:
-  base_url: 'http://0.0.0.0:10002/v1' #'https://api.openai.com/v1/' #'http://localhost:11211/api/openai/v1'
+  base_url: 'http://localhost:11212/v1' #'https://api.openai.com/v1/' #'http://localhost:11211/api/openai/v1'
   llm_name: 'Goedel-LM/Goedel-Prover-V2-32B' # deepseek-ai/DeepSeek-Prover-V2-7B
+  # 생성 토큰 한도. 저장소 기본값 16384 를 유지한다.
+  #
+  #   한때 처리량을 높이려고 6144 로 낮췄다가 되돌렸다. 근거와 결과:
+  #
+  #     의도 — 요청당 평균 생성량이 5,552 토큰으로 측정되었으니 6144 면 대부분을
+  #            자르지 않고 담을 수 있고, 요청당 KV 점유가 줄어 동시 처리가 늘 것.
+  #
+  #     결과 — 평균만 보고 분포의 긴 꼬리를 놓친 판단이었다. 실제로는 전체 요청의
+  #            42%(1,401/3,298)가 6144 를 다 쓰고 잘렸다(16384 일 때는 6%).
+  #            잘린 응답은 증명으로 쓸 수 없어 재시도로 이어졌고, 토큰 생성 속도는
+  #            2배가 되었지만 문제 처리 속도는 오히려 2.7배 느려졌다.
+  #
+  #     실측 — max_tokens 16384: 2시간 44분에 8문제 처리
+  #            max_tokens  6144: 3시간 54분에 4문제 처리
   max_tokens: 16384
   prompt_strategy: non_cot # either cot or non_cot
 
 informal_llm:
-  base_url: 'http://0.0.0.0:8000/v1'
+  base_url: 'http://localhost:11211/v1'
   model_name: 'openai/gpt-oss-120b'
   
 search_engine:
@@ -21,6 +35,12 @@ search_engine:
 enable_retrieval: true  # Set to false to disable all retrieval
 
 # AsyncHILBERT parameters (from AsyncHILBERT.__init__)
+# 최대 재귀 깊이. 저장소 기본값 4를 유지한다.
+#
+#   논문 Section 3.2 에는 D = 5 로 나와 있어 한때 5로 올렸으나, 어려운 문제가
+#   한 단계 더 깊이 파고들면서 실행 시간이 크게 늘었다 (조각 하나에서 11시간 넘게
+#   한 문제도 완료되지 않음). 논문의 D 는 알고리즘 정의상의 상한이고, 저자들이
+#   공개한 구현체가 4로 설정해 둔 것을 따르는 편이 실용적이다.
 max_depth: 4
 verify_each_subgoal_separately: true
 complexity_proof_length_cutoff: 30 # if the informal LLM is trying to write a proof greater than 30 lines, stop and recurse
@@ -28,7 +48,22 @@ save_proofs_to_disk: true
 proof_save_dir: results/proofs/
 sequential_processing: false  # Set to true to process problems one by one
 run_proof_attempts_sequentially: true
-max_concurrent_problems: 8
+# 동시에 처리할 문제 수. 저장소 원본은 8이다.
+#
+#   8로 두면 문제 8개가 prover 처리량(A6000 2장, bf16 32B 기준 약 103 토큰/초)을
+#   나눠 쓰면서 대기열이 100~140건까지 쌓인다. 그러면 요청 하나가 클라이언트
+#   타임아웃(AsyncLLMClient 기본 2400초) 안에 응답을 못 받고 실패한다.
+#   실제로 13시간 실행에서 APITimeoutError 가 324건 발생했고, 처리된 3문제가
+#   모두 실패로 기록됐다.
+#
+#   문제는 이 타임아웃 실패가 "증명 실패"로 집계된다는 점이다. prover 가 풀 수
+#   있었을 문제도 응답을 못 받아 실패가 되므로, 이 상태의 pass rate 는 논문의
+#   90.8%(gpt-oss-120b + Goedel-V2-32B, miniF2F)와 비교할 수 없다.
+#
+#   2로 낮추면 대기열이 짧아져 각 문제가 정상 조건에서 평가받는다. GPU 가
+#   병목이라 총 소요 시간은 줄지 않지만, 얻는 것은 시간이 아니라 결과의 타당성이다.
+#   (알고리즘 동작이 아니라 스케줄링만 바뀐다 — 재시도 횟수, 재귀 깊이, 프롬프트는 동일)
+max_concurrent_problems: 2
 
 # Proof attempt configuration - centralized control of all iteration limits and retry counts
 proof_attempt_config:
@@ -41,8 +76,8 @@ proof_attempt_config:
   proof_sketch_corrections: 8                  # Proof sketch refinement attempts 
   missing_subgoal_extraction_attempts: 3               # Missing subgoal extraction attempts 
   proof_verification_timeout: 60               # Timeout for Lean proof verification in seconds
-  max_prover_llm_calls: null                      # Max calls to prover LLM per worker, None for unlimited
-  max_reasoner_llm_calls: null                    # Max calls to reasoning LLM per worker, None for unlimited
+  max_prover_llm_calls: 700                      # Max calls to prover LLM per worker, None for unlimited
+  max_reasoner_llm_calls: 1500                    # Max calls to reasoning LLM per worker, None for unlimited
 
 # How many concurrent requests are sent to the verifier
 max_concurrent_requests: 16
