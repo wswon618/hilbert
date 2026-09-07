@@ -54,9 +54,21 @@ class TrackedAsyncLLMClient:
             prompt_type = PromptType.SIMPLE_CHAT.value
         
         try:
-
-            await self._increment_call_count()
-
+            # 카운터는 호출이 "끝난 뒤"에 올린다. 시작 시점에 올리면 안 된다.
+            #
+            #   asyncio.CancelledError 는 파이썬 3.8부터 Exception 이 아니라
+            #   BaseException 을 상속한다. 따라서 아래 `except Exception` 에 걸리지
+            #   않는다. 카운터를 호출 시작 시점에 올려두면, 그 호출이 취소될 때
+            #   카운터만 오르고 통계에는 아무것도 남지 않는다.
+            #
+            #   HILBERT 는 병렬 시도 중 하나가 성공하면 나머지를 즉시 취소하므로
+            #   (로그의 "Stopping all other jobs") 취소가 대량으로 발생한다.
+            #   실측: imo_2019_p1 에서 통계에 남은 prover 호출은 363건인데
+            #   카운터는 700을 넘겨 예산이 소진됐다. 차이 약 320건이 취소분이다.
+            #   설정한 예산의 절반만 실제 작업에 쓰인 셈이다.
+            #
+            #   같은 파일의 chat_completion 은 원래 호출 뒤에 올리고 있어 이 문제가
+            #   없다. 그 형태에 맞춘다.
             response = await self.client.simple_chat(
                 prompt, max_tokens=max_tokens, reasoning=reasoning, **kwargs
             )
@@ -75,6 +87,7 @@ class TrackedAsyncLLMClient:
                 context=context,
                 success=True
             )
+            await self._increment_call_count()
             return response
             
         except Exception as e:
@@ -216,8 +229,8 @@ class TrackedAsyncProverLLM:
         start_time = time.time()
         
         try:
-            await self._increment_call_count()
-
+            # 카운터를 호출 뒤로 옮긴 이유는 simple_chat 쪽 주석 참고.
+            # (취소된 호출이 예산만 태우고 통계에는 남지 않던 문제)
             proof = await self.prover_llm.generate_proof(theorem, **kwargs)
             
             # Extract token usage from the underlying LLM client
@@ -234,6 +247,7 @@ class TrackedAsyncProverLLM:
                 context=context,
                 success=proof is not None
             )
+            await self._increment_call_count()
             return proof
             
         except Exception as e:

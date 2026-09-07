@@ -11,5 +11,12 @@ cache/
 tests/
 .aider*
 visualize
-.DS_Storekimina-lean-server/
+.DS_Store
+kimina-lean-server/
 logs/
+
+# --- 재현 실험 중 추가 (대용량·중간 산출물) ---
+*.partial
+.venv/
+venv/
+wandb/

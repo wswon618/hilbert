@@ -662,13 +662,19 @@ def extract_missing_identifiers(error_message: str) -> List[str]:
     
     identifiers = []
     
-    # Pattern for "unknown constant '<identifier>'"
-    unknown_constant_pattern = r"unknown constant\s+'([^']+)'"
+    # Pattern for "unknown constant '<identifier>'" or "Unknown constant `<identifier>`"
+    #
+    #   Lean 4 는 백틱(`)으로 이름을 감싼다:  Unknown constant `Nat.pow_le_pow_of_le_left`
+    #   원래 정규식은 작은따옴표(')만 받아서 실제 오류를 하나도 잡지 못했다.
+    #   그 결과 _augment_useful_theorems 의 오류 기반 재검색이 한 번도 발동하지 않았다
+    #   (실측: Unknown constant/identifier 오류 2,604건, 재검색 트리거 0건).
+    #   양쪽 따옴표를 모두 받도록 해서 기존 형식과의 호환도 유지한다.
+    unknown_constant_pattern = r"unknown constant\s+['`]([^'`]+)['`]"
     matches = re.findall(unknown_constant_pattern, error_message, re.IGNORECASE)
     identifiers.extend(matches)
     
-    # Pattern for "unknown identifier '<identifier>'"
-    unknown_identifier_pattern = r"unknown identifier\s+'([^']+)'"
+    # Pattern for "unknown identifier '<identifier>'" or "Unknown identifier `<identifier>`"
+    unknown_identifier_pattern = r"unknown identifier\s+['`]([^'`]+)['`]"
     matches = re.findall(unknown_identifier_pattern, error_message, re.IGNORECASE)
     identifiers.extend(matches)
     

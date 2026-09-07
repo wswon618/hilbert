@@ -65,4 +65,8 @@ GENERAL_HINTS="""
 9. If you get a `no goals to be solved` error, it means that the previous tactics already solved the goal, and you can remove the subsequent tactics.
 10. When proving theorems, ALWAYS write the proof in tactic mode, starting the proof with `:= by`.
 11. Do NOT use `begin`, `end` blocks in your proof. This is invalid in Lean 4.
+12. The `<;>` combinator MUST be followed by a tactic. Write it only as `tac1 <;> tac2`. NEVER write consecutive `<;>` on their own lines, and never leave a trailing `<;>` at the end of a proof. Once a goal is closed, stop writing tactics.
 """
+# 12, 13 hint 추가
+# 12: 스케치 오류 중 no goals to be solved 오류 가장 많음 - 로그에 <;>만 연속으로 찍힌 코드 확인
+# 13: 최신 mathlib에서 바뀐 표기를 모델이 구 버전 표기를 써서 스케치 무효 (gpt-oss의 학습 시점 문제)

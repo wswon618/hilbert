@@ -170,11 +170,27 @@ class AsyncHILBERT:
                 # read the file
                 proof = open_file_contents(proof_path)
                 return problem_id, True, proof
+        # 문제당 시간 제한. 설정하지 않으면(None) 기존처럼 무제한.
+        timeout_s = getattr(self.proof_attempt_config, "per_problem_timeout_seconds", None)
+
         try:
             # Create a dedicated worker for this problem
             async with await self._create_worker() as worker:
-                success, proof = await worker.generate_single_proof(formal_statement, header, problem_id)
-                return problem_id, success, proof
+                coro = worker.generate_single_proof(formal_statement, header, problem_id)
+                try:
+                    if timeout_s:
+                        success, proof = await asyncio.wait_for(coro, timeout=timeout_s)
+                    else:
+                        success, proof = await coro
+                    return problem_id, success, proof
+                except asyncio.TimeoutError:
+                    # wait_for 가 코루틴을 취소하면 generate_single_proof 의 finally 가
+                    # 돌면서 통계 파일은 정상적으로 저장된다. 여기서는 실패로만 기록한다.
+                    logger.error(
+                        f"Problem {problem_id} exceeded the per-problem time limit "
+                        f"({timeout_s}s); giving up on it and moving on."
+                    )
+                    return problem_id, False, None
         except MaxLLMCallsExceeded as e:
             logger.error(f"Worker exceeded max LLM calls for problem {problem_id}: {e}")
             return problem_id, False, None

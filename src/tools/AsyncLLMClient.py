@@ -7,6 +7,7 @@ import logging
 import copy
 import traceback
 from typing import List, Dict, Any, Optional
+import httpx
 import openai
 
 logger = logging.getLogger(__name__)
@@ -74,10 +75,46 @@ class AsyncLLMClient:
         if not self.base_url:
             raise ValueError("`base_url` is not provided")
             
+        # httpx 기본 설정을 그대로 쓰면 커넥션 교착이 발생한다.
+        #
+        # 무슨 일이 있었나
+        #   17시간짜리 배치가 16:00 에 조용히 멈췄다. 서버(prover, Lean)는 모두
+        #   정상이었고(HTTP 200, finish_reason error 0), Lean 은 0.02초에 응답했다.
+        #   그런데 클라이언트 소켓 15개가 전부 CLOSE_WAIT 였고 ESTABLISHED 는 0개,
+        #   프로세스는 ep_poll 에서 잠든 채 11시간 동안 요청을 한 건도 보내지 않았다.
+        #
+        # 왜
+        #   httpx 기본값은 keepalive 연결을 풀에 유지한다(keepalive_expiry=5초,
+        #   max_keepalive_connections 무제한). 서버가 닫은 연결이 CLOSE_WAIT 로
+        #   풀에 남고, 그걸 재사용하려다 막히면 새 요청을 만들지 못한다.
+        #   게다가 timeout 을 스칼라로 주면 connect/read/write/pool 이 모두 그 값이
+        #   되어(2400초), 풀 대기까지 40분씩 잡아먹는다.
+        #
+        # 대응
+        #   max_keepalive_connections=0 : 요청마다 새 연결을 쓰고 끝나면 닫는다.
+        #                                 CLOSE_WAIT 가 쌓일 자리가 없어진다.
+        #                                 로컬 vLLM 이라 연결 비용은 무시할 수준이다.
+        #   pool=60                     : 풀이 막히면 60초 뒤 예외가 난다. 그 문제
+        #                                 하나만 실패하고 배치는 계속된다.
+        #   connect=10                  : 로컬 서버 연결에 40분을 줄 이유가 없다.
+        #   read=self.timeout           : 생성 대기는 기존대로 길게 유지한다.
+        self.http_client = httpx.AsyncClient(
+            limits=httpx.Limits(
+                max_connections=64,
+                max_keepalive_connections=0,
+            ),
+        )
         self.client = openai.AsyncOpenAI(
             base_url=self.base_url,
             default_headers=self.default_headers,
-            timeout=self.timeout,
+            timeout=httpx.Timeout(
+                connect=10.0,
+                read=float(self.timeout),
+                write=60.0,
+                pool=60.0,
+            ),
+            max_retries=3,
+            http_client=self.http_client,
         )
         
         self._initialized = True

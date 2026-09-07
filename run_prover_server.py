@@ -37,8 +37,16 @@ if __name__ == "__main__":
         "--port", "11212",
         "--host", "0.0.0.0",
 
-        # 위에서 GPU 2장만 보이게 했으므로 2.
-        "--tensor-parallel-size", "2",
+        # 기본은 GPU 2장(TP=2). 환경변수 PROVER_TP 로 바꿀 수 있다.
+        #
+        #   prover 단독 작업(선별 측정 등)에서는 reasoner 를 내리고 4장을 다 주는 편이
+        #   훨씬 빠르다. TP=2 면 가중치가 장당 33GB 라 KV 캐시가 모자라, vLLM 이
+        #   실행 중인 요청을 쫓아냈다 처음부터 다시 계산한다(선점).
+        #   실측: TP=2 선점 3,752회 / 37 토큰/초  →  TP=4 선점 0회 / 736 토큰/초 (20배)
+        #
+        #   쓰는 법:
+        #     CUDA_VISIBLE_DEVICES=0,1,2,3 PROVER_TP=4 python run_prover_server.py
+        "--tensor-parallel-size", os.environ.get("PROVER_TP", "2"),
 
         # GPU 0,1 에는 외부 프로세스가 3GiB 정도 있으므로 그만큼 여유를 둔 값.
         # 그 프로세스가 커지면 여기를 낮춰야 한다.

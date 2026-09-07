@@ -1569,6 +1569,12 @@ class HILBERTWorker:
                 prompt_type=PromptType.MISSING_SUBGOAL_EXTRACTION.value,
                 context="Extracting missing subgoals"
             )
+            # 응답이 비어 오면(None) 대화 기록에 넣지 않고 다음 시도로 넘어간다.
+            # content=None 인 메시지를 남기면 이후 호출까지 오염된다.
+            if not missing_response:
+                logger.info("Empty response while extracting missing subgoals; retrying.")
+                continue
+
             messages.append({'role': 'assistant', 'content': missing_response})
             # Parse the missing theorems
             missing_theorems = extract_all_lean_blocks(missing_response)
