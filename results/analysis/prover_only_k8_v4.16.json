@@ -1,0 +1,265 @@
+{
+  "config": {
+    "dataset": "data/minif2f/minif2f.jsonl",
+    "split": "test",
+    "num_problems": 20,
+    "k": 8,
+    "seed": 0,
+    "prover_url": "http://localhost:11212/v1",
+    "model": "Goedel-LM/Goedel-Prover-V2-32B",
+    "verifier_url": "http://localhost:10001/",
+    "max_tokens": 16384,
+    "temperature": 0.6,
+    "concurrency": 6,
+    "gen_timeout": 3600,
+    "verify_timeout": 180,
+    "out": "results/analysis/prover_only_k8_v4.16.json"
+  },
+  "elapsed_seconds": 1816.4,
+  "pass_at_k": {
+    "1": 0.625,
+    "2": 0.6696428571428571,
+    "4": 0.6892857142857143,
+    "8": 0.7
+  },
+  "records": [
+    {
+      "name": "aime_1999_p11",
+      "source": "aime",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 1117.5,
+      "verify_seconds": 113.8,
+      "errors": [
+        "tactic 'rfl' failed, the left-hand side\n  ∑ k ∈ Finset.Icc 1 35, sin (↑k * π / 36)\nis not definitionally equal to the right-hand side\n  sin (35 * (π / 72)) / sin (π / 72)\nm : ℚ\nh₀ : 0 < m\nh₁ : ∑ k ∈ F",
+        "tactic 'rfl' failed, the left-hand side\n  (175 / 2).num\nis not definitionally equal to the right-hand side\n  175\nm : ℚ\nh₀ : 0 < m\nh₁ : ∑ k ∈ Finset.Icc 1 35, sin (5 * ↑k * π / 180) = tan (↑m * π / 180",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "algebra_absxm1pabsxpabsxp1eqxp2_0leqxleq1",
+      "source": "algebra",
+      "num_pass": 8,
+      "k": 8,
+      "first_success_index": 1,
+      "gen_seconds": 427.8,
+      "verify_seconds": 6.8,
+      "errors": []
+    },
+    {
+      "name": "amc12a_2020_p7",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 1117.6,
+      "verify_seconds": 13.1,
+      "errors": [
+        "unexpected token; expected command",
+        "failed to synthesize\n  HMul ℕ ℕ ℤ\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.",
+        "unexpected identifier; expected command"
+      ]
+    },
+    {
+      "name": "amc12a_2021_p14",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 321.5,
+      "verify_seconds": 9.3,
+      "errors": [
+        "failed to synthesize\n  LocallyFiniteOrder ℝ\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.",
+        "failed to synthesize\n  LocallyFiniteOrder ℝ\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.",
+        "failed to synthesize\n  LocallyFiniteOrder ℝ\nAdditional diagnostic information may be available using the `set_option diagnostics true` command."
+      ]
+    },
+    {
+      "name": "amc12b_2002_p19",
+      "source": "amc12",
+      "num_pass": 6,
+      "k": 8,
+      "first_success_index": 2,
+      "gen_seconds": 464.9,
+      "verify_seconds": 25.6,
+      "errors": [
+        "linarith failed to find a contradiction\ncase h2.h\na b c : ℝ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c\nh₁ : a * (b + c) = 152\nh₂ : b * (c + a) = 162\nh₃ : c * (a + b) = 170\nh₄ : 0 < a\nh₅ : 0 < b\nh₆ : 0 < c\nh₇ : 0 < a ",
+        "linarith failed to find a contradiction\ncase h1.h\na b c : ℝ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c\nh₁ : a * (b + c) = 152\nh₂ : b * (c + a) = 162\nh₃ : c * (a + b) = 170\nh₄ : a * b + a * c = 152\nh₅ : b * c + b * a "
+      ]
+    },
+    {
+      "name": "amc12b_2020_p22",
+      "source": "amc12",
+      "num_pass": 2,
+      "k": 8,
+      "first_success_index": 4,
+      "gen_seconds": 1095.2,
+      "verify_seconds": 12.4,
+      "errors": [
+        "unknown constant 'Real.rpow_nat_cast'",
+        "unknown constant 'Real.rpow_nat_cast'",
+        "unknown constant 'Real.rpow_nat_cast'"
+      ]
+    },
+    {
+      "name": "imo_1977_p6",
+      "source": "imo",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 1075.8,
+      "verify_seconds": 29.0,
+      "errors": [
+        "unexpected token '#'; expected command",
+        "unsolved goals\nf : ℕ → ℕ\nh₀ : ∀ (n : ℕ), 0 < f n\nh₁ : ∀ (n : ℕ), 0 < n → f (f n) < f (n + 1)\nh₂ : ¬f 1 = 1\nh₃ : 1 < f 1\nh₆ : 2 ≤ f 1\nh₇ : ¬f 1 = 2\nh₉ : 2 < f 1\nh₆₅ : 1 ≤ f (f 1)\nh₇₄ : 1 ≤ f (f 2)\nh₇₅ ",
+        "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  m ≥ 0\n  l ≥ 0\n  j ≥ 0\n  j - l ≥ 1\n  i ≥ 0\n  i - j ≥ 0\n  i - l ≥ 0\n  g ≥ 0\n  g - i ≥ 0\n  g - m ≤ 0\n  e ≥ 0\n  d ≥ "
+      ]
+    },
+    {
+      "name": "induction_12dvd4expnp1p20",
+      "source": "induction",
+      "num_pass": 6,
+      "k": 8,
+      "first_success_index": 1,
+      "gen_seconds": 225.0,
+      "verify_seconds": 0.9,
+      "errors": [
+        "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  4 ^ (n + 1 + 1) + 20\ncase succ\nn✝ n : ℕ\nih : 12 ∣ 4 ^ n * 4 + 8\nh₁ : 4 ^ (n + 1) % 3 = 1\nh₂ : 3 ∣ 4 ^ (n + 1) +",
+        "no goals to be solved"
+      ]
+    },
+    {
+      "name": "mathd_algebra_137",
+      "source": "mathd_algebra",
+      "num_pass": 8,
+      "k": 8,
+      "first_success_index": 1,
+      "gen_seconds": 258.6,
+      "verify_seconds": 3.5,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_293",
+      "source": "mathd_algebra",
+      "num_pass": 8,
+      "k": 8,
+      "first_success_index": 1,
+      "gen_seconds": 519.0,
+      "verify_seconds": 5.0,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_388",
+      "source": "mathd_algebra",
+      "num_pass": 7,
+      "k": 8,
+      "first_success_index": 1,
+      "gen_seconds": 118.9,
+      "verify_seconds": 1.1,
+      "errors": [
+        "unsolved goals\nx y z : ℝ\nh₀ : 3 * x + 4 * y - 12 * z = 10\nh₁ : -2 * x - 3 * y + 9 * z = -4\nh₃ : 3 * (3 * x + 4 * y - 12 * z) + 4 * (-2 * x - 3 * y + 9 * z) = 3 * 10 + 4 * -4\nh₄ : 3 * (3 * x + 4 * y - "
+      ]
+    },
+    {
+      "name": "mathd_algebra_412",
+      "source": "mathd_algebra",
+      "num_pass": 8,
+      "k": 8,
+      "first_success_index": 1,
+      "gen_seconds": 800.6,
+      "verify_seconds": 0.3,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_478",
+      "source": "mathd_algebra",
+      "num_pass": 8,
+      "k": 8,
+      "first_success_index": 1,
+      "gen_seconds": 43.8,
+      "verify_seconds": 0.3,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_513",
+      "source": "mathd_algebra",
+      "num_pass": 8,
+      "k": 8,
+      "first_success_index": 1,
+      "gen_seconds": 16.7,
+      "verify_seconds": 0.5,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_207",
+      "source": "mathd_numbertheory",
+      "num_pass": 8,
+      "k": 8,
+      "first_success_index": 1,
+      "gen_seconds": 24.4,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_233",
+      "source": "mathd_numbertheory",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 224.7,
+      "verify_seconds": 1.6,
+      "errors": [
+        "unknown constant 'ZMod.nat_cast_self'",
+        "unknown constant 'ZMod.nat_cast_self'",
+        "unknown constant 'ZMod.nat_cast_self'"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_343",
+      "source": "mathd_numbertheory",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 643.7,
+      "verify_seconds": 0.2,
+      "errors": [
+        "tactic 'rfl' failed, expected goal to be a binary relation\n⊢ False",
+        "tactic 'rfl' failed, expected goal to be a binary relation\n⊢ False",
+        "tactic 'rfl' failed, expected goal to be a binary relation\n⊢ False"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_769",
+      "source": "mathd_numbertheory",
+      "num_pass": 8,
+      "k": 8,
+      "first_success_index": 1,
+      "gen_seconds": 176.5,
+      "verify_seconds": 0.7,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_85",
+      "source": "mathd_numbertheory",
+      "num_pass": 8,
+      "k": 8,
+      "first_success_index": 1,
+      "gen_seconds": 33.4,
+      "verify_seconds": 0.3,
+      "errors": []
+    },
+    {
+      "name": "numbertheory_notequiv2i2jasqbsqdiv8",
+      "source": "numbertheory",
+      "num_pass": 7,
+      "k": 8,
+      "first_success_index": 1,
+      "gen_seconds": 220.9,
+      "verify_seconds": 2.4,
+      "errors": [
+        "tauto failed to solve some goals."
+      ]
+    }
+  ]
+}
