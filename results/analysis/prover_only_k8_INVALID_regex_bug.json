@@ -1,0 +1,307 @@
+{
+  "config": {
+    "dataset": "data/minif2f/minif2f_lean4_26.jsonl",
+    "split": "test",
+    "num_problems": 20,
+    "k": 8,
+    "seed": 0,
+    "prover_url": "http://localhost:11212/v1",
+    "model": "Goedel-LM/Goedel-Prover-V2-32B",
+    "verifier_url": "http://localhost:10001/",
+    "max_tokens": 16384,
+    "temperature": 0.6,
+    "concurrency": 6,
+    "gen_timeout": 3600,
+    "verify_timeout": 180,
+    "out": "results/analysis/prover_only_k8.json"
+  },
+  "elapsed_seconds": 1902.6,
+  "pass_at_k": {
+    "1": 0.00625,
+    "2": 0.0125,
+    "4": 0.025,
+    "8": 0.05
+  },
+  "records": [
+    {
+      "name": "aime_1999_p11",
+      "source": "aime",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 1130.7,
+      "verify_seconds": 8.1,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "algebra_absxm1pabsxpabsxp1eqxp2_0leqxleq1",
+      "source": "algebra",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 418.6,
+      "verify_seconds": 8.5,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "amc12a_2020_p7",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 1130.8,
+      "verify_seconds": 5.1,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token '#'; expected command"
+      ]
+    },
+    {
+      "name": "amc12a_2021_p14",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 389.7,
+      "verify_seconds": 7.8,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "amc12b_2002_p19",
+      "source": "amc12",
+      "num_pass": 1,
+      "k": 8,
+      "first_success_index": 5,
+      "gen_seconds": 387.4,
+      "verify_seconds": 180.1,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "amc12b_2020_p22",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 1130.7,
+      "verify_seconds": 13.5,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "imo_1977_p6",
+      "source": "imo",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 1102.6,
+      "verify_seconds": 8.2,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "induction_12dvd4expnp1p20",
+      "source": "induction",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 1112.9,
+      "verify_seconds": 2.7,
+      "errors": [
+        "HTTPError: HTTP Error 500: Internal Server Error",
+        "HTTPError: HTTP Error 500: Internal Server Error",
+        "HTTPError: HTTP Error 500: Internal Server Error"
+      ]
+    },
+    {
+      "name": "mathd_algebra_137",
+      "source": "mathd_algebra",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 187.7,
+      "verify_seconds": 3.3,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "mathd_algebra_293",
+      "source": "mathd_algebra",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 514.9,
+      "verify_seconds": 2.5,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "mathd_algebra_388",
+      "source": "mathd_algebra",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 85.6,
+      "verify_seconds": 0.9,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "mathd_algebra_412",
+      "source": "mathd_algebra",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 29.3,
+      "verify_seconds": 0.3,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "mathd_algebra_478",
+      "source": "mathd_algebra",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 51.7,
+      "verify_seconds": 0.3,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "mathd_algebra_513",
+      "source": "mathd_algebra",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 54.1,
+      "verify_seconds": 0.5,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_207",
+      "source": "mathd_numbertheory",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 47.5,
+      "verify_seconds": 0.3,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_233",
+      "source": "mathd_numbertheory",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 147.4,
+      "verify_seconds": 1.7,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_343",
+      "source": "mathd_numbertheory",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 87.2,
+      "verify_seconds": 0.2,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_769",
+      "source": "mathd_numbertheory",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 176.1,
+      "verify_seconds": 1.1,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_85",
+      "source": "mathd_numbertheory",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 626.4,
+      "verify_seconds": 0.2,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    },
+    {
+      "name": "numbertheory_notequiv2i2jasqbsqdiv8",
+      "source": "numbertheory",
+      "num_pass": 0,
+      "k": 8,
+      "first_success_index": null,
+      "gen_seconds": 223.0,
+      "verify_seconds": 2.5,
+      "errors": [
+        "unexpected token; expected command",
+        "unexpected token; expected command",
+        "unexpected token; expected command"
+      ]
+    }
+  ]
+}

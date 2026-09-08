@@ -1,0 +1,2880 @@
+{
+  "config": {
+    "dataset": "data/minif2f/minif2f_lean4_26.jsonl",
+    "split": "test",
+    "num_problems": 244,
+    "k": 4,
+    "seed": 0,
+    "prover_url": "http://localhost:11212/v1",
+    "model": "Goedel-LM/Goedel-Prover-V2-32B",
+    "verifier_url": "http://localhost:10001/",
+    "max_tokens": 16384,
+    "temperature": 0.6,
+    "concurrency": 8,
+    "gen_timeout": 3600,
+    "verify_timeout": 180,
+    "out": "results/analysis/prover_screen_244.json"
+  },
+  "elapsed_seconds": 14990.5,
+  "pass_at_k": {
+    "1": 0.6383196721311475,
+    "2": 0.707650273224044,
+    "4": 0.7581967213114754
+  },
+  "records": [
+    {
+      "name": "aime_1983_p2",
+      "source": "aime",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 196.2,
+      "verify_seconds": 1.0,
+      "errors": []
+    },
+    {
+      "name": "aime_1989_p8",
+      "source": "aime",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 321.3,
+      "verify_seconds": 54.9,
+      "errors": []
+    },
+    {
+      "name": "aime_1983_p1",
+      "source": "aime",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 414.2,
+      "verify_seconds": 32.4,
+      "errors": [
+        "unknown constant 'Real.log_nat_cast'",
+        "type mismatch\n  h15₇\nhas type\n  Real.log ↑z = Real.log ↑w / 60 : Prop\nbut is expected to have type\n  Real.log ↑z = Real.log ↑w * (1 / 60) : Prop",
+        "expected token"
+      ]
+    },
+    {
+      "name": "aime_1984_p1",
+      "source": "aime",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 489.7,
+      "verify_seconds": 2.3,
+      "errors": [
+        "tactic 'rfl' failed, the left-hand side\n  ∑ k ∈ Finset.range 98, (↑k + 1)\nis not definitionally equal to the right-hand side\n  4851\nu : ℕ → ℚ\nh₀ : ∀ (n : ℕ), u (n + 1) = u n + 1\nh₁ : ∑ k ∈ Finset.rang",
+        "tactic 'simp' failed, nested error:\nmaximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics true` to get diagnostic information"
+      ]
+    },
+    {
+      "name": "aime_1990_p4",
+      "source": "aime",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 213.7,
+      "verify_seconds": 10.8,
+      "errors": [
+        "linarith failed to find a contradiction\ncase h1.h\nx : ℝ\nh₀ : 0 < x\nh₁ : x ^ 2 - 10 * x - 29 ≠ 0\nh₂ : x ^ 2 - 10 * x - 45 ≠ 0\nh₃ : x ^ 2 - 10 * x - 69 ≠ 0\nh₄ : 1 / (x ^ 2 - 10 * x - 29) + 1 / (x ^ 2 - ",
+        "linarith failed to find a contradiction\ncase h2.h\nx : ℝ\nh₀ : 0 < x\nh₁ : x ^ 2 - 10 * x - 29 ≠ 0\nh₂ : x ^ 2 - 10 * x - 45 ≠ 0\nh₃ : x ^ 2 - 10 * x - 69 ≠ 0\nh₄ : 1 / (x ^ 2 - 10 * x - 29) + 1 / (x ^ 2 - "
+      ]
+    },
+    {
+      "name": "aime_1990_p15",
+      "source": "aime",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 404.0,
+      "verify_seconds": 15.3,
+      "errors": []
+    },
+    {
+      "name": "aime_1983_p3",
+      "source": "aime",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 778.5,
+      "verify_seconds": 16.1,
+      "errors": [
+        "type mismatch\n  h₁₁\nhas type\n  f (-9 + √61) = 0 : Prop\nbut is expected to have type\n  -9 + √61 ∈ (f ⁻¹' {0}).toFinset : Prop",
+        "application type mismatch\n  Finset.mem_coe.mpr h₂\nargument\n  h₂\nhas type\n  √61 - 9 ∈ f ⁻¹' {0} : Prop\nbut is expected to have type\n  √61 - 9 ∈ (f ⁻¹' {0}).toFinset : Prop"
+      ]
+    },
+    {
+      "name": "aime_1987_p5",
+      "source": "aime",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 810.3,
+      "verify_seconds": 118.1,
+      "errors": [
+        "linarith failed to find a contradiction\ncase h1.h\nx y : ℤ\nh₀ h₁₀ : y ^ 2 + 3 * (x ^ 2 * y ^ 2) = 30 * x ^ 2 + 517\nh₁₁ : y ^ 2 + 3 * (x ^ 2 * y ^ 2) - 30 * x ^ 2 = 517\nh₁₂ : -517 + y ^ 2 + (y ^ 2 * x ^"
+      ]
+    },
+    {
+      "name": "aime_1988_p8",
+      "source": "aime",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 944.3,
+      "verify_seconds": 18.0,
+      "errors": [
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "aime_1984_p7",
+      "source": "aime",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 944.3,
+      "verify_seconds": 31.8,
+      "errors": [
+        "type mismatch\n  1000 - (n + 5)\nhas type\n  ℤ : outParam Type\nbut is expected to have type\n  ℕ : Type",
+        "sorry 포함",
+        "unsolved goals\nf : ℤ → ℤ\nh₀ : ∀ (n : ℤ), 1000 ≤ n → f n = n - 3\nh₁ : ∀ n < 1000, f n = f (f (n + 5))\nh₃ : f 999 = 998\nh₁₁ : f 998 = f (f (998 + 5))\n⊢ False"
+      ]
+    },
+    {
+      "name": "algebra_9onxpypzleqsum2onxpy",
+      "source": "algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 277.0,
+      "verify_seconds": 10.3,
+      "errors": []
+    },
+    {
+      "name": "aime_1991_p9",
+      "source": "aime",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 684.2,
+      "verify_seconds": 123.4,
+      "errors": [
+        "tactic 'rfl' failed, the left-hand side\n  ↑(29 / 15).den + (29 / 15).num\nis not definitionally equal to the right-hand side\n  44\nx : ℝ\nm : ℚ\nh₀ : 1 / cos x + tan x = 22 / 7\nh₁ : 1 / sin x + 1 / tan x ",
+        "unsolved goals\nx : ℝ\nm : ℚ\nh₀ : (cos x)⁻¹ + ↑m * (cos x)⁻¹ = 22 * 7⁻¹\nh₁ : (↑m)⁻¹ + cos x * (↑m)⁻¹ = ↑m\nh_cos_ne_zero : ¬cos x = ↑m\nh₂ : sin x = ↑m\nh₄ : tan x = ↑m * (cos x)⁻¹\nh₃ : 0 = ↑m\n⊢ False",
+        "unsolved goals\nx : ℝ\nm : ℚ\nh₀ : 1 / cos x + tan x = 22 / 7\nh₁ : 1 / sin x + 1 / tan x = ↑m\nh₂ : cos x ≠ 0\nh₃ : sin x ≠ 0\nh₄ : 7 * (1 + sin x) = 22 * cos x\nh₅ : 533 * sin x ^ 2 + 98 * sin x - 435 = 0\nh"
+      ]
+    },
+    {
+      "name": "algebra_2varlineareq_fp3zeq11_3tfm1m5zeqn68_feqn10_zeq7",
+      "source": "algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 350.8,
+      "verify_seconds": 3.2,
+      "errors": []
+    },
+    {
+      "name": "aime_1997_p9",
+      "source": "aime",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 706.8,
+      "verify_seconds": 27.5,
+      "errors": []
+    },
+    {
+      "name": "algebra_amgm_sumasqdivbgeqsuma",
+      "source": "algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 73.5,
+      "verify_seconds": 7.7,
+      "errors": []
+    },
+    {
+      "name": "aime_1994_p3",
+      "source": "aime",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 938.0,
+      "verify_seconds": 25.4,
+      "errors": [
+        "tactic 'assumption' failed\nx : ℤ\nf : ℤ → ℤ\nh0 : f x + f (x - 1) = x ^ 2\nh1 : f 19 = 94\nh : ¬False\nh2 : f x + f (x - 1) = x ^ 2\nh3 : f 19 = 94\nh4 : True\n⊢ False",
+        "linarith failed to find a contradiction\ncase h2.h\nf : ℤ → ℤ\nh : ∀ (x : ℤ), f x + f (x - 1) = x ^ 2\nh19 : f 19 = 94\nh20 : f 20 = 306\nh21 : f 21 = 135\nh22 : f 22 = 349\nh23 : f 23 = 180\nh24' : f 24 + 180",
+        "unsolved goals\nx : ℤ\nf : ℤ → ℤ\nh0 : f x + f (x - 1) = x ^ 2\nh1 : f 19 = 94\nh3 : f x + f (x - 1) = x ^ 2\nh4 : f 19 = 94\nh : ¬False\nh6 : ¬x = 0\n⊢ False"
+      ]
+    },
+    {
+      "name": "algebra_absxm1pabsxpabsxp1eqxp2_0leqxleq1",
+      "source": "algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 265.3,
+      "verify_seconds": 6.7,
+      "errors": []
+    },
+    {
+      "name": "aime_1995_p7",
+      "source": "aime",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 947.9,
+      "verify_seconds": 96.0,
+      "errors": [
+        "sorry 포함",
+        "unsolved goals\ncase hp\nk m n : ℕ\nt : ℝ\nh₀ : 0 < k ∧ 0 < m ∧ 0 < n\nh₁ : m.gcd n = 1\nh₂ : (1 + sin t) * (1 + cos t) = 5 / 4\nh₃ : (1 - sin t) * (1 - cos t) = ↑m / ↑n - √↑k\nh₄ : sin t + cos t + sin t * co",
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "algebra_absapbon1pabsapbleqsumabsaon1pabsa",
+      "source": "algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 420.3,
+      "verify_seconds": 7.2,
+      "errors": []
+    },
+    {
+      "name": "aime_1999_p11",
+      "source": "aime",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 947.4,
+      "verify_seconds": 42.2,
+      "errors": [
+        "sorry 포함",
+        "sorry 포함",
+        "unsolved goals\nm : ℚ\nh₀ : 0 < m\nh₇ : 0 < tan (π * 35 / 72)\nh₁ :\n  (sin (π / 36) + sin (π / 18) + sin (π / 12) + sin (π / 9) + sin (π * 5 / 36)) * 2 + 1 + sin (π * 7 / 36) * 2 +\n                       "
+      ]
+    },
+    {
+      "name": "algebra_amgm_sum1toneqn_prod1tonleq1",
+      "source": "algebra",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 627.1,
+      "verify_seconds": 5.8,
+      "errors": [
+        "failed to synthesize\n  LE Type\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.",
+        "unknown constant 'Real.geom_mean_le_arith_mean_of_nonneg'",
+        "application type mismatch\n  Finset.card_pos.mp (Finset.nonempty_range_iff.mpr ?m.25303)\nargument\n  Finset.nonempty_range_iff.mpr ?m.25303\nhas type\n  (Finset.range ?m.25300).Nonempty : Prop\nbut is expe"
+      ]
+    },
+    {
+      "name": "algebra_abpbcpcageq3_sumaonsqrtapbgeq3onsqrt2",
+      "source": "algebra",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 943.9,
+      "verify_seconds": 34.7,
+      "errors": [
+        "linarith failed to find a contradiction\ncase h.a\na b c : ℝ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c\nh₁ : 3 ≤ a * b + b * c + c * a\nh₃ : 0 < a\nh₄ : 0 < b\nh₅ : 0 < c\nh₆ : 0 < a * b\nh₇ : 0 < b * c\nh₈ : 0 < c * a\nh₉ : ",
+        "unexpected token '#'; expected command",
+        "unknown identifier 'div_le_div_of_le_left'"
+      ]
+    },
+    {
+      "name": "algebra_apbon2pownleqapownpbpowon2",
+      "source": "algebra",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 600.9,
+      "verify_seconds": 13.2,
+      "errors": [
+        "unknown identifier 'convex_on_pow''",
+        "application type mismatch\n  pow_le_pow_of_le_left ?m.19480 h\nargument\n  h\nhas type\n  a ≥ b : Prop\nbut is expected to have type\n  ℕ : Type",
+        "unsolved goals\ncase step.succ\na b : ℝ\nn : ℕ\nh₁ : 0 < n\nh₃ : 0 < a\nh₄ : 0 < b\nh₅ : 0 < a + b\nk✝ k : ℕ\nIH : a * (a + b) ^ k + b * (a + b) ^ k ≤ a * a ^ k * 2 ^ k + b * b ^ k * 2 ^ k\n⊢ a * b * (a + b) ^ "
+      ]
+    },
+    {
+      "name": "algebra_bleqa_apbon2msqrtableqambsqon8b",
+      "source": "algebra",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 423.6,
+      "verify_seconds": 25.9,
+      "errors": [
+        "application type mismatch\n  pow_le_pow_of_le_left ?m.34427 h₉₁\nargument\n  h₉₁\nhas type\n  √a + √b ≥ 2 * √b : Prop\nbut is expected to have type\n  ℕ : Type",
+        "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  √(a * b)\na b : ℝ\nh₀ : 0 < a ∧ 0 < b\nh₁ : b ≤ a\nh₂ : 0 < b\nh₃ : 0 < a\nh₄ : 0 < a * b\nh₅ : 0 < √(a * b)\nh₆₁ : 0 <",
+        "unknown identifier 'div_le_div_of_le_left'"
+      ]
+    },
+    {
+      "name": "algebra_sqineq_unitcircatbpamblt1",
+      "source": "algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 174.2,
+      "verify_seconds": 6.1,
+      "errors": []
+    },
+    {
+      "name": "algebra_sqineq_unitcircatbpabsamblt1",
+      "source": "algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 262.4,
+      "verify_seconds": 7.3,
+      "errors": []
+    },
+    {
+      "name": "algebra_apbmpcneq0_aeq0anbeq0anceq0",
+      "source": "algebra",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 952.4,
+      "verify_seconds": 33.0,
+      "errors": [
+        "linarith failed to find a contradiction\na b c : ℚ\nm n : ℝ\nh₀ : 0 < m ∧ 0 < n\nh₁ : m ^ 3 = 2\nh₂ : n ^ 3 = 4\nh₃ : ↑a + ↑b * m + ↑c * n = 0\nh₄ : n = m ^ 2\nh₅ : ↑a + ↑b * m + ↑c * m ^ 2 = 0\nh : ¬a = 0\nh₆₁",
+        "unknown constant 'Nat.Prime.irrational_rpow'",
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3",
+      "source": "algebra",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 942.5,
+      "verify_seconds": 1.9,
+      "errors": [
+        "sorry 포함",
+        "unexpected token '#'; expected command",
+        "unexpected token '#'; expected command"
+      ]
+    },
+    {
+      "name": "algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778",
+      "source": "algebra",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 933.4,
+      "verify_seconds": 17.7,
+      "errors": [
+        "unexpected token '#'; expected command",
+        "sorry 포함",
+        "unknown constant 'Real.rpow_nat_cast'"
+      ]
+    },
+    {
+      "name": "algebra_others_exirrpowirrrat",
+      "source": "algebra",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 743.5,
+      "verify_seconds": 1.4,
+      "errors": [
+        "unknown constant 'Real.rpow_nat_cast'"
+      ]
+    },
+    {
+      "name": "algebra_ineq_nto1onlt2m1on",
+      "source": "algebra",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 932.6,
+      "verify_seconds": 21.4,
+      "errors": [
+        "sorry 포함",
+        "type expected, got\n  (algebra_ineq_nto1onlt2m1on 1 : ↑1 ^ (1 / ↑1) < 2 - 1 / ↑1)",
+        "unsolved goals\ncase inl\nn✝ n : ℕ\nhn : n ≥ 1\nh₁ : ↑n ≥ 1\nh₃ : n = 1\n⊢ False"
+      ]
+    },
+    {
+      "name": "amc12_2000_p6",
+      "source": "amc12",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 182.8,
+      "verify_seconds": 2.5,
+      "errors": []
+    },
+    {
+      "name": "algebra_sum1onsqrt2to1onsqrt10000lt198",
+      "source": "algebra",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 542.1,
+      "verify_seconds": 36.8,
+      "errors": [
+        "tactic 'apply' failed, failed to unify\n  IntervalIntegrable ?u ?μ ?a ?b\nwith\n  ↑k - 1 ≤ ↑k\nk : ℕ\nhk : k ∈ Finset.Icc 2 10000\nh₃ : 2 ≤ k\nh₄ : k ≤ 10000\nh₅ : ↑k ≥ 2\nh₆ : ↑k ≤ 10000\nh₈ : ∀ x ∈ Set.Icc (↑",
+        "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  ∫ (x : ℝ) in ?m.25709..?m.25710, 1 / √(?d - x)\nk : ℕ\nhk : k ∈ Finset.Icc 2 10000\nh₃ : 2 ≤ k\nh₄ : k ≤ 10000\nh₅ :",
+        "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a ≥ 2\nwhere\n a := ↑n✝¹"
+      ]
+    },
+    {
+      "name": "algebra_sqineq_at2malt1",
+      "source": "algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 930.1,
+      "verify_seconds": 0.6,
+      "errors": []
+    },
+    {
+      "name": "amc12_2000_p20",
+      "source": "amc12",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 387.9,
+      "verify_seconds": 36.0,
+      "errors": [
+        "linarith failed to find a contradiction\ncase h1.h\nx y z : ℝ\nh₀ : 0 < x ∧ 0 < y ∧ 0 < z\nh₁ : x + 1 / y = 4\nh₂ : y + 1 / z = 1\nh₃ : z + 1 / x = 7 / 3\nh₄ : y < 1\nh₅ : x = 4 - 1 / y\nh₆ : z = 1 / (1 - y)\nh",
+        "linarith failed to find a contradiction\ncase h1.h\nx y z : ℝ\nh₀ : 0 < x ∧ 0 < y ∧ 0 < z\nh₅ : 0 < x\nh₆ : 0 < y\nh₇ : 0 < z\nh₈ : 0 < x * y\nh₉ : 0 < x * z\nh₁₀ : 0 < y * z\nh₁₁ : 0 < x * y * z\nh₁ : 1 + x * y"
+      ]
+    },
+    {
+      "name": "amc12a_2002_p6",
+      "source": "amc12",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 69.7,
+      "verify_seconds": 0.5,
+      "errors": []
+    },
+    {
+      "name": "amc12_2000_p12",
+      "source": "amc12",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 800.3,
+      "verify_seconds": 52.1,
+      "errors": [
+        "unsolved goals\ncase «4»\na m c : ℕ\nh₃ : a ≤ 12\nh₅ : c ≤ 12\nh₇ : a = 1\nh₁₁ : c ≤ 11\nh₀ : a + 4 + c = 12\nh₁ : a * 4 + a * c + 4 * c ≤ 48\nh₄ : 4 ≤ 12\nh₈ : 4 + c = 11\nh₁₀ : 4 ≤ 11\n⊢ 4 * c ≤ 27\n\ncase «5»\na ",
+        "type mismatch\n  h₄\nhas type\n  a * m * c + a * m + m * c + a * c + a + m + c + 1 ≤ 125 : Prop\nbut is expected to have type\n  a * m * c + a * m + m * c + a * c + (a + m + c) + 1 ≤ 125 : Prop"
+      ]
+    },
+    {
+      "name": "amc12_2001_p21",
+      "source": "amc12",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 623.9,
+      "verify_seconds": 63.3,
+      "errors": [
+        "unsolved goals\ncase «75»\na b c d : ℕ\nh₀ : a * b * c * d = 8!\nh₁ : a * b + a + b = 524\nh₂ : b * c + b + c = 146\nh₃ : c * d + c + d = 104\nh₅ : (b + 1) * (c + 1) = 147\nh₆ : (c + 1) * (d + 1) = 105\nh₄ : 7"
+      ]
+    },
+    {
+      "name": "amc12a_2009_p6",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 86.4,
+      "verify_seconds": 1.2,
+      "errors": [
+        "unknown constant 'Real.rpow_nat_cast'",
+        "unknown constant 'Real.rpow_nat_cast'",
+        "unknown identifier 'rpow_nat_cast'"
+      ]
+    },
+    {
+      "name": "amc12_2000_p1",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 949.8,
+      "verify_seconds": 82.1,
+      "errors": [
+        "sorry 포함",
+        "sorry 포함",
+        "unsolved goals\ncase «69»\ni m o : ℕ\nh₃ : m ≥ 2\nh₄ : o ≥ 2\nh₅₃ : m ≥ 2\nh₅₄ : o ≥ 2\nh₅₆ : m ≠ o\nh₅₉ : m ∣ 2001\nh₆₀ : o ∣ 2001\nh₀ : 69 ≠ m ∧ m ≠ o ∧ o ≠ 69\nh₁ : 69 * m * o = 2001\nh₂ : 69 ≥ 2\nh₅₁ : 69 * m "
+      ]
+    },
+    {
+      "name": "amc12a_2003_p5",
+      "source": "amc12",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 3,
+      "gen_seconds": 543.3,
+      "verify_seconds": 13.8,
+      "errors": [
+        "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  0 ≤ d ≤ 123422\n  0 ≤ c ≤ 9\n  0 ≤ b ≤ 9\n  0 ≤ a ≤ 9\n  101*a + 10*b ≤ 110\nwhere\n a := ↑A\n b := ↑M\n c := ↑C\n d := ↑",
+        "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  0 ≤ d ≤ 123422\n  0 ≤ c ≤ 9\n  0 ≤ b ≤ 9\n  0 ≤ a ≤ 9\n  a + 10*b + 100*c ≤ 999\n  101*a + 10*b ≤ 9\nwhere\n a := ↑A\n b"
+      ]
+    },
+    {
+      "name": "amc12a_2002_p13",
+      "source": "amc12",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 630.1,
+      "verify_seconds": 59.6,
+      "errors": [
+        "unsolved goals\ncase inl.inl\na b : ℝ\nh₀ : 0 < a ∧ 0 < b\nh₁ : a ≠ b\nh₂ : |a - 1 / a| = 1\nh₃ : |b - 1 / b| = 1\nh₆ : 0 < a\nh₇ : 0 < b\nh₄ : a - 1 / a = 1\nh₅ : b - 1 / b = 1\n⊢ a - 1 / a = 1 ∧ b - 1 / b = -1"
+      ]
+    },
+    {
+      "name": "amc12_2001_p5",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 949.6,
+      "verify_seconds": 66.5,
+      "errors": [
+        "sorry 포함",
+        "maximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics true` to get diagnostic information",
+        "maximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics true` to get diagnostic information"
+      ]
+    },
+    {
+      "name": "amc12a_2009_p7",
+      "source": "amc12",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 471.5,
+      "verify_seconds": 8.9,
+      "errors": []
+    },
+    {
+      "name": "amc12a_2003_p23",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 946.3,
+      "verify_seconds": 7.3,
+      "errors": [
+        "unsolved goals\ncase h\nS : Finset ℕ\nh₀ : ∀ (k : ℕ), k ∈ S ↔ 0 < k ∧ k * k ∣ ∏ i ∈ Finset.Icc 1 9, i !\nh₁ : ∏ i ∈ Finset.Icc 1 9, i ! = 1834933472251084800000\nk : ℕ\n⊢ 0 < k ∧ k * k ∣ ∏ i ∈ Finset.Icc 1 ",
+        "unexpected token '#'; expected command",
+        "unsolved goals\ncase h\nS : Finset ℕ\nh₀ : ∀ (k : ℕ), k ∈ S ↔ 0 < k ∧ k * k ∣ ∏ i ∈ Finset.Icc 1 9, i !\nh₁ : ∏ i ∈ Finset.Icc 1 9, i ! = 2 ^ 30 * 3 ^ 13 * 5 ^ 5 * 7 ^ 3\nk : ℕ\n⊢ 0 < k ∧ k * k ∣ ∏ i ∈ Fins"
+      ]
+    },
+    {
+      "name": "amc12a_2008_p25",
+      "source": "amc12",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 944.6,
+      "verify_seconds": 180.0,
+      "errors": [
+        "omega could not prove the goal:\nNo usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication,",
+        "tactic 'simp' failed, nested error:\nmaximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics true` to get diagnostic information",
+        "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  z (1 + k)\na b : ℕ → ℝ\nh₀ : ∀ (n : ℕ), a (n + 1) = √3 * a n - b n\nh₁ : ∀ (n : ℕ), b (n + 1) = √3 * b n + a n\nh₂ "
+      ]
+    },
+    {
+      "name": "amc12a_2019_p12",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 665.4,
+      "verify_seconds": 16.1,
+      "errors": [
+        "unsolved goals\nx y : ℝ\nh₀ : ¬x = 1 ∧ ¬y = 1\nh₂ : x * y = 64\nh₄₂ : Real.log 16 = 4 * Real.log 2\nh₄₃ : (x = 0 ∨ x = -1) ∨ 2 = -1\nh₄₁₅ : y ≤ 0\nh₄₁₆ : y = 0 ∨ y = -1\n⊢ False",
+        "unsolved goals\ncase neg\nx y : ℝ\nh₀ : ¬x = 1\nh₁ : (x = 0 ∨ x = -1) ∨ 2 = -1\nh₂ : x * y = 64\nh₃₁ : ¬y = 1\nh₃₉ : y ≤ 0\nh₄₀ : y = 0 ∨ y = -1\n⊢ Real.log y ≤ 0",
+        "linarith failed to find a contradiction\ncase h1.h\nx y : ℝ\nh₀ : x ≠ 1 ∧ y ≠ 1\nh₁ : Real.log x / Real.log 2 = Real.log 16 / Real.log y\nh₂ : x * y = 64\nh₃ : x ≠ 0\nh₄ : y ≠ 0\nh h₅₁ : Real.log y = 0\nh₅₂ : "
+      ]
+    },
+    {
+      "name": "amc12a_2013_p4",
+      "source": "amc12",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 967.1,
+      "verify_seconds": 1.8,
+      "errors": [
+        "maximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics true` to get diagnostic information",
+        "maximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics true` to get diagnostic information"
+      ]
+    },
+    {
+      "name": "amc12a_2020_p10",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 988.9,
+      "verify_seconds": 26.8,
+      "errors": [
+        "unsolved goals\ncase inl\nn : ℕ\nh₀ : 0 < n\nh₁ : logb 2 (logb 16 ↑n) = logb 4 (logb 4 ↑n)\nh₂ h₄ : n = 1\n⊢ False",
+        "linarith failed to find a contradiction\ncase h0.h\nn : ℕ\nh₀ : 0 < n\nh₁ : logb 2 (logb 16 ↑n) = logb 4 (logb 4 ↑n)\nh : ¬↑n > 1\nh₃ : ↑n ≤ 1\nh₄ : n ≤ 1\nh₅ : n = 1\nh₆ : ↑n = 1\nh₇ : logb 16 ↑n ≤ 0\nh₈₁ : log",
+        "unexpected end of input; expected '{'"
+      ]
+    },
+    {
+      "name": "amc12a_2020_p15",
+      "source": "amc12",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 994.7,
+      "verify_seconds": 13.5,
+      "errors": [
+        "linarith failed to find a contradiction\ncase a\na b : ℂ\nh₀ : a ^ 3 - 8 = 0\nh₁ : b ^ 3 - 8 * b ^ 2 - 8 * b + 64 = 0\nh₂ : Complex.abs a = 2\nh₃ : (b - 8) * (b ^ 2 - 8) = 0\nh₄ : b = 8 ∨ b ^ 2 = 8\nh₅₁ h₅₂ :",
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "amc12a_2021_p14",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 337.4,
+      "verify_seconds": 3.8,
+      "errors": [
+        "failed to synthesize\n  LocallyFiniteOrder ℝ\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.",
+        "failed to synthesize\n  LocallyFiniteOrder ℝ\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.",
+        "failed to synthesize\n  LocallyFiniteOrder ℝ\nAdditional diagnostic information may be available using the `set_option diagnostics true` command."
+      ]
+    },
+    {
+      "name": "amc12a_2021_p18",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 303.1,
+      "verify_seconds": 2.3,
+      "errors": [
+        "unsolved goals\nf : ℚ → ℝ\nh₀ : ∀ x > 0, ∀ y > 0, f (x * y) = f x + f y\nh₁ : ∀ (p : ℕ), Nat.Prime p → f ↑p = ↑p\nh_f1 : f 1 = 0\nh_f_inv_prime : ∀ (p : ℕ), Nat.Prime p → f (1 / ↑p) = -↑p\nh_f25 : f 25 = 10",
+        "simp made no progress",
+        "simp made no progress"
+      ]
+    },
+    {
+      "name": "amc12a_2020_p25",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 1019.5,
+      "verify_seconds": 8.2,
+      "errors": [
+        "linarith failed to find a contradiction\ncase h\na : ℚ\nS : Finset ℝ\nh₀ : ∀ (x : ℝ), x ∈ S ↔ ↑⌊x⌋ * (x - ↑⌊x⌋) = ↑a * x ^ 2\nh₁ : ∑ k ∈ S, k = 420\nh h₃ : a = 0\nx : ℝ\nhx : x ∈ Set.Icc 0 1\nh₅₁ : 0 ≤ x\na✝ : ",
+        "sorry 포함",
+        "linarith failed to find a contradiction\na : ℚ\nS : Finset ℝ\nn : ℤ\nh₀ : ∀ (x : ℝ), x ∈ S ↔ ↑⌊x⌋ * Int.fract x = ↑a * x ^ 2\nh₂ : ¬a = 0\nh₅ : ∑ k ∈ S, k = 420\nh₁₇ : n = 0\n⊢ False failed"
+      ]
+    },
+    {
+      "name": "amc12a_2020_p4",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 1031.0,
+      "verify_seconds": 1.0,
+      "errors": [
+        "tactic 'rfl' failed, the left-hand side\n  (Finset.filter (fun n => 5 ∣ n) (Finset.filter (fun n => ∀ d ∈ digits 10 n, Even d) (Finset.Icc 1000 9999))).card\nis not definitionally equal to the right-han",
+        "tactic 'rfl' failed, the left-hand side\n  (Finset.filter (fun n => 5 ∣ n) (Finset.filter (fun n => ∀ d ∈ digits 10 n, Even d) (Finset.Icc 1000 9999))).card\nis not definitionally equal to the right-han",
+        "tactic 'rfl' failed, the left-hand side\n  (Finset.filter (fun n => 5 ∣ n) (Finset.filter (fun n => ∀ d ∈ digits 10 n, Even d) (Finset.Icc 1000 9999))).card\nis not definitionally equal to the right-han"
+      ]
+    },
+    {
+      "name": "amc12a_2020_p7",
+      "source": "amc12",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 1032.9,
+      "verify_seconds": 23.2,
+      "errors": [
+        "sorry 포함",
+        "unsolved goals\na : ℕ → ℕ\nh_a0 : a 0 = 1\nh_a1 : a 1 = 2\nh_a2 : a 2 = 3\nh_a3 : a 3 = 4\nh_a4 : a 4 = 5\nh_a5 : a 5 = 6\nh_a6 : a 6 = 7\n⊢ a 9 = 2",
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "amc12a_2020_p9",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 1056.5,
+      "verify_seconds": 5.8,
+      "errors": [
+        "sorry 포함",
+        "unexpected token '#'; expected command",
+        "unexpected token '#'; expected command"
+      ]
+    },
+    {
+      "name": "amc12a_2021_p3",
+      "source": "amc12",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 225.4,
+      "verify_seconds": 118.3,
+      "errors": []
+    },
+    {
+      "name": "amc12a_2021_p12",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 1056.2,
+      "verify_seconds": 41.7,
+      "errors": [
+        "sorry 포함",
+        "unsolved goals\na b c d : ℝ\nf : ℂ → ℂ\nh₀ : ∀ (z : ℂ), f z = z ^ 6 - 10 * z ^ 5 + ↑a * z ^ 4 + ↑b * z ^ 3 + ↑c * z ^ 2 + ↑d * z + 16\nh₁ :\n  ∀ (z : ℂ),\n    z ^ 6 - 10 * z ^ 5 + ↑a * z ^ 4 + ↑b * z ^ 3 + ",
+        "unsolved goals\na b c d : ℝ\nf : ℂ → ℂ\nh₀ : ∀ (z : ℂ), f z = z ^ 6 - 10 * z ^ 5 + ↑a * z ^ 4 + ↑b * z ^ 3 + ↑c * z ^ 2 + ↑d * z + 16\nh₁ : ∀ (z : ℂ), f z = 0 → z.im = 0 ∧ 0 < z.re ∧ ↑⌊z.re⌋ = z.re\nh₃ h₄ "
+      ]
+    },
+    {
+      "name": "amc12a_2021_p19",
+      "source": "amc12",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 659.5,
+      "verify_seconds": 46.3,
+      "errors": [
+        "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  cos x + sin x\nS : Finset ℝ\nh₀ : ∀ (x : ℝ), x ∈ S ↔ 0 ≤ x ∧ x ≤ π ∧ sin (π / 2 * cos x) = cos (π / 2 * sin x)\nh₁",
+        "linarith failed to find a contradiction\ncase h\nS : Finset ℝ\nh₀ : ∀ (x : ℝ), x ∈ S ↔ 0 ≤ x ∧ x ≤ π ∧ sin (π / 2 * cos x) = cos (π / 2 * sin x)\nh₁ : 0 ∈ S\nh₂ : π / 2 ∈ S\nx : ℝ\nhx : 0 ≤ x ∧ x ≤ π ∧ sin (",
+        "linarith failed to find a contradiction\ncase hxp.h\nS : Finset ℝ\nh₀ : ∀ (x : ℝ), x ∈ S ↔ 0 ≤ x ∧ x ≤ π ∧ sin (π / 2 * cos x) = cos (π / 2 * sin x)\nh1 : 0 ∈ S\nh2 : π / 2 ∈ S\nx : ℝ\nhx h₃ : x ∈ S\nh₄ : 0 ≤"
+      ]
+    },
+    {
+      "name": "amc12b_2002_p19",
+      "source": "amc12",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 334.2,
+      "verify_seconds": 19.4,
+      "errors": [
+        "linarith failed to find a contradiction\ncase h1.h\na b c : ℝ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c\nh₁ : a * (b + c) = 152\nh₂ : b * (c + a) = 162\nh₃ : c * (a + b) = 170\nh₄ : 0 < a\nh₅ : 0 < b\nh₆ : 0 < c\nh₇ : 0 < a "
+      ]
+    },
+    {
+      "name": "amc12b_2002_p7",
+      "source": "amc12",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 349.5,
+      "verify_seconds": 8.9,
+      "errors": [
+        "linarith failed to find a contradiction\ncase h\na b c : ℕ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c\nh₁ : b = a + 1\nh₂ : c = b + 1\nh₃ : a * b * c = 8 * (a + b + c)\nh₄ : c = a + 2\nh₅₁ : a * (a + 1) * (a + 2) = 8 * (a +",
+        "linarith failed to find a contradiction\ncase h\na b c : ℕ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c\nh₁ : b = a + 1\nh₂ : c = b + 1\nh₃ : a * b * c = 8 * (a + b + c)\nh₄₁ : a * (a + 1) * (b + 1) = 8 * (a + (a + 1) + (b +"
+      ]
+    },
+    {
+      "name": "amc12a_2021_p22",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 1016.4,
+      "verify_seconds": 0.9,
+      "errors": [
+        "sorry 포함",
+        "sorry 포함",
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "amc12b_2020_p2",
+      "source": "amc12",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 135.9,
+      "verify_seconds": 0.9,
+      "errors": []
+    },
+    {
+      "name": "amc12a_2021_p25",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 999.1,
+      "verify_seconds": 0.2,
+      "errors": [
+        "unexpected identifier; expected command",
+        "sorry 포함",
+        "unexpected end of input; expected '{'"
+      ]
+    },
+    {
+      "name": "amc12b_2020_p13",
+      "source": "amc12",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 297.9,
+      "verify_seconds": 12.2,
+      "errors": []
+    },
+    {
+      "name": "amc12b_2002_p4",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 600.8,
+      "verify_seconds": 28.3,
+      "errors": [
+        "type mismatch, term\n  h₁\nafter simplification has type\n  (41 /. 42 + mkRat 1 n).den = 1 : Prop\nbut is expected to have type\n  (2⁻¹ + 3⁻¹ + 7⁻¹ + (↑n)⁻¹).den = 1 : Prop",
+        "application type mismatch\n  1 /. ↑n\nargument\n  ↑n\nhas type\n  ℚ : Type\nbut is expected to have type\n  ℤ : Type",
+        "application type mismatch\n  1 /. ↑n\nargument\n  ↑n\nhas type\n  ℚ : Type\nbut is expected to have type\n  ℤ : Type"
+      ]
+    },
+    {
+      "name": "amc12a_2021_p9",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 979.2,
+      "verify_seconds": 1.8,
+      "errors": [
+        "unexpected token '#'; expected command",
+        "unsolved goals\ncase zero\nk n : ℕ\n⊢ 2 + 3 ^ 2 ^ k = 5",
+        "tactic 'rfl' failed, the left-hand side\n  170141183460469231731687303715884105728 + 3 ^ 2 ^ k\nis not definitionally equal to the right-hand side\n  11790184577738583171520532579045597727214748217668409"
+      ]
+    },
+    {
+      "name": "amc12a_2021_p8",
+      "source": "amc12",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 983.9,
+      "verify_seconds": 180.1,
+      "errors": [
+        "sorry 포함",
+        "unsolved goals\nd : ℕ → ℕ\nh₀ : d 0 = 0\nh₁ : d 1 = 0\nh₂ : d 2 = 1\nh₃ : ∀ n ≥ 3, d n = d (n - 1) + d (n - 3)\nh₄ : d 3 = 1\nh₅ : d 4 = 1\nh₆₁ : d 5 = d 4 + d 2\n⊢ False"
+      ]
+    },
+    {
+      "name": "amc12b_2002_p2",
+      "source": "amc12",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 959.3,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "amc12b_2020_p6",
+      "source": "amc12",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 4,
+      "gen_seconds": 314.4,
+      "verify_seconds": 6.1,
+      "errors": [
+        "function expected at\n  n\nterm has type\n  ℕ",
+        "unexpected token ')'; expected 'by' or 'from'",
+        "unsolved goals\nn : ℕ\nh₀ : 9 ≤ n\nh₂ : ↑(1 + n)! = ↑n * ↑n ! + ↑n !\nh₁ : ↑(2 + n)! = ↑n * ↑n ! * 3 + ↑n ^ 2 * ↑n ! + ↑n ! * 2\n⊢ ↑(n * n ! * 3 + n ^ 2 * n ! + n ! * 2 - (n * n ! + n !)) =\n    Int.subNatN"
+      ]
+    },
+    {
+      "name": "amc12b_2021_p1",
+      "source": "amc12",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 389.3,
+      "verify_seconds": 8.9,
+      "errors": []
+    },
+    {
+      "name": "amc12b_2021_p3",
+      "source": "amc12",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 265.9,
+      "verify_seconds": 17.3,
+      "errors": [
+        "unsolved goals\nx : ℝ\nh₀ : 2 + 1 / (1 + 1 / (2 + 2 / (3 + x))) = 144 / 53\nh₁ : x ≠ -3\nh₂ : 3 + x ≠ 0\nh₃ h₄ h₅₂ : 2 + 2 / (3 + x) = 0\n⊢ False",
+        "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  1 + 1 / ((8 + 2 * x) / (3 + x))\nx : ℝ\nh₀ : 2 + 1 / (1 + 1 / (2 + 2 / (3 + x))) = 144 / 53\nh₁ : 3 + x ≠ 0\nh₂ h₄ "
+      ]
+    },
+    {
+      "name": "amc12b_2021_p9",
+      "source": "amc12",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 318.8,
+      "verify_seconds": 4.0,
+      "errors": []
+    },
+    {
+      "name": "amc12b_2021_p4",
+      "source": "amc12",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 325.0,
+      "verify_seconds": 8.8,
+      "errors": []
+    },
+    {
+      "name": "imo_1959_p1",
+      "source": "imo",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 250.1,
+      "verify_seconds": 1.8,
+      "errors": []
+    },
+    {
+      "name": "amc12b_2020_p22",
+      "source": "amc12",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 890.6,
+      "verify_seconds": 5.3,
+      "errors": [
+        "unknown constant 'Real.rpow_nat_cast'"
+      ]
+    },
+    {
+      "name": "amc12b_2020_p21",
+      "source": "amc12",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 918.9,
+      "verify_seconds": 24.1,
+      "errors": [
+        "sorry 포함",
+        "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  ↑k\nS : Finset ℕ\nh₀ : ∀ (n : ℕ), n ∈ S ↔ 0 < n ∧ (↑n + 1000) / 70 = ↑⌊√↑n⌋\nn : ℕ\nh : 0 < n ∧ (↑n + 1000) / 70 = ",
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "imo_1963_p5",
+      "source": "imo",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 261.1,
+      "verify_seconds": 12.3,
+      "errors": [
+        "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  2 * sin ((?x - ?y) / 2) * cos ((?x + ?y) / 2)\nh₁₁ : 2 * sin (π / 7) * cos (π / 7) = sin (2 * π / 7)\n⊢ sin (3 * ",
+        "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  2 * sin ((?x - ?y) / 2) * cos ((?x + ?y) / 2)\nh₁₁ : 2 * sin (π / 7) * cos (π / 7) = sin (2 * π / 7)\n⊢ sin (3 * "
+      ]
+    },
+    {
+      "name": "imo_1960_p2",
+      "source": "imo",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 369.2,
+      "verify_seconds": 16.9,
+      "errors": [
+        "unsolved goals\nx : ℝ\nh₀ : 0 ≤ 1 + 2 * x\nh₁ : (1 - √(1 + 2 * x)) ^ 2 ≠ 0\nh₂ : 4 * x ^ 2 / (1 - √(1 + 2 * x)) ^ 2 < 2 * x + 9\nh₃ : -(1 / 2) ≤ x\nh₄ : √(1 + 2 * x) ≥ 0\nh₅ : √(1 + 2 * x) ≠ 1\nh₆ : √(1 + 2 *",
+        "linarith failed to find a contradiction\ncase a\nx : ℝ\nh₀ : 0 ≤ 1 + 2 * x\nh₁ : (1 - √(1 + 2 * x)) ^ 2 ≠ 0\nh₂ : 4 * x ^ 2 / (1 - √(1 + 2 * x)) ^ 2 < 2 * x + 9\nh₃ : 1 + 2 * x ≥ 0\nh₄ : √(1 + 2 * x) ≥ 0\nh₅ "
+      ]
+    },
+    {
+      "name": "amc12b_2021_p13",
+      "source": "amc12",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 919.1,
+      "verify_seconds": 0.3,
+      "errors": [
+        "sorry 포함",
+        "sorry 포함",
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "amc12b_2021_p18",
+      "source": "amc12",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 775.9,
+      "verify_seconds": 56.6,
+      "errors": [
+        "linarith failed to find a contradiction\ncase h1.h\nz : ℂ\nh₀ : 12 * Complex.normSq z = 2 * Complex.normSq (z + 2) + Complex.normSq (z ^ 2 + 1) + 31\nh₁ : z ≠ 0\nh₂₁ : z.re ^ 2 * 12 + z.im ^ 2 * 12 = 40 + "
+      ]
+    },
+    {
+      "name": "imo_1964_p2",
+      "source": "imo",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 294.7,
+      "verify_seconds": 15.3,
+      "errors": []
+    },
+    {
+      "name": "imo_1962_p2",
+      "source": "imo",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 428.0,
+      "verify_seconds": 118.1,
+      "errors": []
+    },
+    {
+      "name": "imo_1981_p6",
+      "source": "imo",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 3,
+      "gen_seconds": 610.1,
+      "verify_seconds": 8.7,
+      "errors": [
+        "unsolved goals\ncase succ\nf : ℕ → ℕ → ℕ\nh₀ : ∀ (y : ℕ), f 0 y = y + 1\nh₁ : ∀ (x : ℕ), f (x + 1) 0 = f x 1\nh₂ : ∀ (x y : ℕ), f (x + 1) (y + 1) = f x (f (x + 1) y)\nh_f1 : ∀ (y : ℕ), f 1 y = y + 2\nh_f2 : ",
+        "linarith failed to find a contradiction\ncase succ.h1.h\nf : ℕ → ℕ → ℕ\nh₀ : ∀ (y : ℕ), f 0 y = y + 1\nh₁ : ∀ (x : ℕ), f (x + 1) 0 = f x 1\nz n m : ℕ\nih✝ : f 2 m = 3 + m * 2\nih : f 3 n = 2 ^ n * 8 - 3\nh₂ :"
+      ]
+    },
+    {
+      "name": "imo_1968_p5_1",
+      "source": "imo",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 4,
+      "gen_seconds": 1042.1,
+      "verify_seconds": 12.8,
+      "errors": [
+        "linarith failed to find a contradiction\na : ℝ\nf : ℝ → ℝ\nh₀ : 0 < a\nh₁ : ∀ (x : ℝ), f (x + a) = 1 / 2 + √(f x - f x ^ 2)\nh₂ : ∀ (x : ℝ), f x ≥ 1 / 2\nx : ℝ\nh₄ : f (x + a) = 1 / 2 + √(f x - f x ^ 2)\nh₅ :",
+        "linarith failed to find a contradiction\na : ℝ\nf : ℝ → ℝ\nh₀ : 0 < a\nh₁ : ∀ (x : ℝ), f (x + a) = 1 / 2 + √(f x - f x ^ 2)\nx : ℝ\nh₂ : f (x + a) = 1 / 2 + √(f x - f x ^ 2)\nh₃ : f (x + a + a) = 1 / 2 + √(f",
+        "unexpected identifier; expected command"
+      ]
+    },
+    {
+      "name": "imo_1969_p2",
+      "source": "imo",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 1056.7,
+      "verify_seconds": 3.5,
+      "errors": [
+        "sorry 포함",
+        "unexpected token ':'; expected '‖', '‖₊' or '‖ₑ'",
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "imo_1977_p6",
+      "source": "imo",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 1056.9,
+      "verify_seconds": 0.8,
+      "errors": [
+        "unexpected end of input; expected '{'",
+        "sorry 포함",
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "imo_1982_p1",
+      "source": "imo",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 1059.3,
+      "verify_seconds": 27.5,
+      "errors": [
+        "unexpected token '#'; expected command",
+        "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  b ≥ 1\n  a ≥ 1\nwhere\n a := ↑(f 3)\n b := ↑(f 1)",
+        "unexpected token '#'; expected command"
+      ]
+    },
+    {
+      "name": "imo_1965_p2",
+      "source": "imo",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 1037.5,
+      "verify_seconds": 180.0,
+      "errors": [
+        "linarith failed to find a contradiction\nx y z : ℝ\na : ℕ → ℝ\nh₀ : 0 < a 0 ∧ 0 < a 4 ∧ 0 < a 8\nh₁ : a 1 < 0 ∧ a 2 < 0\nh₂ : a 3 < 0 ∧ a 5 < 0\nh₃ : a 6 < 0 ∧ a 7 < 0\nh₄ : 0 < a 0 + a 1 + a 2\nh₅ : 0 < a 3 ",
+        "sorry 포함",
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "imo_1974_p3",
+      "source": "imo",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 1056.6,
+      "verify_seconds": 180.0,
+      "errors": [
+        "unexpected token '#'; expected command"
+      ]
+    },
+    {
+      "name": "imo_1983_p6",
+      "source": "imo",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 1067.9,
+      "verify_seconds": 37.6,
+      "errors": [
+        "unexpected token '#'; expected command"
+      ]
+    },
+    {
+      "name": "induction_11div10tonmn1ton",
+      "source": "induction",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 109.8,
+      "verify_seconds": 0.8,
+      "errors": []
+    },
+    {
+      "name": "induction_12dvd4expnp1p20",
+      "source": "induction",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 130.7,
+      "verify_seconds": 0.9,
+      "errors": []
+    },
+    {
+      "name": "induction_1pxpownlt1pnx",
+      "source": "induction",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 27.0,
+      "verify_seconds": 1.5,
+      "errors": []
+    },
+    {
+      "name": "imo_1984_p6",
+      "source": "imo",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 1078.3,
+      "verify_seconds": 0.7,
+      "errors": [
+        "sorry 포함",
+        "sorry 포함",
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "induction_nfactltnexpnm1ngt3",
+      "source": "induction",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 319.0,
+      "verify_seconds": 5.6,
+      "errors": [
+        "unsolved goals\ncase step.succ.succ.succ\nn✝ : ℕ\nh₀ : 3 ≤ n✝\nn : ℕ\nhn : 3 ≤ n\nk k''' : ℕ\nIH :\n  (k''' + 2 + 1) * ((k''' + 1 + 1) * ((k''' + 1) * k''' !)) <\n    (k''' + 1 + 1 + 1) ^ k''' * ((k''' + 1 + 1",
+        "unknown constant 'Nat.factorial_eq_prod_Icc'",
+        "unsolved goals\ncase step.succ.succ.succ\nn✝ : ℕ\nh₀ : 3 ≤ n✝\nn : ℕ\nhn : 3 ≤ n\nk k''' : ℕ\nIH :\n  (k''' + 2 + 1) * ((k''' + 1 + 1) * ((k''' + 1) * k''' !)) <\n    (k''' + 1 + 1 + 1) ^ k''' * ((k''' + 1 + 1"
+      ]
+    },
+    {
+      "name": "induction_pprime_pdvdapowpma",
+      "source": "induction",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 24.7,
+      "verify_seconds": 2.1,
+      "errors": [
+        "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  b ≥ 1\nwhere\n b := ↑a",
+        "unknown constant 'ZMod.nat_cast_zmod_eq_zero_iff_dvd'",
+        "unknown constant 'ZMod.nat_cast_zmod_eq_zero_iff_dvd'"
+      ]
+    },
+    {
+      "name": "imo_1985_p6",
+      "source": "imo",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 1075.3,
+      "verify_seconds": 3.2,
+      "errors": [
+        "unsolved goals\nf : ℕ → NNReal → ℝ\nh₀ : ∀ (x : NNReal), f 1 x = ↑x\nh₁ : ∀ (x : NNReal) (n : ℕ), f (n + 1) x = f n x * (f n x + 1 / ↑n)\nh₂ : f 0 0 = 0\nh₄ : f 2 1 = 2\nh₆ : f 2 2 = 6\nh₃ : 1 = f 0 1 ^ 2\nh₅",
+        "unsolved goals\nf : ℕ → NNReal → ℝ\nh₀ : ∀ (x : NNReal), f 1 x = ↑x\nh₁ : ∀ (x : NNReal) (n : ℕ), f (n + 1) x = f n x * (f n x + 1 / ↑n)\nh₂ : f 0 0 = 0\nh₃ : f 2 0 = 0\nh₅ : f 2 1 = 2\nh₄ : 1 = f 0 1 ^ 2\nh₆",
+        "unsolved goals\nf : ℕ → NNReal → ℝ\nh₀ : ∀ (x : NNReal), f 1 x = ↑x\nh₁ : ∀ (x : NNReal) (n : ℕ), f (1 + n) x = f n x / ↑n + f n x ^ 2\nh₃ : f 0 0 = 0\nh₄ : f 2 0 = 0\nh₇ : 1 = f 0 1 * f 0 1\nh₈ : f 2 1 = 2\n"
+      ]
+    },
+    {
+      "name": "induction_sumkexp3eqsumksq",
+      "source": "induction",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 36.8,
+      "verify_seconds": 4.4,
+      "errors": [
+        "unsolved goals\ncase succ\nn✝ n : ℕ\nih : ∑ x ∈ Finset.range n, x ^ 3 = (∑ k ∈ Finset.range n, k) ^ 2\n⊢ (∑ k ∈ Finset.range n, k) ^ 2 + n ^ 3 = (∑ k ∈ Finset.range n, k) * n * 2 + (∑ k ∈ Finset.range n, ",
+        "unsolved goals\ncase succ\nn✝ n : ℕ\nih : ∑ k ∈ Finset.range n, k ^ 3 = (∑ k ∈ Finset.range n, k) ^ 2\n⊢ (∑ k ∈ Finset.range n, k) ^ 2 + n ^ 3 = (∑ k ∈ Finset.range n, k) * n * 2 + (∑ k ∈ Finset.range n, ",
+        "unsolved goals\ncase succ\nn✝ n : ℕ\nih : ∑ x ∈ Finset.range n, x ^ 3 = (∑ k ∈ Finset.range n, k) ^ 2\n⊢ (∑ k ∈ Finset.range n, k) ^ 2 + n ^ 3 = (∑ k ∈ Finset.range n, k) * n * 2 + (∑ k ∈ Finset.range n, "
+      ]
+    },
+    {
+      "name": "imo_1992_p1",
+      "source": "imo",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 1076.6,
+      "verify_seconds": 0.2,
+      "errors": [
+        "sorry 포함",
+        "sorry 포함",
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "mathd_algebra_107",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 63.3,
+      "verify_seconds": 4.9,
+      "errors": []
+    },
+    {
+      "name": "imo_1997_p5",
+      "source": "imo",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 1076.9,
+      "verify_seconds": 53.2,
+      "errors": [
+        "sorry 포함",
+        "linarith failed to find a contradiction\ncase step.succ.succ.succ.succ.succ.succ.succ.succ.succ.succ.succ.succ.succ.succ.succ.succ.h\nx n✝ n : ℕ\nh₀ : 0 < x\nh₆ : x * (x * (x * (x * (x * (x * (x * (x * x)",
+        "linarith failed to find a contradiction\ncase step.succ.succ.succ.succ.succ.succ.succ.succ.succ.succ.succ.succ.succ.succ.h\nx y : ℕ\nh₂ : 0 < x\nn✝ n : ℕ\nh₄ : ¬x = 1\nhy : y = 3\nh₇₁ : x * x * x * x * x * x"
+      ]
+    },
+    {
+      "name": "mathd_algebra_113",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 91.1,
+      "verify_seconds": 5.2,
+      "errors": []
+    },
+    {
+      "name": "imo_2019_p1",
+      "source": "imo",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 1079.5,
+      "verify_seconds": 34.9,
+      "errors": [
+        "sorry 포함",
+        "linarith failed to find a contradiction\ncase h1.h\nf : ℤ → ℤ\nh : ∀ (a b : ℤ), f (2 * a) + 2 * f b = f (f (a + b))\nh₁ : ∀ (x : ℤ), f (2 * x) + f 0 = 2 * f x\nh₂ : ∀ (x : ℤ), f (f x) = f 0 + 2 * f x\nh₃ : ",
+        "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a + 2*b ≥ 1\nwhere\n a := f (-z)\n b := z"
+      ]
+    },
+    {
+      "name": "imosl_2007_algebra_p6",
+      "source": "imo",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 1069.6,
+      "verify_seconds": 0.4,
+      "errors": [
+        "unexpected identifier; expected command",
+        "sorry 포함",
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "mathd_algebra_129",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 106.0,
+      "verify_seconds": 3.1,
+      "errors": []
+    },
+    {
+      "name": "induction_prod1p1onk3le3m1onn",
+      "source": "induction",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 338.7,
+      "verify_seconds": 14.1,
+      "errors": [
+        "simp made no progress",
+        "simp made no progress",
+        "simp made no progress"
+      ]
+    },
+    {
+      "name": "mathd_algebra_141",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 21.2,
+      "verify_seconds": 1.6,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_125",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 170.4,
+      "verify_seconds": 3.2,
+      "errors": []
+    },
+    {
+      "name": "imo_2001_p6",
+      "source": "imo",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 4,
+      "gen_seconds": 1079.4,
+      "verify_seconds": 180.1,
+      "errors": [
+        "unsolved goals\ncase inl\na b c d : ℕ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 < d\nh₁ : d < c\nh₂ : c < b\nh₃ : b < a\nh₄ : a * c + b * d = (b + d + a - c) * (b + d + c - a)\nh₅ : b + d + c > a\nh₆₁ : 0 < a\nh₆₂ : 0 < ",
+        "sorry 포함",
+        "unsolved goals\ncase intro.intro\na b c d : ℕ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 < d\nh₁ : d < c\nh₂ : c < b\nh₃ : b < a\nh₅₁ : 0 < a\nh₅₂ : 0 < b\nh₅₃ : 0 < c\nh₅₄ : 0 < d\nh₅₅ : d < c\nh₅₆ : c < b\nh₅₇ : b < a\nh₅₁₀"
+      ]
+    },
+    {
+      "name": "mathd_algebra_143",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 24.0,
+      "verify_seconds": 0.4,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_148",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 45.1,
+      "verify_seconds": 0.9,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_139",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 117.4,
+      "verify_seconds": 0.6,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_142",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 83.4,
+      "verify_seconds": 0.6,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_160",
+      "source": "mathd_algebra",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 4,
+      "gen_seconds": 18.0,
+      "verify_seconds": 0.7,
+      "errors": [
+        "linarith failed to find a contradiction\ncase h2.h\nn x : ℝ\nh₀ : n + x = 97\nh₁ : n + 5 * x = 265\nh₂₁ : n + 5 * x - (n + x) = 265 - 97\nh₂₂ : 4 * x = 168\na✝ : 36 < x\n⊢ False failed",
+        "linarith failed to find a contradiction\ncase h2.h\nn x : ℝ\nh₀ : n + x = 97\nh₁ : n + 5 * x = 265\nh₂₁ : n + 5 * x - (n + x) = 265 - 97\na✝ : 33 < x\n⊢ False failed",
+        "linarith failed to find a contradiction\ncase h1.h\nn x : ℝ\nh₀ : n + x = 97\nh₁ : n + 5 * x = 265\nh₂₁ : n + 5 * x - (n + x) = 265 - 97\na✝ : x < 49\n⊢ False failed"
+      ]
+    },
+    {
+      "name": "mathd_algebra_153",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 121.2,
+      "verify_seconds": 0.7,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_171",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 9.3,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_176",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 47.9,
+      "verify_seconds": 0.5,
+      "errors": []
+    },
+    {
+      "name": "induction_pord1p1on2powklt5on2",
+      "source": "induction",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 950.4,
+      "verify_seconds": 3.1,
+      "errors": [
+        "sorry 포함",
+        "unsolved goals\ncase refl\nk n✝¹ : ℕ\nh₀ : 0 < n✝¹\nn✝ : ℕ\nhn : 0 < n✝\nn : ℕ\n⊢ 1 + (2 ^ k)⁻¹ ≤ 2",
+        "unexpected token '#'; expected command"
+      ]
+    },
+    {
+      "name": "mathd_algebra_156",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 271.3,
+      "verify_seconds": 9.8,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_170",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 263.9,
+      "verify_seconds": 2.0,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_158",
+      "source": "mathd_algebra",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 310.6,
+      "verify_seconds": 1.3,
+      "errors": [
+        "type mismatch, term\n  h₁\nafter simplification has type\n  ∑ x ∈ Finset.range 8, 2 * ↑x + 1 - (5 * ↑a + 2 * ↑k) = 4 : Prop\nbut is expected to have type\n  64 - (5 * ↑a + 20) = 4 : Prop",
+        "tactic 'rfl' failed, expected goal to be a binary relation\nk a : ℕ\nh₀ : Even a\nh₁ : ↑(∑ k ∈ Finset.range 8, 2 * k + 1) - ↑(∑ k ∈ Finset.range 5, a + 2 * k) = 4\n⊢ False",
+        "tactic 'rfl' failed, expected goal to be a binary relation\nk a : ℕ\nh₀ : Even a\nh₁ : ↑(∑ k ∈ Finset.range 8, 2 * k + 1) - ↑(∑ k ∈ Finset.range 5, a + 2 * k) = 4\n⊢ False"
+      ]
+    },
+    {
+      "name": "mathd_algebra_188",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 74.2,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_17",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 305.0,
+      "verify_seconds": 14.6,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_114",
+      "source": "mathd_algebra",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 583.2,
+      "verify_seconds": 1.7,
+      "errors": [
+        "unknown constant 'Real.rpow_nat_cast'"
+      ]
+    },
+    {
+      "name": "mathd_algebra_24",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 18.3,
+      "verify_seconds": 0.6,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_263",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 16.3,
+      "verify_seconds": 1.0,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_270",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 48.9,
+      "verify_seconds": 0.4,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_246",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 75.5,
+      "verify_seconds": 2.3,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_209",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 124.8,
+      "verify_seconds": 0.5,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_184",
+      "source": "mathd_algebra",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 277.5,
+      "verify_seconds": 7.4,
+      "errors": [
+        "unknown constant 'NNReal.sqrt_eq_iff_sq_eq'",
+        "unknown constant 'NNReal.sqrt_coe'",
+        "unknown constant 'NNReal.sqrt_eq_iff_sq_eq'"
+      ]
+    },
+    {
+      "name": "mathd_algebra_196",
+      "source": "mathd_algebra",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 188.9,
+      "verify_seconds": 0.6,
+      "errors": [
+        "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  x ∈ S\ncase h.mpr.inl\nS : Finset ℝ\nh₀ : ∀ (x : ℝ), x ∈ S ↔ |2 - x| = 3\nx : ℝ\nh₂ : x ∈ S ↔ |2 - x| = 3\nh h₃ : x ="
+      ]
+    },
+    {
+      "name": "mathd_algebra_275",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 102.4,
+      "verify_seconds": 0.6,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_208",
+      "source": "mathd_algebra",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 285.7,
+      "verify_seconds": 0.8,
+      "errors": [
+        "unknown constant 'Real.rpow_nat_cast'",
+        "unknown constant 'Real.rpow_nat_cast'",
+        "unknown constant 'Real.rpow_nat_cast'"
+      ]
+    },
+    {
+      "name": "mathd_algebra_288",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 161.3,
+      "verify_seconds": 11.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_296",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 124.1,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_137",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 837.2,
+      "verify_seconds": 3.9,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_215",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 411.7,
+      "verify_seconds": 1.0,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_293",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 297.2,
+      "verify_seconds": 6.6,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_314",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 89.5,
+      "verify_seconds": 0.5,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_329",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 17.3,
+      "verify_seconds": 0.9,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_33",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 29.6,
+      "verify_seconds": 1.7,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_332",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 136.9,
+      "verify_seconds": 3.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_338",
+      "source": "mathd_algebra",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 4,
+      "gen_seconds": 127.0,
+      "verify_seconds": 4.5,
+      "errors": [
+        "linarith failed to find a contradiction\ncase h2.h\na b c : ℝ\nh₀ : 3 * a + b + c = -3\nh₁ : a + 3 * b + c = 9\nh₂ : a + b + 3 * c = 19\nh₃₂ : a + 3 * b + c - (3 * a + b + c) = 9 - -3\nh₃₃ : -2 * a + 2 * b =",
+        "linarith failed to find a contradiction\ncase h2.h\na b c : ℝ\nh₀ : 3 * a + b + c = -3\nh₁ : a + 3 * b + c = 9\nh₂ : a + b + 3 * c = 19\na✝ : -5 < a\n⊢ False failed",
+        "linarith failed to find a contradiction\ncase h1.h\na b c : ℝ\nh₀ : 3 * a + b + c = -3\nh₁ : a + 3 * b + c = 9\nh₂ : a + b + 3 * c = 19\nh₃ : a = -4\nh₄₁ : 3 * -4 + b + c = -3\nh₄₂ : b + c = 9\nh₄₃ : -4 + 3 * "
+      ]
+    },
+    {
+      "name": "mathd_algebra_289",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 456.1,
+      "verify_seconds": 33.8,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_313",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 288.0,
+      "verify_seconds": 3.9,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_359",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 8.2,
+      "verify_seconds": 0.5,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_346",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 52.7,
+      "verify_seconds": 0.3,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_354",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 204.6,
+      "verify_seconds": 0.9,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_276",
+      "source": "mathd_algebra",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 650.7,
+      "verify_seconds": 64.3,
+      "errors": [
+        "unsolved goals\na b : ℤ\nh₂₀ : True\nh₁ : a * b = 10\nh₂₁ : Int.negSucc 14 = Int.negSucc 23 + a * 3 + (a * b - b * 8)\nh₂₂ : Int.negSucc 12 = Int.negSucc 23 - a * 3 + a * b + b * 8\nh₂₃ : 14 = Int.negSucc 2",
+        "unsolved goals\na b : ℤ\nh₁ : a * b = 10\nh₃₁ : 986 = -(a * 30) + a * b * 100 + b * 80 + Int.negSucc 23\nh₃₀ : 966 = a * 30 + (a * b * 100 - b * 80) + Int.negSucc 23\nh₂₈ : 69 = -(a * 9) + a * b * 9 + b * ",
+        "mod_cast has type\n  3 * a - 8 * b = Int.negSucc 0 : Prop\nbut is expected to have type\n  a * 3 - b * 8 = Int.negSucc 0 : Prop"
+      ]
+    },
+    {
+      "name": "mathd_algebra_342",
+      "source": "mathd_algebra",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 250.1,
+      "verify_seconds": 2.0,
+      "errors": [
+        "linarith failed to find a contradiction\ncase h1.h\nk a d : ℝ\nh₁ : ∑ k ∈ Finset.range 10, a + k * d = 210\nh₀ : a * 5 + k * d = 70\na✝ : a * 5 + d * 10 < 70\n⊢ False failed",
+        "type mismatch\n  h₀\nhas type\n  ∑ k ∈ Finset.range 5, a + k * d = 70 : Prop\nbut is expected to have type\n  ∑ k ∈ Finset.range 5, (a + ↑k * d) = 70 : Prop",
+        "type mismatch, term\n  h₀\nafter simplification has type\n  5 * a + k * d = 70 : Prop\nbut is expected to have type\n  a + (a + d) + (a + 2 * d) + (a + 3 * d) + (a + 4 * d) = 70 : Prop"
+      ]
+    },
+    {
+      "name": "mathd_algebra_400",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 39.0,
+      "verify_seconds": 1.3,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_398",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 71.0,
+      "verify_seconds": 2.3,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_419",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 5.3,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_412",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 29.3,
+      "verify_seconds": 0.3,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_432",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 6.8,
+      "verify_seconds": 4.7,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_362",
+      "source": "mathd_algebra",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 284.2,
+      "verify_seconds": 16.5,
+      "errors": [
+        "linarith failed to find a contradiction\ncase h1.h\na b : ℝ\nh₀ : a ^ 2 * b ^ 3 = 32 / 27\nh₁ : a / b ^ 3 = 27 / 4\nh₂ : b ≠ 0\nh₃ : a = 27 / 4 * b ^ 3\nh₅ h₆ : (27 / 4 * b ^ 3) ^ 2 * b ^ 3 = 32 / 27\nh₇ : b "
+      ]
+    },
+    {
+      "name": "mathd_algebra_440",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 13.1,
+      "verify_seconds": 1.4,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_44",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 39.4,
+      "verify_seconds": 0.7,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_427",
+      "source": "mathd_algebra",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 3,
+      "gen_seconds": 79.5,
+      "verify_seconds": 4.2,
+      "errors": [
+        "linarith failed to find a contradiction\ncase h2.h\nx y z : ℝ\nh₀ : 3 * x + y = 17\nh₁ : 5 * y + z = 14\nh₂ : 3 * x + 5 * z = 41\nh₄ : x = (17 - y) / 3\nh₅ : 3 * ((17 - y) / 3) + 5 * z = 41\nh₆ : 17 - y + 5 *",
+        "linarith failed to find a contradiction\ncase h1.h\nx y z : ℝ\nh₀ : 3 * x + y = 17\nh₁ : 5 * y + z = 14\nh₂ : 3 * x + 5 * z = 41\nh₄ : 5 * z - y = 24\na✝ : 6 * z < 38\n⊢ False failed",
+        "linarith failed to find a contradiction\ncase h.h2.h\nx y z : ℝ\nh₀ : 3 * x + y = 17\nh₁ : 5 * y + z = 14\nh₂ : 3 * x + 5 * z = 41\nh₄ : x = (17 - y) / 3\nh₅ : 3 * ((17 - y) / 3) + 5 * z = 41\nh₆ : 17 - y + 5"
+      ]
+    },
+    {
+      "name": "mathd_algebra_392",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 205.7,
+      "verify_seconds": 2.8,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_320",
+      "source": "mathd_algebra",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 427.6,
+      "verify_seconds": 180.1,
+      "errors": [
+        "unsolved goals\nx : ℝ\na b c : ℕ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 ≤ x\nh₁ : 2 * x ^ 2 = 4 * x + 9\nh₂ : x = (↑a + √↑b) / ↑c\nh₃ : c = 2\nh₄ : x = (2 + √22) / 2\nh₅ h₆₁ : ↑a + √↑b = 2 + √22\nh₆₂ : √↑b = 2 + √22 ",
+        "unsolved goals\ncase hp\nx : ℝ\na b c : ℕ\nh₀ : 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 ≤ x\nh₁ : 2 * x ^ 2 = 4 * x + 9\nh₂ : x = (↑a + √↑b) / ↑c\nh₃ : c = 2\nh₄ : x = (2 + √22) / 2\nh₅ : ↑a + √↑b = 2 + √22\nh₆ : ↑b = 26 - 4"
+      ]
+    },
+    {
+      "name": "mathd_algebra_302",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 769.8,
+      "verify_seconds": 0.5,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_478",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 21.9,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_304",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 769.8,
+      "verify_seconds": 0.1,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_484",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 37.0,
+      "verify_seconds": 0.3,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_513",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 38.7,
+      "verify_seconds": 0.6,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_76",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 44.8,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_80",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 54.9,
+      "verify_seconds": 0.7,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_756",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 120.5,
+      "verify_seconds": 1.1,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_598",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 193.5,
+      "verify_seconds": 5.4,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_1124",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 123.5,
+      "verify_seconds": 0.7,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_12",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 52.8,
+      "verify_seconds": 1.1,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_487",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 273.9,
+      "verify_seconds": 6.9,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_100",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 133.7,
+      "verify_seconds": 15.4,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_441",
+      "source": "mathd_algebra",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 437.0,
+      "verify_seconds": 2.7,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_150",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 114.6,
+      "verify_seconds": 0.5,
+      "errors": []
+    },
+    {
+      "name": "mathd_algebra_388",
+      "source": "mathd_algebra",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 800.6,
+      "verify_seconds": 0.8,
+      "errors": [
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_185",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 77.0,
+      "verify_seconds": 0.6,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_207",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 91.0,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_175",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 193.4,
+      "verify_seconds": 0.9,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_127",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 234.7,
+      "verify_seconds": 2.4,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_212",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 142.5,
+      "verify_seconds": 0.4,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_233",
+      "source": "mathd_numbertheory",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 233.9,
+      "verify_seconds": 2.0,
+      "errors": [
+        "unknown constant 'ZMod.nat_cast_self'",
+        "unknown constant 'ZMod.nat_cast_self'",
+        "unknown constant 'ZMod.val_nat_cast'"
+      ]
+    },
+    {
+      "name": "mathd_algebra_452",
+      "source": "mathd_algebra",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 827.5,
+      "verify_seconds": 13.6,
+      "errors": [
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "mathd_algebra_459",
+      "source": "mathd_algebra",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 828.6,
+      "verify_seconds": 4.1,
+      "errors": [
+        "tactic 'rfl' failed, the left-hand side\n  (13 / 15).num\nis not definitionally equal to the right-hand side\n  13\na b c d : ℚ\nh₀ : 3 * a = b + c + d\nh₁ : 4 * b = a + c + d\nh₂ : 2 * c = a + b + d\nh₃ : 8 ",
+        "tactic 'rfl' failed, the left-hand side\n  (13 / 15).num\nis not definitionally equal to the right-hand side\n  13\na b c d : ℚ\nh₀ : 3 * a = b + c + d\nh₁ : 4 * b = a + c + d\nh₂ : 2 * c = a + b + d\nh₃ : 8 ",
+        "unexpected token '#'; expected command"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_222",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 219.3,
+      "verify_seconds": 174.8,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_227",
+      "source": "mathd_numbertheory",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 373.6,
+      "verify_seconds": 14.9,
+      "errors": [
+        "unsolved goals\ncase inl.inr\nx y n : ℕ+\nh₀ : ↑↑x / 4 + ↑↑y / 6 = (↑↑x + ↑↑y) / ↑↑n\nh₁ : 3 * ↑n * ↑x + 2 * ↑n * ↑y = 12 * (↑x + ↑y)\nh : 3 ≤ ↑n\nh' : ↑n < 6\nh₂₂ : 2 * ↑n * ↑y + 3 * ↑n * ↑x = 12 * (↑x + ↑y",
+        "unsolved goals\nx y n : ℕ+\nh₀ : ↑↑x / 4 + ↑↑y / 6 = (↑↑x + ↑↑y) / ↑↑n\nh₂ : ↑↑n ≠ 0\nh₁ : x * n * 6 + y * n * 4 = x * 24 + y * 24\n⊢ Int.subNatNat (↑(n * 3)) 12 * ↑↑x + Int.subNatNat (↑(n * 2)) 12 * ↑↑y ="
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_247",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 73.9,
+      "verify_seconds": 2.1,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_135",
+      "source": "mathd_numbertheory",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 789.8,
+      "verify_seconds": 6.6,
+      "errors": [
+        "linarith failed to find a contradiction\ncase h1.h\nn A B C : ℕ\nh₀ : n = 3 ^ 17 + 3 ^ 10\nh₁ : 11 ∣ n + 1\nh₂ : List.Pairwise (fun x1 x2 => x1 ≠ x2) [A, B, C]\nh₃ : {A, B, C} ⊂ Finset.Icc 0 9\nh₄ : Odd A ∧ ",
+        "tactic 'rfl' failed, expected goal to be a binary relation\nn A B C : ℕ\nh₀ : n = 3 ^ 17 + 3 ^ 10\nh₁ : 11 ∣ n + 1\nh₂ : List.Pairwise (fun x1 x2 => x1 ≠ x2) [A, B, C]\nh₃ : {A, B, C} ⊂ Finset.Icc 0 9\nh₄ :"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_234",
+      "source": "mathd_numbertheory",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 593.5,
+      "verify_seconds": 6.1,
+      "errors": [
+        "application type mismatch\n  pow_le_pow_of_le_left ?m.41241 h₉₁\nargument\n  h₉₁\nhas type\n  10 * a + b ≤ 96 : Prop\nbut is expected to have type\n  ℕ : Type",
+        "application type mismatch\n  pow_le_pow_of_le_left ?m.44626 h₄₅\nargument\n  h₄₅\nhas type\n  10 * a + b ≤ 96 : Prop\nbut is expected to have type\n  ℕ : Type"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_277",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 342.2,
+      "verify_seconds": 12.7,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_229",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 771.6,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_299",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 35.4,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_314",
+      "source": "mathd_numbertheory",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 200.5,
+      "verify_seconds": 2.1,
+      "errors": [
+        "tactic 'simp' failed, nested error:\nmaximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics true` to get diagnostic information"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_235",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 761.9,
+      "verify_seconds": 0.1,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_237",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 762.8,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_239",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 765.1,
+      "verify_seconds": 0.3,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_254",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 769.3,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_328",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 119.7,
+      "verify_seconds": 0.5,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_296",
+      "source": "mathd_numbertheory",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 508.4,
+      "verify_seconds": 33.9,
+      "errors": [
+        "application type mismatch\n  pow_le_pow_of_le_left ?m.15946 h₁₂\nargument\n  h₁₂\nhas type\n  x ≥ 1 : Prop\nbut is expected to have type\n  ℕ : Type",
+        "linarith failed to find a contradiction\ncase h\nn : ℕ\nh₀ : 2 ≤ n\nx : ℕ\nhx : x ^ 3 = n\nt : ℕ\nht : t ^ 4 = n\nh₃ h₅ : x ^ 3 = t ^ 4\nh₇ : x ≥ 1\nh₈ : t ≥ 1\nh₁₀ : x ^ 3 = t ^ 4\nh₁₁ : x ≥ 1\nh₁₂ : t ≥ 1\nh₁₄ : ",
+        "application type mismatch\n  pow_le_pow_of_le_left ?m.154118 h₇\nargument\n  h₇\nhas type\n  t ≥ 8 : Prop\nbut is expected to have type\n  ℕ : Type"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_321",
+      "source": "mathd_numbertheory",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 218.0,
+      "verify_seconds": 1.0,
+      "errors": [
+        "unknown constant 'ZMod.nat_cast_self'",
+        "unknown constant 'ZMod.nat_cast_self'",
+        "unknown constant 'ZMod.nat_cast_self'"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_345",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 47.7,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_343",
+      "source": "mathd_numbertheory",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 85.0,
+      "verify_seconds": 0.1,
+      "errors": [
+        "tactic 'rfl' failed, expected goal to be a binary relation\n⊢ False",
+        "tactic 'rfl' failed, expected goal to be a binary relation\n⊢ False",
+        "tactic 'rfl' failed, expected goal to be a binary relation\n⊢ False"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_293",
+      "source": "mathd_numbertheory",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 763.0,
+      "verify_seconds": 0.4,
+      "errors": [
+        "unsolved goals\nn : ℕ\nh₀ : n ≤ 9\nh₁ : 11 ∣ 20 * 100 + 10 * n + 7\nh₂ : n ≤ 9\nh₃ : 11 ∣ 20 * 100 + 10 * n + 7\nh₄ : (20 * 100 + 10 * n + 7) % 11 = 0\nh₅ : (20 * 100 + 10 * n + 7) % 11 = (20 * 100 + 10 * n "
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_341",
+      "source": "mathd_numbertheory",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 255.6,
+      "verify_seconds": 2.8,
+      "errors": [
+        "type mismatch\n  h₁\nhas type\n  [5, 2, 6] = [c, b, a] : Prop\nbut is expected to have type\n  [c, b, a] = [5, 2, 6] : Prop",
+        "type mismatch\n  h₁\nhas type\n  [5, 2, 6] = [c, b, a] : Prop\nbut is expected to have type\n  [c, b, a] = [5, 2, 6] : Prop",
+        "linarith failed to find a contradiction\ncase h1.h\na b c : ℕ\nh₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9\nh₁ : digits 10 (5 ^ 100 % 1000) = [c, b, a]\nh₂ : 5 ^ 100 % 1000 = 625\nh₃ : digits 10 (5 ^ 100 % 1000) = [5, 2, 6]"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_320",
+      "source": "mathd_numbertheory",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 409.6,
+      "verify_seconds": 2.2,
+      "errors": [
+        "omega could not prove the goal:\nNo usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication,"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_427",
+      "source": "mathd_numbertheory",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 171.8,
+      "verify_seconds": 0.8,
+      "errors": [
+        "maximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics true` to get diagnostic information",
+        "maximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics true` to get diagnostic information",
+        "maximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics true` to get diagnostic information"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_447",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 86.6,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_3",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 782.4,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_435",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 225.4,
+      "verify_seconds": 0.9,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_430",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 315.7,
+      "verify_seconds": 18.6,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_457",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 222.1,
+      "verify_seconds": 1.4,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_34",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 674.9,
+      "verify_seconds": 6.8,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_517",
+      "source": "mathd_numbertheory",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 42.3,
+      "verify_seconds": 0.2,
+      "errors": [
+        "no goals to be solved"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_342",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 824.9,
+      "verify_seconds": 0.1,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_521",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 262.2,
+      "verify_seconds": 6.1,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_551",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 30.8,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_353",
+      "source": "mathd_numbertheory",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 627.9,
+      "verify_seconds": 180.0,
+      "errors": [
+        "maximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics true` to get diagnostic information",
+        "maximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics true` to get diagnostic information",
+        "maximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics true` to get diagnostic information"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_5",
+      "source": "mathd_numbertheory",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 396.3,
+      "verify_seconds": 89.9,
+      "errors": [
+        "application type mismatch\n  pow_le_pow_of_le_left ?m.57876 h₇₁\nargument\n  h₇₁\nhas type\n  t ≥ 4 : Prop\nbut is expected to have type\n  ℕ : Type"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_582",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 114.4,
+      "verify_seconds": 0.7,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_483",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 679.2,
+      "verify_seconds": 2.9,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_495",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 663.3,
+      "verify_seconds": 42.7,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_451",
+      "source": "mathd_numbertheory",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 883.0,
+      "verify_seconds": 4.7,
+      "errors": [
+        "sorry 포함",
+        "sorry 포함",
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_541",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 594.5,
+      "verify_seconds": 24.8,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_559",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 395.1,
+      "verify_seconds": 8.1,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_728",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 81.1,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_769",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 122.6,
+      "verify_seconds": 0.8,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_711",
+      "source": "mathd_numbertheory",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 340.3,
+      "verify_seconds": 19.1,
+      "errors": [
+        "unsolved goals\ncase «28»\nm n : ℕ\nh₄₂ : 0 < n\nh₇ : n ≤ 71\nh₀ : 0 < 28 ∧ 0 < n\nh₁ : Nat.gcd 28 n = 8\nh₂ : Nat.lcm 28 n = 112\nh₃ : 28 * n = 896\nh₄₁ : 0 < 28\nh₄₃ : 0 < 28 * n\nh₄₄ : 28 * n = 896\nh : ¬28 + "
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_552",
+      "source": "mathd_numbertheory",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 669.8,
+      "verify_seconds": 2.6,
+      "errors": [
+        "unsolved goals\nf g h : ℕ+ → ℕ\nh₀ : ∀ (x : ℕ+), f x = 12 * ↑x + 7\nh₁ : ∀ (x : ℕ+), g x = 5 * ↑x + 2\nh₂ : ∀ (x : ℕ+), h x = (f x).gcd (g x)\nh₃ : Fintype ↑(Set.range h)\nh_div : ∀ (x : ℕ+), h x ∣ 11\nh_ran"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_765",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 415.9,
+      "verify_seconds": 4.6,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_99",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 379.8,
+      "verify_seconds": 6.0,
+      "errors": []
+    },
+    {
+      "name": "mathd_numbertheory_618",
+      "source": "mathd_numbertheory",
+      "num_pass": 1,
+      "k": 4,
+      "first_success_index": 3,
+      "gen_seconds": 891.2,
+      "verify_seconds": 1.3,
+      "errors": [
+        "linarith failed to find a contradiction\ncase inl\nn : ℕ\np : ℕ → ℕ\nh₀ : ∀ (x : ℕ), p x = x ^ 2 - x + 41\nh₁ : 1 < (p n).gcd (p (n + 1))\nh h₂ : n = 0\nh₃ : 1 < (p n).gcd (p (n + 1))\nh₄ : p n = 41\nh₅ : p (n",
+        "unsolved goals\ncase «0»\nn : ℕ\np : ℕ → ℕ\nh₀ : ∀ (x : ℕ), p x = x ^ 2 - x + 41\nh : 0 < 41\nh₂ h₃ : 0 ≤ 40\nh₁ : True\n⊢ False",
+        "unsolved goals\ncase «0»\nn : ℕ\np : ℕ → ℕ\nh₀ : ∀ (x : ℕ), p x = x ^ 2 - x + 41\nh₁ : 1 < (p n).gcd (p (n + 1))\nh : n < 41\nh₃ : n ≤ 40\nk : ℕ\nhk h₅ : 0 ≤ 40\n⊢ False"
+      ]
+    },
+    {
+      "name": "numbertheory_2pownm1prime_nprime",
+      "source": "numbertheory",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 483.0,
+      "verify_seconds": 6.5,
+      "errors": [
+        "unknown constant 'Nat.pow_lt_pow_of_lt_right'",
+        "unknown constant 'Nat.pow_lt_pow_of_lt_right'",
+        "unknown identifier 'pow_lt_pow_of_lt_right'"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_66",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 890.7,
+      "verify_seconds": 0.1,
+      "errors": []
+    },
+    {
+      "name": "numbertheory_4x3m7y3neq2003",
+      "source": "numbertheory",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 302.4,
+      "verify_seconds": 4.8,
+      "errors": [
+        "unsolved goals\nx y : ℤ\nh h₁ : 4 * x ^ 3 - 7 * y ^ 3 = 2003\nh₂ : (4 * x ^ 3 - 7 * y ^ 3) % 7 = 2003 % 7\nh₃ : (4 * x ^ 3 - 7 * y ^ 3) % 7 = 4 * x ^ 3 % 7\n⊢ False",
+        "unsolved goals\nx✝ y x : ℤ\nh h₂ h₃ : x % 7 = 3\nh₄ : x ^ 3 % 7 = 6\n⊢ False"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_764",
+      "source": "mathd_numbertheory",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 737.3,
+      "verify_seconds": 23.0,
+      "errors": [
+        "unknown constant 'ZMod.nat_cast_zmod_eq_zero_iff_dvd'",
+        "type mismatch, term\n  h\nafter simplification has type\n  a * (a + 1) = 0 : Prop\nbut is expected to have type\n  a + 1 = 0 : Prop",
+        "unknown constant 'ZMod.nat_cast_zmod_eq_zero_iff_dvd'"
+      ]
+    },
+    {
+      "name": "mathd_numbertheory_85",
+      "source": "mathd_numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 903.7,
+      "verify_seconds": 0.2,
+      "errors": []
+    },
+    {
+      "name": "numbertheory_notequiv2i2jasqbsqdiv8",
+      "source": "numbertheory",
+      "num_pass": 4,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 237.1,
+      "verify_seconds": 0.9,
+      "errors": []
+    },
+    {
+      "name": "numbertheory_x5neqy2p4",
+      "source": "numbertheory",
+      "num_pass": 3,
+      "k": 4,
+      "first_success_index": 1,
+      "gen_seconds": 287.8,
+      "verify_seconds": 6.9,
+      "errors": [
+        "unsolved goals\ncase inl.inl\nx y : ℤ\nh : x ^ 5 = y ^ 2 + 4\nh₁ : x ^ 5 % 11 = (y ^ 2 + 4) % 11\nh₂ : x ^ 5 % 11 = 0\nh₃ : (y ^ 2 + 4) % 11 = 0\n⊢ False\n\ncase inr.inl.inr.inl\nx y : ℤ\nh : x ^ 5 = y ^ 2 + 4\nh"
+      ]
+    },
+    {
+      "name": "numbertheory_3pow2pownm1mod2pownp3eq2pownp2",
+      "source": "numbertheory",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 888.9,
+      "verify_seconds": 41.2,
+      "errors": [
+        "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  j ≥ 1\n  i ≥ 1\n  h ≥ 0\n  g ≥ 0\n  f ≥ 0\n  f - h ≥ 1\n  e ≥ 0\n  e - i ≤ -1\n  d ≥ 1\n  d + e - i ≥ 0\n  c ≥ 1\n  b ≥ 1\n ",
+        "linarith failed to find a contradiction\ncase a\nn✝² : ℕ\nh₀ : 0 < n✝²\nn✝¹ : ℕ\nhn✝ : 0 < n✝¹\nn✝ n : ℕ\nhn : (succ 0).le n\nIH : 3 ^ 2 ^ n % 2 ^ (n + 3) = (1 + 2 ^ (n + 2)) % 2 ^ (n + 3)\nh₃ : 3 ^ 2 ^ (n + 1",
+        "sorry 포함"
+      ]
+    },
+    {
+      "name": "numbertheory_aoddbdiv4asqpbsqmod8eq1",
+      "source": "numbertheory",
+      "num_pass": 2,
+      "k": 4,
+      "first_success_index": 2,
+      "gen_seconds": 687.0,
+      "verify_seconds": 3.9,
+      "errors": [
+        "type mismatch\n  a ^ 2 + ↑b ^ 2\nhas type\n  ℤ : outParam Type\nbut is expected to have type\n  ℕ : Type",
+        "type mismatch\n  a ^ 2 + ↑b ^ 2\nhas type\n  ℤ : outParam Type\nbut is expected to have type\n  ℕ : Type"
+      ]
+    },
+    {
+      "name": "numbertheory_fxeq4powxp6powxp9powx_f2powmdvdf2pown",
+      "source": "numbertheory",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 804.6,
+      "verify_seconds": 15.3,
+      "errors": [
+        "unexpected token '#'; expected command",
+        "sorry 포함",
+        "function expected at\n  pow_le_pow_of_le_left ?m.55273 ?m.55274\nterm has type\n  ?m.55271 ^ ?m.55274 ≤ ?m.55272 ^ ?m.55274"
+      ]
+    },
+    {
+      "name": "numbertheory_exk2powkeqapb2mulbpa2_aeq1",
+      "source": "numbertheory",
+      "num_pass": 0,
+      "k": 4,
+      "first_success_index": null,
+      "gen_seconds": 814.5,
+      "verify_seconds": 164.3,
+      "errors": [
+        "sorry 포함",
+        "unexpected token '#'; expected command",
+        "unexpected token '#'; expected command"
+      ]
+    }
+  ]
+}

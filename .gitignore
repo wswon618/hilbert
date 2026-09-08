@@ -4,7 +4,9 @@ __pycache__
 *.txt
 *.out
 outputs/
-results/
+results/*
+# 분석 리포트는 추적 (archive/proofs/async_hilbert 는 계속 제외)
+!results/analysis/
 multirun/
 *.ipynb
 cache/
