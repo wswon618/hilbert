@@ -1,0 +1,309 @@
+{
+  "total_problems": 18,
+  "completed_problems": 18,
+  "successful_problems": 15,
+  "results": {
+    "algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3": true,
+    "amc12a_2002_p13": true,
+    "amc12a_2021_p9": false,
+    "amc12b_2020_p22": true,
+    "imo_1959_p1": true,
+    "imosl_2007_algebra_p6": false,
+    "induction_pord1p1on2powklt5on2": false,
+    "mathd_algebra_107": true,
+    "mathd_algebra_160": true,
+    "mathd_algebra_270": true,
+    "mathd_algebra_33": true,
+    "mathd_algebra_427": true,
+    "mathd_algebra_80": true,
+    "mathd_numbertheory_100": true,
+    "mathd_numbertheory_235": true,
+    "mathd_numbertheory_341": true,
+    "mathd_numbertheory_517": true,
+    "mathd_numbertheory_99": true
+  },
+  "failure_cases": [
+    "amc12a_2021_p9",
+    "imosl_2007_algebra_p6",
+    "induction_pord1p1on2powklt5on2"
+  ],
+  "pass_rate": 0.8333333333333334,
+  "proofs": {
+    "algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\ntheorem algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3 (a b c : ℝ) (h₀ : a ≤ b ∧ b ≤ c)\n    (h₁ : a + b + c = 2) (h₂ : a * b + b * c + c * a = 1) :\n    0 ≤ a ∧ a ≤ 1 / 3 ∧ 1 / 3 ≤ b ∧ b ≤ 1 ∧ 1 ≤ c ∧ c ≤ 4 / 3 := by\n  have h₃ : a ≤ 1 / 3 := by\n    have h₃₁ : (a - b) * (a - c) ≥ 0 := by\n      have h₃₂ : a - b ≤ 0 := by linarith\n      have h₃₃ : a - c ≤ 0 := by linarith\n      nlinarith\n    have h₃₄ : 3 * a ^ 2 - 4 * a + 1 ≥ 0 := by\n      have h₃₅ : b + c = 2 - a := by linarith\n      have h₃₆ : a * b + b * c + c * a = 1 := h₂\n      have h₃₇ : b * c = 1 - a * (2 - a) := by\n        have h₃₈ : a * b + b * c + c * a = 1 := h₂\n        have h₃₉ : a * b + c * a = a * (b + c) := by ring\n        have h₄₀ : a * (b + c) + b * c = 1 := by linarith\n        have h₄₁ : a * (2 - a) + b * c = 1 := by\n          calc\n            a * (2 - a) + b * c = a * (b + c) + b * c := by\n              rw [h₃₅]\n              <;> ring\n            _ = 1 := by linarith\n        linarith\n      nlinarith [sq_nonneg (a - b), sq_nonneg (a - c)]\n    have h₃₈ : a ≤ 1 / 3 ∨ a ≥ 1 := by\n      have h₃₉ : (a - 1 / 3) * (a - 1) ≥ 0 := by\n        nlinarith\n      have h₄₀ : a ≤ 1 / 3 ∨ a ≥ 1 := by\n        by_cases h₄₁ : a ≤ 1 / 3\n        · exact Or.inl h₄₁\n        · have h₄₂ : a ≥ 1 := by\n            by_contra h₄₃\n            have h₄₄ : a < 1 := by linarith\n            have h₄₅ : (a - 1 / 3) * (a - 1) < 0 := by\n              have h₄₆ : a - 1 / 3 > 0 := by linarith\n              have h₄₇ : a - 1 < 0 := by linarith\n              nlinarith\n            linarith\n          exact Or.inr h₄₂\n      exact h₄₀\n    cases h₃₈ with\n    | inl h₃₈ =>\n      exact h₃₈\n    | inr h₃₈ =>\n      have h₃₉ : a + b + c ≥ 3 := by\n        have h₄₀ : a ≥ 1 := h₃₈\n        have h₄₁ : b ≥ a := by linarith\n        have h₄₂ : c ≥ b := by linarith\n        linarith\n      linarith\n  \n  have h₄ : 0 ≤ a := by\n    by_contra h\n    have h₅ : a < 0 := by linarith\n    have h₆ : b + c = 2 - a := by linarith\n    have h₇ : b * c = 1 - a * (2 - a) := by\n      have h₈ : a * b + b * c + c * a = 1 := h₂\n      have h₉ : a * b + c * a = a * (b + c) := by ring\n      have h₁₀ : a * (b + c) + b * c = 1 := by linarith\n      have h₁₁ : a * (2 - a) + b * c = 1 := by\n        calc\n          a * (2 - a) + b * c = a * (b + c) + b * c := by\n            rw [h₆]\n            <;> ring\n          _ = 1 := by linarith\n      linarith\n    have h₈ : b * c ≤ ((2 - a) / 2) ^ 2 := by\n      nlinarith [sq_nonneg (b - c)]\n    have h₉ : 1 - a * (2 - a) ≤ ((2 - a) / 2) ^ 2 := by\n      linarith\n    have h₁₀ : a * (3 * a - 4) ≤ 0 := by\n      nlinarith [sq_nonneg (a - 1)]\n    have h₁₁ : a * (3 * a - 4) > 0 := by\n      nlinarith\n    linarith\n  \n  have h₅ : 1 / 3 ≤ b := by\n    have h₅₁ : (b - a) * (b - c) ≤ 0 := by\n      have h₅₂ : b - a ≥ 0 := by linarith\n      have h₅₃ : b - c ≤ 0 := by linarith\n      nlinarith\n    have h₅₄ : 3 * b ^ 2 - 4 * b + 1 ≤ 0 := by\n      have h₅₅ : a + c = 2 - b := by linarith\n      have h₅₆ : a * b + b * c + c * a = 1 := h₂\n      have h₅₇ : a * c = 1 - b * (2 - b) := by\n        have h₅₈ : a * b + b * c + c * a = 1 := h₂\n        have h₅₉ : a * b + b * c = b * (a + c) := by ring\n        have h₆₀ : b * (a + c) + a * c = 1 := by linarith\n        have h₆₁ : b * (2 - b) + a * c = 1 := by\n          calc\n            b * (2 - b) + a * c = b * (a + c) + a * c := by\n              rw [h₅₅]\n              <;> ring\n            _ = 1 := by linarith\n        linarith\n      nlinarith [sq_nonneg (b - a), sq_nonneg (b - c)]\n    have h₅₈ : 1 / 3 ≤ b := by\n      by_contra h₅₉\n      have h₆₀ : b < 1 / 3 := by linarith\n      have h₆₁ : 3 * b ^ 2 - 4 * b + 1 > 0 := by\n        nlinarith [sq_nonneg (b - 1 / 3)]\n      linarith\n    exact h₅₈\n  \n  have h₆ : b ≤ 1 := by\n    have h₆₁ : (b - a) * (b - c) ≤ 0 := by\n      have h₆₂ : b - a ≥ 0 := by linarith\n      have h₆₃ : b - c ≤ 0 := by linarith\n      nlinarith\n    have h₆₄ : 3 * b ^ 2 - 4 * b + 1 ≤ 0 := by\n      have h₆₅ : a + c = 2 - b := by linarith\n      have h₆₆ : a * b + b * c + c * a = 1 := h₂\n      have h₆₇ : a * c = 1 - b * (2 - b) := by\n        have h₆₈ : a * b + b * c + c * a = 1 := h₂\n        have h₆₉ : a * b + b * c = b * (a + c) := by ring\n        have h₇₀ : b * (a + c) + a * c = 1 := by linarith\n        have h₇₁ : b * (2 - b) + a * c = 1 := by\n          calc\n            b * (2 - b) + a * c = b * (a + c) + a * c := by\n              rw [h₆₅]\n              <;> ring\n            _ = 1 := by linarith\n        linarith\n      nlinarith [sq_nonneg (b - a), sq_nonneg (b - c)]\n    have h₆₈ : b ≤ 1 := by\n      by_contra h₆₉\n      have h₇₀ : b > 1 := by linarith\n      have h₇₁ : 3 * b ^ 2 - 4 * b + 1 > 0 := by\n        nlinarith [sq_nonneg (b - 1)]\n      linarith\n    exact h₆₈\n  \n  have h₇ : 1 ≤ c := by\n    have h₇₁ : (c - a) * (c - b) ≥ 0 := by\n      have h₇₂ : c - a ≥ 0 := by linarith\n      have h₇₃ : c - b ≥ 0 := by linarith\n      nlinarith\n    have h₇₄ : 3 * c ^ 2 - 4 * c + 1 ≥ 0 := by\n      have h₇₅ : a + b = 2 - c := by linarith\n      have h₇₆ : a * b + b * c + c * a = 1 := h₂\n      have h₇₇ : a * b = 1 - c * (2 - c) := by\n        have h₇₈ : a * b + b * c + c * a = 1 := h₂\n        have h₇₉ : b * c + c * a = c * (a + b) := by ring\n        have h₈₀ : c * (a + b) + a * b = 1 := by linarith\n        have h₈₁ : c * (2 - c) + a * b = 1 := by\n          calc\n            c * (2 - c) + a * b = c * (a + b) + a * b := by\n              rw [h₇₅]\n              <;> ring\n            _ = 1 := by linarith\n        linarith\n      nlinarith [sq_nonneg (c - a), sq_nonneg (c - b)]\n    have h₇₈ : c ≤ 1 / 3 ∨ c ≥ 1 := by\n      have h₇₉ : (c - 1 / 3) * (c - 1) ≥ 0 := by\n        nlinarith\n      have h₈₀ : c ≤ 1 / 3 ∨ c ≥ 1 := by\n        by_cases h₈₁ : c ≤ 1 / 3\n        · exact Or.inl h₈₁\n        · have h₈₂ : c ≥ 1 := by\n            by_contra h₈₃\n            have h₈₄ : c < 1 := by linarith\n            have h₈₅ : (c - 1 / 3) * (c - 1) < 0 := by\n              have h₈₆ : c - 1 / 3 > 0 := by\n                have h₈₇ : c ≥ b := by linarith\n                have h₈₈ : b ≥ 1 / 3 := by linarith\n                linarith\n              have h₈₉ : c - 1 < 0 := by linarith\n              nlinarith\n            linarith\n          exact Or.inr h₈₂\n      exact h₈₀\n    cases h₇₈ with\n    | inl h₇₈ =>\n      have h₇₉ : a + b + c ≤ 1 := by\n        have h₈₀ : c ≤ 1 / 3 := h₇₈\n        have h₈₁ : a ≤ b := by linarith\n        have h₈₂ : b ≤ c := by linarith\n        have h₈₃ : a ≤ 1 / 3 := by linarith\n        have h₈₄ : b ≤ 1 / 3 := by linarith\n        linarith\n      linarith\n    | inr h₇₈ =>\n      linarith\n  \n  have h₈ : c ≤ 4 / 3 := by\n    by_contra h\n    have h₈₁ : c > 4 / 3 := by linarith\n    have h₈₂ : a ^ 2 + b ^ 2 + c ^ 2 = 2 := by\n      have h₈₃ : (a + b + c) ^ 2 = a ^ 2 + b ^ 2 + c ^ 2 + 2 * (a * b + b * c + c * a) := by ring\n      rw [h₁] at h₈₃\n      rw [h₂] at h₈₃\n      nlinarith\n    have h₈₃ : a ^ 2 ≤ 1 / 9 := by\n      have h₈₄ : 0 ≤ a := h₄\n      have h₈₅ : a ≤ 1 / 3 := h₃\n      nlinarith\n    have h₈₄ : b ^ 2 ≤ 1 := by\n      have h₈₅ : 0 ≤ b := by linarith\n      have h₈₆ : b ≤ 1 := h₆\n      nlinarith\n    have h₈₅ : c ^ 2 > 16 / 9 := by\n      have h₈₆ : c > 4 / 3 := h₈₁\n      nlinarith\n    nlinarith\n  \n  exact ⟨h₄, h₃, h₅, h₆, h₇, h₈⟩\n",
+    "amc12a_2002_p13": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\ntheorem amc12a_2002_p13 (a b : ℝ) (h₀ : 0 < a ∧ 0 < b) (h₁ : a ≠ b) (h₂ : abs (a - 1 / a) = 1)\n    (h₃ : abs (b - 1 / b) = 1) : a + b = Real.sqrt 5 := by\n  have h₄ : a = (1 + Real.sqrt 5) / 2 ∨ a = (-1 + Real.sqrt 5) / 2 := by\n    have h₄₁ : a > 0 := h₀.1\n    have h₄₂ : a - 1 / a = 1 ∨ a - 1 / a = -1 := by\n      have h₄₃ : abs (a - 1 / a) = 1 := h₂\n      have h₄₄ : a - 1 / a = 1 ∨ a - 1 / a = -1 := by\n        apply eq_or_eq_neg_of_abs_eq\n        <;> linarith\n      exact h₄₄\n    cases h₄₂ with\n    | inl h₄₂ =>\n      -- Case: a - 1/a = 1\n      have h₄₃ : a - 1 / a = 1 := h₄₂\n      have h₄₄ : a ^ 2 - a - 1 = 0 := by\n        have h₄₅ : a ≠ 0 := by linarith\n        field_simp at h₄₃\n        nlinarith\n      have h₄₅ : a = (1 + Real.sqrt 5) / 2 ∨ a = (1 - Real.sqrt 5) / 2 := by\n        have h₄₆ : a = (1 + Real.sqrt 5) / 2 ∨ a = (1 - Real.sqrt 5) / 2 := by\n          apply or_iff_not_imp_left.mpr\n          intro h₄₇\n          apply mul_left_cancel₀ (sub_ne_zero.mpr h₄₇)\n          nlinarith [Real.sq_sqrt (show 0 ≤ 5 by norm_num), Real.sqrt_nonneg 5]\n        exact h₄₆\n      cases h₄₅ with\n      | inl h₄₅ =>\n        -- Subcase: a = (1 + sqrt(5))/2\n        exact Or.inl h₄₅\n      | inr h₄₅ =>\n        -- Subcase: a = (1 - sqrt(5))/2\n        have h₄₆ : a > 0 := h₀.1\n        have h₄₇ : (1 - Real.sqrt 5) / 2 < 0 := by\n          nlinarith [Real.sqrt_nonneg 5, Real.sq_sqrt (show 0 ≤ 5 by norm_num)]\n        linarith\n    | inr h₄₂ =>\n      -- Case: a - 1/a = -1\n      have h₄₃ : a - 1 / a = -1 := h₄₂\n      have h₄₄ : a ^ 2 + a - 1 = 0 := by\n        have h₄₅ : a ≠ 0 := by linarith\n        field_simp at h₄₃\n        nlinarith\n      have h₄₅ : a = (-1 + Real.sqrt 5) / 2 ∨ a = (-1 - Real.sqrt 5) / 2 := by\n        have h₄₆ : a = (-1 + Real.sqrt 5) / 2 ∨ a = (-1 - Real.sqrt 5) / 2 := by\n          apply or_iff_not_imp_left.mpr\n          intro h₄₇\n          apply mul_left_cancel₀ (sub_ne_zero.mpr h₄₇)\n          nlinarith [Real.sq_sqrt (show 0 ≤ 5 by norm_num), Real.sqrt_nonneg 5]\n        exact h₄₆\n      cases h₄₅ with\n      | inl h₄₅ =>\n        -- Subcase: a = (-1 + sqrt(5))/2\n        exact Or.inr h₄₅\n      | inr h₄₅ =>\n        -- Subcase: a = (-1 - sqrt(5))/2\n        have h₄₆ : a > 0 := h₀.1\n        have h₄₇ : (-1 - Real.sqrt 5) / 2 < 0 := by\n          nlinarith [Real.sqrt_nonneg 5, Real.sq_sqrt (show 0 ≤ 5 by norm_num)]\n        linarith\n  \n  have h₅ : b = (1 + Real.sqrt 5) / 2 ∨ b = (-1 + Real.sqrt 5) / 2 := by\n    have h₅₁ : b > 0 := h₀.2\n    have h₅₂ : b - 1 / b = 1 ∨ b - 1 / b = -1 := by\n      have h₅₃ : abs (b - 1 / b) = 1 := h₃\n      have h₅₄ : b - 1 / b = 1 ∨ b - 1 / b = -1 := by\n        apply eq_or_eq_neg_of_abs_eq\n        <;> linarith\n      exact h₅₄\n    cases h₅₂ with\n    | inl h₅₂ =>\n      -- Case: b - 1/b = 1\n      have h₅₃ : b - 1 / b = 1 := h₅₂\n      have h₅₄ : b ^ 2 - b - 1 = 0 := by\n        have h₅₅ : b ≠ 0 := by linarith\n        field_simp at h₅₃\n        nlinarith\n      have h₅₅ : b = (1 + Real.sqrt 5) / 2 ∨ b = (1 - Real.sqrt 5) / 2 := by\n        have h₅₆ : b = (1 + Real.sqrt 5) / 2 ∨ b = (1 - Real.sqrt 5) / 2 := by\n          apply or_iff_not_imp_left.mpr\n          intro h₅₇\n          apply mul_left_cancel₀ (sub_ne_zero.mpr h₅₇)\n          nlinarith [Real.sq_sqrt (show 0 ≤ 5 by norm_num), Real.sqrt_nonneg 5]\n        exact h₅₆\n      cases h₅₅ with\n      | inl h₅₅ =>\n        -- Subcase: b = (1 + sqrt(5))/2\n        exact Or.inl h₅₅\n      | inr h₅₅ =>\n        -- Subcase: b = (1 - sqrt(5))/2\n        have h₅₆ : b > 0 := h₀.2\n        have h₅₇ : (1 - Real.sqrt 5) / 2 < 0 := by\n          nlinarith [Real.sqrt_nonneg 5, Real.sq_sqrt (show 0 ≤ 5 by norm_num)]\n        linarith\n    | inr h₅₂ =>\n      -- Case: b - 1/b = -1\n      have h₅₃ : b - 1 / b = -1 := h₅₂\n      have h₅₄ : b ^ 2 + b - 1 = 0 := by\n        have h₅₅ : b ≠ 0 := by linarith\n        field_simp at h₅₃\n        nlinarith\n      have h₅₅ : b = (-1 + Real.sqrt 5) / 2 ∨ b = (-1 - Real.sqrt 5) / 2 := by\n        have h₅₆ : b = (-1 + Real.sqrt 5) / 2 ∨ b = (-1 - Real.sqrt 5) / 2 := by\n          apply or_iff_not_imp_left.mpr\n          intro h₅₇\n          apply mul_left_cancel₀ (sub_ne_zero.mpr h₅₇)\n          nlinarith [Real.sq_sqrt (show 0 ≤ 5 by norm_num), Real.sqrt_nonneg 5]\n        exact h₅₆\n      cases h₅₅ with\n      | inl h₅₅ =>\n        -- Subcase: b = (-1 + sqrt(5))/2\n        exact Or.inr h₅₅\n      | inr h₅₅ =>\n        -- Subcase: b = (-1 - sqrt(5))/2\n        have h₅₆ : b > 0 := h₀.2\n        have h₅₇ : (-1 - Real.sqrt 5) / 2 < 0 := by\n          nlinarith [Real.sqrt_nonneg 5, Real.sq_sqrt (show 0 ≤ 5 by norm_num)]\n        linarith\n  \n  have h₆ : a + b = Real.sqrt 5 := by\n    have h₆₁ : a = (1 + Real.sqrt 5) / 2 ∨ a = (-1 + Real.sqrt 5) / 2 := h₄\n    have h₆₂ : b = (1 + Real.sqrt 5) / 2 ∨ b = (-1 + Real.sqrt 5) / 2 := h₅\n    have h₆₃ : a ≠ b := h₁\n    -- Consider all combinations of a and b being either of the two values\n    rcases h₆₁ with (rfl | rfl) <;> rcases h₆₂ with (rfl | rfl) <;>\n      (try { contradiction }) <;>\n      (try {\n        norm_num [add_assoc]\n        <;>\n        nlinarith [Real.sqrt_nonneg 5, Real.sq_sqrt (show 0 ≤ 5 by norm_num)]\n      }) <;>\n      (try {\n        ring_nf at *\n        <;>\n        nlinarith [Real.sqrt_nonneg 5, Real.sq_sqrt (show 0 ≤ 5 by norm_num)]\n      })\n    <;>\n    (try {\n      field_simp at *\n      <;>\n      ring_nf at *\n      <;>\n      nlinarith [Real.sqrt_nonneg 5, Real.sq_sqrt (show 0 ≤ 5 by norm_num)]\n    })\n  \n  exact h₆\n",
+    "amc12b_2020_p22": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\ntheorem amc12b_2020_p22 (t : ℝ) : (2 ^ t - 3 * t) * t / 4 ^ t ≤ 1 / 12 := by\n  have h_main : ( (2 : ℝ) ^ t - 3 * t ) * t / (4 : ℝ) ^ t = (t / (2 : ℝ) ^ t) - 3 * (t / (2 : ℝ) ^ t) ^ 2 := by\n    have h₁ : (4 : ℝ) ^ t = (2 : ℝ) ^ (2 * t) := by\n      rw [show (4 : ℝ) = (2 : ℝ) ^ ( (2 : ℝ) ) by norm_num]\n      rw [← Real.rpow_mul] <;> ring_nf <;>\n      norm_num\n      <;> linarith\n    have h₂ : (2 : ℝ) ^ (2 * t) = ((2 : ℝ) ^ t) ^ 2 := by\n      have h₃ : (2 : ℝ) ^ (2 * t) = (2 : ℝ) ^ (t + t) := by ring_nf\n      rw [h₃]\n      have h₄ : (2 : ℝ) ^ (t + t) = (2 : ℝ) ^ t * (2 : ℝ) ^ t := by\n        rw [Real.rpow_add (by norm_num : (2 : ℝ) > 0)] <;> ring_nf\n      rw [h₄]\n      ring_nf\n      <;> field_simp [Real.rpow_neg]\n      <;> ring_nf\n    have h₃ : (4 : ℝ) ^ t = ((2 : ℝ) ^ t) ^ 2 := by\n      rw [h₁, h₂]\n    have h₄ : ( (2 : ℝ) ^ t - 3 * t ) * t / (4 : ℝ) ^ t = ( (2 : ℝ) ^ t * t - 3 * t ^ 2 ) / (4 : ℝ) ^ t := by\n      ring_nf\n      <;> field_simp [Real.rpow_neg]\n      <;> ring_nf\n    rw [h₄]\n    have h₅ : ( (2 : ℝ) ^ t * t - 3 * t ^ 2 ) / (4 : ℝ) ^ t = (t / (2 : ℝ) ^ t) - 3 * (t / (2 : ℝ) ^ t) ^ 2 := by\n      have h₆ : (4 : ℝ) ^ t = ((2 : ℝ) ^ t) ^ 2 := by rw [h₃]\n      rw [h₆]\n      have h₇ : (2 : ℝ) ^ t > 0 := by positivity\n      field_simp [h₇.ne']\n      <;> ring_nf\n      <;> field_simp [h₇.ne']\n      <;> ring_nf\n      <;> field_simp [h₇.ne']\n      <;> ring_nf\n    rw [h₅]\n    <;> ring_nf\n  \n  have h_quadratic : ∀ (y : ℝ), y - 3 * y ^ 2 ≤ 1 / 12 := by\n    intro y\n    have h₁ : y - 3 * y ^ 2 ≤ 1 / 12 := by\n      nlinarith [sq_nonneg (y - 1 / 6), sq_nonneg (y + 1 / 6)]\n    exact h₁\n  \n  have h_final : ( (2 : ℝ) ^ t - 3 * t ) * t / (4 : ℝ) ^ t ≤ 1 / 12 := by\n    have h₁ : ( (2 : ℝ) ^ t - 3 * t ) * t / (4 : ℝ) ^ t = (t / (2 : ℝ) ^ t) - 3 * (t / (2 : ℝ) ^ t) ^ 2 := by\n      rw [h_main]\n    rw [h₁]\n    have h₂ : (t / (2 : ℝ) ^ t : ℝ) - 3 * (t / (2 : ℝ) ^ t : ℝ) ^ 2 ≤ 1 / 12 := by\n      have h₃ : ∀ (y : ℝ), y - 3 * y ^ 2 ≤ 1 / 12 := h_quadratic\n      have h₄ : (t / (2 : ℝ) ^ t : ℝ) - 3 * (t / (2 : ℝ) ^ t : ℝ) ^ 2 ≤ 1 / 12 := by\n        have h₅ : (t / (2 : ℝ) ^ t : ℝ) - 3 * (t / (2 : ℝ) ^ t : ℝ) ^ 2 ≤ 1 / 12 := by\n          have h₆ := h₃ (t / (2 : ℝ) ^ t)\n          linarith\n        linarith\n      linarith\n    linarith\n  \n  exact h_final\n",
+    "imo_1959_p1": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\ntheorem imo_1959_p1 (n : ℕ) (h₀ : 0 < n) : Nat.gcd (21 * n + 4) (14 * n + 3) = 1 := by\n  have h₁ : Nat.gcd (21 * n + 4) (14 * n + 3) = Nat.gcd (14 * n + 3) (7 * n + 1) := by\n    have h₁₁ : 21 * n + 4 = 1 * (14 * n + 3) + (7 * n + 1) := by\n      ring_nf\n      <;> omega\n    rw [h₁₁]\n    have h₁₂ : Nat.gcd (1 * (14 * n + 3) + (7 * n + 1)) (14 * n + 3) = Nat.gcd (14 * n + 3) (7 * n + 1) := by\n      rw [show 1 * (14 * n + 3) + (7 * n + 1) = (14 * n + 3) + (7 * n + 1) by ring]\n      -- Use the property of gcd to simplify the expression\n      rw [Nat.gcd_comm]\n      <;> simp [Nat.gcd_comm, Nat.gcd_add_mul_right_right]\n      <;>\n      ring_nf at *\n      <;>\n      simp_all [Nat.gcd_comm]\n      <;>\n      linarith\n    rw [h₁₂]\n    <;>\n    simp [Nat.gcd_comm]\n  \n  have h₂ : Nat.gcd (14 * n + 3) (7 * n + 1) = Nat.gcd (7 * n + 1) 1 := by\n    have h₂₁ : 14 * n + 3 = 2 * (7 * n + 1) + 1 := by\n      ring_nf\n      <;> omega\n    rw [h₂₁]\n    have h₂₂ : Nat.gcd (2 * (7 * n + 1) + 1) (7 * n + 1) = Nat.gcd (7 * n + 1) 1 := by\n      rw [show 2 * (7 * n + 1) + 1 = (7 * n + 1) + (7 * n + 1) + 1 by ring]\n      -- Use the property of gcd to simplify the expression\n      rw [show (7 * n + 1) + (7 * n + 1) + 1 = (7 * n + 1) + ((7 * n + 1) + 1) by ring]\n      rw [Nat.gcd_comm]\n      <;> simp [Nat.gcd_comm, Nat.gcd_add_mul_right_right]\n      <;>\n      ring_nf at *\n      <;>\n      simp_all [Nat.gcd_comm]\n      <;>\n      linarith\n    rw [h₂₂]\n    <;>\n    simp [Nat.gcd_comm]\n  \n  have h₃ : Nat.gcd (7 * n + 1) 1 = 1 := by\n    have h₃₁ : Nat.gcd (7 * n + 1) 1 = 1 := by\n      -- Use the property that gcd(a, 1) = 1 for any natural number a.\n      have h₃₂ : Nat.gcd (7 * n + 1) 1 = 1 := by\n        simp [Nat.gcd_one_right]\n      exact h₃₂\n    exact h₃₁\n  \n  have h₄ : Nat.gcd (21 * n + 4) (14 * n + 3) = 1 := by\n    rw [h₁]\n    rw [h₂]\n    rw [h₃]\n  \n  apply h₄\n",
+    "mathd_algebra_107": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\ntheorem mathd_algebra_107 (x y : ℝ) (h₀ : x ^ 2 + 8 * x + y ^ 2 - 6 * y = 0) :\n    (x + 4) ^ 2 + (y - 3) ^ 2 = 5 ^ 2 := by\n  have h₁ : (x + 4) ^ 2 + (y - 3) ^ 2 = 25 := by\n    have h₂ : x ^ 2 + 8 * x + y ^ 2 - 6 * y = 0 := h₀\n    have h₃ : (x + 4) ^ 2 + (y - 3) ^ 2 = x ^ 2 + 8 * x + 16 + (y ^ 2 - 6 * y + 9) := by\n      ring_nf\n      <;>\n      linarith\n    have h₄ : (x + 4) ^ 2 + (y - 3) ^ 2 = x ^ 2 + 8 * x + y ^ 2 - 6 * y + 25 := by\n      linarith\n    have h₅ : (x + 4) ^ 2 + (y - 3) ^ 2 = 25 := by\n      linarith\n    exact h₅\n  have h₆ : (x + 4) ^ 2 + (y - 3) ^ 2 = 5 ^ 2 := by\n    norm_num at h₁ ⊢\n    <;>\n    linarith\n  exact h₆\n",
+    "mathd_algebra_160": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\ntheorem mathd_algebra_160 (n x : ℝ) (h₀ : n + x = 97) (h₁ : n + 5 * x = 265) : n + 2 * x = 139 := by\n  have h₂ : n + 2 * x = 139 := by\n    linarith\n  exact h₂\n",
+    "mathd_algebra_270": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\ntheorem mathd_algebra_270 (f : ℝ → ℝ) (h₀ : ∀ (x) (_ : x ≠ -2), f x = 1 / (x + 2)) :\n    f (f 1) = 3 / 7 := by\n  have h1 : f 1 = 1 / 3 := by\n    have h1₁ : (1 : ℝ) ≠ -2 := by norm_num\n    have h1₂ : f 1 = 1 / (1 + 2 : ℝ) := h₀ 1 h1₁\n    have h1₃ : (1 : ℝ) / (1 + 2 : ℝ) = 1 / 3 := by norm_num\n    rw [h1₂, h1₃]\n    <;> norm_num\n  \n  have h2 : f (f 1) = 3 / 7 := by\n    rw [h1]\n    have h2₁ : (1 / 3 : ℝ) ≠ -2 := by norm_num\n    have h2₂ : f (1 / 3 : ℝ) = 1 / ((1 / 3 : ℝ) + 2) := h₀ (1 / 3 : ℝ) h2₁\n    rw [h2₂]\n    <;> norm_num\n    <;> field_simp\n    <;> ring_nf\n    <;> norm_num\n  \n  rw [h2]\n",
+    "mathd_algebra_33": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\ntheorem mathd_algebra_33 (x y z : ℝ) (h₀ : x ≠ 0) (h₁ : 2 * x = 5 * y) (h₂ : 7 * y = 10 * z) :\n    z / x = 7 / 25 := by\n  have h₃ : y = (2 * x) / 5 := by\n    have h₃₁ : 2 * x = 5 * y := h₁\n    have h₃₂ : y = (2 * x) / 5 := by\n      apply Eq.symm\n      -- We need to show that (2 * x) / 5 = y\n      -- Start with the given equation 2 * x = 5 * y\n      -- Divide both sides by 5 to get (2 * x) / 5 = y\n      field_simp at h₃₁ ⊢\n      <;> ring_nf at h₃₁ ⊢ <;> nlinarith\n    exact h₃₂\n  \n  have h₄ : z = (7 * y) / 10 := by\n    have h₄₁ : 7 * y = 10 * z := h₂\n    have h₄₂ : z = (7 * y) / 10 := by\n      apply Eq.symm\n      -- We need to show that (7 * y) / 10 = z\n      -- Start with the given equation 7 * y = 10 * z\n      -- Divide both sides by 10 to get (7 * y) / 10 = z\n      field_simp at h₄₁ ⊢\n      <;> ring_nf at h₄₁ ⊢ <;> nlinarith\n    exact h₄₂\n  \n  have h₅ : z / x = 7 / 25 := by\n    have h₅₁ : z = (7 * y) / 10 := h₄\n    have h₅₂ : y = (2 * x) / 5 := h₃\n    rw [h₅₁, h₅₂]\n    have h₅₃ : x ≠ 0 := h₀\n    field_simp [h₅₃]\n    <;> ring_nf\n    <;> field_simp [h₅₃]\n    <;> ring_nf\n    <;> nlinarith\n  \n  exact h₅\n",
+    "mathd_algebra_427": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\ntheorem mathd_algebra_427 (x y z : ℝ) (h₀ : 3 * x + y = 17) (h₁ : 5 * y + z = 14)\n    (h₂ : 3 * x + 5 * z = 41) : x + y + z = 12 := by\n  have h₃ : x + y + z = 12 := by\n    -- We need to find x + y + z. We can use the given equations to eliminate variables.\n    -- First, subtract the first equation from the second to eliminate x:\n    -- (5y + z) - (3x + y) = 14 - 17 => 4y + z - 3x = -3\n    -- But we also have 3x + 5z = 41. We can add these two results to eliminate x:\n    -- (4y + z - 3x) + (3x + 5z) = -3 + 41 => 4y + 6z = 38 => 2y + 3z = 19\n    -- Now we have 2y + 3z = 19 and 5y + z = 14. We can solve for y and z.\n    -- Multiply the second equation by 3: 15y + 3z = 42\n    -- Subtract the first new equation: (15y + 3z) - (2y + 3z) = 42 - 19 => 13y = 23 => y = 23/13\n    -- But let's try a better approach to avoid fractions.\n    \n    -- Alternatively, we can express x from the first equation and substitute into the third equation.\n    -- From 3x + y = 17 => 3x = 17 - y => x = (17 - y)/3\n    -- Substitute into 3x + 5z = 41: (17 - y) + 5z = 41 => -y + 5z = 24 => 5z - y = 24\n    -- Now we have 5z - y = 24 and 5y + z = 14. Solve for y and z.\n    -- Multiply the first by 5: 25z - 5y = 120\n    -- Add to the second: (25z - 5y) + (5y + z) = 120 + 14 => 26z = 134 => z = 134/26 = 67/13\n    -- But again, fractions appear. Let's try another approach.\n    \n    -- A better approach is to add all three equations and then subtract multiples to eliminate variables.\n    -- Add all three equations:\n    -- (3x + y) + (5y + z) + (3x + 5z) = 17 + 14 + 41 => 6x + 6y + 6z = 72 => x + y + z = 12\n    -- This directly gives the desired result without needing to solve for individual variables.\n    have h₃ : 6 * x + 6 * y + 6 * z = 72 := by\n      -- Add the three original equations:\n      have h₃₁ : (3 * x + y) + (5 * y + z) + (3 * x + 5 * z) = 17 + 14 + 41 := by\n        linarith\n      -- Simplify the left and right sides:\n      ring_nf at h₃₁ ⊢\n      linarith\n    -- Divide both sides by 6 to get x + y + z = 12:\n    have h₄ : x + y + z = 12 := by\n      linarith\n    exact h₄\n  exact h₃\n",
+    "mathd_algebra_80": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\ntheorem mathd_algebra_80 (x : ℝ) (h₀ : x ≠ -1) (h₁ : (x - 9) / (x + 1) = 2) : x = -11 := by\n  have h₂ : x + 1 ≠ 0 := by\n    intro h\n    apply h₀\n    linarith\n  \n  -- Eliminate the denominator by multiplying both sides by (x + 1)\n  have h₃ : x - 9 = 2 * (x + 1) := by\n    field_simp [h₂] at h₁\n    linarith\n  \n  -- Expand and simplify the equation\n  have h₄ : x - 9 = 2 * x + 2 := by\n    linarith\n  \n  -- Solve for x\n  have h₅ : x = -11 := by\n    linarith\n  \n  -- The final result\n  exact h₅\n",
+    "mathd_numbertheory_100": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\ntheorem h_mul_mathd_numbertheory_100 (n : ℕ) (h₀ : 0 < n) (h₁ : Nat.gcd n 40 = 10) (h₂ : Nat.lcm n 40 = 280) :\n  Nat.gcd n 40 * Nat.lcm n 40 = n * 40 := by\n  simpa using Nat.gcd_mul_lcm n 40\n\ntheorem h_mul_subst_mathd_numbertheory_100 (n : ℕ) (h₀ : 0 < n) (h₁ : Nat.gcd n 40 = 10) (h₂ : Nat.lcm n 40 = 280)\n    (h_mul : Nat.gcd n 40 * Nat.lcm n 40 = n * 40) :\n  (10 : ℕ) * 280 = n * 40 := by\n  have h_main : (10 : ℕ) * 280 = n * 40 := by\n    have h₃ : Nat.gcd n 40 * Nat.lcm n 40 = n * 40 := h_mul\n    have h₄ : Nat.gcd n 40 = 10 := h₁\n    have h₅ : Nat.lcm n 40 = 280 := h₂\n    rw [h₄, h₅] at h₃\n    -- Now h₃ is 10 * 280 = n * 40\n    -- We need to show that 10 * 280 = n * 40, which is exactly h₃\n    linarith\n  \n  exact h_main\n\ntheorem h_n_eq_70_mathd_numbertheory_100 (n : ℕ) (h₀ : 0 < n) (h₁ : Nat.gcd n 40 = 10) (h₂ : Nat.lcm n 40 = 280)\n    (h_mul : Nat.gcd n 40 * Nat.lcm n 40 = n * 40)\n    (h_mul_subst : (10 : ℕ) * 280 = n * 40)\n    (h_eq70 : (70 : ℕ) * 40 = n * 40) :\n  n = 70 := by\n  have h_main : n = 70 := by\n    have h₃ : n * 40 = 70 * 40 := by\n      linarith\n    have h₄ : n = 70 := by\n      apply Nat.eq_of_mul_eq_mul_right (show 0 < 40 by norm_num)\n      linarith\n    exact h₄\n  \n  exact h_main\n\ntheorem h_eq70_mathd_numbertheory_100 (n : ℕ) (h₀ : 0 < n) (h₁ : Nat.gcd n 40 = 10) (h₂ : Nat.lcm n 40 = 280)\n    (h_mul : Nat.gcd n 40 * Nat.lcm n 40 = n * 40)\n    (h_mul_subst : (10 : ℕ) * 280 = n * 40) :\n  (70 : ℕ) * 40 = n * 40 := by\n  have h₃ : (70 : ℕ) * 40 = 2800 := by\n    norm_num\n    <;> rfl\n  \n  have h₄ : n * 40 = 2800 := by\n    have h₄₁ : (10 : ℕ) * 280 = 2800 := by norm_num\n    have h₄₂ : n * 40 = 2800 := by\n      linarith\n    exact h₄₂\n  \n  have h₅ : (70 : ℕ) * 40 = n * 40 := by\n    linarith\n  \n  exact h₅\n\ntheorem mathd_numbertheory_100 (n : ℕ) (h₀ : 0 < n) (h₁ : Nat.gcd n 40 = 10)\n    (h₂ : Nat.lcm n 40 = 280) : n = 70 := by\n  have h_mul : Nat.gcd n 40 * Nat.lcm n 40 = n * 40 :=\n    h_mul_mathd_numbertheory_100 n h₀ h₁ h₂\n  have h_mul_subst : (10 : ℕ) * 280 = n * 40 :=\n    h_mul_subst_mathd_numbertheory_100 n h₀ h₁ h₂ h_mul\n  have h_eq70 : (70 : ℕ) * 40 = n * 40 :=\n    h_eq70_mathd_numbertheory_100 n h₀ h₁ h₂ h_mul h_mul_subst\n  have h_n_eq_70 : n = 70 :=\n    h_n_eq_70_mathd_numbertheory_100 n h₀ h₁ h₂ h_mul h_mul_subst h_eq70\n  exact h_n_eq_70\n",
+    "mathd_numbertheory_235": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\ntheorem mathd_numbertheory_235 : (29 * 79 + 31 * 81) % 10 = 2 := by\n  norm_num [Nat.add_mod, Nat.mul_mod, Nat.mod_mod]\n  <;> rfl\n",
+    "mathd_numbertheory_341": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\ntheorem h_mod_mathd_numbertheory_341 : 5 ^ 100 % 1000 = 625 := by\n  norm_num [pow_succ, pow_zero, pow_one, Nat.mul_mod, Nat.pow_mod, Nat.mod_mod]\n  <;> rfl\n\ntheorem hc_mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)\n    (ha : a = 6) (hb : b = 2) (h_expansion : c + 10 * b + 100 * a = 625) :\n    c = 5 := by\n  have h₁ : c = 5 := by\n    have h₂ : c + 10 * b + 100 * a = 625 := h_expansion\n    rw [ha, hb] at h₂\n    -- Substitute a = 6 and b = 2 into the equation\n    ring_nf at h₂ ⊢\n    -- Simplify the equation to c + 20 + 600 = 625\n    omega\n  exact h₁\n\ntheorem hb_mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)\n    (ha : a = 6) (h_expansion : c + 10 * b + 100 * a = 625) :\n    b = 2 := by\n  have h₁ : a = 6 := ha\n  have h₂ : c + 10 * b + 100 * a = 625 := h_expansion\n  have h₃ : a ≤ 9 := h₀.1\n  have h₄ : b ≤ 9 := h₀.2.1\n  have h₅ : c ≤ 9 := h₀.2.2\n  have h₆ : c + 10 * b + 100 * 6 = 625 := by\n    rw [h₁] at h₂\n    exact h₂\n  have h₇ : c + 10 * b = 25 := by\n    omega\n  have h₈ : b ≤ 9 := h₀.2.1\n  have h₉ : c ≤ 9 := h₀.2.2\n  have h₁₀ : b = 2 := by\n    -- We know that c + 10 * b = 25 and c ≤ 9, b ≤ 9.\n    -- We can try all possible values of b from 0 to 9 to find the correct one.\n    have h₁₁ : b ≤ 9 := h₀.2.1\n    have h₁₂ : c ≤ 9 := h₀.2.2\n    interval_cases b <;> norm_num at h₇ ⊢ <;>\n      (try omega) <;>\n      (try {\n        have h₁₃ : c ≤ 9 := h₀.2.2\n        omega\n      })\n  exact h₁₀\n\ntheorem ha_mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)\n    (h_expansion : c + 10 * b + 100 * a = 625) :\n    a = 6 := by\n  have h₁ : a = 6 := by\n    -- We know that a, b, c are digits (0-9) and the equation is c + 10b + 100a = 625.\n    -- We can use the constraints to narrow down the possible values of a, b, and c.\n    have h₂ : a ≤ 9 := h₀.1\n    have h₃ : b ≤ 9 := h₀.2.1\n    have h₄ : c ≤ 9 := h₀.2.2\n    -- We can use the fact that a, b, c are digits to bound the possible values.\n    -- Since 100a is the dominant term, we can find the possible values of a first.\n    have h₅ : a ≥ 6 := by\n      by_contra h\n      -- If a < 6, then a ≤ 5.\n      have h₆ : a ≤ 5 := by linarith\n      -- Substitute a ≤ 5 into the equation and check if it's possible.\n      have h₇ : c + 10 * b + 100 * a ≤ c + 10 * b + 100 * 5 := by\n        have h₈ : 100 * a ≤ 100 * 5 := by\n          exact Nat.mul_le_mul_left 100 h₆\n        omega\n      have h₈ : c + 10 * b + 100 * 5 < 625 := by\n        have h₉ : c ≤ 9 := h₄\n        have h₁₀ : b ≤ 9 := h₃\n        have h₁₁ : c + 10 * b + 100 * 5 ≤ 9 + 10 * 9 + 100 * 5 := by\n          nlinarith\n        omega\n      omega\n    -- Now we know a ≥ 6 and a ≤ 9, so a can be 6, 7, 8, or 9.\n    -- We can check each case to see which one satisfies the equation.\n    have h₆ : a ≤ 9 := h₂\n    interval_cases a <;> norm_num at h_expansion ⊢ <;>\n      (try omega) <;>\n      (try {\n        have h₇ : b ≤ 9 := h₃\n        have h₈ : c ≤ 9 := h₄\n        interval_cases b <;> norm_num at h_expansion ⊢ <;>\n          (try omega) <;>\n          (try {\n            interval_cases c <;> norm_num at h_expansion ⊢ <;>\n              omega\n          })\n      })\n  exact h₁\n\ntheorem h_val_mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)\n    (h₁ : Nat.digits 10 (5 ^ 100 % 1000) = [c, b, a])\n    (hdigits : Nat.digits 10 (Nat.ofDigits 10 [c, b, a]) = [c, b, a])\n    (h_eq : Nat.ofDigits 10 [c, b, a] = 5 ^ 100 % 1000)\n    (h_mod : 5 ^ 100 % 1000 = 625) :\n    Nat.ofDigits 10 [c, b, a] = 625 := by\n  have h_main : Nat.ofDigits 10 [c, b, a] = 625 := by\n    rw [h_eq]\n    <;> rw [h_mod]\n    <;> norm_num\n  \n  exact h_main\n\ntheorem h_expansion_mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)\n    (h_val : Nat.ofDigits 10 [c, b, a] = 625) :\n    c + 10 * b + 100 * a = 625 := by\n  have h_main : c + 10 * b + 100 * a = 625 := by\n    have h₁ : Nat.ofDigits 10 [c, b, a] = c + 10 * (b + 10 * a) := by\n      simp [Nat.ofDigits, List.cons, List.nil]\n      <;> ring_nf\n      <;> norm_num\n      <;> rfl\n    rw [h₁] at h_val\n    -- Now h_val states that c + 10 * (b + 10 * a) = 625\n    -- We need to show that c + 10 * b + 100 * a = 625\n    -- These are actually the same expression, as 10 * (b + 10 * a) = 10 * b + 100 * a\n    ring_nf at h_val ⊢\n    <;> omega\n  \n  exact h_main\n\ntheorem hdigits_mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)\n    (h₁ : Nat.digits 10 (5 ^ 100 % 1000) = [c, b, a]) :\n    Nat.digits 10 (Nat.ofDigits 10 [c, b, a]) = [c, b, a] := by\n  have h₂ : Nat.ofDigits 10 [c, b, a] = 5 ^ 100 % 1000 := by\n    have h₂₁ : Nat.ofDigits 10 (Nat.digits 10 (5 ^ 100 % 1000)) = 5 ^ 100 % 1000 := by\n      rw [Nat.ofDigits_digits]\n    rw [h₁] at h₂₁\n    <;> simpa using h₂₁\n  \n  have h₃ : Nat.digits 10 (Nat.ofDigits 10 [c, b, a]) = [c, b, a] := by\n    rw [h₂]\n    <;> rw [h₁]\n    <;> rfl\n  \n  exact h₃\n\ntheorem h_eq_mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)\n    (h₁ : Nat.digits 10 (5 ^ 100 % 1000) = [c, b, a])\n    (hdigits : Nat.digits 10 (Nat.ofDigits 10 [c, b, a]) = [c, b, a]) :\n    Nat.ofDigits 10 [c, b, a] = 5 ^ 100 % 1000 := by\n  have h₂ : Nat.ofDigits 10 (Nat.digits 10 (5 ^ 100 % 1000)) = 5 ^ 100 % 1000 := by\n    have h₂₁ : Nat.ofDigits 10 (Nat.digits 10 (5 ^ 100 % 1000)) = 5 ^ 100 % 1000 := by\n      rw [Nat.ofDigits_digits]\n    exact h₂₁\n  \n  have h₃ : Nat.ofDigits 10 [c, b, a] = 5 ^ 100 % 1000 := by\n    calc\n      Nat.ofDigits 10 [c, b, a] = Nat.ofDigits 10 (Nat.digits 10 (5 ^ 100 % 1000)) := by\n        rw [h₁]\n      _ = 5 ^ 100 % 1000 := by rw [h₂]\n  \n  apply h₃\n\ntheorem mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)\n    (h₁ : Nat.digits 10 (5 ^ 100 % 1000) = [c, b, a]) : a + b + c = 13 := by\n  -- 1️⃣  Re‑obtain the digit list from `ofDigits`\n  have hdigits :\n      Nat.digits 10 (Nat.ofDigits 10 [c, b, a]) = [c, b, a] :=\n    hdigits_mathd_numbertheory_341 a b c h₀ h₁\n  -- 2️⃣  Relate `ofDigits` to the given digit equality\n  have h_eq :\n      Nat.ofDigits 10 [c, b, a] = 5 ^ 100 % 1000 :=\n    h_eq_mathd_numbertheory_341 a b c h₀ h₁ hdigits\n  -- 3️⃣  Compute the concrete remainder `5 ^ 100 % 1000`\n  have h_mod : 5 ^ 100 % 1000 = 625 :=\n    h_mod_mathd_numbertheory_341\n  -- 4️⃣  Combine the two equalities\n  have h_val : Nat.ofDigits 10 [c, b, a] = 625 :=\n    h_val_mathd_numbertheory_341 a b c h₀ h₁ hdigits h_eq h_mod\n  -- 5️⃣  Expand `ofDigits` in base 10\n  have h_expansion : c + 10 * b + 100 * a = 625 :=\n    h_expansion_mathd_numbertheory_341 a b c h₀ h_val\n  -- 6️⃣  Extract the individual digits from the expansion\n  have ha : a = 6 :=\n    ha_mathd_numbertheory_341 a b c h₀ h_expansion\n  have hb : b = 2 :=\n    hb_mathd_numbertheory_341 a b c h₀ ha h_expansion\n  have hc : c = 5 :=\n    hc_mathd_numbertheory_341 a b c h₀ ha hb h_expansion\n  -- 7️⃣  Conclude the required sum\n  calc\n    a + b + c = 6 + 2 + 5 := by\n      simp [ha, hb, hc]\n    _ = 13 := by\n      norm_num\n",
+    "mathd_numbertheory_517": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\ntheorem mathd_numbertheory_517 : 121 * 122 * 123 % 4 = 2 := by\n  norm_num [Nat.mul_mod, Nat.add_mod, Nat.mod_mod]\n  <;> rfl\n",
+    "mathd_numbertheory_99": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\ntheorem mathd_numbertheory_99 (n : ℕ) (h₀ : 2 * n % 47 = 15) : n % 47 = 31 := by\n  have h₁ : n % 47 = 31 := by\n    have h₂ : 2 * n % 47 = 15 := h₀\n    have h₃ : n % 47 = 31 := by\n      -- We know that 2 * n ≡ 15 mod 47. We need to find n ≡ ? mod 47.\n      -- To solve for n, we can multiply both sides by the modular inverse of 2 modulo 47.\n      -- The inverse of 2 modulo 47 is 24 because 2 * 24 = 48 ≡ 1 mod 47.\n      -- Therefore, n ≡ 15 * 24 mod 47.\n      -- Calculate 15 * 24 = 360 ≡ 31 mod 47 (since 360 = 7 * 47 + 31).\n      -- So, n ≡ 31 mod 47.\n      have h₄ : n % 47 = 31 := by\n        -- Use the fact that 2 * n ≡ 15 mod 47 to find n mod 47.\n        have h₅ : (2 * n) % 47 = 15 := h₂\n        -- We can try all possible values of n mod 47 to find the correct one.\n        have h₆ : n % 47 = 31 := by\n          -- Since 47 is a small number, we can use a decision procedure to find the correct value.\n          have h₇ : n % 47 = 0 ∨ n % 47 = 1 ∨ n % 47 = 2 ∨ n % 47 = 3 ∨ n % 47 = 4 ∨ n % 47 = 5 ∨ n % 47 = 6 ∨ n % 47 = 7 ∨ n % 47 = 8 ∨ n % 47 = 9 ∨ n % 47 = 10 ∨ n % 47 = 11 ∨ n % 47 = 12 ∨ n % 47 = 13 ∨ n % 47 = 14 ∨ n % 47 = 15 ∨ n % 47 = 16 ∨ n % 47 = 17 ∨ n % 47 = 18 ∨ n % 47 = 19 ∨ n % 47 = 20 ∨ n % 47 = 21 ∨ n % 47 = 22 ∨ n % 47 = 23 ∨ n % 47 = 24 ∨ n % 47 = 25 ∨ n % 47 = 26 ∨ n % 47 = 27 ∨ n % 47 = 28 ∨ n % 47 = 29 ∨ n % 47 = 30 ∨ n % 47 = 31 ∨ n % 47 = 32 ∨ n % 47 = 33 ∨ n % 47 = 34 ∨ n % 47 = 35 ∨ n % 47 = 36 ∨ n % 47 = 37 ∨ n % 47 = 38 ∨ n % 47 = 39 ∨ n % 47 = 40 ∨ n % 47 = 41 ∨ n % 47 = 42 ∨ n % 47 = 43 ∨ n % 47 = 44 ∨ n % 47 = 45 ∨ n % 47 = 46 := by\n            omega\n          rcases h₇ with (h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇ | h₇) <;>\n            (try omega) <;>\n            (try {\n              simp [h₇, Nat.mul_mod, Nat.add_mod, Nat.mod_mod] at h₅ ⊢\n              <;> omega\n            })\n        exact h₆\n      exact h₄\n    exact h₃\n  exact h₁\n"
+  },
+  "formal_statements": {
+    "algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3": "theorem algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3 (a b c : ℝ) (h₀ : a ≤ b ∧ b ≤ c)\n    (h₁ : a + b + c = 2) (h₂ : a * b + b * c + c * a = 1) :\n    0 ≤ a ∧ a ≤ 1 / 3 ∧ 1 / 3 ≤ b ∧ b ≤ 1 ∧ 1 ≤ c ∧ c ≤ 4 / 3 := by\n",
+    "amc12a_2002_p13": "theorem amc12a_2002_p13 (a b : ℝ) (h₀ : 0 < a ∧ 0 < b) (h₁ : a ≠ b) (h₂ : abs (a - 1 / a) = 1)\n    (h₃ : abs (b - 1 / b) = 1) : a + b = Real.sqrt 5 := by\n",
+    "amc12a_2021_p9": "theorem amc12a_2021_p9 : (∏ k in Finset.range 7, 2 ^ 2 ^ k + 3 ^ 2 ^ k) = 3 ^ 128 - 2 ^ 128 := by\n",
+    "amc12b_2020_p22": "theorem amc12b_2020_p22 (t : ℝ) : (2 ^ t - 3 * t) * t / 4 ^ t ≤ 1 / 12 := by\n",
+    "imo_1959_p1": "theorem imo_1959_p1 (n : ℕ) (h₀ : 0 < n) : Nat.gcd (21 * n + 4) (14 * n + 3) = 1 := by\n",
+    "imosl_2007_algebra_p6": "theorem imosl_2007_algebra_p6 (a : ℕ → NNReal) (h₀ : (∑ x in Finset.range 100, a (x + 1) ^ 2) = 1) :\n    (∑ x in Finset.range 99, a (x + 1) ^ 2 * a (x + 2)) + a 100 ^ 2 * a 1 < 12 / 25 := by\n",
+    "induction_pord1p1on2powklt5on2": "theorem induction_pord1p1on2powklt5on2 (n : ℕ) (h₀ : 0 < n) :\n    (∏ k in Finset.Icc 1 n, 1 + (1 : ℝ) / 2 ^ k) < 5 / 2 := by\n",
+    "mathd_algebra_107": "theorem mathd_algebra_107 (x y : ℝ) (h₀ : x ^ 2 + 8 * x + y ^ 2 - 6 * y = 0) :\n    (x + 4) ^ 2 + (y - 3) ^ 2 = 5 ^ 2 := by\n",
+    "mathd_algebra_160": "theorem mathd_algebra_160 (n x : ℝ) (h₀ : n + x = 97) (h₁ : n + 5 * x = 265) : n + 2 * x = 139 := by\n",
+    "mathd_algebra_270": "theorem mathd_algebra_270 (f : ℝ → ℝ) (h₀ : ∀ (x) (_ : x ≠ -2), f x = 1 / (x + 2)) :\n    f (f 1) = 3 / 7 := by\n",
+    "mathd_algebra_33": "theorem mathd_algebra_33 (x y z : ℝ) (h₀ : x ≠ 0) (h₁ : 2 * x = 5 * y) (h₂ : 7 * y = 10 * z) :\n    z / x = 7 / 25 := by\n",
+    "mathd_algebra_427": "theorem mathd_algebra_427 (x y z : ℝ) (h₀ : 3 * x + y = 17) (h₁ : 5 * y + z = 14)\n    (h₂ : 3 * x + 5 * z = 41) : x + y + z = 12 := by\n",
+    "mathd_algebra_80": "theorem mathd_algebra_80 (x : ℝ) (h₀ : x ≠ -1) (h₁ : (x - 9) / (x + 1) = 2) : x = -11 := by\n",
+    "mathd_numbertheory_100": "theorem mathd_numbertheory_100 (n : ℕ) (h₀ : 0 < n) (h₁ : Nat.gcd n 40 = 10)\n    (h₂ : Nat.lcm n 40 = 280) : n = 70 := by\n",
+    "mathd_numbertheory_235": "theorem mathd_numbertheory_235 : (29 * 79 + 31 * 81) % 10 = 2 := by\n",
+    "mathd_numbertheory_341": "theorem mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)\n    (h₁ : Nat.digits 10 (5 ^ 100 % 1000) = [c, b, a]) : a + b + c = 13 := by\n",
+    "mathd_numbertheory_517": "theorem mathd_numbertheory_517 : 121 * 122 * 123 % 4 = 2 := by\n",
+    "mathd_numbertheory_99": "theorem mathd_numbertheory_99 (n : ℕ) (h₀ : 2 * n % 47 = 15) : n % 47 = 31 := by\n"
+  },
+  "_partial": true,
+  "_note": "조각 미완료 상태에서 문제별 파일을 모아 집계한 부분 결과",
+  "_chunk": "data/minif2f/chunks/strat_000.jsonl",
+  "_since": "2026-08-19 08:20",
+  "_chunk_size": 20,
+  "_skipped_old_proof": [
+    "aime_1989_p8"
+  ],
+  "_pending": [
+    "numbertheory_exk2powkeqapb2mulbpa2_aeq1"
+  ],
+  "_by_source": {
+    "algebra": {
+      "total": 1,
+      "solved": 1
+    },
+    "amc12a": {
+      "total": 2,
+      "solved": 1
+    },
+    "amc12b": {
+      "total": 1,
+      "solved": 1
+    },
+    "imo": {
+      "total": 2,
+      "solved": 1
+    },
+    "induction": {
+      "total": 1,
+      "solved": 0
+    },
+    "mathd_algebra": {
+      "total": 6,
+      "solved": 6
+    },
+    "mathd_numbertheory": {
+      "total": 5,
+      "solved": 5
+    }
+  },
+  "_details": [
+    {
+      "name": "mathd_numbertheory_100",
+      "source": "mathd_numbertheory",
+      "success": true,
+      "duration_min": 75.8,
+      "max_depth_reached": 0,
+      "total_attempts": 8,
+      "prover_calls": 12,
+      "reasoner_calls": 20,
+      "verifications": 19
+    },
+    {
+      "name": "induction_pord1p1on2powklt5on2",
+      "source": "induction",
+      "success": false,
+      "duration_min": 47.1,
+      "max_depth_reached": 0,
+      "total_attempts": 10,
+      "prover_calls": 4,
+      "reasoner_calls": 90,
+      "verifications": 59
+    },
+    {
+      "name": "imosl_2007_algebra_p6",
+      "source": "imo",
+      "success": false,
+      "duration_min": 46.5,
+      "max_depth_reached": 0,
+      "total_attempts": 10,
+      "prover_calls": 4,
+      "reasoner_calls": 84,
+      "verifications": 59
+    },
+    {
+      "name": "amc12a_2021_p9",
+      "source": "amc12a",
+      "success": false,
+      "duration_min": 35.0,
+      "max_depth_reached": 0,
+      "total_attempts": 10,
+      "prover_calls": 4,
+      "reasoner_calls": 80,
+      "verifications": 59
+    },
+    {
+      "name": "mathd_algebra_427",
+      "source": "mathd_algebra",
+      "success": true,
+      "duration_min": 32.4,
+      "max_depth_reached": 0,
+      "total_attempts": 1,
+      "prover_calls": 4,
+      "reasoner_calls": null,
+      "verifications": 3
+    },
+    {
+      "name": "mathd_numbertheory_341",
+      "source": "mathd_numbertheory",
+      "success": true,
+      "duration_min": 32.3,
+      "max_depth_reached": 0,
+      "total_attempts": 4,
+      "prover_calls": 14,
+      "reasoner_calls": 8,
+      "verifications": 22
+    },
+    {
+      "name": "mathd_algebra_33",
+      "source": "mathd_algebra",
+      "success": true,
+      "duration_min": 30.4,
+      "max_depth_reached": 0,
+      "total_attempts": 1,
+      "prover_calls": 2,
+      "reasoner_calls": null,
+      "verifications": 1
+    },
+    {
+      "name": "amc12b_2020_p22",
+      "source": "amc12b",
+      "success": true,
+      "duration_min": 23.1,
+      "max_depth_reached": 0,
+      "total_attempts": 1,
+      "prover_calls": 2,
+      "reasoner_calls": null,
+      "verifications": 2
+    },
+    {
+      "name": "algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3",
+      "source": "algebra",
+      "success": true,
+      "duration_min": 21.9,
+      "max_depth_reached": 0,
+      "total_attempts": 1,
+      "prover_calls": 1,
+      "reasoner_calls": null,
+      "verifications": 1
+    },
+    {
+      "name": "imo_1959_p1",
+      "source": "imo",
+      "success": true,
+      "duration_min": 17.0,
+      "max_depth_reached": 0,
+      "total_attempts": 1,
+      "prover_calls": 1,
+      "reasoner_calls": null,
+      "verifications": 1
+    },
+    {
+      "name": "mathd_algebra_270",
+      "source": "mathd_algebra",
+      "success": true,
+      "duration_min": 14.6,
+      "max_depth_reached": 0,
+      "total_attempts": 1,
+      "prover_calls": 1,
+      "reasoner_calls": null,
+      "verifications": 1
+    },
+    {
+      "name": "amc12a_2002_p13",
+      "source": "amc12a",
+      "success": true,
+      "duration_min": 5.6,
+      "max_depth_reached": 0,
+      "total_attempts": 1,
+      "prover_calls": 2,
+      "reasoner_calls": null,
+      "verifications": 1
+    },
+    {
+      "name": "mathd_algebra_160",
+      "source": "mathd_algebra",
+      "success": true,
+      "duration_min": 1.4,
+      "max_depth_reached": 0,
+      "total_attempts": 1,
+      "prover_calls": 1,
+      "reasoner_calls": null,
+      "verifications": 1
+    },
+    {
+      "name": "mathd_numbertheory_99",
+      "source": "mathd_numbertheory",
+      "success": true,
+      "duration_min": 1.4,
+      "max_depth_reached": 0,
+      "total_attempts": 1,
+      "prover_calls": 2,
+      "reasoner_calls": null,
+      "verifications": 1
+    },
+    {
+      "name": "mathd_algebra_107",
+      "source": "mathd_algebra",
+      "success": true,
+      "duration_min": 0.3,
+      "max_depth_reached": 0,
+      "total_attempts": 1,
+      "prover_calls": 2,
+      "reasoner_calls": null,
+      "verifications": 1
+    },
+    {
+      "name": "mathd_algebra_80",
+      "source": "mathd_algebra",
+      "success": true,
+      "duration_min": 0.3,
+      "max_depth_reached": 0,
+      "total_attempts": 1,
+      "prover_calls": 1,
+      "reasoner_calls": null,
+      "verifications": 1
+    },
+    {
+      "name": "mathd_numbertheory_235",
+      "source": "mathd_numbertheory",
+      "success": true,
+      "duration_min": 0.1,
+      "max_depth_reached": 0,
+      "total_attempts": 1,
+      "prover_calls": 2,
+      "reasoner_calls": null,
+      "verifications": 1
+    },
+    {
+      "name": "mathd_numbertheory_517",
+      "source": "mathd_numbertheory",
+      "success": true,
+      "duration_min": 0.1,
+      "max_depth_reached": 0,
+      "total_attempts": 1,
+      "prover_calls": 1,
+      "reasoner_calls": null,
+      "verifications": 1
+    }
+  ]
+}

@@ -13,6 +13,10 @@ results/*
 !results/proofs/
 results/proofs/*
 !results/proofs/*.lean
+# 과거 회차 아카이브: 증명·결과 요약만 (로그 76M, proof_stats 는 제외)
+!results/archive/
+results/archive/**/proof_stats/
+results/archive/**/*.log
 multirun/
 *.ipynb
 cache/

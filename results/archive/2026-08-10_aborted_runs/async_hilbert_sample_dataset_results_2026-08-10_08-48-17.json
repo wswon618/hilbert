@@ -1,0 +1,16 @@
+{
+  "total_problems": 1,
+  "completed_problems": 1,
+  "successful_problems": 1,
+  "results": {
+    "sqrt_10_irrational": true
+  },
+  "failure_cases": [],
+  "pass_rate": 1.0,
+  "proofs": {
+    "sqrt_10_irrational": "theorem h_irrational_sqrt_ten_irrational (h_equiv : Irrational (Real.sqrt (10 : \u211d)) \u2194 \u00ac IsSquare (10 : \u2115))\n    (h_not_square : \u00ac IsSquare (10 : \u2115)) : Irrational (Real.sqrt (10 : \u211d)) := by\n  have h\u2081 : Irrational (Real.sqrt (10 : \u211d)) := by\n    have h\u2082 : \u00ac IsSquare (10 : \u2115) := h_not_square\n    have h\u2083 : Irrational (Real.sqrt (10 : \u211d)) \u2194 \u00ac IsSquare (10 : \u2115) := h_equiv\n    have h\u2084 : Irrational (Real.sqrt (10 : \u211d)) := by\n      -- Use the given equivalence to deduce the irrationality of sqrt(10)\n      have h\u2085 : \u00ac IsSquare (10 : \u2115) := h\u2082\n      have h\u2086 : Irrational (Real.sqrt (10 : \u211d)) \u2194 \u00ac IsSquare (10 : \u2115) := h\u2083\n      -- Since \u00ac IsSquare (10 : \u2115) is true, we can directly use the equivalence to get the result\n      have h\u2087 : Irrational (Real.sqrt (10 : \u211d)) := by\n        rw [h\u2086]\n        exact h\u2085\n      exact h\u2087\n    exact h\u2084\n  exact h\u2081\n\ntheorem h_equiv_sqrt_ten_irrational : Irrational (Real.sqrt (10 : \u211d)) \u2194 \u00ac IsSquare (10 : \u2115) := by\n  simpa using (irrational_sqrt_natCast_iff (n := 10))\n\ntheorem h_not_square_sqrt_ten_irrational : \u00ac IsSquare (10 : \u2115) := by\n  intro h\n  have h_int : IsSquare (10 : \u2124) := (Int.isSquare_natCast_iff).mpr h\n  rcases h_int with \u27e8z, hz\u27e9\n  have hmod : z * z % 4 = (2 : \u2124) := by\n    simpa [hz] using (by norm_num : ((10 : \u2124) % 4) = (2 : \u2124))\n  have hneq := Int.sq_ne_two_mod_four z\n  exact hneq hmod\n\ntheorem sqrt_ten_irrational : Irrational (Real.sqrt (10 : \u211d)) := by\n  have h_equiv : Irrational (Real.sqrt (10 : \u211d)) \u2194 \u00ac IsSquare (10 : \u2115) := by\n    exact h_equiv_sqrt_ten_irrational\n  have h_not_square : \u00ac IsSquare (10 : \u2115) := by\n    exact h_not_square_sqrt_ten_irrational\n  have h_irrational : Irrational (Real.sqrt (10 : \u211d)) := by\n    exact h_irrational_sqrt_ten_irrational h_equiv h_not_square\n  exact h_irrational"
+  },
+  "formal_statements": {
+    "sqrt_10_irrational": "theorem sqrt_ten_irrational : Irrational (Real.sqrt (10 : \u211d)) := by\n"
+  }
+}
