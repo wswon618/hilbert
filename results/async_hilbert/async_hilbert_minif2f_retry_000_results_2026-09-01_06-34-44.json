@@ -1,0 +1,16 @@
+{
+  "total_problems": 1,
+  "completed_problems": 1,
+  "successful_problems": 0,
+  "results": {
+    "amc12a_2020_p25": false
+  },
+  "failure_cases": [
+    "amc12a_2020_p25"
+  ],
+  "pass_rate": 0.0,
+  "proofs": {},
+  "formal_statements": {
+    "amc12a_2020_p25": "theorem amc12a_2020_p25 (a : \u211a) (S : Finset \u211d)\n    (h\u2080 : \u2200 x : \u211d, x \u2208 S \u2194 \u2191\u230ax\u230b * (x - \u2191\u230ax\u230b) = \u2191a * x ^ 2) (h\u2081 : (\u2211 k in S, k) = 420) :\n    \u2191a.den + a.num = 929 := by\n"
+  }
+}

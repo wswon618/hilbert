@@ -1,12 +1,18 @@
 *.pyc
 __pycache__
-/data
+/data/*
+# 원본·마이그레이션 데이터셋은 추적 (sample_dataset 등은 제외)
+!/data/minif2f/
 *.txt
 *.out
 outputs/
 results/*
-# 분석 리포트는 추적 (archive/proofs/async_hilbert 는 계속 제외)
+# 분석 리포트·실행 결과 요약·성공한 증명만 추적 (archive, proof_stats 는 제외)
 !results/analysis/
+!results/async_hilbert/
+!results/proofs/
+results/proofs/*
+!results/proofs/*.lean
 multirun/
 *.ipynb
 cache/
