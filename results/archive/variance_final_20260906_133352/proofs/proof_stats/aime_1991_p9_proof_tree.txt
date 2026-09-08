@@ -1,0 +1,17 @@
+Proof Progress Tree for Problem: aime_1991_p9
+Generated at: 2026-09-05 08:17:10
+================================================================================
+
+└─ ✅ aime_1991_p9: theorem aime_1991_p9 (x : ℝ) (m : ℚ) (h₀ : 1 / Real.cos x + Real.tan x = 22 / 7)     (h₁ : 1 / Real.... [SUBGOAL_DECOMP]
+    ├─ ✅ h_tan_aime_1991_p9: theorem h_tan_aime_1991_p9 (x : ℝ) : Real.tan x = Real.sin x / Real.cos x := by   sorry... (depth 1)
+    ├─ ✅ h_m_eq_aime_1991_p9: theorem h_m_eq_aime_1991_p9 (x : ℝ) (m : ℚ)     (h_eq2 : (1 + Real.cos x) / Real.sin x = (m : ℝ))   ... (depth 1)
+    ├─ ✅ h_den_aime_1991_p9: theorem h_den_aime_1991_p9 (m : ℚ) (h_m_rat : m = (29 : ℚ) / 15) :     m.den = 15 := by   sorry... (depth 1)
+    ├─ ✅ h_m_rat_aime_1991_p9: theorem h_m_rat_aime_1991_p9 (m : ℚ) (h_m_eq : (m : ℝ) = (29 : ℝ) / 15) :     m = (29 : ℚ) / 15 := b... (depth 1)
+    ├─ ✅ h_cot_aime_1991_p9: theorem h_cot_aime_1991_p9 (x : ℝ) (h_tan : Real.tan x = Real.sin x / Real.cos x) :     (1 / Real.ta... (depth 1)
+    ├─ ✅ h_eq2_aime_1991_p9: theorem h_eq2_aime_1991_p9 (x : ℝ) (m : ℚ) (h₁ : 1 / Real.sin x + 1 / Real.tan x = m)     (h_cot : (... (depth 1)
+    ├─ ✅ h_sin_aime_1991_p9: theorem h_sin_aime_1991_p9 (x : ℝ) (m : ℚ)     (h_eq1 : (1 + Real.sin x) / Real.cos x = (22 : ℚ) / 7... (depth 1)
+    ├─ ✅ h_eq1_aime_1991_p9: theorem h_eq1_aime_1991_p9 (x : ℝ) (h₀ : 1 / Real.cos x + Real.tan x = (22 : ℚ) / 7)     (h_tan : Re... (depth 1)
+    ├─ ✅ h_cos_aime_1991_p9: theorem h_cos_aime_1991_p9 (x : ℝ) (m : ℚ)     (h_eq1 : (1 + Real.sin x) / Real.cos x = (22 : ℚ) / 7... (depth 1)
+    └─ ✅ h_num_aime_1991_p9: theorem h_num_aime_1991_p9 (m : ℚ) (h_m_rat : m = (29 : ℚ) / 15) :     m.num = 29 := by   sorry... (depth 1)
+
+================================================================================

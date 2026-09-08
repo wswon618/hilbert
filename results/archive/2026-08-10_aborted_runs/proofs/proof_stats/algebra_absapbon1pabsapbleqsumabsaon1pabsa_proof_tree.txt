@@ -1,0 +1,12 @@
+Proof Progress Tree for Problem: algebra_absapbon1pabsapbleqsumabsaon1pabsa
+Generated at: 2026-08-10 12:21:08
+================================================================================
+
+└─ ✅ algebra_absapbon1pabsapbleqsumabsaon1pabsa: theorem algebra_absapbon1pabsapbleqsumabsaon1pabsa (a b : ℝ) :     abs (a + b) / (1 + abs (a + b)) ≤... [SUBGOAL_DECOMP]
+    ├─ ✅ h_abs_nonneg_a_algebra_absapbon1pabsapbleqsumabsaon1pabsa: theorem h_abs_nonneg_a_algebra_absapbon1pabsapbleqsumabsaon1pabsa (a : ℝ) : (0 : ℝ) ≤ abs a := by   ... (depth 1)
+    ├─ ✅ h_abs_nonneg_b_algebra_absapbon1pabsapbleqsumabsaon1pabsa: theorem h_abs_nonneg_b_algebra_absapbon1pabsapbleqsumabsaon1pabsa (b : ℝ) : (0 : ℝ) ≤ abs b := by   ... (depth 1)
+    ├─ ✅ h_abs_add_algebra_absapbon1pabsapbleqsumabsaon1pabsa: theorem h_abs_add_algebra_absapbon1pabsapbleqsumabsaon1pabsa (a b : ℝ) : abs (a + b) ≤ abs a + abs b... (depth 1)
+    ├─ ✅ h_xy_algebra_absapbon1pabsapbleqsumabsaon1pabsa: theorem h_xy_algebra_absapbon1pabsapbleqsumabsaon1pabsa     (a b : ℝ)     (h_abs_nonneg_a : (0 : ℝ) ... (depth 1)
+    └─ ✅ h_monotone_algebra_absapbon1pabsapbleqsumabsaon1pabsa: theorem h_monotone_algebra_absapbon1pabsapbleqsumabsaon1pabsa     (a b : ℝ)     (h_abs_nonneg_a : (0... [SHALLOW_SOLVE] (depth 1)
+
+================================================================================

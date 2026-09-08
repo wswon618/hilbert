@@ -1,0 +1,28 @@
+Proof Progress Tree for Problem: aime_1988_p8
+Generated at: 2026-08-12 02:55:45
+================================================================================
+
+└─ ✅ aime_1988_p8: theorem aime_1988_p8 (f : ℕ → ℕ → ℝ) (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 < x ∧ 0 < y → ... [SUBGOAL_DECOMP]
+    ├─ ✅ h₁₄₁₀_sym_aime_1988_p8: theorem h₁₄₁₀_sym_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 ... (depth 1)
+    ├─ ✅ h₁₄₃₈_aime_1988_p8: theorem h₁₄₃₈_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 < x ... (depth 1)
+    ├─ ✅ h₁₀₄_val_aime_1988_p8: theorem h₁₀₄_val_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 <... (depth 1)
+    ├─ ✅ h₂₂_aime_1988_p8: theorem h₂₂_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 < x ∧ ... (depth 1)
+    ├─ ✅ h₁₀₄_sym_aime_1988_p8: theorem h₁₀₄_sym_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 <... (depth 1)
+    ├─ ✅ h₄₂_sym_aime_1988_p8: theorem h₄₂_sym_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 < ... (depth 1)
+    ├─ ✅ h₁₄₂₄_aime_1988_p8: theorem h₁₄₂₄_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 < x ... (depth 1)
+    ├─ ✅ h₁₀₁₄_aime_1988_p8: theorem h₁₀₁₄_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 < x ... (depth 1)
+    ├─ ✅ h₁₄₅₂_aime_1988_p8: theorem h₁₄₅₂_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 < x ... (depth 1)
+    ├─ ✅ h₄₁₀_aime_1988_p8: theorem h₄₁₀_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 < x ∧... (depth 1)
+    ├─ ✅ h₄₆_aime_1988_p8: theorem h₄₆_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 < x ∧ ... (depth 1)
+    ├─ ✅ h₄₂_val_aime_1988_p8: theorem h₄₂_val_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 < ... (depth 1)
+    ├─ ✅ h₂₄_aime_1988_p8: theorem h₂₄_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 < x ∧ ... (depth 1)
+    ├─ ✅ h₁₄₁₀_val_aime_1988_p8: theorem h₁₄₁₀_val_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 ... (depth 1)
+    ├─ ✅ h₂₄_val_aime_1988_p8: theorem h₂₄_val_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 < ... (depth 1)
+    ├─ ✅ h₄₆_val_aime_1988_p8: theorem h₄₆_val_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 < ... (depth 1)
+    ├─ ✅ h₁₀₁₄_val_aime_1988_p8: theorem h₁₀₁₄_val_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 ... (depth 1)
+    ├─ ✅ h₄₁₀_val_aime_1988_p8: theorem h₄₁₀_val_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 <... (depth 1)
+    ├─ ✅ h₁₄₂₄_val_aime_1988_p8: theorem h₁₄₂₄_val_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 ... (depth 1)
+    ├─ ✅ h₁₄₃₈_val_aime_1988_p8: theorem h₁₄₃₈_val_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 ... (depth 1)
+    └─ ✅ h₁₄₅₂_val_aime_1988_p8: theorem h₁₄₅₂_val_aime_1988_p8 (f : ℕ → ℕ → ℝ)     (h₀ : ∀ x, 0 < x → f x x = x)     (h₁ : ∀ x y, 0 ... (depth 1)
+
+================================================================================

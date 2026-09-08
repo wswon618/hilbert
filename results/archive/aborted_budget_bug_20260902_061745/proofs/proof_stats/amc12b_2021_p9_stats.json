@@ -1,0 +1,153 @@
+{
+  "problem_id": "amc12b_2021_p9",
+  "problem_statement": "theorem amc12b_2021_p9 :\n    Real.log 80 / Real.log 2 / (Real.log 2 / Real.log 40) -\n        Real.log 160 / Real.log 2 / (Real.log 2 / Real.log 20) =\n      2 := by\n",
+  "start_time": 1788327998.738894,
+  "end_time": 1788328194.9768453,
+  "duration": 196.23795127868652,
+  "final_success": true,
+  "total_attempts": 1,
+  "max_depth_reached": 0,
+  "llm_calls": [
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 119,
+      "output_tokens": 3275,
+      "cached_input_tokens": 0,
+      "call_duration": 178.91708636283875,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 119,
+      "output_tokens": 3278,
+      "cached_input_tokens": 0,
+      "call_duration": 179.14107990264893,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 119,
+      "output_tokens": 3306,
+      "cached_input_tokens": 0,
+      "call_duration": 180.6105568408966,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    }
+  ],
+  "search_operations": [],
+  "strategy_attempts": [
+    {
+      "strategy": "formal_llm",
+      "start_time": 1788327998.739517,
+      "end_time": 1788328194.9746687,
+      "duration": 196.2351517677307,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "amc12b_2021_p9",
+      "error_message": null
+    }
+  ],
+  "verification_operations": [
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 17.077636241912842,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 124,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: amc12b_2021_p9",
+      "timestamp": 1788328194.9682038
+    }
+  ],
+  "total_llm_calls": {
+    "prover_llm": 3
+  },
+  "total_input_tokens": {
+    "prover_llm": 357
+  },
+  "total_output_tokens": {
+    "prover_llm": 9859
+  },
+  "total_cached_input_tokens": {
+    "prover_llm": 0
+  },
+  "total_tokens": {
+    "prover_llm": 10216
+  },
+  "total_search_operations": {},
+  "search_success_rates": {},
+  "prompt_type_counts": {
+    "generate_proof": 3
+  },
+  "prompt_type_success_rates": {
+    "generate_proof": 1.0
+  },
+  "strategy_counts": {
+    "formal_llm": 1
+  },
+  "total_verification_operations": {
+    "formal_llm_generated_proof_verification": 1
+  },
+  "verification_success_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "verification_validity_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "total_verification_duration": {
+    "formal_llm_generated_proof_verification": 17.077636241912842
+  },
+  "summary": {
+    "problem_id": "amc12b_2021_p9",
+    "final_success": true,
+    "total_duration_seconds": 196.23795127868652,
+    "total_attempts": 1,
+    "max_depth_reached": 0,
+    "total_llm_calls": 3,
+    "total_tokens_used": 10216,
+    "total_search_operations": 0,
+    "total_verification_operations": 1,
+    "total_verification_duration_seconds": 17.077636241912842,
+    "llm_breakdown": {
+      "prover_llm": 3
+    },
+    "token_breakdown": {
+      "prover_llm": 10216
+    },
+    "search_operation_breakdown": {},
+    "verification_operation_breakdown": {
+      "formal_llm_generated_proof_verification": 1
+    },
+    "verification_duration_breakdown": {
+      "formal_llm_generated_proof_verification": 17.077636241912842
+    },
+    "prompt_type_breakdown": {
+      "generate_proof": 3
+    },
+    "strategy_attempts": {
+      "formal_llm": 1
+    },
+    "prompt_type_success_rates": {
+      "generate_proof": 1.0
+    },
+    "search_success_rates": {},
+    "verification_success_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    },
+    "verification_validity_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    }
+  },
+  "generated_at": "2026-09-02T05:49:54.977237"
+}

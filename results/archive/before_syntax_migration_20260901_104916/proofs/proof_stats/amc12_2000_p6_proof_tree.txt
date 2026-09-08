@@ -1,0 +1,27 @@
+Proof Progress Tree for Problem: amc12_2000_p6
+Generated at: 2026-08-31 16:00:18
+================================================================================
+
+└─ ✅ amc12_2000_p6: theorem amc12_2000_p6 (p q : ℕ) (h₀ : Nat.Prime p ∧ Nat.Prime q) (h₁ : 4 ≤ p ∧ p ≤ 18)     (h₂ : 4 ≤... [SUBGOAL_DECOMP]
+    ├─ ✅ hp_range_amc12_2000_p6: theorem hp_range_amc12_2000_p6 (p q : ℕ) (h₁ : 4 ≤ p ∧ p ≤ 18) : 4 ≤ p ∧ p ≤ 18 := by   sorry... (depth 1)
+    ├─ ✅ hq_range_amc12_2000_p6: theorem hq_range_amc12_2000_p6 (p q : ℕ) (h₂ : 4 ≤ q ∧ q ≤ 18) : 4 ≤ q ∧ q ≤ 18 := by   sorry... (depth 1)
+    ├─ ✅ hp_prime_amc12_2000_p6: theorem hp_prime_amc12_2000_p6 (p q : ℕ) (h₀ : Nat.Prime p ∧ Nat.Prime q) : Nat.Prime p := by   sorr... (depth 1)
+    ├─ ✅ hq_prime_amc12_2000_p6: theorem hq_prime_amc12_2000_p6 (p q : ℕ) (h₀ : Nat.Prime p ∧ Nat.Prime q) : Nat.Prime q := by   sorr... (depth 1)
+    ├─ ✅ h_eq_nat_amc12_2000_p6: theorem h_eq_nat_amc12_2000_p6 (p q : ℕ) (h_eq : (p : ℕ) * q - (p + q) = 194) :     (p : ℕ) * q - (p... (depth 1)
+    ├─ ✅ hp_mem_amc12_2000_p6: theorem hp_mem_amc12_2000_p6 (p : ℕ) (hp_cases : p = 5 ∨ p = 7 ∨ p = 11 ∨ p = 13 ∨ p = 17) :     p -... (depth 1)
+    ├─ ✅ hq_mem_amc12_2000_p6: theorem hq_mem_amc12_2000_p6 (q : ℕ) (hq_cases : q = 5 ∨ q = 7 ∨ q = 11 ∨ q = 13 ∨ q = 17) :     q -... (depth 1)
+    ├─ ✅ hp_cases_amc12_2000_p6: theorem hp_cases_amc12_2000_p6 (p : ℕ) (hp_prime : Nat.Prime p) (hp_range : 4 ≤ p ∧ p ≤ 18) :     p ... [RECURSIVE] (depth 1)
+    │   ├─ ✅ h_lt_19_hp_cases_amc12_2000_p6: theorem h_lt_19_hp_cases_amc12_2000_p6 (p : ℕ) (h_up : p ≤ 18) : p < 19 := by   sorry... (depth 2)
+    │   ├─ ✅ h_low_hp_cases_amc12_2000_p6: theorem h_low_hp_cases_amc12_2000_p6 (p : ℕ) (hp_range : 4 ≤ p ∧ p ≤ 18) : 4 ≤ p := by   sorry... (depth 2)
+    │   ├─ ✅ h_primes_eq_hp_cases_amc12_2000_p6: theorem h_primes_eq_hp_cases_amc12_2000_p6 :     Nat.primesBelow 19 = ({2, 3, 5, 7, 11, 13, 17} : Fi... (depth 2)
+    │   ├─ ✅ h_up_hp_cases_amc12_2000_p6: theorem h_up_hp_cases_amc12_2000_p6 (p : ℕ) (hp_range : 4 ≤ p ∧ p ≤ 18) : p ≤ 18 := by   sorry... (depth 2)
+    │   ├─ ✅ h_mem_list_hp_cases_amc12_2000_p6: theorem h_mem_list_hp_cases_amc12_2000_p6 (p : ℕ)     (h_mem_primes : p ∈ Nat.primesBelow 19)     (h... (depth 2)
+    │   ├─ ✅ h_not_two_three_hp_cases_amc12_2000_p6: theorem h_not_two_three_hp_cases_amc12_2000_p6 (p : ℕ) (h_five_le : 5 ≤ p) :     p ≠ 2 ∧ p ≠ 3 := by... (depth 2)
+    │   ├─ ✅ h_five_le_hp_cases_amc12_2000_p6: theorem h_five_le_hp_cases_amc12_2000_p6 (p : ℕ) (hp_prime : Nat.Prime p) (h_low : 4 ≤ p) : 5 ≤ p :=... (depth 2)
+    │   ├─ ✅ h_mem_reduced_hp_cases_amc12_2000_p6: theorem h_mem_reduced_hp_cases_amc12_2000_p6 (p : ℕ)     (h_mem_list : p ∈ ({2, 3, 5, 7, 11, 13, 17}... (depth 2)
+    │   └─ ✅ h_mem_primes_hp_cases_amc12_2000_p6: theorem h_mem_primes_hp_cases_amc12_2000_p6 (p : ℕ) (hp_prime : Nat.Prime p) (h_lt_19 : p < 19) :   ... [SHALLOW_SOLVE] (depth 2)
+    ├─ ✅ hq_cases_amc12_2000_p6: theorem hq_cases_amc12_2000_p6 (q : ℕ) (hq_prime : Nat.Prime q) (hq_range : 4 ≤ q ∧ q ≤ 18) :     q ... [SHALLOW_SOLVE] (depth 1)
+    ├─ ✅ h_not_eq_amc12_2000_p6: theorem h_not_eq_amc12_2000_p6 (p q : ℕ)     (hp_mem : p - 1 ∈ ({4,6,10,12,16} : Finset ℕ))     (hq_... (depth 1)
+    └─ ✅ h_mul_eq_amc12_2000_p6: theorem h_mul_eq_amc12_2000_p6 (p q : ℕ) (h_eq_nat : (p : ℕ) * q - (p + q) = 194) :     (p - 1) * (q... (depth 1)
+
+================================================================================

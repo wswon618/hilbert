@@ -1,0 +1,133 @@
+{
+  "problem_id": "imo_1959_p1",
+  "problem_statement": "theorem imo_1959_p1 (n : \u2115) (h\u2080 : 0 < n) : Nat.gcd (21 * n + 4) (14 * n + 3) = 1 := by\n",
+  "start_time": 1787136080.9474869,
+  "end_time": 1787137100.9520812,
+  "duration": 1020.0045943260193,
+  "final_success": true,
+  "total_attempts": 1,
+  "max_depth_reached": 0,
+  "llm_calls": [
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 100,
+      "output_tokens": 1944,
+      "cached_input_tokens": 0,
+      "call_duration": 1016.1732904911041,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    }
+  ],
+  "search_operations": [],
+  "strategy_attempts": [
+    {
+      "strategy": "formal_llm",
+      "start_time": 1787136080.9483755,
+      "end_time": 1787137100.9494731,
+      "duration": 1020.0010976791382,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "imo_1959_p1",
+      "error_message": null
+    }
+  ],
+  "verification_operations": [
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 3.8187806606292725,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 63,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: imo_1959_p1",
+      "timestamp": 1787137100.943253
+    }
+  ],
+  "total_llm_calls": {
+    "prover_llm": 1
+  },
+  "total_input_tokens": {
+    "prover_llm": 100
+  },
+  "total_output_tokens": {
+    "prover_llm": 1944
+  },
+  "total_cached_input_tokens": {
+    "prover_llm": 0
+  },
+  "total_tokens": {
+    "prover_llm": 2044
+  },
+  "total_search_operations": {},
+  "search_success_rates": {},
+  "prompt_type_counts": {
+    "generate_proof": 1
+  },
+  "prompt_type_success_rates": {
+    "generate_proof": 1.0
+  },
+  "strategy_counts": {
+    "formal_llm": 1
+  },
+  "total_verification_operations": {
+    "formal_llm_generated_proof_verification": 1
+  },
+  "verification_success_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "verification_validity_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "total_verification_duration": {
+    "formal_llm_generated_proof_verification": 3.8187806606292725
+  },
+  "summary": {
+    "problem_id": "imo_1959_p1",
+    "final_success": true,
+    "total_duration_seconds": 1020.0045943260193,
+    "total_attempts": 1,
+    "max_depth_reached": 0,
+    "total_llm_calls": 1,
+    "total_tokens_used": 2044,
+    "total_search_operations": 0,
+    "total_verification_operations": 1,
+    "total_verification_duration_seconds": 3.8187806606292725,
+    "llm_breakdown": {
+      "prover_llm": 1
+    },
+    "token_breakdown": {
+      "prover_llm": 2044
+    },
+    "search_operation_breakdown": {},
+    "verification_operation_breakdown": {
+      "formal_llm_generated_proof_verification": 1
+    },
+    "verification_duration_breakdown": {
+      "formal_llm_generated_proof_verification": 3.8187806606292725
+    },
+    "prompt_type_breakdown": {
+      "generate_proof": 1
+    },
+    "strategy_attempts": {
+      "formal_llm": 1
+    },
+    "prompt_type_success_rates": {
+      "generate_proof": 1.0
+    },
+    "search_success_rates": {},
+    "verification_success_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    },
+    "verification_validity_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    }
+  },
+  "generated_at": "2026-08-19T10:58:20.952549"
+}

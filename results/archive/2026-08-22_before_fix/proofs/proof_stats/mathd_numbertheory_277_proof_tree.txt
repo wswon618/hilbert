@@ -1,0 +1,18 @@
+Proof Progress Tree for Problem: mathd_numbertheory_277
+Generated at: 2026-08-21 16:52:26
+================================================================================
+
+└─ ✅ mathd_numbertheory_277: theorem mathd_numbertheory_277 (m n : ℕ) (h₀ : Nat.gcd m n = 6) (h₁ : Nat.lcm m n = 126) :     60 ≤ ... [SUBGOAL_DECOMP]
+    ├─ ✅ hm_mathd_numbertheory_277: theorem hm_mathd_numbertheory_277 (m a : ℕ) (ha : m = 6 * a) :   m = 6 * a := by   sorry... (depth 1)
+    ├─ ✅ h_mul_mathd_numbertheory_277: theorem h_mul_mathd_numbertheory_277 (m n : ℕ) (h₀ : Nat.gcd m n = 6) (h₁ : Nat.lcm m n = 126) :   m... (depth 1)
+    ├─ ✅ h6dvdm_mathd_numbertheory_277: theorem h6dvdm_mathd_numbertheory_277 (m n : ℕ) (h₀ : Nat.gcd m n = 6) :   6 ∣ m := by   sorry... (depth 1)
+    ├─ ✅ h6dvdn_mathd_numbertheory_277: theorem h6dvdn_mathd_numbertheory_277 (m n : ℕ) (h₀ : Nat.gcd m n = 6) :   6 ∣ n := by   sorry... (depth 1)
+    ├─ ✅ h_coprime_mathd_numbertheory_277: theorem h_coprime_mathd_numbertheory_277 (a b : ℕ) (h_gcd_ab : Nat.gcd a b = 1) :   Nat.Coprime a b ... (depth 1)
+    ├─ ✅ h_mn_mathd_numbertheory_277: theorem h_mn_mathd_numbertheory_277 (m n a b : ℕ) (hm : m = 6 * a) (hn : n = 6 * b) :   m + n = 6 * ... (depth 1)
+    ├─ ✅ hn_mathd_numbertheory_277: theorem hn_mathd_numbertheory_277 (n b : ℕ) (hb : n = 6 * b) :   n = 6 * b := by   sorry... (depth 1)
+    ├─ ✅ h_gcd_ab_mathd_numbertheory_277: theorem h_gcd_ab_mathd_numbertheory_277 (a b m n : ℕ) (hm : m = 6 * a) (hn : n = 6 * b) (h₀ : Nat.gc... (depth 1)
+    ├─ ✅ h_60_le_mathd_numbertheory_277: theorem h_60_le_mathd_numbertheory_277 (a b : ℕ) (h_sum_ab : 10 ≤ a + b) :   (60 : ℕ) ≤ 6 * (a + b) ... (depth 1)
+    ├─ ✅ h_ab_mathd_numbertheory_277: theorem h_ab_mathd_numbertheory_277 (a b m n : ℕ) (hm : m = 6 * a) (hn : n = 6 * b) (h_mul : m * n =... (depth 1)
+    └─ ✅ h_sum_ab_mathd_numbertheory_277: theorem h_sum_ab_mathd_numbertheory_277 (a b : ℕ) (h_ab : a * b = 21) :   10 ≤ a + b := by   sorry... (depth 1)
+
+================================================================================

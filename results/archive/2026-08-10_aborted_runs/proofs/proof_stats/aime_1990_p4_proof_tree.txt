@@ -1,0 +1,20 @@
+Proof Progress Tree for Problem: aime_1990_p4
+Generated at: 2026-08-10 13:51:59
+================================================================================
+
+└─ ✅ aime_1990_p4: theorem aime_1990_p4 (x : ℝ) (h₀ : 0 < x) (h₁ : x ^ 2 - 10 * x - 29 ≠ 0)     (h₂ : x ^ 2 - 10 * x - ... [SUBGOAL_DECOMP]
+    ├─ ✅ hx_quad_aime_1990_p4: theorem hx_quad_aime_1990_p4 (x : ℝ) (h₀ : 0 < x)     (hy_val : x ^ 2 - 10 * x = 39) :     x ^ 2 - 1... [SHALLOW_SOLVE] (depth 1)
+    ├─ ✅ hx_final_aime_1990_p4: theorem hx_final_aime_1990_p4 (x : ℝ) (h₀ : 0 < x)     (hx_cases : x = 13 ∨ x = -3) :     x = 13 := ... [SHALLOW_SOLVE] (depth 1)
+    ├─ ✅ hD_ne_aime_1990_p4: theorem hD_ne_aime_1990_p4 (x : ℝ) (h₀ : 0 < x)     (hy1 : (x ^ 2 - 10 * x) - 29 ≠ 0)     (hy2 : (x ... [SHALLOW_SOLVE] (depth 1)
+    ├─ ✅ hy3_aime_1990_p4: theorem hy3_aime_1990_p4 (x : ℝ) (h₀ : 0 < x) (h₃ : x ^ 2 - 10 * x - 69 ≠ 0) :     (x ^ 2 - 10 * x) ... [SHALLOW_SOLVE] (depth 1)
+    ├─ ✅ hy1_aime_1990_p4: theorem hy1_aime_1990_p4 (x : ℝ) (h₀ : 0 < x) (h₁ : x ^ 2 - 10 * x - 29 ≠ 0) :     (x ^ 2 - 10 * x) ... [SHALLOW_SOLVE] (depth 1)
+    ├─ ✅ hy_val_aime_1990_p4: theorem hy_val_aime_1990_p4 (x : ℝ) (h₀ : 0 < x)     (h_lin : -64 * (x ^ 2 - 10 * x) + 2496 = 0) :  ... [SHALLOW_SOLVE] (depth 1)
+    ├─ ✅ hx_cases_aime_1990_p4: theorem hx_cases_aime_1990_p4 (x : ℝ) (h₀ : 0 < x)     (hx_quad : x ^ 2 - 10 * x - 39 = 0) :     x =... [SHALLOW_SOLVE] (depth 1)
+    ├─ ✅ h_mul_eq_aime_1990_p4: theorem h_mul_eq_aime_1990_p4 (x : ℝ) (h₀ : 0 < x)     (hy1 : (x ^ 2 - 10 * x) - 29 ≠ 0)     (hy2 : ... [RECURSIVE] (depth 1)
+    │   ├─ ✅ hD_ne_h_mul_eq_aime_1990_p4: theorem hD_ne_h_mul_eq_aime_1990_p4 (x : ℝ) (h₀ : 0 < x)     (hy1 : (x ^ 2 - 10 * x) - 29 ≠ 0)     (... [SHALLOW_SOLVE] (depth 2)
+    │   ├─ ✅ h_mul_eq_h_mul_eq_aime_1990_p4: theorem h_mul_eq_h_mul_eq_aime_1990_p4 (x : ℝ) (h₀ : 0 < x)     (hy1 : (x ^ 2 - 10 * x) - 29 ≠ 0)   ... [SHALLOW_SOLVE] (depth 2)
+    │   └─ ✅ h_simpl_h_mul_eq_aime_1990_p4: theorem h_simpl_h_mul_eq_aime_1990_p4 (x : ℝ) (h₀ : 0 < x)     (hy1 : (x ^ 2 - 10 * x) - 29 ≠ 0)    ... [SHALLOW_SOLVE] (depth 2)
+    ├─ ✅ hy2_aime_1990_p4: theorem hy2_aime_1990_p4 (x : ℝ) (h₀ : 0 < x) (h₂ : x ^ 2 - 10 * x - 45 ≠ 0) :     (x ^ 2 - 10 * x) ... [SHALLOW_SOLVE] (depth 1)
+    └─ ✅ h_lin_aime_1990_p4: theorem h_lin_aime_1990_p4 (x : ℝ) (h₀ : 0 < x)     (h_mul_eq :       ((x ^ 2 - 10 * x) - 45) * ((x ... [SHALLOW_SOLVE] (depth 1)
+
+================================================================================

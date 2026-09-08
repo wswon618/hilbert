@@ -1,0 +1,25 @@
+Proof Progress Tree for Problem: aime_1999_p11
+Generated at: 2026-09-05 11:02:57
+================================================================================
+
+└─ ✅ aime_1999_p11: theorem aime_1999_p11 (m : ℚ) (h₀ : 0 < m)     (h₁ : (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k ... [SUBGOAL_DECOMP]
+    ├─ ✅ hpos_aime_1999_p11: theorem hpos_aime_1999_p11 (m : ℚ) (h₀ : (0 : ℚ) < m) :     (0 : ℝ) < m * Real.pi / 180 := by   sorr... (depth 1)
+    ├─ ✅ hpos'_aime_1999_p11: theorem hpos'_aime_1999_p11 :     (0 : ℝ) < (35 : ℝ) * Real.pi / 72 := by   sorry... (depth 1)
+    ├─ ✅ hm_rat_aime_1999_p11: theorem hm_rat_aime_1999_p11 (m : ℚ)     (hm_eq : (m : ℝ) = (35 : ℝ) * 180 / 72) :     m = (175 : ℚ)... (depth 1)
+    ├─ ✅ hlt'_aime_1999_p11: theorem hlt'_aime_1999_p11 :     (35 : ℝ) * Real.pi / 72 < Real.pi / 2 := by   sorry... (depth 1)
+    ├─ ✅ htan_eq_aime_1999_p11: theorem htan_eq_aime_1999_p11 (m : ℚ)     (h₁ : (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Rea... (depth 1)
+    ├─ ✅ hm_eq_aime_1999_p11: theorem hm_eq_aime_1999_p11 (m : ℚ)     (hangle_eq : m * Real.pi / 180 = (35 : ℝ) * Real.pi / 72) : ... (depth 1)
+    ├─ ✅ hlt_aime_1999_p11: theorem hlt_aime_1999_p11 (m : ℚ) (h₀ : (0 : ℚ) < m)     (h₂ : (m.num : ℝ) / m.den < 90) :     m * R... (depth 1)
+    ├─ ✅ hden_aime_1999_p11: theorem hden_aime_1999_p11 (m : ℚ)     (hm_rat : m = (175 : ℚ) / 2) :     (m.den : ℤ) = 2 := by   so... (depth 1)
+    ├─ ✅ hangle_eq_aime_1999_p11: theorem hangle_eq_aime_1999_p11 (m : ℚ)     (hpos : (0 : ℝ) < m * Real.pi / 180)     (hlt : m * Real... (depth 1)
+    ├─ ✅ hnum_aime_1999_p11: theorem hnum_aime_1999_p11 (m : ℚ)     (hm_rat : m = (175 : ℚ) / 2) :     m.num = 175 := by   sorry... [SHALLOW_SOLVE] (depth 1)
+    └─ ✅ hsum_eq_tan_aime_1999_p11: theorem hsum_eq_tan_aime_1999_p11 :     (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 1... [RECURSIVE] (depth 1)
+        ├─ ✅ htheta_hsum_eq_tan_aime_1999_p11: theorem htheta_hsum_eq_tan_aime_1999_p11 :     (5 * Real.pi / 180) = (Real.pi / 36) := by   sorry... (depth 2)
+        ├─ ✅ hsin_cos_hsum_eq_tan_aime_1999_p11: theorem hsin_cos_hsum_eq_tan_aime_1999_p11 :     Real.sin (Real.pi / 72) = Real.cos ((35 : ℝ) * Real... (depth 2)
+        ├─ ✅ htan_hsum_eq_tan_aime_1999_p11: theorem htan_hsum_eq_tan_aime_1999_p11 :     Real.tan ((35 : ℝ) * Real.pi / 72) =       Real.sin ((3... (depth 2)
+        ├─ ✅ hsum_original_hsum_eq_tan_aime_1999_p11: theorem hsum_original_hsum_eq_tan_aime_1999_p11     (htheta :         (5 * Real.pi / 180) = (Real.pi... (depth 2)
+        └─ ✅ hsum_formula_hsum_eq_tan_aime_1999_p11: theorem hsum_formula_hsum_eq_tan_aime_1999_p11 :     (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (k * (R... [RECURSIVE] (depth 2)
+            ├─ ✅ hsin_pi_div_two_hsum_formula_hsum_eq_tan_aime_1999_p11: theorem hsin_pi_div_two_hsum_formula_hsum_eq_tan_aime_1999_p11 : Real.sin (Real.pi / 2) = (1 : ℝ) :=... (depth 3)
+            └─ ✅ hsum_form_hsum_formula_hsum_eq_tan_aime_1999_p11: theorem hsum_form_hsum_formula_hsum_eq_tan_aime_1999_p11 :     (∑ k in Finset.Icc (1 : ℕ) 35, Real.s... (depth 3)
+
+================================================================================

@@ -1,0 +1,7 @@
+Proof Progress Tree for Problem: mathd_numbertheory_222
+Generated at: 2026-08-21 17:17:12
+================================================================================
+
+└─ ✅ mathd_numbertheory_222: theorem mathd_numbertheory_222 (b : ℕ) (h₀ : Nat.lcm 120 b = 3720) (h₁ : Nat.gcd 120 b = 8) :     b ... [FORMAL_LLM]
+
+================================================================================

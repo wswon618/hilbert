@@ -1,0 +1,30 @@
+Proof Progress Tree for Problem: amc12a_2021_p8
+Generated at: 2026-08-21 11:14:11
+================================================================================
+
+└─ ✅ amc12a_2021_p8: theorem amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃ : ∀ n ≥ 3, d... [SUBGOAL_DECOMP]
+    ├─ ✅ h_even0_amc12a_2021_p8: theorem h_even0_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) : Even (d 0) := by   sorry... (depth 1)
+    ├─ ✅ h_even1_amc12a_2021_p8: theorem h_even1_amc12a_2021_p8 (d : ℕ → ℕ) (h₁ : d 1 = 0) : Even (d 1) := by   sorry... (depth 1)
+    ├─ ✅ h_odd2_amc12a_2021_p8: theorem h_odd2_amc12a_2021_p8 (d : ℕ → ℕ) (h₂ : d 2 = 1) : Odd (d 2) := by   sorry... (depth 1)
+    ├─ ✅ h_mod2021_amc12a_2021_p8: theorem h_mod2021_amc12a_2021_p8 : 2021 = 7 * 288 + 5 := by   sorry... (depth 1)
+    ├─ ✅ h_mod2022_amc12a_2021_p8: theorem h_mod2022_amc12a_2021_p8 : 2022 = 7 * 288 + 6 := by   sorry... (depth 1)
+    ├─ ✅ h_mod2023_amc12a_2021_p8: theorem h_mod2023_amc12a_2021_p8 : 2023 = 7 * 288 + 7 := by   sorry... (depth 1)
+    ├─ ✅ h_res2022_amc12a_2021_p8: theorem h_res2022_amc12a_2021_p8 (d : ℕ → ℕ) (h_not_even2022 : ¬Even (d 2022)) : Odd (d 2022) := by ... [SHALLOW_SOLVE] (depth 1)
+    ├─ ✅ h_odd3_amc12a_2021_p8: theorem h_odd3_amc12a_2021_p8 (d : ℕ → ℕ) (h₃ : ∀ n ≥ 3, d n = d (n - 1) + d (n - 3))     (h_even0 :... (depth 1)
+    ├─ ✅ h_even_rec_amc12a_2021_p8: theorem h_even_rec_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃ :... (depth 1)
+    ├─ ✅ h_even4_amc12a_2021_p8: theorem h_even4_amc12a_2021_p8 (d : ℕ → ℕ) (h₃ : ∀ n ≥ 3, d n = d (n - 1) + d (n - 3))     (h_even1 ... (depth 1)
+    ├─ ✅ h_odd4_amc12a_2021_p8: theorem h_odd4_amc12a_2021_p8 (d : ℕ → ℕ) (h₃ : ∀ n ≥ 3, d n = d (n - 1) + d (n - 3))     (h_even1 :... (depth 1)
+    ├─ ✅ h_even3_amc12a_2021_p8: theorem h_even3_amc12a_2021_p8 (d : ℕ → ℕ) (h₃ : ∀ n ≥ 3, d n = d (n - 1) + d (n - 3))     (h_even0 ... (depth 1)
+    ├─ ✅ h_odd5_amc12a_2021_p8: theorem h_odd5_amc12a_2021_p8 (d : ℕ → ℕ) (h₃ : ∀ n ≥ 3, d n = d (n - 1) + d (n - 3))     (h_even4 :... (depth 1)
+    ├─ ✅ h_even5_amc12a_2021_p8: theorem h_even5_amc12a_2021_p8 (d : ℕ → ℕ) (h₃ : ∀ n ≥ 3, d n = d (n - 1) + d (n - 3))     (h_even4 ... (depth 1)
+    ├─ ✅ h_even6_amc12a_2021_p8: theorem h_even6_amc12a_2021_p8 (d : ℕ → ℕ) (h₃ : ∀ n ≥ 3, d n = d (n - 1) + d (n - 3))     (h_even5 ... (depth 1)
+    ├─ ✅ h_res2021_amc12a_2021_p8: theorem h_res2021_amc12a_2021_p8 (d : ℕ → ℕ) (h_even2021 : Even (d 2021) ↔ Even (d 5))     (h_even5 ... (depth 1)
+    ├─ ✅ h_odd6_amc12a_2021_p8: theorem h_odd6_amc12a_2021_p8 (d : ℕ → ℕ) (h₃ : ∀ n ≥ 3, d n = d (n - 1) + d (n - 3))     (h_even5 :... (depth 1)
+    ├─ ✅ h_even2022_amc12a_2021_p8: theorem h_even2022_amc12a_2021_p8 (d : ℕ → ℕ) (h₃ : ∀ n ≥ 3, d n = d (n - 1) + d (n - 3))     (h_per... (depth 1)
+    ├─ ✅ h_not_even2022_amc12a_2021_p8: theorem h_not_even2022_amc12a_2021_p8 (d : ℕ → ℕ) (h_even2022 : Even (d 2022) ↔ Even (d 6))     (h_e... (depth 1)
+    ├─ ✅ h_even2021_amc12a_2021_p8: theorem h_even2021_amc12a_2021_p8 (d : ℕ → ℕ) (h₃ : ∀ n ≥ 3, d n = d (n - 1) + d (n - 3))     (h_per... (depth 1)
+    ├─ ✅ h_res2023_amc12a_2021_p8: theorem h_res2023_amc12a_2021_p8 (d : ℕ → ℕ) (h_even2023 : Even (d 2023) ↔ Even (d 0))     (h_even0 ... (depth 1)
+    ├─ ✅ h_even2023_amc12a_2021_p8: theorem h_even2023_amc12a_2021_p8 (d : ℕ → ℕ) (h₃ : ∀ n ≥ 3, d n = d (n - 1) + d (n - 3))     (h_per... (depth 1)
+    └─ ✅ h_period_even_amc12a_2021_p8: theorem h_period_even_amc12a_2021_p8 (d : ℕ → ℕ) (h₃ : ∀ n ≥ 3, d n = d (n - 1) + d (n - 3)) (n : ℕ)... [SHALLOW_SOLVE] (depth 1)
+
+================================================================================

@@ -1,0 +1,7 @@
+Proof Progress Tree for Problem: algebra_absxm1pabsxpabsxp1eqxp2_0leqxleq1
+Generated at: 2026-08-10 11:45:09
+================================================================================
+
+└─ ✅ algebra_absxm1pabsxpabsxp1eqxp2_0leqxleq1: theorem algebra_absxm1pabsxpabsxp1eqxp2_0leqxleq1 (x : ℝ)     (h₀ : abs (x - 1) + abs x + abs (x + 1... [FORMAL_LLM]
+
+================================================================================

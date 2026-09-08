@@ -1,0 +1,7 @@
+Proof Progress Tree for Problem: mathd_numbertheory_99
+Generated at: 2026-08-19 11:20:17
+================================================================================
+
+└─ ✅ mathd_numbertheory_99: theorem mathd_numbertheory_99 (n : ℕ) (h₀ : 2 * n % 47 = 15) : n % 47 = 31 := by ... [FORMAL_LLM]
+
+================================================================================

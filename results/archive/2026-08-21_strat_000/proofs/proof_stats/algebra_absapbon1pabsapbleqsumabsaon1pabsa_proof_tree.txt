@@ -1,0 +1,13 @@
+Proof Progress Tree for Problem: algebra_absapbon1pabsapbleqsumabsaon1pabsa
+Generated at: 2026-08-11 06:19:18
+================================================================================
+
+└─ ✅ algebra_absapbon1pabsapbleqsumabsaon1pabsa: theorem algebra_absapbon1pabsapbleqsumabsaon1pabsa (a b : ℝ) :     abs (a + b) / (1 + abs (a + b)) ≤... [SUBGOAL_DECOMP]
+    ├─ ✅ h0a_algebra_absapbon1pabsapbleqsumabsaon1pabsa: theorem h0a_algebra_absapbon1pabsapbleqsumabsaon1pabsa (a b : ℝ) : (0 : ℝ) ≤ abs a := by   sorry... (depth 1)
+    ├─ ✅ h0b_algebra_absapbon1pabsapbleqsumabsaon1pabsa: theorem h0b_algebra_absapbon1pabsapbleqsumabsaon1pabsa (a b : ℝ) : (0 : ℝ) ≤ abs b := by   sorry... (depth 1)
+    ├─ ✅ h0_algebra_absapbon1pabsapbleqsumabsaon1pabsa: theorem h0_algebra_absapbon1pabsapbleqsumabsaon1pabsa (a b : ℝ) : (0 : ℝ) ≤ abs (a + b) := by   sorr... (depth 1)
+    ├─ ✅ hle_abs_algebra_absapbon1pabsapbleqsumabsaon1pabsa: theorem hle_abs_algebra_absapbon1pabsapbleqsumabsaon1pabsa (a b : ℝ) : abs (a + b) ≤ abs a + abs b :... (depth 1)
+    ├─ ✅ hmono_algebra_absapbon1pabsapbleqsumabsaon1pabsa: theorem hmono_algebra_absapbon1pabsapbleqsumabsaon1pabsa (a b : ℝ)     (h0 : (0 : ℝ) ≤ abs (a + b)) ... [SHALLOW_SOLVE] (depth 1)
+    └─ ✅ hsplit_algebra_absapbon1pabsapbleqsumabsaon1pabsa: theorem hsplit_algebra_absapbon1pabsapbleqsumabsaon1pabsa (a b : ℝ)     (h0a : (0 : ℝ) ≤ abs a)     ... (depth 1)
+
+================================================================================

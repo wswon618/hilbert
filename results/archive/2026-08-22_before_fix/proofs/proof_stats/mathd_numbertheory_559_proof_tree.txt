@@ -1,0 +1,15 @@
+Proof Progress Tree for Problem: mathd_numbertheory_559
+Generated at: 2026-08-21 17:05:42
+================================================================================
+
+└─ ✅ mathd_numbertheory_559: theorem mathd_numbertheory_559 (x y : ℕ) (h₀ : x % 3 = 2) (h₁ : y % 5 = 4) (h₂ : x % 10 = y % 10) : ... [SUBGOAL_DECOMP]
+    ├─ ✅ h_y_mod5_mathd_numbertheory_559: theorem h_y_mod5_mathd_numbertheory_559 (y : ℕ) (h₁ : y % 5 = 4) : y ≡ 4 [MOD 5] := by   sorry... (depth 1)
+    ├─ ✅ h_x_mod3_mathd_numbertheory_559: theorem h_x_mod3_mathd_numbertheory_559 (x : ℕ) (h₀ : x % 3 = 2) : x ≡ 2 [MOD 3] := by   sorry... (depth 1)
+    ├─ ✅ h_mod10_mathd_numbertheory_559: theorem h_mod10_mathd_numbertheory_559 (x y : ℕ) (h₂ : x % 10 = y % 10) : x ≡ y [MOD 10] := by   sor... (depth 1)
+    ├─ ✅ h_mod15_eq_mathd_numbertheory_559: theorem h_mod15_eq_mathd_numbertheory_559 (x : ℕ) (h_mod15 : x ≡ 14 [MOD 15]) : x % 15 = 14 := by   ... (depth 1)
+    ├─ ✅ h_x_mod5_mathd_numbertheory_559: theorem h_x_mod5_mathd_numbertheory_559 (x y : ℕ) (h_mod5 : x ≡ y [MOD 5]) (h_y_mod5 : y ≡ 4 [MOD 5]... (depth 1)
+    ├─ ✅ h_mod15_mathd_numbertheory_559: theorem h_mod15_mathd_numbertheory_559 (x : ℕ) (h_x_mod5 : x ≡ 4 [MOD 5]) (h_x_mod3 : x ≡ 2 [MOD 3])... (depth 1)
+    ├─ ✅ h_mod5_mathd_numbertheory_559: theorem h_mod5_mathd_numbertheory_559 (x y : ℕ) (h_mod10 : x ≡ y [MOD 10]) : x ≡ y [MOD 5] := by   s... (depth 1)
+    └─ ✅ this_mathd_numbertheory_559: theorem this_mathd_numbertheory_559 (x : ℕ) (h_mod15_eq : x % 15 = 14) : 14 ≤ x := by   sorry... [SHALLOW_SOLVE] (depth 1)
+
+================================================================================

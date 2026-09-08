@@ -1,0 +1,23 @@
+Proof Progress Tree for Problem: amc12a_2021_p8
+Generated at: 2026-09-04 05:33:01
+================================================================================
+
+└─ ✅ amc12a_2021_p8: theorem amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃ : ∀ n ≥ 3, d... [SUBGOAL_DECOMP]
+    ├─ ✅ h_mod2022_amc12a_2021_p8: theorem h_mod2022_amc12a_2021_p8 : 2022 % 7 = 6 := by   sorry... (depth 1)
+    ├─ ✅ h_mod2021_amc12a_2021_p8: theorem h_mod2021_amc12a_2021_p8 : 2021 % 7 = 5 := by   sorry... (depth 1)
+    ├─ ✅ h_mod2023_amc12a_2021_p8: theorem h_mod2023_amc12a_2021_p8 : 2023 % 7 = 0 := by   sorry... (depth 1)
+    ├─ ✅ h_even0_amc12a_2021_p8: theorem h_even0_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃ : ∀ ... (depth 1)
+    ├─ ✅ h_odd2_amc12a_2021_p8: theorem h_odd2_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃ : ∀ n... (depth 1)
+    ├─ ✅ h_even0'_amc12a_2021_p8: theorem h_even0'_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃ : ∀... (depth 1)
+    ├─ ✅ h_even1_amc12a_2021_p8: theorem h_even1_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃ : ∀ ... (depth 1)
+    ├─ ✅ h_even_rec_amc12a_2021_p8: theorem h_even_rec_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃ :... (depth 1)
+    ├─ ✅ h_odd_rec_amc12a_2021_p8: theorem h_odd_rec_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃ : ... (depth 1)
+    ├─ ✅ h_even5_amc12a_2021_p8: theorem h_even5_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃ : ∀ ... (depth 1)
+    ├─ ✅ h_odd6_amc12a_2021_p8: theorem h_odd6_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃ : ∀ n... (depth 1)
+    ├─ ✅ h_period_even_amc12a_2021_p8: theorem h_period_even_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h... (depth 1)
+    ├─ ✅ h_even2021_amc12a_2021_p8: theorem h_even2021_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃ :... (depth 1)
+    ├─ ✅ h_odd2022_amc12a_2021_p8: theorem h_odd2022_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃ : ... (depth 1)
+    ├─ ✅ h_even2023_amc12a_2021_p8: theorem h_even2023_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃ :... (depth 1)
+    └─ ✅ h_period_odd_amc12a_2021_p8: theorem h_period_odd_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃... (depth 1)
+
+================================================================================

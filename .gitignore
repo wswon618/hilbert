@@ -13,10 +13,10 @@ results/*
 !results/proofs/
 results/proofs/*
 !results/proofs/*.lean
-# 과거 회차 아카이브: 증명·결과 요약만 (로그 76M, proof_stats 는 제외)
+# 과거 회차 아카이브: 전부 추적 (로그·proof_stats 포함, 약 130M)
+# 상위의 *.txt / *.out 규칙도 여기서는 뒤집는다
 !results/archive/
-results/archive/**/proof_stats/
-results/archive/**/*.log
+!results/archive/**
 multirun/
 *.ipynb
 cache/

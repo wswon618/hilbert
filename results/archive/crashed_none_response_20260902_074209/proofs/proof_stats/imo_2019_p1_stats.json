@@ -1,0 +1,756 @@
+{
+  "problem_id": "imo_2019_p1",
+  "problem_statement": "theorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n",
+  "start_time": 1788331596.814311,
+  "end_time": 1788333549.8860564,
+  "duration": 1953.0717453956604,
+  "final_success": false,
+  "total_attempts": 5,
+  "max_depth_reached": 0,
+  "llm_calls": [
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 125,
+      "output_tokens": 10379,
+      "cached_input_tokens": 0,
+      "call_duration": 575.1799867153168,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 125,
+      "output_tokens": 12898,
+      "cached_input_tokens": 0,
+      "call_duration": 717.9333872795105,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 125,
+      "output_tokens": 15356,
+      "cached_input_tokens": 0,
+      "call_duration": 858.8878500461578,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 125,
+      "output_tokens": 13616,
+      "cached_input_tokens": 0,
+      "call_duration": 1448.1582946777344,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 399,
+      "output_tokens": 666,
+      "cached_input_tokens": 0,
+      "call_duration": 4.718771457672119,
+      "prompt_type": "search_query_generation",
+      "success": true,
+      "context": "Problem: theorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 5022,
+      "output_tokens": 422,
+      "cached_input_tokens": 0,
+      "call_duration": 3.8915324211120605,
+      "prompt_type": "search_result_selection",
+      "success": true,
+      "context": "Problem: theorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 1280,
+      "output_tokens": 5033,
+      "cached_input_tokens": 0,
+      "call_duration": 35.76243615150452,
+      "prompt_type": "informal_proof_sketch",
+      "success": true,
+      "context": "Problem: theorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 5015,
+      "output_tokens": 2738,
+      "cached_input_tokens": 0,
+      "call_duration": 20.785135984420776,
+      "prompt_type": "lean_sketch_creation",
+      "success": true,
+      "context": "Problem: theorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 3500,
+      "output_tokens": 5796,
+      "cached_input_tokens": 0,
+      "call_duration": 42.54509496688843,
+      "prompt_type": "error_correction_subgoal",
+      "success": true,
+      "context": "Error: \n\nThe provided proof:\n```lean4 \nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n  constructor\n  \u00b7 intro h\n    /- auxiliary equalities obtained from the hypothesis -/\n    have h_eq1 : \u2200 b : \u2124, f 0 + 2 * f b = f (f b) := by sorry\n    have h_eq2 : \u2200 a : \u2124, f (2 * a) + 2 * f 0 = f (f a) := by sorry\n    have h_eq3 : \u2200 a : \u2124, f (2 * a) = 2 * f a - f 0 := by sorry\n    have h_eq4 : \u2200 a b : \u2124, f (f (a + b)) = 2 * f a + 2 * f b - f 0 := by sorry\n    have h_sym : \u2200 a : \u2124, f a + f (-a) = 2 * f 0 := by sorry\n    have h_cases : f 0 = 0 \u2228 f 0 \u2260 0 := by sorry\n    cases h_cases with\n    | inl h0zero =>\n        left\n        intro z\n        have hz : f z = 0 := by sorry\n        exact hz\n    | inr h0nz =>\n        right\n        refine \u27e8f 0, ?_\u27e9\n        intro z\n        have hz : f z = 2 * z + f 0 := by sorry\n        exact hz\n  \u00b7 intro h\n    cases h with\n    | inl hzero =>\n        intro a b\n        have ha : f a = 0 := by sorry\n        have hb : f b = 0 := by sorry\n        have hsum : f (a + b) = 0 := by sorry\n        simp [ha, hb, hsum]\n    | inr hlin =>\n        rcases hlin with \u27e8c, hc\u27e9\n        intro a b\n        have ha : f a = 2 * a + c := by sorry\n        have hb : f b = 2 * b + c := by sorry\n        have hsum : f (a + b) = 2 * (a + b) + c := by sorry\n        simp [ha, hb, hsum, mul_add, add_comm, add_left_comm, add_assoc,\n              mul_comm, mul_left_comm, mul_assoc]\n```\n\n\nError message from Lean: Tactic `left` failed: target is not an inductive datatype\n\ncase mp.inl\nf : \u2124 \u2192 \u2124\nh : \u2200 (a b : \u2124), f (2 * a) + 2 * f b = f (f (a + b))\nh_eq1 : \u2200 (b : \u2124), f 0 + 2 * f b = f (f b)\nh_eq2 : \u2200 (a : \u2124), f (2 * a) + 2 * f 0 = f (f a)\nh_eq3 : \u2200 (a : \u2124), f (2 * a) = 2 * f a - f 0\nh_eq4 : \u2200 (a b : \u2124), f (f (a + b)) = 2 * f a + 2 * f b - f 0\nh_sym : \u2200 (a : \u2124), f a + f (-a) = 2 * f 0\nh0zero : f 0 = 0\n\u22a2 \u2200 (z : \u2124), f z = 0 \u2228 \u2203 c, \u2200 (z : \u2124), f z = 2 * z + c\nThe error was encountered while trying to process the following lines:\n        exact hz\n\n\n\nError message from Lean: Tactic `right` failed: target is not an inductive datatype\n\ncase mp.inr\nf : \u2124 \u2192 \u2124\nh : \u2200 (a b : \u2124), f (2 * a) + 2 * f b = f (f (a + b))\nh_eq1 : \u2200 (b : \u2124), f 0 + 2 * f b = f (f b)\nh_eq2 : \u2200 (a : \u2124), f (2 * a) + 2 * f 0 = f (f a)\nh_eq3 : \u2200 (a : \u2124), f (2 * a) = 2 * f a - f 0\nh_eq4 : \u2200 (a b : \u2124), f (f (a + b)) = 2 * f a + 2 * f b - f 0\nh_sym : \u2200 (a : \u2124), f a + f (-a) = 2 * f 0\nh0nz : f 0 \u2260 0\n\u22a2 \u2200 (z : \u2124), f z = 0 \u2228 \u2203 c, \u2200 (z : \u2124), f z = 2 * z + c\nThe error was encountered while trying to process the following lines:\n        have hz : f z = 2 * z + f 0 := by sorry\n\n\n\nError message from Lean: Tactic `cases` failed: major premise type is not an inductive type\n  \u2200 (z : \u2124), f z = 0 \u2228 \u2203 c, \u2200 (z : \u2124), f z = 2 * z + c\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\ncase mpr\nf : \u2124 \u2192 \u2124\nh : \u2200 (z : \u2124), f z = 0 \u2228 \u2203 c, \u2200 (z : \u2124), f z = 2 * z + c\n\u22a2 \u2200 (a b : \u2124), f (2 * a) + 2 * f b = f (f (a + b))\nThe error was encountered while trying to process the following lines:\n        have ha : f a = 0 := by sorry\n\n\n\n\nType:sketch_outline"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 1232,
+      "output_tokens": 1255,
+      "cached_input_tokens": 0,
+      "call_duration": 8.768590688705444,
+      "prompt_type": "subgoal_extraction",
+      "success": true,
+      "context": "Extracting subgoals from proof sketch"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 825,
+      "output_tokens": 772,
+      "cached_input_tokens": 0,
+      "call_duration": 5.404117584228516,
+      "prompt_type": "missing_subgoal_extraction",
+      "success": true,
+      "context": "Extracting missing subgoals"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 1631,
+      "output_tokens": 545,
+      "cached_input_tokens": 0,
+      "call_duration": 3.927154541015625,
+      "prompt_type": "missing_subgoal_extraction",
+      "success": true,
+      "context": "Extracting missing subgoals"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 2437,
+      "output_tokens": 705,
+      "cached_input_tokens": 0,
+      "call_duration": 5.118071794509888,
+      "prompt_type": "missing_subgoal_extraction",
+      "success": true,
+      "context": "Extracting missing subgoals"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 399,
+      "output_tokens": 509,
+      "cached_input_tokens": 0,
+      "call_duration": 3.47660756111145,
+      "prompt_type": "search_query_generation",
+      "success": true,
+      "context": "Problem: theorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 6089,
+      "output_tokens": 521,
+      "cached_input_tokens": 0,
+      "call_duration": 4.8225998878479,
+      "prompt_type": "search_result_selection",
+      "success": true,
+      "context": "Problem: theorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 1172,
+      "output_tokens": 3083,
+      "cached_input_tokens": 0,
+      "call_duration": 21.7263925075531,
+      "prompt_type": "informal_proof_sketch",
+      "success": true,
+      "context": "Problem: theorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 4112,
+      "output_tokens": 1726,
+      "cached_input_tokens": 0,
+      "call_duration": 13.104904651641846,
+      "prompt_type": "lean_sketch_creation",
+      "success": true,
+      "context": "Problem: theorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 3026,
+      "output_tokens": 2698,
+      "cached_input_tokens": 0,
+      "call_duration": 19.702208042144775,
+      "prompt_type": "error_correction_subgoal",
+      "success": true,
+      "context": "Error: \n\nThe provided proof:\n```lean4 \nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194\n      (\u2200 z, f z = 0) \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n  constructor\n  \u00b7 intro h\n    -- 1.  A convenient reformulation of the hypothesis\n    have h\u2081 : \u2200 a b : \u2124, f (2 * a) + 2 * f b = f (f (a + b)) := by sorry\n    have h\u2082 : \u2200 a b : \u2124, f (2 * a) + 2 * f b = f 0 + 2 * f (a + b) := by sorry\n    -- 2.  Linear relation for even arguments\n    have h\u2083 : \u2200 a : \u2124, f (2 * a) = 2 * f a - f 0 := by sorry\n    -- 3.  Cauchy\u2011type equation\n    have h\u2084 : \u2200 a b : \u2124, f a + f b = f 0 + f (a + b) := by sorry\n    -- 4.  Define the shifted map g\n    have h\u2085 : \u2200 z : \u2124, f z = f 0 + 2 * z \u2228 f z = 0 := by sorry\n    -- 5.  Conclude the required disjunction\n    have h\u2086 : (\u2200 z, f z = 0) \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by sorry\n    exact h\u2086\n  \u00b7 intro h\n    -- 7.  Split the two possible forms of f\n    rcases h with h\u2080 | \u27e8c, hc\u27e9\n    \u00b7 -- case: f is identically zero\n      intro a b\n      have hz\u2081 : f (2 * a) = 0 := by sorry\n      have hz\u2082 : f b = 0 := by sorry\n      have hz\u2083 : f (a + b) = 0 := by sorry\n      simp [hz\u2081, hz\u2082, hz\u2083]\n    \u00b7 -- case: f has the affine form 2\u00b7z + c\n      intro a b\n      have ha : f a = 2 * a + c := by sorry\n      have hb : f b = 2 * b + c := by sorry\n      have hab : f (a + b) = 2 * (a + b) + c := by sorry\n      have hfa : f (2 * a) = 2 * (2 * a) + c := by sorry\n      simp [hfa, ha, hb, hab, mul_add, add_comm, add_left_comm, add_assoc,\n            mul_comm, mul_left_comm, two_mul]\n```\n\n\nError message from Lean: unsolved goals\ncase mpr.inl\nf : \u2124 \u2192 \u2124\nh\u2080 : \u2200 (z : \u2124), f z = 0\na b : \u2124\nhz\u2081 : f (2 * a) = 0\nhz\u2082 : f b = 0\nhz\u2083 : f (a + b) = 0\n\u22a2 0 = f 0\nThe error was encountered while trying to process the following lines:\n      have hz\u2082 : f b = 0 := by sorry\n      have hz\u2083 : f (a + b) = 0 := by sorry\n      simp [hz\u2081, hz\u2082, hz\u2083]\n    \u00b7 -- case: f has the affine form 2\u00b7z + c\n      intro a b\n      have ha : f a = 2 * a + c := by sorry\n\n\n\nError message from Lean: unsolved goals\ncase mpr.inr\nf : \u2124 \u2192 \u2124\nc : \u2124\nhc : \u2200 (z : \u2124), f z = 2 * z + c\na b : \u2124\nha : f a = 2 * a + c\nhb : f b = 2 * b + c\nhab : f (a + b) = 2 * (a + b) + c\nhfa : f (2 * a) = 2 * (2 * a) + c\n\u22a2 c * 2 + (f (a * 2) + b * 4) = f (c + (a + b) * 2)\nThe error was encountered while trying to process the following lines:\n      have hb : f b = 2 * b + c := by sorry\n\n\n\n\nType:sketch_outline"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 5884,
+      "output_tokens": 2411,
+      "cached_input_tokens": 0,
+      "call_duration": 18.26378083229065,
+      "prompt_type": "error_correction_subgoal",
+      "success": true,
+      "context": "Error: The provided proof contains a Lean code block with a theorem signature that does not match the given theorem signature. Please provide your response again with the Lean code block properly matching the given theorem signature.\nProvided Proof:\ntheorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194\n      (\u2200 z, f z = 0) \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n  constructor\n  \u00b7 intro h\n    -- 1.  A convenient reformulation of the hypothesis\n    have h\u2081 : \u2200 a b : \u2124, f (2 * a) + 2 * f b = f (f (a + b)) := by sorry\n    -- 2.  Linear relation for even arguments\n    have h\u2082 : \u2200 a b : \u2124, f (2 * a) + 2 * f b = f 0 + 2 * f (a + b) := by sorry\n    -- 3.  Linear relation for even arguments\n    have h\u2083 : \u2200 a : \u2124, f (2 * a) = 2 * f a - f 0 := by sorry\n    -- 4.  Cauchy\u2011type equation\n    have h\u2084 : \u2200 a b : \u2124, f a + f b = f 0 + f (a + b) := by sorry\n    -- 5.  Define the shifted map g\n    have h\u2085 : \u2200 z : \u2124, f z = f 0 + 2 * z \u2228 f z = 0 := by sorry\n    -- 6.  Conclude the required disjunction\n    have h\u2086 : (\u2200 z, f z = 0) \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by sorry\n    exact h\u2086\n  \u00b7 intro h\n    rcases h with h\u2080 | \u27e8c, hc\u27e9\n    \u00b7 -- case: f is identically zero\n      intro a b\n      simp [h\u2080]\n    \u00b7 -- case: f has the affine form 2\u00b7z + c\n      intro a b\n      simp [hc] \n      ring.\n\nERROR: The theorem statement in the proof does not match the given theorem statement:\ntheorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n\n\nSignature for the provided proof: theorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194\n      (\u2200 z, f z = 0) \u2228 \u2203 c, \u2200 z, f z = 2 * z + c\nSignature for the given theorem: theorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c\n\n\nType:sketch_outline"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 8896,
+      "output_tokens": 1683,
+      "cached_input_tokens": 0,
+      "call_duration": 13.33970022201538,
+      "prompt_type": "error_correction_subgoal",
+      "success": true,
+      "context": "Error: \n\nThe provided proof:\n```lean4 \nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194\n      \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n  constructor\n  \u00b7 intro h\n    -- 1.  A convenient reformulation of the hypothesis\n    have h\u2081 : \u2200 a b : \u2124, f (2 * a) + 2 * f b = f (f (a + b)) := by sorry\n    -- 2.  Linear relation for even arguments\n    have h\u2082 : \u2200 a b : \u2124, f (2 * a) + 2 * f b = f 0 + 2 * f (a + b) := by sorry\n    -- 3.  Linear relation for even arguments\n    have h\u2083 : \u2200 a : \u2124, f (2 * a) = 2 * f a - f 0 := by sorry\n    -- 4.  Cauchy\u2011type equation\n    have h\u2084 : \u2200 a b : \u2124, f a + f b = f 0 + f (a + b) := by sorry\n    -- 5.  Define the shifted map g\n    have h\u2085 : \u2200 z : \u2124, f z = f 0 + 2 * z \u2228 f z = 0 := by sorry\n    -- 6.  Conclude the required global disjunction\n    have h\u2086 : (\u2200 z, f z = 0) \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by sorry\n    -- 7.  Transform to the required shape\n    have h\u2087 : \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by sorry\n    exact h\u2087\n  \u00b7 intro h\n    -- 8.  Obtain a global alternative from the pointwise one\n    have hGlob : (\u2200 z, f z = 0) \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by sorry\n    cases hGlob with\n    | inl hAllZero =>\n        intro a b\n        simp [hAllZero]\n    | inr hAff =>\n        rcases hAff with \u27e8c, hc\u27e9\n        intro a b\n        simp [hc, mul_add, add_comm, add_left_comm, add_assoc, two_mul] \n        ring\n```\n\n\nError message from Lean: No goals to be solved\nThe error was encountered while trying to process the following lines:\nError: line number out of range\n\n\n\n\nType:sketch_outline"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 11907,
+      "output_tokens": 4661,
+      "cached_input_tokens": 0,
+      "call_duration": 37.12397003173828,
+      "prompt_type": "error_correction_subgoal",
+      "success": true,
+      "context": "Error: \n\nThe provided proof:\n```lean4 \nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194\n      \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n  classical\n  constructor\n  \u00b7 intro h\n    -- 1.  A convenient reformulation of the hypothesis\n    have h\u2081 : \u2200 a b : \u2124, f (2 * a) + 2 * f b = f (f (a + b)) := by sorry\n    -- 2.  Linear relation for even arguments\n    have h\u2082 : \u2200 a b : \u2124, f (2 * a) + 2 * f b = f 0 + 2 * f (a + b) := by sorry\n    -- 3.  Linear relation for even arguments\n    have h\u2083 : \u2200 a : \u2124, f (2 * a) = 2 * f a - f 0 := by sorry\n    -- 4.  Cauchy\u2011type equation\n    have h\u2084 : \u2200 a b : \u2124, f a + f b = f 0 + f (a + b) := by sorry\n    -- 5.  Define the shifted map g\n    have h\u2085 : \u2200 z : \u2124, f z = f 0 + 2 * z \u2228 f z = 0 := by sorry\n    -- 6.  Conclude the required global disjunction\n    have h\u2086 : (\u2200 z, f z = 0) \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by sorry\n    -- 7.  Build the pointwise statement required by the goal\n    rcases h\u2086 with hAllZero | \u27e8c, hc\u27e9\n    \u00b7 intro z\n      exact Or.inl (hAllZero z)\n    \u00b7 intro z\n      exact Or.inr \u27e8c, hc\u27e9\n  \u00b7 intro h\n    -- 8.  Extract a global alternative from the pointwise hypothesis\n    have hGlob : (\u2200 z, f z = 0) \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by sorry\n    cases hGlob with\n    | inl hAllZero =>\n        intro a b\n        simp [hAllZero]\n    | inr hAff =>\n        rcases hAff with \u27e8c, hc\u27e9\n        intro a b\n        simp [hc, mul_add, add_comm, add_left_comm, add_assoc, two_mul] \n        ring\n```\n\n\nError message from Lean: No goals to be solved\nThe error was encountered while trying to process the following lines:\nError: line number out of range\n\n\n\n\nType:sketch_outline"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 14948,
+      "output_tokens": 2030,
+      "cached_input_tokens": 0,
+      "call_duration": 16.929945945739746,
+      "prompt_type": "error_correction_subgoal",
+      "success": true,
+      "context": "Error: \n\nThe provided proof:\n```lean4 \nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194\n      \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n  classical\n  constructor\n  \u00b7 intro h\n    -- 1.  A convenient reformulation of the hypothesis\n    have h\u2081 : \u2200 a b : \u2124, f (2 * a) + 2 * f b = f (f (a + b)) := by sorry\n    -- 2.  Linear relation for even arguments\n    have h\u2082 : \u2200 a b : \u2124, f (2 * a) + 2 * f b = f 0 + 2 * f (a + b) := by sorry\n    -- 3.  Linear relation for even arguments\n    have h\u2083 : \u2200 a : \u2124, f (2 * a) = 2 * f a - f 0 := by sorry\n    -- 4.  Cauchy\u2011type equation\n    have h\u2084 : \u2200 a b : \u2124, f a + f b = f 0 + f (a + b) := by sorry\n    -- 5.  Define the shifted map g\n    have h\u2085 : \u2200 z : \u2124, f z = f 0 + 2 * z \u2228 f z = 0 := by sorry\n    -- 6.  Conclude the required global disjunction\n    have h\u2086 : (\u2200 z, f z = 0) \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by sorry\n    -- 7.  Build the pointwise statement required by the goal\n    have h\u2087 : \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by sorry\n    exact h\u2087\n  \u00b7 intro h\n    -- 8.  Extract a global alternative from the pointwise hypothesis\n    have hGlob : (\u2200 z, f z = 0) \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by sorry\n    cases hGlob with\n    | inl hAllZero =>\n        intro a b\n        simp [hAllZero]\n    | inr hAff =>\n        rcases hAff with \u27e8c, hc\u27e9\n        intro a b\n        simp [hc, mul_add, add_comm, add_left_comm, add_assoc, two_mul] \n        ring\n```\n\n\nError message from Lean: No goals to be solved\nThe error was encountered while trying to process the following lines:\nError: line number out of range\n\n\n\n\nType:sketch_outline"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 17989,
+      "output_tokens": 2395,
+      "cached_input_tokens": 0,
+      "call_duration": 20.37770915031433,
+      "prompt_type": "error_correction_subgoal",
+      "success": true,
+      "context": "Error: \n\nThe provided proof:\n```lean4 \nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194\n      \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n  classical\n  constructor\n  \u00b7 intro h\n    -- 1.  A convenient reformulation of the hypothesis\n    have h\u2081 : \u2200 a b : \u2124, f (2 * a) + 2 * f b = f (f (a + b)) := by sorry\n    -- 2.  Linear relation for even arguments\n    have h\u2082 : \u2200 a b : \u2124, f (2 * a) + 2 * f b = f 0 + 2 * f (a + b) := by sorry\n    -- 3.  Linear relation for even arguments\n    have h\u2083 : \u2200 a : \u2124, f (2 * a) = 2 * f a - f 0 := by sorry\n    -- 4.  Cauchy\u2011type equation\n    have h\u2084 : \u2200 a b : \u2124, f a + f b = f 0 + f (a + b) := by sorry\n    -- 5.  Define the shifted map g\n    have h\u2085 : \u2200 z : \u2124, f z = f 0 + 2 * z \u2228 f z = 0 := by sorry\n    -- 6.  Conclude the required global disjunction\n    have h\u2086 : (\u2200 z, f z = 0) \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by sorry\n    -- 7.  Build the pointwise statement required by the goal\n    have h\u2087 : \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by sorry\n    exact h\u2087\n  \u00b7 intro h\n    -- 8.  Extract a global alternative from the pointwise hypothesis\n    have hGlob : (\u2200 z, f z = 0) \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by sorry\n    cases hGlob with\n    | inl hAllZero =>\n        intro a b\n        simp [hAllZero]\n    | inr hAff =>\n        rcases hAff with \u27e8c, hc\u27e9\n        intro a b\n        simp [hc, mul_add, add_comm, add_left_comm, add_assoc, two_mul] \n        ring\n```\n\n\nError message from Lean: No goals to be solved\nThe error was encountered while trying to process the following lines:\nError: line number out of range\n\n\n\n\nType:sketch_outline"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 399,
+      "output_tokens": 672,
+      "cached_input_tokens": 0,
+      "call_duration": 4.651304483413696,
+      "prompt_type": "search_query_generation",
+      "success": true,
+      "context": "Problem: theorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 6912,
+      "output_tokens": 648,
+      "cached_input_tokens": 0,
+      "call_duration": 5.973329305648804,
+      "prompt_type": "search_result_selection",
+      "success": true,
+      "context": "Problem: theorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 865,
+      "output_tokens": 3646,
+      "cached_input_tokens": 0,
+      "call_duration": 25.625864028930664,
+      "prompt_type": "informal_proof_sketch",
+      "success": true,
+      "context": "Problem: theorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 2860,
+      "output_tokens": 1883,
+      "cached_input_tokens": 0,
+      "call_duration": 13.755948305130005,
+      "prompt_type": "error_correction_missing_tags",
+      "success": true,
+      "context": "Correcting missing tags/code blocks"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 3894,
+      "output_tokens": 5778,
+      "cached_input_tokens": 0,
+      "call_duration": 49.85004425048828,
+      "prompt_type": "lean_sketch_creation",
+      "success": true,
+      "context": "Problem: theorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194 \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 2955,
+      "output_tokens": 4353,
+      "cached_input_tokens": 0,
+      "call_duration": 41.21945858001709,
+      "prompt_type": "error_correction_subgoal",
+      "success": true,
+      "context": "Error: \n\nThe provided proof:\n```lean4 \nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem imo_2019_p1 (f : \u2124 \u2192 \u2124) :\n    (\u2200 a b, f (2 * a) + 2 * f b = f (f (a + b))) \u2194\n      \u2200 z, f z = 0 \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by\n  constructor\n  \u00b7 intro h\n    -- basic consequences of the hypothesis\n    have h00 : 3 * f 0 = f (f 0) := by sorry\n    have h_even : \u2200 a : \u2124, f (2 * a) = 2 * f a - f 0 := by sorry\n    have h_neg : \u2200 a : \u2124, f (-a) = 2 * f 0 - f a := by sorry\n    have h_add : \u2200 a b : \u2124, f (a + b) = f a + f b - f 0 := by sorry\n    -- introduce the constant c = f 0\n    set c := f 0 with hcdef\n    -- additive property for g x = f x - c\n    have hg_add : \u2200 a b : \u2124, (f (a + b) - c) = (f a - c) + (f b - c) := by sorry\n    -- existence of a linear coefficient k\n    have hk_exists : \u2203 k : \u2124, \u2200 x : \u2124, f x = k * x + c := by sorry\n    rcases hk_exists with \u27e8k, hk\u27e9\n    -- determine the possible values of k and c\n    have hk_cases : (k = 0 \u2227 c = 0) \u2228 k = 2 := by sorry\n    -- build the required universal statement\n    intro z\n    cases hk_cases with\n    | inl hkc =>\n        left\n        rcases hkc with \u27e8hk0, hc0\u27e9\n        have : f z = 0 := by sorry\n        exact this\n    | inr hk2 =>\n        right\n        refine \u27e8c, ?_\u27e9\n        intro z\n        have : f z = k * z + c := by sorry\n        simpa [hk2, mul_comm] using this\n  \u00b7 intro h\n    -- extract a global disjunction from the pointwise one\n    have h0_or : (\u2200 z, f z = 0) \u2228 \u2203 c, \u2200 z, f z = 2 * z + c := by sorry\n    cases h0_or with\n    | inl hzero =>\n        intro a b\n        have hfa : f (2 * a) = 0 := by sorry\n        have hfb : f b = 0 := by sorry\n        have hfab : f (a + b) = 0 := by sorry\n        simp [hfa, hfb, hfab]\n    | inr hlin =>\n        rcases hlin with \u27e8c, hc\u27e9\n        intro a b\n        have hfa : f (2 * a) = 2 * (2 * a) + c := by sorry\n        have hfb : f b = 2 * b + c := by sorry\n        have hfab : f (a + b) = 2 * (a + b) + c := by sorry\n        have : f (f (a + b)) = f (2 * (a + b) + c) := by sorry\n        simp [hfa, hfb, this, two_mul, mul_add, add_comm, add_left_comm, add_assoc]\n```\n\n\nError message from Lean: unsolved goals\ncase mpr.inl\nf : \u2124 \u2192 \u2124\nh : \u2200 (z : \u2124), f z = 0 \u2228 \u2203 c, \u2200 (z : \u2124), f z = 2 * z + c\nhzero : \u2200 (z : \u2124), f z = 0\na b : \u2124\nhfa : f (2 * a) = 0\nhfb : f b = 0\nhfab : f (a + b) = 0\n\u22a2 0 = f 0\nThe error was encountered while trying to process the following lines:\n        have hfb : f b = 0 := by sorry\n        have hfab : f (a + b) = 0 := by sorry\n        simp [hfa, hfb, hfab]\n    | inr hlin =>\n        rcases hlin with \u27e8c, hc\u27e9\n        intro a b\n\n\n\nError message from Lean: unsolved goals\ncase mpr.inr\nf : \u2124 \u2192 \u2124\nh : \u2200 (z : \u2124), f z = 0 \u2228 \u2203 c, \u2200 (z : \u2124), f z = 2 * z + c\nc : \u2124\nhc : \u2200 (z : \u2124), f z = 2 * z + c\na b : \u2124\nhfa : f (2 * a) = 2 * (2 * a) + c\nhfb : f b = 2 * b + c\nhfab : f (a + b) = 2 * (a + b) + c\nthis : f (f (a + b)) = f (2 * (a + b) + c)\n\u22a2 c + (c + (b + (b + (b + (b + f (a + a)))))) = f (c + (a + (a + (b + b))))\nThe error was encountered while trying to process the following lines:\n        have hfa : f (2 * a) = 2 * (2 * a) + c := by sorry\n\n\n\n\nType:sketch_outline"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 2824,
+      "output_tokens": 1080,
+      "cached_input_tokens": 0,
+      "call_duration": 10.7156503200531,
+      "prompt_type": "error_correction_missing_tags",
+      "success": true,
+      "context": "Requesting full theorem statement"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 1188,
+      "output_tokens": 818,
+      "cached_input_tokens": 0,
+      "call_duration": 7.550429582595825,
+      "prompt_type": "subgoal_extraction",
+      "success": true,
+      "context": "Extracting subgoals from proof sketch"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 728,
+      "output_tokens": 498,
+      "cached_input_tokens": 0,
+      "call_duration": 4.705566644668579,
+      "prompt_type": "missing_subgoal_extraction",
+      "success": true,
+      "context": "Extracting missing subgoals"
+    }
+  ],
+  "search_operations": [],
+  "strategy_attempts": [
+    {
+      "strategy": "formal_llm",
+      "start_time": 1788331596.8152294,
+      "end_time": 1788333068.2162101,
+      "duration": 1471.4009807109833,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "imo_2019_p1",
+      "error_message": null
+    },
+    {
+      "strategy": "subgoal_decomposition",
+      "start_time": 1788333068.2173307,
+      "end_time": 1788333549.8860235,
+      "duration": 481.66869282722473,
+      "success": false,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "imo_2019_p1",
+      "error_message": "expected string or bytes-like object"
+    },
+    {
+      "strategy": "sketch_generation",
+      "start_time": 1788333077.6799176,
+      "end_time": 1788333134.2342527,
+      "duration": 56.55433511734009,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "imo_2019_p1",
+      "error_message": null
+    },
+    {
+      "strategy": "sketch_generation",
+      "start_time": 1788333210.1973343,
+      "end_time": 1788333245.038135,
+      "duration": 34.840800762176514,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "imo_2019_p1",
+      "error_message": null
+    },
+    {
+      "strategy": "sketch_generation",
+      "start_time": 1788333393.0077596,
+      "end_time": 1788333482.2477233,
+      "duration": 89.23996376991272,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "imo_2019_p1",
+      "error_message": null
+    }
+  ],
+  "verification_operations": [
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 83.87938737869263,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 385,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: imo_2019_p1",
+      "timestamp": 1788332256.2730536
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 46.256309509277344,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 211,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: imo_2019_p1",
+      "timestamp": 1788332361.4023247
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 63.92876219749451,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 172,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: imo_2019_p1",
+      "timestamp": 1788332519.639659
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 22.83890461921692,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 192,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: imo_2019_p1",
+      "timestamp": 1788333068.2129774
+    },
+    {
+      "verification_type": "proof_sketch_with_sorry_verification",
+      "verification_duration": 1.0162100791931152,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 46,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Initial proof sketch compilation for: imo_2019_p1",
+      "timestamp": 1788333135.2551706
+    },
+    {
+      "verification_type": "proof_sketch_error_correction_verification",
+      "verification_duration": 0.4282081127166748,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 17,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Proof sketch error correction pass 1/6 for: imo_2019_p1",
+      "timestamp": 1788333178.2366965
+    },
+    {
+      "verification_type": "proof_sketch_with_sorry_verification",
+      "verification_duration": 1.7829968929290771,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 41,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Initial proof sketch compilation for: imo_2019_p1",
+      "timestamp": 1788333246.825045
+    },
+    {
+      "verification_type": "proof_sketch_error_correction_verification",
+      "verification_duration": 1.0587184429168701,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 34,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Proof sketch error correction pass 1/6 for: imo_2019_p1",
+      "timestamp": 1788333267.5912442
+    },
+    {
+      "verification_type": "proof_sketch_error_correction_verification",
+      "verification_duration": 1.522554874420166,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 39,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Proof sketch error correction pass 2/6 for: imo_2019_p1",
+      "timestamp": 1788333287.3904412
+    },
+    {
+      "verification_type": "proof_sketch_error_correction_verification",
+      "verification_duration": 2.0180294513702393,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 43,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Proof sketch error correction pass 3/6 for: imo_2019_p1",
+      "timestamp": 1788333302.7523725
+    },
+    {
+      "verification_type": "proof_sketch_error_correction_verification",
+      "verification_duration": 1.7260305881500244,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 40,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Proof sketch error correction pass 4/6 for: imo_2019_p1",
+      "timestamp": 1788333341.622235
+    },
+    {
+      "verification_type": "proof_sketch_error_correction_verification",
+      "verification_duration": 1.656113624572754,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 40,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Proof sketch error correction pass 5/6 for: imo_2019_p1",
+      "timestamp": 1788333360.21343
+    },
+    {
+      "verification_type": "proof_sketch_error_correction_verification",
+      "verification_duration": 1.4251222610473633,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 31,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Proof sketch error correction pass 6/6 for: imo_2019_p1",
+      "timestamp": 1788333382.0220633
+    },
+    {
+      "verification_type": "proof_sketch_with_sorry_verification",
+      "verification_duration": 3.0075457096099854,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 58,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Initial proof sketch compilation for: imo_2019_p1",
+      "timestamp": 1788333485.258383
+    },
+    {
+      "verification_type": "proof_sketch_error_correction_verification",
+      "verification_duration": 0.4183039665222168,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 17,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Proof sketch error correction pass 1/6 for: imo_2019_p1",
+      "timestamp": 1788333537.6203976
+    }
+  ],
+  "total_llm_calls": {
+    "prover_llm": 4,
+    "informal_llm": 28
+  },
+  "total_input_tokens": {
+    "prover_llm": 500,
+    "informal_llm": 118388
+  },
+  "total_output_tokens": {
+    "prover_llm": 52249,
+    "informal_llm": 59025
+  },
+  "total_cached_input_tokens": {
+    "prover_llm": 0,
+    "informal_llm": 0
+  },
+  "total_tokens": {
+    "prover_llm": 52749,
+    "informal_llm": 177413
+  },
+  "total_search_operations": {},
+  "search_success_rates": {},
+  "prompt_type_counts": {
+    "generate_proof": 4,
+    "search_query_generation": 3,
+    "search_result_selection": 3,
+    "informal_proof_sketch": 3,
+    "lean_sketch_creation": 3,
+    "error_correction_subgoal": 8,
+    "subgoal_extraction": 2,
+    "missing_subgoal_extraction": 4,
+    "error_correction_missing_tags": 2
+  },
+  "prompt_type_success_rates": {
+    "generate_proof": 1.0,
+    "search_query_generation": 1.0,
+    "search_result_selection": 1.0,
+    "informal_proof_sketch": 1.0,
+    "lean_sketch_creation": 1.0,
+    "error_correction_subgoal": 1.0,
+    "subgoal_extraction": 1.0,
+    "missing_subgoal_extraction": 1.0,
+    "error_correction_missing_tags": 1.0
+  },
+  "strategy_counts": {
+    "formal_llm": 1,
+    "subgoal_decomposition": 1,
+    "sketch_generation": 3
+  },
+  "total_verification_operations": {
+    "formal_llm_generated_proof_verification": 4,
+    "proof_sketch_with_sorry_verification": 3,
+    "proof_sketch_error_correction_verification": 8
+  },
+  "verification_success_rates": {
+    "formal_llm_generated_proof_verification": 1.0,
+    "proof_sketch_with_sorry_verification": 1.0,
+    "proof_sketch_error_correction_verification": 1.0
+  },
+  "verification_validity_rates": {
+    "formal_llm_generated_proof_verification": 0.0,
+    "proof_sketch_with_sorry_verification": 0.0,
+    "proof_sketch_error_correction_verification": 0.375
+  },
+  "total_verification_duration": {
+    "formal_llm_generated_proof_verification": 216.9033637046814,
+    "proof_sketch_with_sorry_verification": 5.806752681732178,
+    "proof_sketch_error_correction_verification": 10.253081321716309
+  },
+  "summary": {
+    "problem_id": "imo_2019_p1",
+    "final_success": false,
+    "total_duration_seconds": 1953.0717453956604,
+    "total_attempts": 5,
+    "max_depth_reached": 0,
+    "total_llm_calls": 32,
+    "total_tokens_used": 230162,
+    "total_search_operations": 0,
+    "total_verification_operations": 15,
+    "total_verification_duration_seconds": 232.96319770812988,
+    "llm_breakdown": {
+      "prover_llm": 4,
+      "informal_llm": 28
+    },
+    "token_breakdown": {
+      "prover_llm": 52749,
+      "informal_llm": 177413
+    },
+    "search_operation_breakdown": {},
+    "verification_operation_breakdown": {
+      "formal_llm_generated_proof_verification": 4,
+      "proof_sketch_with_sorry_verification": 3,
+      "proof_sketch_error_correction_verification": 8
+    },
+    "verification_duration_breakdown": {
+      "formal_llm_generated_proof_verification": 216.9033637046814,
+      "proof_sketch_with_sorry_verification": 5.806752681732178,
+      "proof_sketch_error_correction_verification": 10.253081321716309
+    },
+    "prompt_type_breakdown": {
+      "generate_proof": 4,
+      "search_query_generation": 3,
+      "search_result_selection": 3,
+      "informal_proof_sketch": 3,
+      "lean_sketch_creation": 3,
+      "error_correction_subgoal": 8,
+      "subgoal_extraction": 2,
+      "missing_subgoal_extraction": 4,
+      "error_correction_missing_tags": 2
+    },
+    "strategy_attempts": {
+      "formal_llm": 1,
+      "subgoal_decomposition": 1,
+      "sketch_generation": 3
+    },
+    "prompt_type_success_rates": {
+      "generate_proof": 1.0,
+      "search_query_generation": 1.0,
+      "search_result_selection": 1.0,
+      "informal_proof_sketch": 1.0,
+      "lean_sketch_creation": 1.0,
+      "error_correction_subgoal": 1.0,
+      "subgoal_extraction": 1.0,
+      "missing_subgoal_extraction": 1.0,
+      "error_correction_missing_tags": 1.0
+    },
+    "search_success_rates": {},
+    "verification_success_rates": {
+      "formal_llm_generated_proof_verification": 1.0,
+      "proof_sketch_with_sorry_verification": 1.0,
+      "proof_sketch_error_correction_verification": 1.0
+    },
+    "verification_validity_rates": {
+      "formal_llm_generated_proof_verification": 0.0,
+      "proof_sketch_with_sorry_verification": 0.0,
+      "proof_sketch_error_correction_verification": 0.375
+    }
+  },
+  "generated_at": "2026-09-02T07:19:09.891209"
+}

@@ -1,0 +1,41 @@
+Proof Progress Tree for Problem: aime_1987_p5
+Generated at: 2026-08-11 10:54:33
+================================================================================
+
+└─ ✅ aime_1987_p5: theorem aime_1987_p5 (x y : ℤ) (h₀ : y ^ 2 + 3 * (x ^ 2 * y ^ 2) = 30 * x ^ 2 + 517) :     3 * (x ^ ... [SUBGOAL_DECOMP]
+    ├─ ✅ h1_aime_1987_p5: theorem h1_aime_1987_p5 (x y : ℤ)     (h₀ : y ^ 2 + 3 * (x ^ 2 * y ^ 2) = 30 * x ^ 2 + 517) :     y ... (depth 1)
+    ├─ ✅ h_final_aime_1987_p5: theorem h_final_aime_1987_p5 (x y : ℤ)     (hx2 : x ^ 2 = 4)     (hy2 : y ^ 2 = 49) :     3 * (x ^ 2... (depth 1)
+    ├─ ✅ hx2_aime_1987_p5: theorem hx2_aime_1987_p5 (x y : ℤ)     (h₀ : y ^ 2 + 3 * (x ^ 2 * y ^ 2) = 30 * x ^ 2 + 517)     (h1... (depth 1)
+    ├─ ✅ h2_aime_1987_p5: theorem h2_aime_1987_p5 (x y : ℤ)     (h₀ : y ^ 2 + 3 * (x ^ 2 * y ^ 2) = 30 * x ^ 2 + 517)     (h1 ... (depth 1)
+    ├─ ✅ hy2_aime_1987_p5: theorem hy2_aime_1987_p5 (x y : ℤ)     (h₀ : y ^ 2 + 3 * (x ^ 2 * y ^ 2) = 30 * x ^ 2 + 517)     (hx... (depth 1)
+    ├─ ✅ h3_aime_1987_p5: theorem h3_aime_1987_p5 (x y : ℤ)     (h₀ : y ^ 2 + 3 * (x ^ 2 * y ^ 2) = 30 * x ^ 2 + 517)     (h1 ... (depth 1)
+    └─ ✅ h4_aime_1987_p5: theorem h4_aime_1987_p5 (x y : ℤ)     (h₀ : y ^ 2 + 3 * (x ^ 2 * y ^ 2) = 30 * x ^ 2 + 517)     (h1 ... [RECURSIVE] (depth 1)
+        ├─ ✅ h507_factor_h4_aime_1987_p5: theorem h507_factor_h4_aime_1987_p5 : (507 : ℤ) = 3 * (13 : ℤ) ^ 2 := by   sorry... (depth 2)
+        ├─ ✅ hd_nonneg_h4_aime_1987_p5: theorem hd_nonneg_h4_aime_1987_p5 (x y d : ℤ) (hd_def : d = 1 + 3 * x ^ 2) : (0 : ℤ) ≤ d := by   sor... (depth 2)
+        ├─ ✅ hd_pos_h4_aime_1987_p5: theorem hd_pos_h4_aime_1987_p5 (x y d : ℤ) (hd_def : d = 1 + 3 * x ^ 2) (hd_nonneg : (0 : ℤ) ≤ d) : ... (depth 2)
+        ├─ ✅ hd_eq_13_h4_aime_1987_p5: theorem hd_eq_13_h4_aime_1987_p5 (x y d : ℤ)     (h_possible : d = 1 ∨ d = 13 ∨ d = 169)     (h_not_... (depth 2)
+        ├─ ✅ h3_not_dvd_h4_aime_1987_p5: theorem h3_not_dvd_h4_aime_1987_p5 (x y d : ℤ) (hd_def : d = 1 + 3 * x ^ 2) (hd_pos : (0 : ℤ) < d) :... (depth 2)
+        ├─ ✅ h_not_one_h4_aime_1987_p5: theorem h_not_one_h4_aime_1987_p5 (x y d : ℤ)     (hd_def : d = 1 + 3 * x ^ 2)     (h₀ : y ^ 2 + 3 *... (depth 2)
+        ├─ ✅ h_not_169_h4_aime_1987_p5: theorem h_not_169_h4_aime_1987_p5 (x y d : ℤ)     (hd_def : d = 1 + 3 * x ^ 2)     (h₀ : y ^ 2 + 3 *... [RECURSIVE] (depth 2)
+        │   ├─ ✅ h_exists_h_not_169_h4_aime_1987_p5: theorem h_exists_h_not_169_h4_aime_1987_p5 (x : ℤ) (hx2_eq : x ^ 2 = 56) : ∃ n : ℤ, n ^ 2 = 56 := by... (depth 3)
+        │   ├─ ✅ h_no_square_h_not_169_h4_aime_1987_p5: theorem h_no_square_h_not_169_h4_aime_1987_p5 : ¬ ∃ n : ℤ, n ^ 2 = 56 := by   sorry... (depth 3)
+        │   └─ ✅ hx2_eq_h_not_169_h4_aime_1987_p5: theorem hx2_eq_h_not_169_h4_aime_1987_p5 (x y d : ℤ)     (hd_def : d = 1 + 3 * x ^ 2)     (h₀ : y ^ ... (depth 3)
+        └─ ✅ h_possible_h4_aime_1987_p5: theorem h_possible_h4_aime_1987_p5 (x y d : ℤ)     (h3 : (1 + 3 * x ^ 2) ∣ 507)     (h3_not_dvd : ¬ ... [RECURSIVE] (depth 2)
+            ├─ ✅ hd_eq_h_possible_h4_aime_1987_p5: theorem hd_eq_h_possible_h4_aime_1987_p5 (x y d : ℤ)     (h3 : (1 + 3 * x ^ 2) ∣ 507)     (h3_not_dv... (depth 3)
+            ├─ ✅ h_factor_h_possible_h4_aime_1987_p5: theorem h_factor_h_possible_h4_aime_1987_p5 (x y d : ℤ)     (h3 : (1 + 3 * x ^ 2) ∣ 507)     (h3_not... (depth 3)
+            ├─ ✅ h13_prime_h_possible_h4_aime_1987_p5: theorem h13_prime_h_possible_h4_aime_1987_p5 : Nat.Prime 13 := by   sorry... (depth 3)
+            ├─ ✅ h_dvd_prod_h_possible_h4_aime_1987_p5: theorem h_dvd_prod_h_possible_h4_aime_1987_p5 (x y d : ℤ)     (h3 : (1 + 3 * x ^ 2) ∣ 507)     (h3_n... (depth 3)
+            ├─ ✅ h_natAbs_eq_13_h_possible_h4_aime_1987_p5: theorem h_natAbs_eq_13_h_possible_h4_aime_1987_p5 (x y d : ℤ) (h2 : d.natAbs = 13) :     (d.natAbs :... (depth 3)
+            ├─ ✅ h_natAbs_eq_one_h_possible_h4_aime_1987_p5: theorem h_natAbs_eq_one_h_possible_h4_aime_1987_p5 (x y d : ℤ) (h1 : d.natAbs = 1) :     (d.natAbs :... (depth 3)
+            ├─ ✅ h_natAbs_eq_169_h_possible_h4_aime_1987_p5: theorem h_natAbs_eq_169_h_possible_h4_aime_1987_p5 (x y d : ℤ) (h3 : d.natAbs = 169) :     (d.natAbs... (depth 3)
+            ├─ ✅ h_dvd_507_h_possible_h4_aime_1987_p5: theorem h_dvd_507_h_possible_h4_aime_1987_p5 (x y d : ℤ)     (h3 : (1 + 3 * x ^ 2) ∣ 507)     (h3_no... (depth 3)
+            ├─ ✅ hd_nonneg_h_possible_h4_aime_1987_p5: theorem hd_nonneg_h_possible_h4_aime_1987_p5 (x y d : ℤ)     (h3 : (1 + 3 * x ^ 2) ∣ 507)     (h3_no... (depth 3)
+            ├─ ✅ h_not_dvd_3_h_possible_h4_aime_1987_p5: theorem h_not_dvd_3_h_possible_h4_aime_1987_p5 (x y d : ℤ)     (h3 : (1 + 3 * x ^ 2) ∣ 507)     (h3_... (depth 3)
+            ├─ ✅ h_dvd_13sq_nat_h_possible_h4_aime_1987_p5: theorem h_dvd_13sq_nat_h_possible_h4_aime_1987_p5 (x y d : ℤ)     (h3 : (1 + 3 * x ^ 2) ∣ 507)     (... (depth 3)
+            ├─ ✅ h_natAbs_eq_h_possible_h4_aime_1987_p5: theorem h_natAbs_eq_h_possible_h4_aime_1987_p5 (x y d : ℤ)     (h3 : (1 + 3 * x ^ 2) ∣ 507)     (h3_... (depth 3)
+            ├─ ✅ h_dvd_13sq_h_possible_h4_aime_1987_p5: theorem h_dvd_13sq_h_possible_h4_aime_1987_p5 (x y d : ℤ)     (h3 : (1 + 3 * x ^ 2) ∣ 507)     (h3_n... [RECURSIVE] (depth 3)
+            │   ├─ ✅ h_res_h_dvd_13sq_h_possible_h4_aime_1987_p5: theorem h_res_h_dvd_13sq_h_possible_h4_aime_1987_p5 (d : ℤ) (h_gcd_one : Int.gcd d 3 = 1) (h_dvd_pro... (depth 4)
+            │   └─ ✅ h_gcd_one_h_dvd_13sq_h_possible_h4_aime_1987_p5: theorem h_gcd_one_h_dvd_13sq_h_possible_h4_aime_1987_p5 (d : ℤ) (h_not_dvd_3 : ¬ 3 ∣ d) : Int.gcd d ... [SHALLOW_SOLVE] (depth 4)
+            └─ ✅ h_possible_nat_h_possible_h4_aime_1987_p5: theorem h_possible_nat_h_possible_h4_aime_1987_p5 (x y d : ℤ)     (h3 : (1 + 3 * x ^ 2) ∣ 507)     (... [SHALLOW_SOLVE] (depth 3)
+
+================================================================================

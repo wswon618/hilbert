@@ -1,0 +1,7 @@
+Proof Progress Tree for Problem: mathd_numbertheory_451
+Generated at: 2026-08-21 17:16:38
+================================================================================
+
+└─ ❌ mathd_numbertheory_451: theorem mathd_numbertheory_451 (S : Finset ℕ)     (h₀ :       ∀ n : ℕ,         n ∈ S ↔           201... [SUBGOAL_DECOMP]
+
+================================================================================

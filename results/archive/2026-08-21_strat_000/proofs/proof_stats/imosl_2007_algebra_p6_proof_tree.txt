@@ -1,0 +1,7 @@
+Proof Progress Tree for Problem: imosl_2007_algebra_p6
+Generated at: 2026-08-19 09:30:49
+================================================================================
+
+└─ ❌ imosl_2007_algebra_p6: theorem imosl_2007_algebra_p6 (a : ℕ → NNReal) (h₀ : (∑ x in Finset.range 100, a (x + 1) ^ 2) = 1) :... [SUBGOAL_DECOMP]
+
+================================================================================

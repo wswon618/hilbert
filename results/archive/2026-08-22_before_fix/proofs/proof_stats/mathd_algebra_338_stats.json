@@ -1,0 +1,183 @@
+{
+  "problem_id": "mathd_algebra_338",
+  "problem_statement": "theorem mathd_algebra_338 (a b c : \u211d) (h\u2080 : 3 * a + b + c = -3) (h\u2081 : a + 3 * b + c = 9)\n    (h\u2082 : a + b + 3 * c = 19) : a * b * c = -56 := by\n",
+  "start_time": 1787332208.3609657,
+  "end_time": 1787332326.5000112,
+  "duration": 118.13904547691345,
+  "final_success": true,
+  "total_attempts": 1,
+  "max_depth_reached": 0,
+  "llm_calls": [
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 127,
+      "output_tokens": 309,
+      "cached_input_tokens": 0,
+      "call_duration": 15.573590755462646,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 127,
+      "output_tokens": 761,
+      "cached_input_tokens": 0,
+      "call_duration": 38.22083568572998,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 127,
+      "output_tokens": 2310,
+      "cached_input_tokens": 0,
+      "call_duration": 115.78398418426514,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    }
+  ],
+  "search_operations": [],
+  "strategy_attempts": [
+    {
+      "strategy": "formal_llm",
+      "start_time": 1787332208.3616233,
+      "end_time": 1787332326.4962668,
+      "duration": 118.1346435546875,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "mathd_algebra_338",
+      "error_message": null
+    }
+  ],
+  "verification_operations": [
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 0.8294296264648438,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 34,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: mathd_algebra_338",
+      "timestamp": 1787332224.8296463
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 1.742002010345459,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 62,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: mathd_algebra_338",
+      "timestamp": 1787332248.3359857
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 2.333137035369873,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 65,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: mathd_algebra_338",
+      "timestamp": 1787332326.4891648
+    }
+  ],
+  "total_llm_calls": {
+    "prover_llm": 3
+  },
+  "total_input_tokens": {
+    "prover_llm": 381
+  },
+  "total_output_tokens": {
+    "prover_llm": 3380
+  },
+  "total_cached_input_tokens": {
+    "prover_llm": 0
+  },
+  "total_tokens": {
+    "prover_llm": 3761
+  },
+  "total_search_operations": {},
+  "search_success_rates": {},
+  "prompt_type_counts": {
+    "generate_proof": 3
+  },
+  "prompt_type_success_rates": {
+    "generate_proof": 1.0
+  },
+  "strategy_counts": {
+    "formal_llm": 1
+  },
+  "total_verification_operations": {
+    "formal_llm_generated_proof_verification": 3
+  },
+  "verification_success_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "verification_validity_rates": {
+    "formal_llm_generated_proof_verification": 0.3333333333333333
+  },
+  "total_verification_duration": {
+    "formal_llm_generated_proof_verification": 4.904568672180176
+  },
+  "summary": {
+    "problem_id": "mathd_algebra_338",
+    "final_success": true,
+    "total_duration_seconds": 118.13904547691345,
+    "total_attempts": 1,
+    "max_depth_reached": 0,
+    "total_llm_calls": 3,
+    "total_tokens_used": 3761,
+    "total_search_operations": 0,
+    "total_verification_operations": 3,
+    "total_verification_duration_seconds": 4.904568672180176,
+    "llm_breakdown": {
+      "prover_llm": 3
+    },
+    "token_breakdown": {
+      "prover_llm": 3761
+    },
+    "search_operation_breakdown": {},
+    "verification_operation_breakdown": {
+      "formal_llm_generated_proof_verification": 3
+    },
+    "verification_duration_breakdown": {
+      "formal_llm_generated_proof_verification": 4.904568672180176
+    },
+    "prompt_type_breakdown": {
+      "generate_proof": 3
+    },
+    "strategy_attempts": {
+      "formal_llm": 1
+    },
+    "prompt_type_success_rates": {
+      "generate_proof": 1.0
+    },
+    "search_success_rates": {},
+    "verification_success_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    },
+    "verification_validity_rates": {
+      "formal_llm_generated_proof_verification": 0.3333333333333333
+    }
+  },
+  "generated_at": "2026-08-21T17:12:06.500679"
+}

@@ -1,0 +1,16 @@
+Proof Progress Tree for Problem: mathd_numbertheory_34
+Generated at: 2026-08-21 16:55:35
+================================================================================
+
+└─ ✅ mathd_numbertheory_34: theorem mathd_numbertheory_34 (x : ℕ) (h₀ : x < 100) (h₁ : x * 9 % 100 = 1) : x = 89 := by ... [SUBGOAL_DECOMP]
+    ├─ ✅ h89_mathd_numbertheory_34: theorem h89_mathd_numbertheory_34 : 89 * 9 ≡ 1 [MOD 100] := by   sorry... (depth 1)
+    ├─ ✅ hfinal_mathd_numbertheory_34: theorem hfinal_mathd_numbertheory_34 (x : ℕ) (htrans : 1 * x ≡ 89 [MOD 100]) : x ≡ 89 [MOD 100] := b... (depth 1)
+    ├─ ✅ hmod_eq_mathd_numbertheory_34: theorem hmod_eq_mathd_numbertheory_34 (x : ℕ) (hfinal : x ≡ 89 [MOD 100]) : x % 100 = 89 := by   sor... (depth 1)
+    ├─ ✅ hmod_self_mathd_numbertheory_34: theorem hmod_self_mathd_numbertheory_34 (x : ℕ) (h₀ : x < 100) : x % 100 = x := by   sorry... (depth 1)
+    ├─ ✅ hmod_mathd_numbertheory_34: theorem hmod_mathd_numbertheory_34 (x : ℕ) (h₁ : x * 9 % 100 = 1) : x * 9 ≡ 1 [MOD 100] := by   sorr... (depth 1)
+    ├─ ✅ hmul_left_mathd_numbertheory_34: theorem hmul_left_mathd_numbertheory_34 (x : ℕ) (hmod : x * 9 ≡ 1 [MOD 100]) : 89 * (x * 9) ≡ 89 * 1... (depth 1)
+    ├─ ✅ hmul_right_mathd_numbertheory_34: theorem hmul_right_mathd_numbertheory_34 (x : ℕ) (h89 : 89 * 9 ≡ 1 [MOD 100]) : (89 * 9) * x ≡ 1 * x... (depth 1)
+    ├─ ✅ htrans_mathd_numbertheory_34: theorem htrans_mathd_numbertheory_34 (x : ℕ) (hmul_right : (89 * 9) * x ≡ 1 * x [MOD 100]) (hassoc :... (depth 1)
+    └─ ✅ hassoc_mathd_numbertheory_34: theorem hassoc_mathd_numbertheory_34 (x : ℕ) (hmul_left : 89 * (x * 9) ≡ 89 * 1 [MOD 100]) : (89 * 9... (depth 1)
+
+================================================================================

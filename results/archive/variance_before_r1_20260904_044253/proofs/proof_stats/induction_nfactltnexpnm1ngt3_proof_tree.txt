@@ -1,0 +1,10 @@
+Proof Progress Tree for Problem: induction_nfactltnexpnm1ngt3
+Generated at: 2026-09-03 18:05:39
+================================================================================
+
+└─ ✅ induction_nfactltnexpnm1ngt3: theorem induction_nfactltnexpnm1ngt3 (n : ℕ) (h₀ : 3 ≤ n) : n ! < n ^ (n - 1) := by ... [SUBGOAL_DECOMP]
+    ├─ ✅ hbase_induction_nfactltnexpnm1ngt3: theorem hbase_induction_nfactltnexpnm1ngt3 : (3 : ℕ) ! < (3 : ℕ) ^ (3 - 1) := by   sorry... (depth 1)
+    ├─ ✅ hstep_induction_nfactltnexpnm1ngt3: theorem hstep_induction_nfactltnexpnm1ngt3 :     ∀ k,       (3 : ℕ) ≤ k →         k ! < k ^ (k - 1) ... (depth 1)
+    └─ ✅ hresult_induction_nfactltnexpnm1ngt3: theorem hresult_induction_nfactltnexpnm1ngt3 (n : ℕ) (h₀ : (3 : ℕ) ≤ n)     (hbase : (3 : ℕ) ! < (3 ... (depth 1)
+
+================================================================================

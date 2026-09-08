@@ -1,0 +1,20 @@
+Proof Progress Tree for Problem: amc12_2000_p6
+Generated at: 2026-08-21 08:06:39
+================================================================================
+
+└─ ✅ amc12_2000_p6: theorem amc12_2000_p6 (p q : ℕ) (h₀ : Nat.Prime p ∧ Nat.Prime q) (h₁ : 4 ≤ p ∧ p ≤ 18)     (h₂ : 4 ≤... [SUBGOAL_DECOMP]
+    ├─ ✅ hp_ge_amc12_2000_p6: theorem hp_ge_amc12_2000_p6 (p q : ℕ) (h₁ : 4 ≤ p ∧ p ≤ 18) : 4 ≤ p := by   sorry... (depth 1)
+    ├─ ✅ hp_le_amc12_2000_p6: theorem hp_le_amc12_2000_p6 (p q : ℕ) (h₁ : 4 ≤ p ∧ p ≤ 18) : p ≤ 18 := by   sorry... (depth 1)
+    ├─ ✅ hq1_ge_amc12_2000_p6: theorem hq1_ge_amc12_2000_p6 (p q : ℕ) (hq_ge : 4 ≤ q) : 3 ≤ q - 1 := by   sorry... (depth 1)
+    ├─ ✅ hq_le_amc12_2000_p6: theorem hq_le_amc12_2000_p6 (p q : ℕ) (h₂ : 4 ≤ q ∧ q ≤ 18) : q ≤ 18 := by   sorry... (depth 1)
+    ├─ ✅ hp1_ge_amc12_2000_p6: theorem hp1_ge_amc12_2000_p6 (p q : ℕ) (hp_ge : 4 ≤ p) : 3 ≤ p - 1 := by   sorry... (depth 1)
+    ├─ ✅ hq_ge_amc12_2000_p6: theorem hq_ge_amc12_2000_p6 (p q : ℕ) (h₂ : 4 ≤ q ∧ q ≤ 18) : 4 ≤ q := by   sorry... (depth 1)
+    ├─ ✅ hp1_le_amc12_2000_p6: theorem hp1_le_amc12_2000_p6 (p q : ℕ) (hp_le : p ≤ 18) : p - 1 ≤ 17 := by   sorry... (depth 1)
+    ├─ ✅ hq1_le_amc12_2000_p6: theorem hq1_le_amc12_2000_p6 (p q : ℕ) (hq_le : q ≤ 18) : q - 1 ≤ 17 := by   sorry... (depth 1)
+    ├─ ✅ hq_not_prime_amc12_2000_p6: theorem hq_not_prime_amc12_2000_p6 (p q : ℕ)     (hcases : (p - 1 = 13 ∧ q - 1 = 15) ∨ (p - 1 = 15 ∧... (depth 1)
+    ├─ ✅ hrew_amc12_2000_p6: theorem hrew_amc12_2000_p6 (p q : ℕ) (hp_ge : 4 ≤ p) (hq_ge : 4 ≤ q) :     (p * q - (p + q) : ℕ) = (... (depth 1)
+    ├─ ✅ hcases_amc12_2000_p6: theorem hcases_amc12_2000_p6 (p q : ℕ)     (hprod : (p - 1) * (q - 1) = 195)     (hp1_ge : 3 ≤ p - 1... (depth 1)
+    ├─ ✅ hp_not_prime_amc12_2000_p6: theorem hp_not_prime_amc12_2000_p6 (p q : ℕ)     (hcases : (p - 1 = 13 ∧ q - 1 = 15) ∨ (p - 1 = 15 ∧... (depth 1)
+    └─ ✅ hprod_amc12_2000_p6: theorem hprod_amc12_2000_p6 (p q : ℕ)     (hrew : (p * q - (p + q) : ℕ) = (p - 1) * (q - 1) - 1)    ... (depth 1)
+
+================================================================================

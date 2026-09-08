@@ -1,0 +1,7 @@
+Proof Progress Tree for Problem: mathd_numbertheory_517
+Generated at: 2026-08-19 11:18:51
+================================================================================
+
+└─ ✅ mathd_numbertheory_517: theorem mathd_numbertheory_517 : 121 * 122 * 123 % 4 = 2 := by ... [FORMAL_LLM]
+
+================================================================================

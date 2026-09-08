@@ -1,0 +1,7 @@
+Proof Progress Tree for Problem: algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3
+Generated at: 2026-08-19 08:44:19
+================================================================================
+
+└─ ✅ algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3: theorem algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3 (a b c : ℝ) (h₀ : a ≤ b ∧ b ≤ c)     ... [FORMAL_LLM]
+
+================================================================================

@@ -1,0 +1,193 @@
+{
+  "problem_id": "imo_1960_p2",
+  "problem_statement": "theorem imo_1960_p2 (x : \u211d) (h\u2080 : 0 \u2264 1 + 2 * x) (h\u2081 : (1 - Real.sqrt (1 + 2 * x)) ^ 2 \u2260 0)\n    (h\u2082 : 4 * x ^ 2 / (1 - Real.sqrt (1 + 2 * x)) ^ 2 < 2 * x + 9) : -(1 / 2) \u2264 x \u2227 x < 45 / 8 := by\n",
+  "start_time": 1788190410.0568352,
+  "end_time": 1788190814.5718412,
+  "duration": 404.51500606536865,
+  "final_success": true,
+  "total_attempts": 1,
+  "max_depth_reached": 0,
+  "llm_calls": [
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 161,
+      "output_tokens": 6525,
+      "cached_input_tokens": 0,
+      "call_duration": 342.55869698524475,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 161,
+      "output_tokens": 6711,
+      "cached_input_tokens": 0,
+      "call_duration": 352.70006370544434,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 161,
+      "output_tokens": 7174,
+      "cached_input_tokens": 0,
+      "call_duration": 376.8768119812012,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 161,
+      "output_tokens": 7597,
+      "cached_input_tokens": 0,
+      "call_duration": 398.6637728214264,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    }
+  ],
+  "search_operations": [],
+  "strategy_attempts": [
+    {
+      "strategy": "formal_llm",
+      "start_time": 1788190410.0574405,
+      "end_time": 1788190814.5697184,
+      "duration": 404.512277841568,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "imo_1960_p2",
+      "error_message": null
+    }
+  ],
+  "verification_operations": [
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 13.974175453186035,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 81,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: imo_1960_p2",
+      "timestamp": 1788190766.6052408
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 27.975542783737183,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 137,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: imo_1960_p2",
+      "timestamp": 1788190790.7448616
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 27.608893871307373,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 119,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: imo_1960_p2",
+      "timestamp": 1788190814.5593615
+    }
+  ],
+  "total_llm_calls": {
+    "prover_llm": 4
+  },
+  "total_input_tokens": {
+    "prover_llm": 644
+  },
+  "total_output_tokens": {
+    "prover_llm": 28007
+  },
+  "total_cached_input_tokens": {
+    "prover_llm": 0
+  },
+  "total_tokens": {
+    "prover_llm": 28651
+  },
+  "total_search_operations": {},
+  "search_success_rates": {},
+  "prompt_type_counts": {
+    "generate_proof": 4
+  },
+  "prompt_type_success_rates": {
+    "generate_proof": 1.0
+  },
+  "strategy_counts": {
+    "formal_llm": 1
+  },
+  "total_verification_operations": {
+    "formal_llm_generated_proof_verification": 3
+  },
+  "verification_success_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "verification_validity_rates": {
+    "formal_llm_generated_proof_verification": 0.3333333333333333
+  },
+  "total_verification_duration": {
+    "formal_llm_generated_proof_verification": 69.55861210823059
+  },
+  "summary": {
+    "problem_id": "imo_1960_p2",
+    "final_success": true,
+    "total_duration_seconds": 404.51500606536865,
+    "total_attempts": 1,
+    "max_depth_reached": 0,
+    "total_llm_calls": 4,
+    "total_tokens_used": 28651,
+    "total_search_operations": 0,
+    "total_verification_operations": 3,
+    "total_verification_duration_seconds": 69.55861210823059,
+    "llm_breakdown": {
+      "prover_llm": 4
+    },
+    "token_breakdown": {
+      "prover_llm": 28651
+    },
+    "search_operation_breakdown": {},
+    "verification_operation_breakdown": {
+      "formal_llm_generated_proof_verification": 3
+    },
+    "verification_duration_breakdown": {
+      "formal_llm_generated_proof_verification": 69.55861210823059
+    },
+    "prompt_type_breakdown": {
+      "generate_proof": 4
+    },
+    "strategy_attempts": {
+      "formal_llm": 1
+    },
+    "prompt_type_success_rates": {
+      "generate_proof": 1.0
+    },
+    "search_success_rates": {},
+    "verification_success_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    },
+    "verification_validity_rates": {
+      "formal_llm_generated_proof_verification": 0.3333333333333333
+    }
+  },
+  "generated_at": "2026-08-31T15:40:14.572340"
+}

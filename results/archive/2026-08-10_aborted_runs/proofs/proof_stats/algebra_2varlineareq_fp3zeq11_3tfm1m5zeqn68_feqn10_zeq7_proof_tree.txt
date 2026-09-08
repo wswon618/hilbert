@@ -1,0 +1,7 @@
+Proof Progress Tree for Problem: algebra_2varlineareq_fp3zeq11_3tfm1m5zeqn68_feqn10_zeq7
+Generated at: 2026-08-10 10:30:10
+================================================================================
+
+└─ ✅ algebra_2varlineareq_fp3zeq11_3tfm1m5zeqn68_feqn10_zeq7: theorem algebra_2varlineareq_fp3zeq11_3tfm1m5zeqn68_feqn10_zeq7 (f z : ℂ) (h₀ : f + 3 * z = 11)     ... [FORMAL_LLM]
+
+================================================================================

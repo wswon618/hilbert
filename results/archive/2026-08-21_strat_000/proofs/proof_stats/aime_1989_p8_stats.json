@@ -1,0 +1,133 @@
+{
+  "problem_id": "aime_1989_p8",
+  "problem_statement": "theorem aime_1989_p8 (a b c d e f g : \u211d)\n    (h\u2080 : a + 4 * b + 9 * c + 16 * d + 25 * e + 36 * f + 49 * g = 1)\n    (h\u2081 : 4 * a + 9 * b + 16 * c + 25 * d + 36 * e + 49 * f + 64 * g = 12)\n    (h\u2082 : 9 * a + 16 * b + 25 * c + 36 * d + 49 * e + 64 * f + 81 * g = 123) :\n    16 * a + 25 * b + 36 * c + 49 * d + 64 * e + 81 * f + 100 * g = 334 := by\n",
+  "start_time": 1786415672.5448675,
+  "end_time": 1786415754.9793892,
+  "duration": 82.43452167510986,
+  "final_success": true,
+  "total_attempts": 1,
+  "max_depth_reached": 0,
+  "llm_calls": [
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 264,
+      "output_tokens": 1091,
+      "cached_input_tokens": 0,
+      "call_duration": 69.31750631332397,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    }
+  ],
+  "search_operations": [],
+  "strategy_attempts": [
+    {
+      "strategy": "formal_llm",
+      "start_time": 1786415672.5457091,
+      "end_time": 1786415754.976288,
+      "duration": 82.43057894706726,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "aime_1989_p8",
+      "error_message": null
+    }
+  ],
+  "verification_operations": [
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 12.674554347991943,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 40,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: aime_1989_p8",
+      "timestamp": 1786415754.966708
+    }
+  ],
+  "total_llm_calls": {
+    "prover_llm": 1
+  },
+  "total_input_tokens": {
+    "prover_llm": 264
+  },
+  "total_output_tokens": {
+    "prover_llm": 1091
+  },
+  "total_cached_input_tokens": {
+    "prover_llm": 0
+  },
+  "total_tokens": {
+    "prover_llm": 1355
+  },
+  "total_search_operations": {},
+  "search_success_rates": {},
+  "prompt_type_counts": {
+    "generate_proof": 1
+  },
+  "prompt_type_success_rates": {
+    "generate_proof": 1.0
+  },
+  "strategy_counts": {
+    "formal_llm": 1
+  },
+  "total_verification_operations": {
+    "formal_llm_generated_proof_verification": 1
+  },
+  "verification_success_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "verification_validity_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "total_verification_duration": {
+    "formal_llm_generated_proof_verification": 12.674554347991943
+  },
+  "summary": {
+    "problem_id": "aime_1989_p8",
+    "final_success": true,
+    "total_duration_seconds": 82.43452167510986,
+    "total_attempts": 1,
+    "max_depth_reached": 0,
+    "total_llm_calls": 1,
+    "total_tokens_used": 1355,
+    "total_search_operations": 0,
+    "total_verification_operations": 1,
+    "total_verification_duration_seconds": 12.674554347991943,
+    "llm_breakdown": {
+      "prover_llm": 1
+    },
+    "token_breakdown": {
+      "prover_llm": 1355
+    },
+    "search_operation_breakdown": {},
+    "verification_operation_breakdown": {
+      "formal_llm_generated_proof_verification": 1
+    },
+    "verification_duration_breakdown": {
+      "formal_llm_generated_proof_verification": 12.674554347991943
+    },
+    "prompt_type_breakdown": {
+      "generate_proof": 1
+    },
+    "strategy_attempts": {
+      "formal_llm": 1
+    },
+    "prompt_type_success_rates": {
+      "generate_proof": 1.0
+    },
+    "search_success_rates": {},
+    "verification_success_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    },
+    "verification_validity_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    }
+  },
+  "generated_at": "2026-08-11T02:35:54.979914"
+}

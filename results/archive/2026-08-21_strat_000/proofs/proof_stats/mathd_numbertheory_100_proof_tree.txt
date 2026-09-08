@@ -1,0 +1,11 @@
+Proof Progress Tree for Problem: mathd_numbertheory_100
+Generated at: 2026-08-19 13:11:05
+================================================================================
+
+└─ ✅ mathd_numbertheory_100: theorem mathd_numbertheory_100 (n : ℕ) (h₀ : 0 < n) (h₁ : Nat.gcd n 40 = 10)     (h₂ : Nat.lcm n 40 ... [SUBGOAL_DECOMP]
+    ├─ ✅ h_mul_mathd_numbertheory_100: theorem h_mul_mathd_numbertheory_100 (n : ℕ) (h₀ : 0 < n) (h₁ : Nat.gcd n 40 = 10) (h₂ : Nat.lcm n 4... [SHALLOW_SOLVE] (depth 1)
+    ├─ ✅ h_mul_subst_mathd_numbertheory_100: theorem h_mul_subst_mathd_numbertheory_100 (n : ℕ) (h₀ : 0 < n) (h₁ : Nat.gcd n 40 = 10) (h₂ : Nat.l... (depth 1)
+    ├─ ✅ h_n_eq_70_mathd_numbertheory_100: theorem h_n_eq_70_mathd_numbertheory_100 (n : ℕ) (h₀ : 0 < n) (h₁ : Nat.gcd n 40 = 10) (h₂ : Nat.lcm... (depth 1)
+    └─ ✅ h_eq70_mathd_numbertheory_100: theorem h_eq70_mathd_numbertheory_100 (n : ℕ) (h₀ : 0 < n) (h₁ : Nat.gcd n 40 = 10) (h₂ : Nat.lcm n ... (depth 1)
+
+================================================================================

@@ -1,0 +1,14 @@
+Proof Progress Tree for Problem: aime_1999_p11
+Generated at: 2026-09-04 15:16:37
+================================================================================
+
+└─ ✅ aime_1999_p11: theorem aime_1999_p11 (m : ℚ) (h₀ : 0 < m)     (h₁ : (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k ... [SUBGOAL_DECOMP]
+    ├─ ✅ h_angle_simpl_aime_1999_p11: theorem h_angle_simpl_aime_1999_p11 :     Real.tan (Real.pi / 2 - Real.pi / 72) = Real.tan ((35 : ℝ)... (depth 1)
+    ├─ ✅ h_tan_eq_aime_1999_p11: theorem h_tan_eq_aime_1999_p11 (m : ℚ)     (h₁ : (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Re... (depth 1)
+    ├─ ✅ h_m_eq_aime_1999_p11: theorem h_m_eq_aime_1999_p11 (m : ℚ)     (h_angle_eq :         m * Real.pi / 180 = ((35 : ℝ) * Real.... (depth 1)
+    ├─ ✅ h_angle_eq_aime_1999_p11: theorem h_angle_eq_aime_1999_p11 (m : ℚ)     (h_tan_eq :         Real.tan (m * Real.pi / 180) = Real... (depth 1)
+    ├─ ✅ h_angle_range_aime_1999_p11: theorem h_angle_range_aime_1999_p11 (m : ℚ) (h₀ : (0 : ℚ) < m)     (h₂ : (m.num : ℝ) / m.den < 90) :... (depth 1)
+    ├─ ✅ h_num_den_aime_1999_p11: theorem h_num_den_aime_1999_p11 (m : ℚ)     (h_m_eq : (m : ℝ) = (175 : ℝ) / 2) :     (↑m.den + m.num... (depth 1)
+    └─ ✅ h_sum_eq_tan_aime_1999_p11: theorem h_sum_eq_tan_aime_1999_p11 :     (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / ... (depth 1)
+
+================================================================================

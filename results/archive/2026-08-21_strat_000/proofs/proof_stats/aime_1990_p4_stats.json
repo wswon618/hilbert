@@ -1,0 +1,158 @@
+{
+  "problem_id": "aime_1990_p4",
+  "problem_statement": "theorem aime_1990_p4 (x : \u211d) (h\u2080 : 0 < x) (h\u2081 : x ^ 2 - 10 * x - 29 \u2260 0)\n    (h\u2082 : x ^ 2 - 10 * x - 45 \u2260 0) (h\u2083 : x ^ 2 - 10 * x - 69 \u2260 0)\n    (h\u2084 : 1 / (x ^ 2 - 10 * x - 29) + 1 / (x ^ 2 - 10 * x - 45) - 2 / (x ^ 2 - 10 * x - 69) = 0) :\n    x = 13 := by\n",
+  "start_time": 1786433620.7514277,
+  "end_time": 1786434804.333701,
+  "duration": 1183.5822732448578,
+  "final_success": true,
+  "total_attempts": 1,
+  "max_depth_reached": 0,
+  "llm_calls": [
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 218,
+      "output_tokens": 2850,
+      "cached_input_tokens": 0,
+      "call_duration": 1127.466317653656,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 218,
+      "output_tokens": 4532,
+      "cached_input_tokens": 0,
+      "call_duration": 1158.2344510555267,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    }
+  ],
+  "search_operations": [],
+  "strategy_attempts": [
+    {
+      "strategy": "formal_llm",
+      "start_time": 1786433620.7520711,
+      "end_time": 1786434804.331715,
+      "duration": 1183.5796439647675,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "aime_1990_p4",
+      "error_message": null
+    }
+  ],
+  "verification_operations": [
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 5.707947015762329,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 58,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: aime_1990_p4",
+      "timestamp": 1786434754.3105075
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 24.95756196975708,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 145,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: aime_1990_p4",
+      "timestamp": 1786434804.3226364
+    }
+  ],
+  "total_llm_calls": {
+    "prover_llm": 2
+  },
+  "total_input_tokens": {
+    "prover_llm": 436
+  },
+  "total_output_tokens": {
+    "prover_llm": 7382
+  },
+  "total_cached_input_tokens": {
+    "prover_llm": 0
+  },
+  "total_tokens": {
+    "prover_llm": 7818
+  },
+  "total_search_operations": {},
+  "search_success_rates": {},
+  "prompt_type_counts": {
+    "generate_proof": 2
+  },
+  "prompt_type_success_rates": {
+    "generate_proof": 1.0
+  },
+  "strategy_counts": {
+    "formal_llm": 1
+  },
+  "total_verification_operations": {
+    "formal_llm_generated_proof_verification": 2
+  },
+  "verification_success_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "verification_validity_rates": {
+    "formal_llm_generated_proof_verification": 0.5
+  },
+  "total_verification_duration": {
+    "formal_llm_generated_proof_verification": 30.66550898551941
+  },
+  "summary": {
+    "problem_id": "aime_1990_p4",
+    "final_success": true,
+    "total_duration_seconds": 1183.5822732448578,
+    "total_attempts": 1,
+    "max_depth_reached": 0,
+    "total_llm_calls": 2,
+    "total_tokens_used": 7818,
+    "total_search_operations": 0,
+    "total_verification_operations": 2,
+    "total_verification_duration_seconds": 30.66550898551941,
+    "llm_breakdown": {
+      "prover_llm": 2
+    },
+    "token_breakdown": {
+      "prover_llm": 7818
+    },
+    "search_operation_breakdown": {},
+    "verification_operation_breakdown": {
+      "formal_llm_generated_proof_verification": 2
+    },
+    "verification_duration_breakdown": {
+      "formal_llm_generated_proof_verification": 30.66550898551941
+    },
+    "prompt_type_breakdown": {
+      "generate_proof": 2
+    },
+    "strategy_attempts": {
+      "formal_llm": 1
+    },
+    "prompt_type_success_rates": {
+      "generate_proof": 1.0
+    },
+    "search_success_rates": {},
+    "verification_success_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    },
+    "verification_validity_rates": {
+      "formal_llm_generated_proof_verification": 0.5
+    }
+  },
+  "generated_at": "2026-08-11T07:53:24.334116"
+}

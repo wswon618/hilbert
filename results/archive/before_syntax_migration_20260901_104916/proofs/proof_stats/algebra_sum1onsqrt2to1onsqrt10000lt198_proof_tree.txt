@@ -1,0 +1,7 @@
+Proof Progress Tree for Problem: algebra_sum1onsqrt2to1onsqrt10000lt198
+Generated at: 2026-08-31 10:31:21
+================================================================================
+
+└─ ❌ algebra_sum1onsqrt2to1onsqrt10000lt198: theorem algebra_sum1onsqrt2to1onsqrt10000lt198 :     (∑ k in Finset.Icc (2 : ℕ) 10000, 1 / Real.sqrt... [SUBGOAL_DECOMP]
+
+================================================================================

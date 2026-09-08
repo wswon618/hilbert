@@ -1,0 +1,33 @@
+Proof Progress Tree for Problem: amc12a_2021_p8
+Generated at: 2026-08-31 11:03:44
+================================================================================
+
+└─ ✅ amc12a_2021_p8: theorem amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) (h₁ : d 1 = 0) (h₂ : d 2 = 1)     (h₃ : ∀ n ≥ 3, d... [SUBGOAL_DECOMP]
+    ├─ ✅ h_a0_amc12a_2021_p8: theorem h_a0_amc12a_2021_p8 (d : ℕ → ℕ) (h₀ : d 0 = 0) :     (d 0) % 2 = 0 := by   sorry... (depth 1)
+    ├─ ✅ h_a1_amc12a_2021_p8: theorem h_a1_amc12a_2021_p8 (d : ℕ → ℕ) (h₁ : d 1 = 0) :     (d 1) % 2 = 0 := by   sorry... (depth 1)
+    ├─ ✅ h_a2_amc12a_2021_p8: theorem h_a2_amc12a_2021_p8 (d : ℕ → ℕ) (h₂ : d 2 = 1) :     (d 2) % 2 = 1 := by   sorry... (depth 1)
+    ├─ ✅ h_even2021_amc12a_2021_p8: theorem h_even2021_amc12a_2021_p8 (d : ℕ → ℕ)     (h2021 : (d 2021) % 2 = (d 5) % 2) (h_a5 : (d 5) %... (depth 1)
+    ├─ ✅ h_a4_amc12a_2021_p8: theorem h_a4_amc12a_2021_p8 (d : ℕ → ℕ)     (h_parity_rec : ∀ n ≥ 3, (d n) % 2 = ((d (n - 1)) % 2 + ... (depth 1)
+    ├─ ✅ h_a3_amc12a_2021_p8: theorem h_a3_amc12a_2021_p8 (d : ℕ → ℕ)     (h_parity_rec : ∀ n ≥ 3, (d n) % 2 = ((d (n - 1)) % 2 + ... (depth 1)
+    ├─ ✅ h_parity_rec_amc12a_2021_p8: theorem h_parity_rec_amc12a_2021_p8 (d : ℕ → ℕ)     (h₃ : ∀ n ≥ 3, d n = d (n - 1) + d (n - 3)) :   ... (depth 1)
+    ├─ ✅ h_even2023_amc12a_2021_p8: theorem h_even2023_amc12a_2021_p8 (d : ℕ → ℕ)     (h2023 : (d 2023) % 2 = (d 0) % 2) (h_a0 : (d 0) %... (depth 1)
+    ├─ ✅ h_a5_amc12a_2021_p8: theorem h_a5_amc12a_2021_p8 (d : ℕ → ℕ)     (h_parity_rec : ∀ n ≥ 3, (d n) % 2 = ((d (n - 1)) % 2 + ... (depth 1)
+    ├─ ✅ h_a6_amc12a_2021_p8: theorem h_a6_amc12a_2021_p8 (d : ℕ → ℕ)     (h_parity_rec : ∀ n ≥ 3, (d n) % 2 = ((d (n - 1)) % 2 + ... (depth 1)
+    ├─ ✅ h_a7_amc12a_2021_p8: theorem h_a7_amc12a_2021_p8 (d : ℕ → ℕ)     (h_parity_rec : ∀ n ≥ 3, (d n) % 2 = ((d (n - 1)) % 2 + ... (depth 1)
+    ├─ ✅ h2023_amc12a_2021_p8: theorem h2023_amc12a_2021_p8 (d : ℕ → ℕ)     (h_period : ∀ n, (d (n + 7)) % 2 = (d n) % 2) :     (d ... (depth 1)
+    ├─ ✅ h_odd2022_amc12a_2021_p8: theorem h_odd2022_amc12a_2021_p8 (d : ℕ → ℕ)     (h2022 : (d 2022) % 2 = (d 6) % 2) (h_a6 : (d 6) % ... (depth 1)
+    ├─ ✅ h2021_amc12a_2021_p8: theorem h2021_amc12a_2021_p8 (d : ℕ → ℕ)     (h_period : ∀ n, (d (n + 7)) % 2 = (d n) % 2) :     (d ... (depth 1)
+    ├─ ✅ h2022_amc12a_2021_p8: theorem h2022_amc12a_2021_p8 (d : ℕ → ℕ)     (h_period : ∀ n, (d (n + 7)) % 2 = (d n) % 2) :     (d ... (depth 1)
+    └─ ✅ h_period_amc12a_2021_p8: theorem h_period_amc12a_2021_p8 (d : ℕ → ℕ)     (h_parity_rec : ∀ n ≥ 3, (d n) % 2 = ((d (n - 1)) % ... [RECURSIVE] (depth 1)
+        ├─ ✅ hge_h_period_amc12a_2021_p8: theorem hge_h_period_amc12a_2021_p8 (n : ℕ) (hle : ¬ n ≤ 6) : 7 ≤ n := by   sorry... (depth 2)
+        ├─ ✅ h0_h_period_amc12a_2021_p8: theorem h0_h_period_amc12a_2021_p8 (d : ℕ → ℕ)     (h_parity_rec : ∀ n ≥ 3,         (d n) % 2 = ((d ... (depth 2)
+        ├─ ✅ h1_h_period_amc12a_2021_p8: theorem h1_h_period_amc12a_2021_p8 (d : ℕ → ℕ)     (h_parity_rec : ∀ n ≥ 3,         (d n) % 2 = ((d ... (depth 2)
+        ├─ ✅ h2_h_period_amc12a_2021_p8: theorem h2_h_period_amc12a_2021_p8 (d : ℕ → ℕ)     (h_parity_rec : ∀ n ≥ 3,         (d n) % 2 = ((d ... (depth 2)
+        ├─ ✅ h3_h_period_amc12a_2021_p8: theorem h3_h_period_amc12a_2021_p8 (d : ℕ → ℕ)     (h_parity_rec : ∀ n ≥ 3,         (d n) % 2 = ((d ... (depth 2)
+        ├─ ✅ h_base_h_period_amc12a_2021_p8: theorem h_base_h_period_amc12a_2021_p8 (d : ℕ → ℕ)     (h_parity_rec : ∀ n ≥ 3,         (d n) % 2 = ... (depth 2)
+        ├─ ✅ h4_h_period_amc12a_2021_p8: theorem h4_h_period_amc12a_2021_p8 (d : ℕ → ℕ)     (h_parity_rec : ∀ n ≥ 3,         (d n) % 2 = ((d ... (depth 2)
+        ├─ ✅ h5_h_period_amc12a_2021_p8: theorem h5_h_period_amc12a_2021_p8 (d : ℕ → ℕ)     (h_parity_rec : ∀ n ≥ 3,         (d n) % 2 = ((d ... (depth 2)
+        ├─ ✅ h6_h_period_amc12a_2021_p8: theorem h6_h_period_amc12a_2021_p8 (d : ℕ → ℕ)     (h_parity_rec : ∀ n ≥ 3,         (d n) % 2 = ((d ... (depth 2)
+        └─ ✅ h_step_h_period_amc12a_2021_p8: theorem h_step_h_period_amc12a_2021_p8 (d : ℕ → ℕ)     (h_parity_rec : ∀ n ≥ 3,         (d n) % 2 = ... (depth 2)
+
+================================================================================

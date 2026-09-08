@@ -1,0 +1,10 @@
+Proof Progress Tree for Problem: sqrt_10_irrational
+Generated at: 2026-08-10 08:48:17
+================================================================================
+
+└─ ✅ sqrt_ten_irrational: theorem sqrt_ten_irrational : Irrational (Real.sqrt (10 : ℝ)) := by ... [SUBGOAL_DECOMP]
+    ├─ ✅ h_irrational_sqrt_ten_irrational: theorem h_irrational_sqrt_ten_irrational (h_equiv : Irrational (Real.sqrt (10 : ℝ)) ↔ ¬ IsSquare (10... (depth 1)
+    ├─ ✅ h_not_square_sqrt_ten_irrational: theorem h_not_square_sqrt_ten_irrational : ¬ IsSquare (10 : ℕ) := by   sorry... [SHALLOW_SOLVE] (depth 1)
+    └─ ✅ h_equiv_sqrt_ten_irrational: theorem h_equiv_sqrt_ten_irrational : Irrational (Real.sqrt (10 : ℝ)) ↔ ¬ IsSquare (10 : ℕ) := by   ... [SHALLOW_SOLVE] (depth 1)
+
+================================================================================

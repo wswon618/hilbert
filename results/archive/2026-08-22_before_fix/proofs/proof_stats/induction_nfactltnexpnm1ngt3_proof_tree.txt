@@ -1,0 +1,17 @@
+Proof Progress Tree for Problem: induction_nfactltnexpnm1ngt3
+Generated at: 2026-08-21 09:28:19
+================================================================================
+
+└─ ✅ induction_nfactltnexpnm1ngt3: theorem induction_nfactltnexpnm1ngt3 (n : ℕ) (h₀ : 3 ≤ n) : n ! < n ^ (n - 1) := by ... [SUBGOAL_DECOMP]
+    ├─ ✅ h_base_induction_nfactltnexpnm1ngt3: theorem h_base_induction_nfactltnexpnm1ngt3 : (3 : ℕ) ! < (3 : ℕ) ^ (3 - 1) := by   sorry... (depth 1)
+    ├─ ✅ h_all_induction_nfactltnexpnm1ngt3: theorem h_all_induction_nfactltnexpnm1ngt3     (h_base : (3 : ℕ) ! < (3 : ℕ) ^ (3 - 1))     (h_step ... (depth 1)
+    └─ ✅ h_step_induction_nfactltnexpnm1ngt3: theorem h_step_induction_nfactltnexpnm1ngt3 :     ∀ n, 3 ≤ n → n ! < n ^ (n - 1) → (n + 1) ! < (n + ... [RECURSIVE] (depth 1)
+        ├─ ✅ hpos_h_step_induction_nfactltnexpnm1ngt3: theorem hpos_h_step_induction_nfactltnexpnm1ngt3 (n : ℕ) : 0 < n + 1 := by   sorry... (depth 2)
+        ├─ ✅ h_comb_h_step_induction_nfactltnexpnm1ngt3: theorem h_comb_h_step_induction_nfactltnexpnm1ngt3 (n : ℕ)     (h_mul : (n + 1) * n ! < (n + 1) * n ... (depth 2)
+        ├─ ✅ h_fact_h_step_induction_nfactltnexpnm1ngt3: theorem h_fact_h_step_induction_nfactltnexpnm1ngt3 (n : ℕ) :     (n + 1)! = (n + 1) * n ! := by   so... (depth 2)
+        ├─ ✅ h_right_h_step_induction_nfactltnexpnm1ngt3: theorem h_right_h_step_induction_nfactltnexpnm1ngt3 (n : ℕ) :     (n + 1) * (n + 1) ^ (n - 1) = (n +... (depth 2)
+        ├─ ✅ h_mul_h_step_induction_nfactltnexpnm1ngt3: theorem h_mul_h_step_induction_nfactltnexpnm1ngt3 (n : ℕ) (hlt : n ! < n ^ (n - 1)) (hpos : 0 < n + ... (depth 2)
+        ├─ ✅ h_mul2_h_step_induction_nfactltnexpnm1ngt3: theorem h_mul2_h_step_induction_nfactltnexpnm1ngt3 (n : ℕ) (h_pow_lt : n ^ (n - 1) < (n + 1) ^ (n - ... (depth 2)
+        └─ ✅ h_pow_lt_h_step_induction_nfactltnexpnm1ngt3: theorem h_pow_lt_h_step_induction_nfactltnexpnm1ngt3 (n : ℕ) (hnle : 3 ≤ n) :     n ^ (n - 1) < (n +... [SHALLOW_SOLVE] (depth 2)
+
+================================================================================

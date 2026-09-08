@@ -1,0 +1,15 @@
+Proof Progress Tree for Problem: mathd_numbertheory_1124
+Generated at: 2026-08-21 17:24:23
+================================================================================
+
+└─ ✅ mathd_numbertheory_1124: theorem mathd_numbertheory_1124 (n : ℕ) (h₀ : n ≤ 9) (h₁ : 18 ∣ 374 * 10 + n) : n = 4 := by ... [SUBGOAL_DECOMP]
+    ├─ ✅ h_lt_mathd_numbertheory_1124: theorem h_lt_mathd_numbertheory_1124 (n : ℕ) (h₀ : n ≤ 9) :     n < 18 := by   sorry... (depth 1)
+    ├─ ✅ h_add_mathd_numbertheory_1124: theorem h_add_mathd_numbertheory_1124 (n : ℕ) (h_eq_zero : ((374 * 10 + n) : ZMod 18) = 0) :     ((3... (depth 1)
+    ├─ ✅ h_mod_self_mathd_numbertheory_1124: theorem h_mod_self_mathd_numbertheory_1124 (n : ℕ) (h_lt : n < 18) :     n % 18 = n := by   sorry... (depth 1)
+    ├─ ✅ h_residue_mathd_numbertheory_1124: theorem h_residue_mathd_numbertheory_1124 :     ((374 * 10) : ZMod 18) = (14 : ZMod 18) := by   sorr... (depth 1)
+    ├─ ✅ h_n_eq_4_mathd_numbertheory_1124: theorem h_n_eq_4_mathd_numbertheory_1124 (n : ℕ)     (h_mod_eq : n % 18 = 4)     (h_mod_self : n % 1... (depth 1)
+    ├─ ✅ h_mod_eq_mathd_numbertheory_1124: theorem h_mod_eq_mathd_numbertheory_1124 (n : ℕ) (h_n_eq : (n : ZMod 18) = (4 : ZMod 18)) :     n % ... [SHALLOW_SOLVE] (depth 1)
+    ├─ ✅ h_eq_zero_mathd_numbertheory_1124: theorem h_eq_zero_mathd_numbertheory_1124 (n : ℕ) (h₁ : 18 ∣ 374 * 10 + n) :     ((374 * 10 + n) : Z... [SHALLOW_SOLVE] (depth 1)
+    └─ ✅ h_n_eq_mathd_numbertheory_1124: theorem h_n_eq_mathd_numbertheory_1124 (n : ℕ)     (h_add : ((374 * 10) : ZMod 18) + (n : ZMod 18) =... [SHALLOW_SOLVE] (depth 1)
+
+================================================================================

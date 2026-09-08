@@ -1,0 +1,143 @@
+{
+  "problem_id": "mathd_algebra_33",
+  "problem_statement": "theorem mathd_algebra_33 (x y z : \u211d) (h\u2080 : x \u2260 0) (h\u2081 : 2 * x = 5 * y) (h\u2082 : 7 * y = 10 * z) :\n    z / x = 7 / 25 := by\n",
+  "start_time": 1787145147.8023179,
+  "end_time": 1787146968.9945674,
+  "duration": 1821.1922495365143,
+  "final_success": true,
+  "total_attempts": 1,
+  "max_depth_reached": 0,
+  "llm_calls": [
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 116,
+      "output_tokens": 554,
+      "cached_input_tokens": 0,
+      "call_duration": 1819.4061613082886,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 116,
+      "output_tokens": 565,
+      "cached_input_tokens": 0,
+      "call_duration": 1819.5595309734344,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    }
+  ],
+  "search_operations": [],
+  "strategy_attempts": [
+    {
+      "strategy": "formal_llm",
+      "start_time": 1787145147.8032124,
+      "end_time": 1787146968.9904003,
+      "duration": 1821.18718791008,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "mathd_algebra_33",
+      "error_message": null
+    }
+  ],
+  "verification_operations": [
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 1.7616112232208252,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 43,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: mathd_algebra_33",
+      "timestamp": 1787146968.9844482
+    }
+  ],
+  "total_llm_calls": {
+    "prover_llm": 2
+  },
+  "total_input_tokens": {
+    "prover_llm": 232
+  },
+  "total_output_tokens": {
+    "prover_llm": 1119
+  },
+  "total_cached_input_tokens": {
+    "prover_llm": 0
+  },
+  "total_tokens": {
+    "prover_llm": 1351
+  },
+  "total_search_operations": {},
+  "search_success_rates": {},
+  "prompt_type_counts": {
+    "generate_proof": 2
+  },
+  "prompt_type_success_rates": {
+    "generate_proof": 1.0
+  },
+  "strategy_counts": {
+    "formal_llm": 1
+  },
+  "total_verification_operations": {
+    "formal_llm_generated_proof_verification": 1
+  },
+  "verification_success_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "verification_validity_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "total_verification_duration": {
+    "formal_llm_generated_proof_verification": 1.7616112232208252
+  },
+  "summary": {
+    "problem_id": "mathd_algebra_33",
+    "final_success": true,
+    "total_duration_seconds": 1821.1922495365143,
+    "total_attempts": 1,
+    "max_depth_reached": 0,
+    "total_llm_calls": 2,
+    "total_tokens_used": 1351,
+    "total_search_operations": 0,
+    "total_verification_operations": 1,
+    "total_verification_duration_seconds": 1.7616112232208252,
+    "llm_breakdown": {
+      "prover_llm": 2
+    },
+    "token_breakdown": {
+      "prover_llm": 1351
+    },
+    "search_operation_breakdown": {},
+    "verification_operation_breakdown": {
+      "formal_llm_generated_proof_verification": 1
+    },
+    "verification_duration_breakdown": {
+      "formal_llm_generated_proof_verification": 1.7616112232208252
+    },
+    "prompt_type_breakdown": {
+      "generate_proof": 2
+    },
+    "strategy_attempts": {
+      "formal_llm": 1
+    },
+    "prompt_type_success_rates": {
+      "generate_proof": 1.0
+    },
+    "search_success_rates": {},
+    "verification_success_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    },
+    "verification_validity_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    }
+  },
+  "generated_at": "2026-08-19T13:42:48.995143"
+}

@@ -1,0 +1,16 @@
+Proof Progress Tree for Problem: aime_1999_p11
+Generated at: 2026-09-03 19:08:16
+================================================================================
+
+└─ ✅ aime_1999_p11: theorem aime_1999_p11 (m : ℚ) (h₀ : 0 < m)     (h₁ : (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k ... [SUBGOAL_DECOMP]
+    ├─ ✅ htan_eq_aime_1999_p11: theorem htan_eq_aime_1999_p11 (m : ℚ) (h₀ : 0 < m)     (h₁ : (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin... (depth 1)
+    ├─ ✅ h_range_aime_1999_p11: theorem h_range_aime_1999_p11 (m : ℚ) (h₀ : 0 < m) (h₂ : (m.num : ℝ) / m.den < 90) :     (0 : ℝ) < m... (depth 1)
+    ├─ ✅ hm_rat_aime_1999_p11: theorem hm_rat_aime_1999_p11 (m : ℚ) (h₀ : 0 < m) (h₂ : (m.num : ℝ) / m.den < 90)     (hm_eq : (m : ... (depth 1)
+    ├─ ✅ hm_eq_aime_1999_p11: theorem hm_eq_aime_1999_p11 (m : ℚ) (h₀ : 0 < m) (h₂ : (m.num : ℝ) / m.den < 90)     (h_inj : m * Re... (depth 1)
+    ├─ ✅ final_eq_aime_1999_p11: theorem final_eq_aime_1999_p11 (m : ℚ) (h₀ : 0 < m) (h₂ : (m.num : ℝ) / m.den < 90)     (num_eq : m.... (depth 1)
+    ├─ ✅ h_inj_aime_1999_p11: theorem h_inj_aime_1999_p11 (m : ℚ) (h₀ : 0 < m) (h₂ : (m.num : ℝ) / m.den < 90)     (htan_eq : Real... (depth 1)
+    ├─ ✅ den_eq_aime_1999_p11: theorem den_eq_aime_1999_p11 (m : ℚ) (h₀ : 0 < m) (h₂ : (m.num : ℝ) / m.den < 90)     (hm_rat : m = ... (depth 1)
+    ├─ ✅ hsum_eq_aime_1999_p11: theorem hsum_eq_aime_1999_p11 (m : ℚ) (h₀ : 0 < m)     (h₁ : (∑ k in Finset.Icc (1 : ℕ) 35, Real.sin... (depth 1)
+    └─ ✅ num_eq_aime_1999_p11: theorem num_eq_aime_1999_p11 (m : ℚ) (h₀ : 0 < m) (h₂ : (m.num : ℝ) / m.den < 90)     (hm_rat : m = ... [SHALLOW_SOLVE] (depth 1)
+
+================================================================================

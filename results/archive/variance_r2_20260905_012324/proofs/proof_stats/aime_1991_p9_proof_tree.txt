@@ -1,0 +1,17 @@
+Proof Progress Tree for Problem: aime_1991_p9
+Generated at: 2026-09-05 04:03:42
+================================================================================
+
+└─ ✅ aime_1991_p9: theorem aime_1991_p9 (x : ℝ) (m : ℚ) (h₀ : 1 / Real.cos x + Real.tan x = 22 / 7)     (h₁ : 1 / Real.... [SUBGOAL_DECOMP]
+    ├─ ✅ h_goal_aime_1991_p9: theorem h_goal_aime_1991_p9 (m : ℚ)     (hm_num : m.num = 29) (hm_den : m.den = 15) :     (↑m.den + ... (depth 1)
+    ├─ ✅ h_eq1_aime_1991_p9: theorem h_eq1_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = (22 : ℝ) / 7)    ... (depth 1)
+    ├─ ✅ h_cos_ne_aime_1991_p9: theorem h_cos_ne_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = (22 : ℝ) / 7) ... (depth 1)
+    ├─ ✅ h_sin_ne_aime_1991_p9: theorem h_sin_ne_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = (22 : ℝ) / 7) ... (depth 1)
+    ├─ ✅ h_eq2_aime_1991_p9: theorem h_eq2_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = (22 : ℝ) / 7)    ... (depth 1)
+    ├─ ✅ h_sin_val_aime_1991_p9: theorem h_sin_val_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = (22 : ℝ) / 7)... (depth 1)
+    ├─ ✅ h_cos_val_aime_1991_p9: theorem h_cos_val_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = (22 : ℝ) / 7)... (depth 1)
+    ├─ ✅ hm_den_aime_1991_p9: theorem hm_den_aime_1991_p9 (m : ℚ)     (h_m_val : (m : ℝ) = (29 : ℝ) / 15) :     m.den = 15 := by  ... (depth 1)
+    ├─ ✅ h_m_val_aime_1991_p9: theorem h_m_val_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = (22 : ℝ) / 7)  ... (depth 1)
+    └─ ✅ hm_num_aime_1991_p9: theorem hm_num_aime_1991_p9 (m : ℚ)     (h_m_val : (m : ℝ) = (29 : ℝ) / 15) :     m.num = 29 := by  ... [SHALLOW_SOLVE] (depth 1)
+
+================================================================================

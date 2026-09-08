@@ -1,0 +1,133 @@
+{
+  "problem_id": "aime_1983_p2",
+  "problem_statement": "theorem aime_1983_p2 (x p : \u211d) (f : \u211d \u2192 \u211d) (h\u2080 : 0 < p \u2227 p < 15) (h\u2081 : p \u2264 x \u2227 x \u2264 15)\n    (h\u2082 : f x = abs (x - p) + abs (x - 15) + abs (x - p - 15)) : 15 \u2264 f x := by\n",
+  "start_time": 1786421563.7898698,
+  "end_time": 1786422135.0833564,
+  "duration": 571.2934865951538,
+  "final_success": true,
+  "total_attempts": 1,
+  "max_depth_reached": 0,
+  "llm_calls": [
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 143,
+      "output_tokens": 1862,
+      "cached_input_tokens": 0,
+      "call_duration": 568.5175433158875,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    }
+  ],
+  "search_operations": [],
+  "strategy_attempts": [
+    {
+      "strategy": "formal_llm",
+      "start_time": 1786421563.7906091,
+      "end_time": 1786422135.0805774,
+      "duration": 571.289968252182,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "aime_1983_p2",
+      "error_message": null
+    }
+  ],
+  "verification_operations": [
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 2.755589723587036,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 52,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: aime_1983_p2",
+      "timestamp": 1786422135.0753977
+    }
+  ],
+  "total_llm_calls": {
+    "prover_llm": 1
+  },
+  "total_input_tokens": {
+    "prover_llm": 143
+  },
+  "total_output_tokens": {
+    "prover_llm": 1862
+  },
+  "total_cached_input_tokens": {
+    "prover_llm": 0
+  },
+  "total_tokens": {
+    "prover_llm": 2005
+  },
+  "total_search_operations": {},
+  "search_success_rates": {},
+  "prompt_type_counts": {
+    "generate_proof": 1
+  },
+  "prompt_type_success_rates": {
+    "generate_proof": 1.0
+  },
+  "strategy_counts": {
+    "formal_llm": 1
+  },
+  "total_verification_operations": {
+    "formal_llm_generated_proof_verification": 1
+  },
+  "verification_success_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "verification_validity_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "total_verification_duration": {
+    "formal_llm_generated_proof_verification": 2.755589723587036
+  },
+  "summary": {
+    "problem_id": "aime_1983_p2",
+    "final_success": true,
+    "total_duration_seconds": 571.2934865951538,
+    "total_attempts": 1,
+    "max_depth_reached": 0,
+    "total_llm_calls": 1,
+    "total_tokens_used": 2005,
+    "total_search_operations": 0,
+    "total_verification_operations": 1,
+    "total_verification_duration_seconds": 2.755589723587036,
+    "llm_breakdown": {
+      "prover_llm": 1
+    },
+    "token_breakdown": {
+      "prover_llm": 2005
+    },
+    "search_operation_breakdown": {},
+    "verification_operation_breakdown": {
+      "formal_llm_generated_proof_verification": 1
+    },
+    "verification_duration_breakdown": {
+      "formal_llm_generated_proof_verification": 2.755589723587036
+    },
+    "prompt_type_breakdown": {
+      "generate_proof": 1
+    },
+    "strategy_attempts": {
+      "formal_llm": 1
+    },
+    "prompt_type_success_rates": {
+      "generate_proof": 1.0
+    },
+    "search_success_rates": {},
+    "verification_success_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    },
+    "verification_validity_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    }
+  },
+  "generated_at": "2026-08-11T04:22:15.083850"
+}

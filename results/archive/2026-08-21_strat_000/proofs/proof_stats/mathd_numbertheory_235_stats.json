@@ -1,0 +1,143 @@
+{
+  "problem_id": "mathd_numbertheory_235",
+  "problem_statement": "theorem mathd_numbertheory_235 : (29 * 79 + 31 * 81) % 10 = 2 := by\n",
+  "start_time": 1787146969.0146315,
+  "end_time": 1787146972.8770573,
+  "duration": 3.8624258041381836,
+  "final_success": true,
+  "total_attempts": 1,
+  "max_depth_reached": 0,
+  "llm_calls": [
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 84,
+      "output_tokens": 71,
+      "cached_input_tokens": 0,
+      "call_duration": 3.611819267272949,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 84,
+      "output_tokens": 71,
+      "cached_input_tokens": 0,
+      "call_duration": 3.651010751724243,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    }
+  ],
+  "search_operations": [],
+  "strategy_attempts": [
+    {
+      "strategy": "formal_llm",
+      "start_time": 1787146969.0152228,
+      "end_time": 1787146972.8731568,
+      "duration": 3.85793399810791,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "mathd_numbertheory_235",
+      "error_message": null
+    }
+  ],
+  "verification_operations": [
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 0.2413640022277832,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 10,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: mathd_numbertheory_235",
+      "timestamp": 1787146972.8700259
+    }
+  ],
+  "total_llm_calls": {
+    "prover_llm": 2
+  },
+  "total_input_tokens": {
+    "prover_llm": 168
+  },
+  "total_output_tokens": {
+    "prover_llm": 142
+  },
+  "total_cached_input_tokens": {
+    "prover_llm": 0
+  },
+  "total_tokens": {
+    "prover_llm": 310
+  },
+  "total_search_operations": {},
+  "search_success_rates": {},
+  "prompt_type_counts": {
+    "generate_proof": 2
+  },
+  "prompt_type_success_rates": {
+    "generate_proof": 1.0
+  },
+  "strategy_counts": {
+    "formal_llm": 1
+  },
+  "total_verification_operations": {
+    "formal_llm_generated_proof_verification": 1
+  },
+  "verification_success_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "verification_validity_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "total_verification_duration": {
+    "formal_llm_generated_proof_verification": 0.2413640022277832
+  },
+  "summary": {
+    "problem_id": "mathd_numbertheory_235",
+    "final_success": true,
+    "total_duration_seconds": 3.8624258041381836,
+    "total_attempts": 1,
+    "max_depth_reached": 0,
+    "total_llm_calls": 2,
+    "total_tokens_used": 310,
+    "total_search_operations": 0,
+    "total_verification_operations": 1,
+    "total_verification_duration_seconds": 0.2413640022277832,
+    "llm_breakdown": {
+      "prover_llm": 2
+    },
+    "token_breakdown": {
+      "prover_llm": 310
+    },
+    "search_operation_breakdown": {},
+    "verification_operation_breakdown": {
+      "formal_llm_generated_proof_verification": 1
+    },
+    "verification_duration_breakdown": {
+      "formal_llm_generated_proof_verification": 0.2413640022277832
+    },
+    "prompt_type_breakdown": {
+      "generate_proof": 2
+    },
+    "strategy_attempts": {
+      "formal_llm": 1
+    },
+    "prompt_type_success_rates": {
+      "generate_proof": 1.0
+    },
+    "search_success_rates": {},
+    "verification_success_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    },
+    "verification_validity_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    }
+  },
+  "generated_at": "2026-08-19T13:42:52.877835"
+}

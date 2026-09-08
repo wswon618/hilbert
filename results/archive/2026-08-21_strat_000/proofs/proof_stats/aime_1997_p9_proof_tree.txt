@@ -1,0 +1,17 @@
+Proof Progress Tree for Problem: aime_1997_p9
+Generated at: 2026-08-11 08:39:08
+================================================================================
+
+└─ ✅ aime_1997_p9: theorem aime_1997_p9 (a : ℝ) (h₀ : 0 < a)     (h₁ : 1 / a - Int.floor (1 / a) = a ^ 2 - Int.floor (a... [SUBGOAL_DECOMP]
+    ├─ ✅ h_ne_neg_one_aime_1997_p9: theorem h_ne_neg_one_aime_1997_p9 (a : ℝ) (h₀ : 0 < a)     (h_cubic : a ^ 3 - 2 * a - 1 = (0 : ℝ)) :... (depth 1)
+    ├─ ✅ h_a2_eq_aime_1997_p9: theorem h_a2_eq_aime_1997_p9 (a : ℝ)     (h_quad : a ^ 2 - a - 1 = (0 : ℝ)) :     a ^ 2 = a + 1 := b... (depth 1)
+    ├─ ✅ h_quad_aime_1997_p9: theorem h_quad_aime_1997_p9 (a : ℝ)     (h_cubic : a ^ 3 - 2 * a - 1 = (0 : ℝ))     (h_ne_neg_one : ... (depth 1)
+    ├─ ✅ h_cubic_aime_1997_p9: theorem h_cubic_aime_1997_p9 (a : ℝ) (h₀ : 0 < a)     (h_eq_one_div : (1 / a) = a ^ 2 - (2 : ℝ)) :  ... (depth 1)
+    ├─ ✅ h_floor_a2_int_aime_1997_p9: theorem h_floor_a2_int_aime_1997_p9 (a : ℝ) (h₀ : 0 < a)     (h₁ : 1 / a - Int.floor (1 / a) = a ^ 2... (depth 1)
+    ├─ ✅ h_one_div_eq_aime_1997_p9: theorem h_one_div_eq_aime_1997_p9 (a : ℝ)     (h_a2_eq : a ^ 2 = a + 1)     (h_eq_one_div : (1 / a) ... (depth 1)
+    ├─ ✅ h_eq_one_div_aime_1997_p9: theorem h_eq_one_div_aime_1997_p9 (a : ℝ) (h₀ : 0 < a)     (h₁ : 1 / a - Int.floor (1 / a) = a ^ 2 -... (depth 1)
+    ├─ ✅ h_floor_inv_int_aime_1997_p9: theorem h_floor_inv_int_aime_1997_p9 (a : ℝ) (h₀ : 0 < a)     (h₁ : 1 / a - Int.floor (1 / a) = a ^ ... (depth 1)
+    ├─ ✅ h_goal_aime_1997_p9: theorem h_goal_aime_1997_p9 (a : ℝ)     (h_a12 : a ^ 12 = 144 * a + 89)     (h_one_div_eq : (1 / a) ... (depth 1)
+    └─ ✅ h_a12_aime_1997_p9: theorem h_a12_aime_1997_p9 (a : ℝ)     (h_a2_eq : a ^ 2 = a + 1) :     a ^ 12 = 144 * a + 89 := by  ... (depth 1)
+
+================================================================================

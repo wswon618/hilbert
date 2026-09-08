@@ -1,0 +1,25 @@
+Proof Progress Tree for Problem: induction_nfactltnexpnm1ngt3
+Generated at: 2026-08-31 13:23:20
+================================================================================
+
+└─ ✅ induction_nfactltnexpnm1ngt3: theorem induction_nfactltnexpnm1ngt3 (n : ℕ) (h₀ : 3 ≤ n) : n ! < n ^ (n - 1) := by ... [SUBGOAL_DECOMP]
+    └─ ✅ h_ind_induction_nfactltnexpnm1ngt3: theorem h_ind_induction_nfactltnexpnm1ngt3 : ∀ m : ℕ, 3 ≤ m → m ! < m ^ (m - 1) := by   sorry... [RECURSIVE] (depth 1)
+        ├─ ✅ h2_lt_m_h_ind_induction_nfactltnexpnm1ngt3: theorem h2_lt_m_h_ind_induction_nfactltnexpnm1ngt3 (m : ℕ) (hm : (3 : ℕ) ≤ m) : (2 : ℕ) < m := by   ... (depth 2)
+        ├─ ✅ hpos_h_ind_induction_nfactltnexpnm1ngt3: theorem hpos_h_ind_induction_nfactltnexpnm1ngt3 (m : ℕ) (hm : (3 : ℕ) ≤ m) : 0 < m := by   sorry... (depth 2)
+        ├─ ✅ hle_h_ind_induction_nfactltnexpnm1ngt3: theorem hle_h_ind_induction_nfactltnexpnm1ngt3 (m : ℕ) (hm : (3 : ℕ) ≤ m) (hpos : 0 < m) (h2_lt_m : ... [RECURSIVE] (depth 2)
+        │   ├─ ✅ hbase_hle_h_ind_induction_nfactltnexpnm1ngt3: theorem hbase_hle_h_ind_induction_nfactltnexpnm1ngt3 : (3 : ℕ)! ≤ 3 ^ (3 - 1) := by   sorry... (depth 3)
+        │   ├─ ✅ hgeneral_hle_h_ind_induction_nfactltnexpnm1ngt3: theorem hgeneral_hle_h_ind_induction_nfactltnexpnm1ngt3     (hbase : (3 : ℕ)! ≤ 3 ^ (3 - 1))     (hs... (depth 3)
+        │   └─ ✅ hstep_hle_h_ind_induction_nfactltnexpnm1ngt3: theorem hstep_hle_h_ind_induction_nfactltnexpnm1ngt3 (k : ℕ) (hk3 : 3 ≤ k) (hk : k ! ≤ k ^ (k - 1)) ... [RECURSIVE] (depth 3)
+        │       ├─ ✅ hpos_hstep_hle_h_ind_induction_nfactltnexpnm1ngt3: theorem hpos_hstep_hle_h_ind_induction_nfactltnexpnm1ngt3 (k : ℕ) (hk3 : 3 ≤ k) (hk : k ! ≤ k ^ (k -... (depth 4)
+        │       ├─ ✅ hfactorial_hstep_hle_h_ind_induction_nfactltnexpnm1ngt3: theorem hfactorial_hstep_hle_h_ind_induction_nfactltnexpnm1ngt3 (k : ℕ) (hk3 : 3 ≤ k) (hk : k ! ≤ k ... (depth 4)
+        │       ├─ ✅ hmult1_hstep_hle_h_ind_induction_nfactltnexpnm1ngt3: theorem hmult1_hstep_hle_h_ind_induction_nfactltnexpnm1ngt3 (k : ℕ) (hk3 : 3 ≤ k) (hk : k ! ≤ k ^ (k... (depth 4)
+        │       ├─ ✅ hfinal_hstep_hle_h_ind_induction_nfactltnexpnm1ngt3: theorem hfinal_hstep_hle_h_ind_induction_nfactltnexpnm1ngt3 (k : ℕ) (hk3 : 3 ≤ k) (hk : k ! ≤ k ^ (k... (depth 4)
+        │       ├─ ✅ hmult2_hstep_hle_h_ind_induction_nfactltnexpnm1ngt3: theorem hmult2_hstep_hle_h_ind_induction_nfactltnexpnm1ngt3 (k : ℕ) (hk3 : 3 ≤ k) (hk : k ! ≤ k ^ (k... (depth 4)
+        │       └─ ✅ hpow_le_hstep_hle_h_ind_induction_nfactltnexpnm1ngt3: theorem hpow_le_hstep_hle_h_ind_induction_nfactltnexpnm1ngt3 (k : ℕ) (hk3 : 3 ≤ k) (hk : k ! ≤ k ^ (... [SHALLOW_SOLVE] (depth 4)
+        └─ ✅ hlt_h_ind_induction_nfactltnexpnm1ngt3: theorem hlt_h_ind_induction_nfactltnexpnm1ngt3 (m : ℕ) (hm : (3 : ℕ) ≤ m) (hpos : 0 < m) (h2_lt_m : ... [RECURSIVE] (depth 2)
+            └─ ✅ hneq_hlt_h_ind_induction_nfactltnexpnm1ngt3: theorem hneq_hlt_h_ind_induction_nfactltnexpnm1ngt3 (m : ℕ) (hm : (3 : ℕ) ≤ m) (hpos : 0 < m) (h2_lt... [RECURSIVE] (depth 3)
+                ├─ ✅ hlt_hneq_hlt_h_ind_induction_nfactltnexpnm1ngt3: theorem hlt_hneq_hlt_h_ind_induction_nfactltnexpnm1ngt3 (m : ℕ) (hm : (3 : ℕ) ≤ m) (hpos : 0 < m) (h... (depth 4)
+                └─ ✅ h_ind_hneq_hlt_h_ind_induction_nfactltnexpnm1ngt3: theorem h_ind_hneq_hlt_h_ind_induction_nfactltnexpnm1ngt3 : ∀ n, (3 : ℕ) ≤ n → n ! < n ^ (n - 1) := ... [RECURSIVE] (depth 4)
+                    └─ ✅ h_ind_h_ind_hneq_hlt_h_ind_induction_nfactltnexpnm1ngt3: theorem h_ind_h_ind_hneq_hlt_h_ind_induction_nfactltnexpnm1ngt3 : ∀ m, (3 : ℕ) ≤ m → m ! < m ^ (m - ... [SHALLOW_SOLVE] (depth 5)
+
+================================================================================

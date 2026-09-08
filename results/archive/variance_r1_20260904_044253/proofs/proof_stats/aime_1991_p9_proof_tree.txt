@@ -1,0 +1,16 @@
+Proof Progress Tree for Problem: aime_1991_p9
+Generated at: 2026-09-04 15:23:22
+================================================================================
+
+└─ ✅ aime_1991_p9: theorem aime_1991_p9 (x : ℝ) (m : ℚ) (h₀ : 1 / Real.cos x + Real.tan x = 22 / 7)     (h₁ : 1 / Real.... [SUBGOAL_DECOMP]
+    ├─ ✅ htan_aime_1991_p9: theorem htan_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = 22 / 7)     (h₁ : ... (depth 1)
+    ├─ ✅ hcos_ne_aime_1991_p9: theorem hcos_ne_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = 22 / 7)     (h₁... (depth 1)
+    ├─ ✅ h_eq2_aime_1991_p9: theorem h_eq2_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = 22 / 7)     (h₁ :... (depth 1)
+    ├─ ✅ h_eq1_aime_1991_p9: theorem h_eq1_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = 22 / 7)     (h₁ :... (depth 1)
+    ├─ ✅ h_sin_val_aime_1991_p9: theorem h_sin_val_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = 22 / 7)     (... (depth 1)
+    ├─ ✅ h_s_eq_aime_1991_p9: theorem h_s_eq_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = 22 / 7)     (h₁ ... (depth 1)
+    ├─ ✅ hgoal_aime_1991_p9: theorem hgoal_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = 22 / 7)     (h₁ :... (depth 1)
+    ├─ ✅ h_cos_val_aime_1991_p9: theorem h_cos_val_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = 22 / 7)     (... (depth 1)
+    └─ ✅ hm_aime_1991_p9: theorem hm_aime_1991_p9 (x : ℝ) (m : ℚ)     (h₀ : 1 / Real.cos x + Real.tan x = 22 / 7)     (h₁ : 1 ... (depth 1)
+
+================================================================================

@@ -1,0 +1,21 @@
+Proof Progress Tree for Problem: imo_2019_p1
+Generated at: 2026-09-02 19:14:58
+================================================================================
+
+└─ ✅ imo_2019_p1: theorem imo_2019_p1 (f : ℤ → ℤ) :     (∀ a b, f (2 * a) + 2 * f b = f (f (a + b))) ↔ ∀ z, f z = 0 ∨ ... [SUBGOAL_DECOMP]
+    ├─ ✅ h_cases_imo_2019_p1: theorem h_cases_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ z, f z = 0 ∨ ∃ c, ∀ z, f z = 2 * z + c) :     (∀ ... (depth 1)
+    ├─ ✅ h_fun_eq_imo_2019_p1: theorem h_fun_eq_imo_2019_p1 (f : ℤ → ℤ)     (h_cases : (∀ z, f z = 0) ∨ ∃ c, ∀ z, f z = 2 * z + c) ... (depth 1)
+    └─ ✅ h_zero_or_affine_imo_2019_p1: theorem h_zero_or_affine_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f (a + b))... [RECURSIVE] (depth 1)
+        ├─ ✅ h₆_h_zero_or_affine_imo_2019_p1: theorem h₆_h_zero_or_affine_imo_2019_p1 (f : ℤ → ℤ)     (h₅ : ∀ a b : ℤ, f a + f b = f (a + b) + f 0... (depth 2)
+        ├─ ✅ hk_eq_h_zero_or_affine_imo_2019_p1: theorem hk_eq_h_zero_or_affine_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f (a... (depth 2)
+        ├─ ✅ h_add_h_zero_or_affine_imo_2019_p1: theorem h_add_h_zero_or_affine_imo_2019_p1 (f : ℤ → ℤ)     (h₆ : ∀ a b : ℤ, (f a - f 0) + (f b - f 0... (depth 2)
+        ├─ ✅ h₁_h_zero_or_affine_imo_2019_p1: theorem h₁_h_zero_or_affine_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f (a + ... (depth 2)
+        ├─ ✅ h₂_h_zero_or_affine_imo_2019_p1: theorem h₂_h_zero_or_affine_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f (a + ... (depth 2)
+        ├─ ✅ h₄_h_zero_or_affine_imo_2019_p1: theorem h₄_h_zero_or_affine_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f (a + ... (depth 2)
+        ├─ ✅ h₃_h_zero_or_affine_imo_2019_p1: theorem h₃_h_zero_or_affine_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f (a + ... (depth 2)
+        ├─ ✅ h₅_h_zero_or_affine_imo_2019_p1: theorem h₅_h_zero_or_affine_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f (a + ... (depth 2)
+        ├─ ✅ hk_cases_h_zero_or_affine_imo_2019_p1: theorem hk_cases_h_zero_or_affine_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f... (depth 2)
+        ├─ ✅ h_final_h_zero_or_affine_imo_2019_p1: theorem h_final_h_zero_or_affine_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f ... (depth 2)
+        └─ ✅ h_linear_h_zero_or_affine_imo_2019_p1: theorem h_linear_h_zero_or_affine_imo_2019_p1 (f : ℤ → ℤ)     (h_add : ∀ a b : ℤ, (f a - f 0) + (f b... [SHALLOW_SOLVE] (depth 2)
+
+================================================================================
