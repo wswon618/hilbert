@@ -299,3 +299,74 @@ def remove_think_block(text: str) -> str:
         return think_pattern.sub("", text).strip()
     else:
         return text
+
+def collapse_repeated_blocks(text: str,
+                             max_block: int = 40,
+                             min_repeats: int = 3) -> str:
+    """연속으로 되풀이되는 줄 블록을 한 번만 남기고 접는다.
+
+    왜 필요한가
+      prover 가 증명을 못 찾으면 같은 사고 과정을 주석으로 수십 번 되풀이한
+      출력을 낸다. 그 전문이 Lean 오류 메시지에 실려 다음 교정 프롬프트로
+      들어가면서 컨텍스트 한도를 넘긴다.
+
+      sketch6 r1 (2026-09-09) 실측: 오류 메시지 최대 63,130자 = 약 18,000 토큰.
+      가장 큰 것은 7줄 블록이 78회 되풀이된 것이었고, reasoner 요청이
+      33,582 토큰으로 한도(32,768)를 814 토큰 넘겨 거부됐다. 거부된 요청은
+      빈 응답으로 돌아와 같은 프롬프트를 계속 재시도하는 루프가 됐다.
+
+    왜 단순 줄 중복 제거가 아닌가
+      같은 실측에서 "연속 동일 줄"은 0개였다. 반복 주기가 7줄이라 줄 단위로는
+      안 잡힌다. 또 Lean 증명은 `ring`, `simp` 같은 줄이 정당하게 여러 번
+      나오므로, 전역 줄 중복 제거는 증명 본문을 망가뜨려 모델이 고칠 수
+      없게 만든다. 그래서 "연속으로 min_repeats 회 이상 되풀이되는 블록"만
+      접는다. 정보량은 유지되고 중복만 사라진다.
+
+    Args:
+        text: 접을 대상 문자열.
+        max_block: 탐지할 블록의 최대 줄 수. 주기가 이보다 길면 접지 않는다.
+        min_repeats: 이 횟수 이상 되풀이될 때만 접는다. 2 로 두면 정당한
+            반복(예: 같은 두 줄이 우연히 붙은 경우)까지 건드리므로 3 을 쓴다.
+
+    Returns:
+        접힌 문자열. 접을 것이 없으면 원본과 동일하다.
+    """
+    if not text:
+        return text
+
+    lines = text.split("\n")
+    n = len(lines)
+    out = []
+    i = 0
+    while i < n:
+        hit = None
+        # 주기가 짧은 것부터 찾는다. L=7 이 78회 반복이면 L=14 도 39회로
+        # 걸리지만, 가장 작은 주기를 잡는 편이 접은 결과가 읽기 쉽다.
+        for L in range(1, max_block + 1):
+            if i + 2 * L > n:
+                break
+            block = lines[i:i + L]
+            # 빈 줄만으로 된 블록은 접어도 의미가 없고 오히려 구조를 깬다
+            if not any(x.strip() for x in block):
+                continue
+            k = 1
+            j = i + L
+            while j + L <= n and lines[j:j + L] == block:
+                k += 1
+                j += L
+            if k >= min_repeats:
+                hit = (L, k, j, block)
+                break
+        if hit:
+            L, k, j, block = hit
+            out.extend(block)
+            out.append(
+                f"-- <앞의 {L}줄 블록이 {k}회 되풀이되었습니다. "
+                f"중복 {k - 1}회를 생략합니다.>"
+            )
+            i = j
+        else:
+            out.append(lines[i])
+            i += 1
+
+    return "\n".join(out)

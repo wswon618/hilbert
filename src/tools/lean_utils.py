@@ -12,6 +12,7 @@ from src.prompts.error_messages import ERROR_LINE_MESSAGE, FULL_ERROR_MESSAGE
 
 # Import for infotree-based extraction
 from src.tools.proof_utils import split_header_body
+from src.tools.string import collapse_repeated_blocks
 
 
 logger = logging.getLogger(__name__)
@@ -23,6 +24,7 @@ def extract_all_error_messages(responses, proofs):
         i_error_msgs = []
         if not responses.results[i].response:
             error_message = f"Proof: {proofs[i]}\nError: Timed out"
+            error_message = collapse_repeated_blocks(error_message)
             all_error_messages.append(error_message)
             continue
         if 'messages' in responses.results[i].response:
@@ -34,6 +36,7 @@ def extract_all_error_messages(responses, proofs):
             else:
                 error = "Timed out"
             error_message = f"Proof: {proofs[i]}\nError: {error}"
+            error_message = collapse_repeated_blocks(error_message)
             all_error_messages.append(error_message)
             continue
         # Split proof to get body for line number reference
@@ -79,6 +82,14 @@ def extract_all_error_messages(responses, proofs):
         error_lines_message = "\n".join(error_lines_messages)
         error_message = FULL_ERROR_MESSAGE.format(proof=proofs[i],
                                     error_lines_message=error_lines_message)
+        # prover 가 같은 주석·전술 블록을 수십 번 되풀이한 출력을 내면 그 전문이
+        # 여기 실려 reasoner 컨텍스트 한도(32,768)를 넘긴다. 되풀이되는 블록만
+        # 접어 정보량은 유지하고 중복만 없앤다. 실측 18,037 -> 6,687 토큰.
+        _before_collapse = len(error_message)
+        error_message = collapse_repeated_blocks(error_message)
+        if len(error_message) < _before_collapse:
+            logger.info("Collapsed repeated blocks in error message: %d -> %d chars",
+                        _before_collapse, len(error_message))
         i_error_msgs.append(error_message)
         i_error_msgs = "\n".join(i_error_msgs)
         all_error_messages.append(i_error_msgs)
