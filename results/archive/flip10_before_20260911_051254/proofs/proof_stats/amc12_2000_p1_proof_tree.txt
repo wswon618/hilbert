@@ -1,0 +1,32 @@
+Proof Progress Tree for Problem: amc12_2000_p1
+Generated at: 2026-09-09 04:47:43
+================================================================================
+
+└─ ✅ amc12_2000_p1: theorem amc12_2000_p1 (i m o : ℕ) (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i * m * o = 2001) :     i + m +... [SUBGOAL_DECOMP]
+    └─ ✅ h_bound_amc12_2000_p1: theorem h_bound_amc12_2000_p1 (i m o : ℕ) (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i * m * o = 2001) :    ... [RECURSIVE] (depth 1)
+        ├─ ✅ h_prime29_h_bound_amc12_2000_p1: theorem h_prime29_h_bound_amc12_2000_p1 : Nat.Prime 29 := by   sorry... (depth 2)
+        ├─ ✅ h_prime23_h_bound_amc12_2000_p1: theorem h_prime23_h_bound_amc12_2000_p1 : Nat.Prime 23 := by   sorry... (depth 2)
+        ├─ ✅ h_factors_h_bound_amc12_2000_p1: theorem h_factors_h_bound_amc12_2000_p1 : 2001 = 3 * 23 * 29 := by   sorry... (depth 2)
+        ├─ ✅ h_prime3_h_bound_amc12_2000_p1: theorem h_prime3_h_bound_amc12_2000_p1 : Nat.Prime 3 := by   sorry... (depth 2)
+        ├─ ✅ h_div_o_h_bound_amc12_2000_p1: theorem h_div_o_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)     (h₁ : i * m *... (depth 2)
+        ├─ ✅ h_i_pos_h_bound_amc12_2000_p1: theorem h_i_pos_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)     (h₁ : i * m *... (depth 2)
+        ├─ ✅ h_div_i_h_bound_amc12_2000_p1: theorem h_div_i_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)     (h₁ : i * m *... (depth 2)
+        ├─ ✅ h_div_m_h_bound_amc12_2000_p1: theorem h_div_m_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)     (h₁ : i * m *... (depth 2)
+        ├─ ✅ h_o_pos_h_bound_amc12_2000_p1: theorem h_o_pos_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)     (h₁ : i * m *... (depth 2)
+        ├─ ✅ h_m_pos_h_bound_amc12_2000_p1: theorem h_m_pos_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)     (h₁ : i * m *... (depth 2)
+        ├─ ✅ h_im_ge_h_bound_amc12_2000_p1: theorem h_im_ge_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)     (h₁ : i * m *... (depth 2)
+        ├─ ✅ h_o_le_h_bound_amc12_2000_p1: theorem h_o_le_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)     (h₁ : i * m * ... (depth 2)
+        ├─ ✅ h_sum_im_le_h_bound_amc12_2000_p1: theorem h_sum_im_le_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)     (h₁ : i *... (depth 2)
+        └─ ✅ h_total_le_h_bound_amc12_2000_p1: theorem h_total_le_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)     (h₁ : i * ... [RECURSIVE] (depth 2)
+            ├─ ✅ h_o_cases_h_total_le_h_bound_amc12_2000_p1: theorem h_o_cases_h_total_le_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)     ... (depth 3)
+            ├─ ✅ h_total_le_h_total_le_h_bound_amc12_2000_p1: theorem h_total_le_h_total_le_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)    ... (depth 3)
+            ├─ ✅ h_sum_le_h_total_le_h_bound_amc12_2000_p1: theorem h_sum_le_h_total_le_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)     (... (depth 3)
+            ├─ ✅ h_i_ge_three_h_total_le_h_bound_amc12_2000_p1: theorem h_i_ge_three_h_total_le_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)  ... (depth 3)
+            ├─ ✅ h_o_ge_three_h_total_le_h_bound_amc12_2000_p1: theorem h_o_ge_three_h_total_le_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)  ... (depth 3)
+            ├─ ✅ h_im_eq_h_total_le_h_bound_amc12_2000_p1: theorem h_im_eq_h_total_le_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)     (h... (depth 3)
+            ├─ ✅ h_final_h_total_le_h_bound_amc12_2000_p1: theorem h_final_h_total_le_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)     (h... (depth 3)
+            ├─ ✅ h_m_le_sixsixseven_h_total_le_h_bound_amc12_2000_p1: theorem h_m_le_sixsixseven_h_total_le_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ... (depth 3)
+            ├─ ✅ h_bound_one_h_total_le_h_bound_amc12_2000_p1: theorem h_bound_one_h_total_le_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)   ... (depth 3)
+            └─ ✅ h_f_le_h_total_le_h_bound_amc12_2000_p1: theorem h_f_le_h_total_le_h_bound_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i)     (h₁... (depth 3)
+
+================================================================================

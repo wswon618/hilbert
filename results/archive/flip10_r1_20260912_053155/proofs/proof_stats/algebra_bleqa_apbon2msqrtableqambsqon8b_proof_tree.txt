@@ -1,0 +1,7 @@
+Proof Progress Tree for Problem: algebra_bleqa_apbon2msqrtableqambsqon8b
+Generated at: 2026-09-08 00:15:41
+================================================================================
+
+└─ ✅ algebra_bleqa_apbon2msqrtableqambsqon8b: theorem algebra_bleqa_apbon2msqrtableqambsqon8b (a b : ℝ) (h₀ : 0 < a ∧ 0 < b) (h₁ : b ≤ a) :     (a... [FORMAL_LLM]
+
+================================================================================

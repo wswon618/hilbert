@@ -1,0 +1,158 @@
+{
+  "problem_id": "induction_sumkexp3eqsumksq",
+  "problem_statement": "theorem induction_sumkexp3eqsumksq (n : \u2115) :\n    (\u2211 k in Finset.range n, k ^ 3) = (\u2211 k in Finset.range n, k) ^ 2 := by\n",
+  "start_time": 1788824837.4095473,
+  "end_time": 1788826158.805575,
+  "duration": 1321.3960275650024,
+  "final_success": true,
+  "total_attempts": 1,
+  "max_depth_reached": 0,
+  "llm_calls": [
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 97,
+      "output_tokens": 193,
+      "cached_input_tokens": 0,
+      "call_duration": 12.91034746170044,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 97,
+      "output_tokens": 5450,
+      "cached_input_tokens": 0,
+      "call_duration": 1304.448893070221,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    }
+  ],
+  "search_operations": [],
+  "strategy_attempts": [
+    {
+      "strategy": "formal_llm",
+      "start_time": 1788824837.410245,
+      "end_time": 1788826158.8029995,
+      "duration": 1321.3927545547485,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "induction_sumkexp3eqsumksq",
+      "error_message": null
+    }
+  ],
+  "verification_operations": [
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 1.5015068054199219,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 21,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: induction_sumkexp3eqsumksq",
+      "timestamp": 1788824851.8239381
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 16.925029754638672,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 103,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: induction_sumkexp3eqsumksq",
+      "timestamp": 1788826158.7956896
+    }
+  ],
+  "total_llm_calls": {
+    "prover_llm": 2
+  },
+  "total_input_tokens": {
+    "prover_llm": 194
+  },
+  "total_output_tokens": {
+    "prover_llm": 5643
+  },
+  "total_cached_input_tokens": {
+    "prover_llm": 0
+  },
+  "total_tokens": {
+    "prover_llm": 5837
+  },
+  "total_search_operations": {},
+  "search_success_rates": {},
+  "prompt_type_counts": {
+    "generate_proof": 2
+  },
+  "prompt_type_success_rates": {
+    "generate_proof": 1.0
+  },
+  "strategy_counts": {
+    "formal_llm": 1
+  },
+  "total_verification_operations": {
+    "formal_llm_generated_proof_verification": 2
+  },
+  "verification_success_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "verification_validity_rates": {
+    "formal_llm_generated_proof_verification": 0.5
+  },
+  "total_verification_duration": {
+    "formal_llm_generated_proof_verification": 18.426536560058594
+  },
+  "summary": {
+    "problem_id": "induction_sumkexp3eqsumksq",
+    "final_success": true,
+    "total_duration_seconds": 1321.3960275650024,
+    "total_attempts": 1,
+    "max_depth_reached": 0,
+    "total_llm_calls": 2,
+    "total_tokens_used": 5837,
+    "total_search_operations": 0,
+    "total_verification_operations": 2,
+    "total_verification_duration_seconds": 18.426536560058594,
+    "llm_breakdown": {
+      "prover_llm": 2
+    },
+    "token_breakdown": {
+      "prover_llm": 5837
+    },
+    "search_operation_breakdown": {},
+    "verification_operation_breakdown": {
+      "formal_llm_generated_proof_verification": 2
+    },
+    "verification_duration_breakdown": {
+      "formal_llm_generated_proof_verification": 18.426536560058594
+    },
+    "prompt_type_breakdown": {
+      "generate_proof": 2
+    },
+    "strategy_attempts": {
+      "formal_llm": 1
+    },
+    "prompt_type_success_rates": {
+      "generate_proof": 1.0
+    },
+    "search_success_rates": {},
+    "verification_success_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    },
+    "verification_validity_rates": {
+      "formal_llm_generated_proof_verification": 0.5
+    }
+  },
+  "generated_at": "2026-09-08T00:09:18.805984"
+}

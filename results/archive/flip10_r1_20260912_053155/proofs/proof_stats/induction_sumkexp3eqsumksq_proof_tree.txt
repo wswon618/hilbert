@@ -1,0 +1,7 @@
+Proof Progress Tree for Problem: induction_sumkexp3eqsumksq
+Generated at: 2026-09-08 00:09:18
+================================================================================
+
+└─ ✅ induction_sumkexp3eqsumksq: theorem induction_sumkexp3eqsumksq (n : ℕ) :     (∑ k in Finset.range n, k ^ 3) = (∑ k in Finset.ran... [FORMAL_LLM]
+
+================================================================================

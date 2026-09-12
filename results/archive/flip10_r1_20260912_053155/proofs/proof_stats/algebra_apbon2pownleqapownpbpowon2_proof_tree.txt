@@ -1,0 +1,7 @@
+Proof Progress Tree for Problem: algebra_apbon2pownleqapownpbpowon2
+Generated at: 2026-09-08 21:03:03
+================================================================================
+
+└─ ✅ algebra_apbon2pownleqapownpbpowon2: theorem algebra_apbon2pownleqapownpbpowon2 (a b : ℝ) (n : ℕ) (h₀ : 0 < a ∧ 0 < b) (h₁ : 0 < n) :    ... [FORMAL_LLM]
+
+================================================================================

@@ -1,0 +1,12 @@
+Proof Progress Tree for Problem: mathd_numbertheory_233
+Generated at: 2026-09-08 02:30:17
+================================================================================
+
+└─ ✅ mathd_numbertheory_233: theorem mathd_numbertheory_233 (b : ZMod (11 ^ 2)) (h₀ : b = 24⁻¹) : b = 116 := by ... [SUBGOAL_DECOMP]
+    ├─ ✅ h_mul_congr_mathd_numbertheory_233: theorem h_mul_congr_mathd_numbertheory_233 : (24 * 116 : ℕ) ≡ 1 [MOD 11 ^ 2] := by   sorry... (depth 1)
+    ├─ ✅ h_res_mathd_numbertheory_233: theorem h_res_mathd_numbertheory_233 (b : ZMod (11 ^ 2)) (h₀ : b = (24 : ZMod (11 ^ 2))⁻¹)     (h_in... (depth 1)
+    ├─ ✅ h_mul_eq_mathd_numbertheory_233: theorem h_mul_eq_mathd_numbertheory_233 (h_mul_congr : (24 * 116 : ℕ) ≡ 1 [MOD 11 ^ 2]) :     ((24 *... (depth 1)
+    ├─ ✅ h_inv_mathd_numbertheory_233: theorem h_inv_mathd_numbertheory_233 (h_mul_eq' :     (24 : ZMod (11 ^ 2)) * (116 : ZMod (11 ^ 2)) =... [SHALLOW_SOLVE] (depth 1)
+    └─ ✅ h_mul_eq'_mathd_numbertheory_233: theorem h_mul_eq'_mathd_numbertheory_233 (h_mul_eq :     ((24 * 116 : ℕ) : ZMod (11 ^ 2)) = (1 : ZMo... (depth 1)
+
+================================================================================

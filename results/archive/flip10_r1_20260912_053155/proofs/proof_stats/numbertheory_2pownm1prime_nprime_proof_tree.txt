@@ -1,0 +1,10 @@
+Proof Progress Tree for Problem: numbertheory_2pownm1prime_nprime
+Generated at: 2026-09-08 05:01:59
+================================================================================
+
+└─ ✅ numbertheory_2pownm1prime_nprime: theorem numbertheory_2pownm1prime_nprime (n : ℕ) (h₀ : 0 < n) (h₁ : Nat.Prime (2 ^ n - 1)) : Nat.Pri... [SUBGOAL_DECOMP]
+    ├─ ✅ hne_one_numbertheory_2pownm1prime_nprime: theorem hne_one_numbertheory_2pownm1prime_nprime (n : ℕ) (h₀ : 0 < n) (h₁ : Nat.Prime (2 ^ n - 1)) :... (depth 1)
+    ├─ ✅ hprime_numbertheory_2pownm1prime_nprime: theorem hprime_numbertheory_2pownm1prime_nprime (n : ℕ) (h₀ : 0 < n) (h₁ : Nat.Prime (2 ^ n - 1)) (h... (depth 1)
+    └─ ✅ hconj_numbertheory_2pownm1prime_nprime: theorem hconj_numbertheory_2pownm1prime_nprime (n : ℕ) (h₀ : 0 < n) (h₁ : Nat.Prime (2 ^ n - 1)) (hn... (depth 1)
+
+================================================================================

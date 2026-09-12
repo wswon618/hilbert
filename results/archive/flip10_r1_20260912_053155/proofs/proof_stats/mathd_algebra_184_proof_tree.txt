@@ -1,0 +1,16 @@
+Proof Progress Tree for Problem: mathd_algebra_184
+Generated at: 2026-09-07 19:19:40
+================================================================================
+
+└─ ✅ mathd_algebra_184: theorem mathd_algebra_184 (a b : NNReal) (h₀ : 0 < a ∧ 0 < b) (h₁ : a ^ 2 = 6 * b)     (h₂ : a ^ 2 =... [SUBGOAL_DECOMP]
+    ├─ ✅ h_a_pos_mathd_algebra_184: theorem h_a_pos_mathd_algebra_184 (a b : NNReal) (h₀ : 0 < a ∧ 0 < b) (h₁ : a ^ 2 = 6 * b)     (h₂ :... (depth 1)
+    ├─ ✅ h_mul_eq_mathd_algebra_184: theorem h_mul_eq_mathd_algebra_184 (a b : NNReal) (h_eq₁ : (6 : NNReal) * b = 54 / b) :     ((6 : NN... (depth 1)
+    ├─ ✅ h_b_pos_mathd_algebra_184: theorem h_b_pos_mathd_algebra_184 (a b : NNReal) (h₀ : 0 < a ∧ 0 < b) (h₁ : a ^ 2 = 6 * b)     (h₂ :... (depth 1)
+    ├─ ✅ h_eq₁_mathd_algebra_184: theorem h_eq₁_mathd_algebra_184 (a b : NNReal) (h₁ : a ^ 2 = 6 * b) (h₂ : a ^ 2 = 54 / b)     (h_b_p... (depth 1)
+    ├─ ✅ h_a_sq_mathd_algebra_184: theorem h_a_sq_mathd_algebra_184 (a b : NNReal) (h₁ : a ^ 2 = 6 * b) (h_b_eq : b = (3 : NNReal)) :  ... (depth 1)
+    ├─ ✅ h_b_eq_mathd_algebra_184: theorem h_b_eq_mathd_algebra_184 (a b : NNReal) (h_b_sq : b * b = (9 : NNReal))     (h_b_pos : (0 : ... (depth 1)
+    ├─ ✅ h_b_sq_mathd_algebra_184: theorem h_b_sq_mathd_algebra_184 (a b : NNReal) (h_simp : ((6 : NNReal) * b) * b = (54 : NNReal)) : ... (depth 1)
+    ├─ ✅ h_simp_mathd_algebra_184: theorem h_simp_mathd_algebra_184 (a b : NNReal) (h_mul_eq : ((6 : NNReal) * b) * b = ((54 : NNReal) ... (depth 1)
+    └─ ✅ h_candidate_mathd_algebra_184: theorem h_candidate_mathd_algebra_184 (a b : NNReal) (h_a_sq : a ^ 2 = (18 : NNReal))     (h_a_pos :... [SHALLOW_SOLVE] (depth 1)
+
+================================================================================

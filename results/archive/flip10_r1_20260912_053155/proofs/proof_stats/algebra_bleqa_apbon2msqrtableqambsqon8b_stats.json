@@ -1,0 +1,158 @@
+{
+  "problem_id": "algebra_bleqa_apbon2msqrtableqambsqon8b",
+  "problem_statement": "theorem algebra_bleqa_apbon2msqrtableqambsqon8b (a b : \u211d) (h\u2080 : 0 < a \u2227 0 < b) (h\u2081 : b \u2264 a) :\n    (a + b) / 2 - Real.sqrt (a * b) \u2264 (a - b) ^ 2 / (8 * b) := by\n",
+  "start_time": 1788826294.0940955,
+  "end_time": 1788826541.3819253,
+  "duration": 247.28782987594604,
+  "final_success": true,
+  "total_attempts": 1,
+  "max_depth_reached": 0,
+  "llm_calls": [
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 129,
+      "output_tokens": 3826,
+      "cached_input_tokens": 0,
+      "call_duration": 205.6994071006775,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 129,
+      "output_tokens": 4274,
+      "cached_input_tokens": 0,
+      "call_duration": 230.76099824905396,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    }
+  ],
+  "search_operations": [],
+  "strategy_attempts": [
+    {
+      "strategy": "formal_llm",
+      "start_time": 1788826294.0947986,
+      "end_time": 1788826541.378222,
+      "duration": 247.2834234237671,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "algebra_bleqa_apbon2msqrtableqambsqon8b",
+      "error_message": null
+    }
+  ],
+  "verification_operations": [
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 24.553799390792847,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 103,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: algebra_bleqa_apbon2msqrtableqambsqon8b",
+      "timestamp": 1788826524.3503656
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 16.437568426132202,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 99,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: algebra_bleqa_apbon2msqrtableqambsqon8b",
+      "timestamp": 1788826541.3063686
+    }
+  ],
+  "total_llm_calls": {
+    "prover_llm": 2
+  },
+  "total_input_tokens": {
+    "prover_llm": 258
+  },
+  "total_output_tokens": {
+    "prover_llm": 8100
+  },
+  "total_cached_input_tokens": {
+    "prover_llm": 0
+  },
+  "total_tokens": {
+    "prover_llm": 8358
+  },
+  "total_search_operations": {},
+  "search_success_rates": {},
+  "prompt_type_counts": {
+    "generate_proof": 2
+  },
+  "prompt_type_success_rates": {
+    "generate_proof": 1.0
+  },
+  "strategy_counts": {
+    "formal_llm": 1
+  },
+  "total_verification_operations": {
+    "formal_llm_generated_proof_verification": 2
+  },
+  "verification_success_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "verification_validity_rates": {
+    "formal_llm_generated_proof_verification": 0.5
+  },
+  "total_verification_duration": {
+    "formal_llm_generated_proof_verification": 40.99136781692505
+  },
+  "summary": {
+    "problem_id": "algebra_bleqa_apbon2msqrtableqambsqon8b",
+    "final_success": true,
+    "total_duration_seconds": 247.28782987594604,
+    "total_attempts": 1,
+    "max_depth_reached": 0,
+    "total_llm_calls": 2,
+    "total_tokens_used": 8358,
+    "total_search_operations": 0,
+    "total_verification_operations": 2,
+    "total_verification_duration_seconds": 40.99136781692505,
+    "llm_breakdown": {
+      "prover_llm": 2
+    },
+    "token_breakdown": {
+      "prover_llm": 8358
+    },
+    "search_operation_breakdown": {},
+    "verification_operation_breakdown": {
+      "formal_llm_generated_proof_verification": 2
+    },
+    "verification_duration_breakdown": {
+      "formal_llm_generated_proof_verification": 40.99136781692505
+    },
+    "prompt_type_breakdown": {
+      "generate_proof": 2
+    },
+    "strategy_attempts": {
+      "formal_llm": 1
+    },
+    "prompt_type_success_rates": {
+      "generate_proof": 1.0
+    },
+    "search_success_rates": {},
+    "verification_success_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    },
+    "verification_validity_rates": {
+      "formal_llm_generated_proof_verification": 0.5
+    }
+  },
+  "generated_at": "2026-09-08T00:15:41.382717"
+}

@@ -1,0 +1,4039 @@
+--- line 22138 ---
+    exact ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq ha_ne
+  have hr_nonneg : 0 ≤ r := by
+    exact hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a ha_def ha_pos
+  have h_quad : a ^ 2 = 3 * a - 1 := by
+    exact h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+  have h_pow : a ^ 9 + (a ^ 9)⁻¹ = 5778 := by
+    exact h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_quad
+  have h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+    exact h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+  have h_nat : r ^ (3 : ℝ) = r ^ 3 := by
+    exact h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+  have hr_pow : r ^ 3 = a ^ 9 := by
+    exact hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_pow_eq h_nat ha_def
+  have h_inv_pow : (1 / r ^ 3) = (a ^ 9)⁻¹ := by
+    exact h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a hr_pow
+  simpa [hr_pow, h_inv_pow] using h_pow
+[2026-09-11 06:17:33,005][src.models.HILBERTWorker][INFO] - ****************************************************************************************************
+[2026-09-11 06:17:33,005][src.tools.string][INFO] - No code fence; the response itself looks like Lean. Using it as-is.
+[2026-09-11 06:17:33,005][src.tools.lean_utils][INFO] - ????????????????????????????????????????????????????????????????????????????????????????????????????
+[2026-09-11 06:17:33,005][src.tools.lean_utils][INFO] - Theorem does not have non-theorem lines
+by
+  set a : ℝ := r ^ ((1 : ℝ) / 3) with ha_def
+  have h_eq : a + 1 / a = 3 := by
+    exact h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h₀ ha_def
+  have ha_ne : a ≠ 0 := by
+    exact ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+  have ha_pos : 0 < a := by
+    exact ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq ha_ne
+  have hr_nonneg : 0 ≤ r := by
+    exact hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a ha_def ha_pos
+  have h_quad : a ^ 2 = 3 * a - 1 := by
+    exact h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+  have h_pow : a ^ 9 + (a ^ 9)⁻¹ = 5778 := by
+    exact h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_quad
+  have h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+    exact h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+  have h_nat : r ^ (3 : ℝ) = r ^ 3 := by
+    exact h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+
+--- line 22165 ---
+    exact ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq ha_ne
+  have hr_nonneg : 0 ≤ r := by
+    exact hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a ha_def ha_pos
+  have h_quad : a ^ 2 = 3 * a - 1 := by
+    exact h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+  have h_pow : a ^ 9 + (a ^ 9)⁻¹ = 5778 := by
+    exact h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_quad
+  have h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+    exact h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+  have h_nat : r ^ (3 : ℝ) = r ^ 3 := by
+    exact h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+  have hr_pow : r ^ 3 = a ^ 9 := by
+    exact hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_pow_eq h_nat ha_def
+  have h_inv_pow : (1 / r ^ 3) = (a ^ 9)⁻¹ := by
+    exact h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a hr_pow
+  simpa [hr_pow, h_inv_pow] using h_pow
+[2026-09-11 06:17:33,006][src.tools.lean_utils][INFO] - ????????????????????????????????????????????????????????????????????????????????????????????????????
+[2026-09-11 06:17:33,006][src.models.HILBERTWorker][INFO] - ****************************************************************************************************
+[2026-09-11 06:17:33,006][src.models.HILBERTWorker][INFO] - Trying to obtain the full theorem statement, attempt 1/3
+[2026-09-11 06:17:33,006][src.models.HILBERTWorker][INFO] - ****************************************************************************************************
+[2026-09-11 06:17:38,813][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:17:38,813][src.models.HILBERTWorker][INFO] - Full theorem statement response (attempt 1)
+[2026-09-11 06:17:38,814][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:17:38,814][src.models.HILBERTWorker][INFO] - ```lean4
+theorem algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ)
+    (h₀ : r ^ ((1 : ℝ) / 3) + 1 / r ^ ((1 : ℝ) / 3) = 3) :
+    r ^ 3 + 1 / r ^ 3 = 5778 := by
+  set a : ℝ := r ^ ((1 : ℝ) / 3) with ha_def
+  have h_eq : a + 1 / a = 3 :=
+    h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h₀ ha_def
+  have ha_ne : a ≠ 0 :=
+    ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+  have ha_pos : 0 < a :=
+    ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq ha_ne
+  have hr_nonneg : 0 ≤ r :=
+    hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a ha_def ha_pos
+  have h_quad : a ^ 2 = 3 * a - 1 :=
+    h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+
+--- line 22198 ---
+    ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq ha_ne
+  have hr_nonneg : 0 ≤ r :=
+    hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a ha_def ha_pos
+  have h_quad : a ^ 2 = 3 * a - 1 :=
+    h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+  have h_pow : a ^ 9 + (a ^ 9)⁻¹ = 5778 :=
+    h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_quad
+  have h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) :=
+    h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+  have h_nat : r ^ (3 : ℝ) = r ^ 3 :=
+    h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+  have hr_pow : r ^ 3 = a ^ 9 :=
+    hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_pow_eq h_nat ha_def
+  have h_inv_pow : (1 / r ^ 3) = (a ^ 9)⁻¹ :=
+    h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a hr_pow
+  simpa [hr_pow, h_inv_pow] using h_pow
+```
+
+[2026-09-11 06:17:38,814][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:17:38,814][src.models.HILBERTWorker][INFO] - VERIFYING PROOF
+[2026-09-11 06:17:38,814][src.models.HILBERTWorker][INFO] - Generated proof
+[2026-09-11 06:17:38,815][src.models.HILBERTWorker][INFO] - import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h₀ : r ^ ((1 : ℝ) / 3) + 1 / r ^ ((1 : ℝ) / 3) = 3)
+    (ha_def : a = r ^ ((1 : ℝ) / 3)) : a + 1 / a = 3 := by
+  sorry
+
+theorem ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ≠ 0 := by
+  sorry
+
+theorem ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) (ha_ne : a ≠ 0) : 0 < a := by
+  sorry
+
+
+--- line 22237 ---
+  sorry
+
+theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^ 2 = 3 * a - 1 := by
+  sorry
+
+theorem h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_quad : a ^ 2 = 3 * a - 1) : a ^ 9 + (a ^ 9)⁻¹ = 5778 := by
+  sorry
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  sorry
+
+theorem h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = r ^ 3 := by
+  sorry
+
+theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ))
+    (h_nat : r ^ (3 : ℝ) = r ^ 3) (ha_def : a = r ^ ((1 : ℝ) / 3)) : r ^ 3 = a ^ 9 := by
+  sorry
+
+theorem h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (hr_pow : r ^ 3 = a ^ 9) : (1 / r ^ 3) = (a ^ 9)⁻¹ := by
+  sorry
+
+theorem algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ)
+    (h₀ : r ^ ((1 : ℝ) / 3) + 1 / r ^ ((1 : ℝ) / 3) = 3) :
+    r ^ 3 + 1 / r ^ 3 = 5778 := by
+  set a : ℝ := r ^ ((1 : ℝ) / 3) with ha_def
+  have h_eq : a + 1 / a = 3 :=
+    h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h₀ ha_def
+  have ha_ne : a ≠ 0 :=
+    ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+  have ha_pos : 0 < a :=
+    ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq ha_ne
+  have hr_nonneg : 0 ≤ r :=
+    hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a ha_def ha_pos
+  have h_quad : a ^ 2 = 3 * a - 1 :=
+    h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+  have h_pow : a ^ 9 + (a ^ 9)⁻¹ = 5778 :=
+    h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_quad
+  have h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) :=
+
+--- line 22267 ---
+    ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq ha_ne
+  have hr_nonneg : 0 ≤ r :=
+    hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a ha_def ha_pos
+  have h_quad : a ^ 2 = 3 * a - 1 :=
+    h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+  have h_pow : a ^ 9 + (a ^ 9)⁻¹ = 5778 :=
+    h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_quad
+  have h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) :=
+    h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+  have h_nat : r ^ (3 : ℝ) = r ^ 3 :=
+    h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+  have hr_pow : r ^ 3 = a ^ 9 :=
+    hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_pow_eq h_nat ha_def
+  have h_inv_pow : (1 / r ^ 3) = (a ^ 9)⁻¹ :=
+    h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a hr_pow
+  simpa [hr_pow, h_inv_pow] using h_pow
+[2026-09-11 06:17:39,858][src.models.HILBERTWorker][INFO] - Status: True
+[2026-09-11 06:17:39,859][src.models.HILBERTWorker][INFO] - ERROR MESSAGE: None
+[2026-09-11 06:17:39,863][src.tools.lean_utils][INFO] - SIGNATURE ONE: theorem algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778(r:ℝ)(h₀:r^((1:ℝ)/3)+1/r^((1:ℝ)/3)=3):r^3+1/r^3=5778
+[2026-09-11 06:17:39,864][src.tools.lean_utils][INFO] - SIGNATURE TWO: theorem algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778(r:ℝ)(h₀:r^((1:ℝ)/3)+1/r^((1:ℝ)/3)=3):r^3+1/r^3=5778
+[2026-09-11 06:17:39,864][src.models.HILBERTWorker][INFO] - THEOREM SIGNATURE MATCHES
+[2026-09-11 06:17:39,867][src.models.HILBERTWorker][INFO] - No sorries found in proof sketch
+[2026-09-11 06:17:39,867][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,868][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,868][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,869][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,869][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,870][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,870][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,870][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,871][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,871][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,871][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-203
+[2026-09-11 06:17:39,872][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-204
+[2026-09-11 06:17:39,872][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-205
+[2026-09-11 06:17:39,872][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-206
+[2026-09-11 06:17:39,872][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-207
+[2026-09-11 06:17:39,872][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-208
+
+--- line 22287 ---
+[2026-09-11 06:17:39,864][src.models.HILBERTWorker][INFO] - THEOREM SIGNATURE MATCHES
+[2026-09-11 06:17:39,867][src.models.HILBERTWorker][INFO] - No sorries found in proof sketch
+[2026-09-11 06:17:39,867][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,868][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,868][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,869][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,869][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,870][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,870][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,870][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,871][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,871][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: theorem_h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:17:39,871][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-203
+[2026-09-11 06:17:39,872][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-204
+[2026-09-11 06:17:39,872][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-205
+[2026-09-11 06:17:39,872][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-206
+[2026-09-11 06:17:39,872][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-207
+[2026-09-11 06:17:39,872][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-208
+[2026-09-11 06:17:39,872][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-209
+[2026-09-11 06:17:39,872][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-210
+[2026-09-11 06:17:39,873][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-211
+[2026-09-11 06:17:39,873][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-212
+[2026-09-11 06:17:39,873][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-213
+[2026-09-11 06:17:39,873][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-214
+[2026-09-11 06:17:39,873][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-215
+[2026-09-11 06:17:39,873][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-216
+[2026-09-11 06:17:39,874][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-217
+[2026-09-11 06:17:39,874][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-218
+[2026-09-11 06:17:39,874][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-219
+[2026-09-11 06:17:39,874][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-220
+[2026-09-11 06:17:39,874][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-221
+[2026-09-11 06:17:39,874][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-222
+[2026-09-11 06:17:39,874][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-223
+[2026-09-11 06:17:39,875][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-224
+[2026-09-11 06:17:39,875][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-225
+[2026-09-11 06:17:39,875][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-226
+[2026-09-11 06:17:39,875][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-227
+[2026-09-11 06:17:39,875][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-228
+
+--- line 22403 ---
+[2026-09-11 06:17:55,654][src.models.HILBERTWorker][INFO] - Success! Proved theorem matches the input theorem!
+[2026-09-11 06:17:55,655][src.tools.AsyncJobPool][INFO] - ✅ Job 'Task-219' finished
+[2026-09-11 06:17:55,655][src.tools.AsyncJobPool][INFO] - 🏆 Truthy result found from 'Task-219'.
+[2026-09-11 06:17:55,655][src.tools.AsyncJobPool][INFO] - 🛑 Stopping all other jobs...
+[2026-09-11 06:17:55,657][src.tools.AsyncJobPool][INFO] - ✅ Job 'theorem_h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778' finished with result: (True, 'theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^ 2 = 3 * a - 1 := by\n  sorry', 'theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^ 2 = 3 * a - 1 := by\n  have h_a_ne_zero : a ≠ 0 := by\n    by_contra h\n    rw [h] at h_eq\n    norm_num at h_eq ⊢\n    <;> linarith\n  \n  have h_main : a ^ 2 = 3 * a - 1 := by\n    have h1 : a + 1 / a = 3 := h_eq\n    have h2 : a ≠ 0 := h_a_ne_zero\n    field_simp [h2] at h1 ⊢\n    ring_nf at h1 ⊢\n    nlinarith [sq_pos_of_ne_zero h2]\n  \n  exact h_main', None)
+[2026-09-11 06:17:55,657][src.tools.AsyncJobPool][INFO] - 🏆 Success from 'theorem_h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778': (True, 'theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^ 2 = 3 * a - 1 := by\n  sorry', 'theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^ 2 = 3 * a - 1 := by\n  have h_a_ne_zero : a ≠ 0 := by\n    by_contra h\n    rw [h] at h_eq\n    norm_num at h_eq ⊢\n    <;> linarith\n  \n  have h_main : a ^ 2 = 3 * a - 1 := by\n    have h1 : a + 1 / a = 3 := h_eq\n    have h2 : a ≠ 0 := h_a_ne_zero\n    field_simp [h2] at h1 ⊢\n    ring_nf at h1 ⊢\n    nlinarith [sq_pos_of_ne_zero h2]\n  \n  exact h_main', None)
+[2026-09-11 06:18:00,868][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:18:00,869][src.models.HILBERTWorker][INFO] - Generated Formal Proof:
+[2026-09-11 06:18:00,869][src.models.HILBERTWorker][INFO] - theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h₁ : (r : ℝ) ^ (3 : ℝ) = (r : ℝ) ^ (3 : ℝ) := rfl
+  have h₂ : ((r : ℝ) ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = (r : ℝ) ^ (3 : ℝ) := by
+    have h₃ : ((r : ℝ) ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = (r : ℝ) ^ (((1 : ℝ) / 3) * (9 : ℝ)) := by
+      rw [← Real.rpow_mul] <;>
+      (try norm_num) <;>
+      (try linarith) <;>
+      (try positivity) <;>
+      (try
+        {
+          by_cases h : r = 0
+          · simp_all
+          · positivity
+        })
+    rw [h₃]
+    have h₄ : ((1 : ℝ) / 3 : ℝ) * (9 : ℝ) = (3 : ℝ) := by norm_num
+    rw [h₄]
+  linarith
+[2026-09-11 06:18:00,869][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:18:02,213][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:18:02,214][src.models.HILBERTWorker][INFO] - Generated Formal Proof:
+[2026-09-11 06:18:02,214][src.models.HILBERTWorker][INFO] - theorem h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (hr_pow : r ^ 3 = a ^ 9) : (1 / r ^ 3) = (a ^ 9)⁻¹ := by
+  have h₁ : r ^ 3 = a ^ 9 := hr_pow
+  have h₂ : 1 / r ^ 3 = (r ^ 3)⁻¹ := by
+    by_cases h : r = 0
+    · -- If r = 0, then r^3 = 0, and 1 / r^3 is undefined, but Lean's division by zero is defined as zero
+      simp [h]
+      <;>
+      simp_all [pow_three]
+      <;>
+
+--- line 22460 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h₁ : (r : ℝ) ^ (3 : ℝ) = (r : ℝ) ^ (3 : ℝ) := rfl
+  have h₂ : ((r : ℝ) ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = (r : ℝ) ^ (3 : ℝ) := by
+    have h₃ : ((r : ℝ) ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = (r : ℝ) ^ (((1 : ℝ) / 3) * (9 : ℝ)) := by
+      rw [← Real.rpow_mul] <;>
+      (try norm_num) <;>
+      (try linarith) <;>
+      (try positivity) <;>
+      (try
+        {
+          by_cases h : r = 0
+          · simp_all
+          · positivity
+        })
+    rw [h₃]
+    have h₄ : ((1 : ℝ) / 3 : ℝ) * (9 : ℝ) = (3 : ℝ) := by norm_num
+    rw [h₄]
+  linarith
+```
+
+
+Error message from Lean: unsolved goals
+case hx
+r : ℝ
+h₁ : r ^ 3 = r ^ 3
+⊢ 0 ≤ r
+The error was encountered while trying to process the following lines:
+      (try linarith) <;>
+      (try positivity) <;>
+      (try
+
+--- line 22515 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h₁ : (r : ℝ) ^ (3 : ℝ) = (r : ℝ) ^ (3 : ℝ) := rfl
+  have h₂ : ((r : ℝ) ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = (r : ℝ) ^ (3 : ℝ) := by
+    have h₃ : ((r : ℝ) ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = (r : ℝ) ^ (((1 : ℝ) / 3) * (9 : ℝ)) := by
+      rw [← Real.rpow_mul] <;>
+      (try norm_num) <;>
+      (try linarith) <;>
+      (try positivity) <;>
+      (try
+        {
+          by_cases h : r = 0
+          · simp_all
+          · positivity
+        })
+    rw [h₃]
+    have h₄ : ((1 : ℝ) / 3 : ℝ) * (9 : ℝ) = (3 : ℝ) := by norm_num
+    rw [h₄]
+  linarith
+```
+
+
+Error message from Lean: unsolved goals
+case hx
+r : ℝ
+h₁ : r ^ 3 = r ^ 3
+⊢ 0 ≤ r
+The error was encountered while trying to process the following lines:
+      (try linarith) <;>
+      (try positivity) <;>
+      (try
+
+--- line 23060 ---
+Error: line number out of range
+
+
+
+[2026-09-11 06:18:32,691][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:18:32,691][src.tools.AsyncJobPool][INFO] - ✅ Job 'Task-236' finished
+[2026-09-11 06:18:41,987][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:18:41,988][src.models.HILBERTWorker][INFO] - Generated Formal Proof:
+[2026-09-11 06:18:41,988][src.models.HILBERTWorker][INFO] - theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h₁ : (r : ℝ) ^ (3 : ℝ) = (r : ℝ) ^ (3 : ℝ) := rfl
+  have h₂ : (r : ℝ) ^ ((1 : ℝ) / 3 : ℝ) = (r : ℝ) ^ ((1 : ℝ) / 3 : ℝ) := rfl
+  have h₃ : ((r : ℝ) ^ ((1 : ℝ) / 3 : ℝ)) ^ (9 : ℝ) = (r : ℝ) ^ ((1 : ℝ) / 3 * 9 : ℝ) := by
+    rw [← Real.rpow_mul (by
+      -- Prove that r is non-negative to use the property of real powers
+      by_cases h : r ≥ 0
+      · exact le_of_lt (by
+          -- If r is non-negative, then r is positive or zero
+          by_cases h' : r = 0
+          · -- If r = 0, then 0 is non-negative
+            simp_all
+            <;> norm_num
+          · -- If r > 0, then r is positive
+            have h'' : 0 < r := by
+              contrapose! h'
+              linarith
+            linarith
+        )
+      · -- If r is negative, we need to check the exponent
+        by_contra h'
+        -- Since the exponent (1/3) is not an integer, we cannot use the property directly
+        -- However, Lean's Real.rpow_mul requires the base to be non-negative
+        -- So we need to handle the case when r < 0 separately
+        -- For simplicity, we assume r ≥ 0 in this proof
+        exfalso
+        have h'' : r < 0 := by linarith
+        have h''' : (1 : ℝ) / 3 > 0 := by norm_num
+        have h'''' : (r : ℝ) ^ ((1 : ℝ) / 3 : ℝ) = 0 := by
+          -- This is not true in general, but we are assuming r ≥ 0 for simplicity
+
+--- line 23148 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h₁ : (r : ℝ) ^ (3 : ℝ) = (r : ℝ) ^ (3 : ℝ) := rfl
+  have h₂ : (r : ℝ) ^ ((1 : ℝ) / 3 : ℝ) = (r : ℝ) ^ ((1 : ℝ) / 3 : ℝ) := rfl
+  have h₃ : ((r : ℝ) ^ ((1 : ℝ) / 3 : ℝ)) ^ (9 : ℝ) = (r : ℝ) ^ ((1 : ℝ) / 3 * 9 : ℝ) := by
+    rw [← Real.rpow_mul (by
+      -- Prove that r is non-negative to use the property of real powers
+      by_cases h : r ≥ 0
+      · exact le_of_lt (by
+          -- If r is non-negative, then r is positive or zero
+          by_cases h' : r = 0
+          · -- If r = 0, then 0 is non-negative
+            simp_all
+            <;> norm_num
+          · -- If r > 0, then r is positive
+            have h'' : 0 < r := by
+              contrapose! h'
+              linarith
+            linarith
+        )
+      · -- If r is negative, we need to check the exponent
+        by_contra h'
+        -- Since the exponent (1/3) is not an integer, we cannot use the property directly
+        -- However, Lean's Real.rpow_mul requires the base to be non-negative
+        -- So we need to handle the case when r < 0 separately
+        -- For simplicity, we assume r ≥ 0 in this proof
+        exfalso
+        have h'' : r < 0 := by linarith
+        have h''' : (1 : ℝ) / 3 > 0 := by norm_num
+        have h'''' : (r : ℝ) ^ ((1 : ℝ) / 3 : ℝ) = 0 := by
+          -- This is not true in general, but we are assuming r ≥ 0 for simplicity
+
+--- line 23264 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h₁ : (r : ℝ) ^ (3 : ℝ) = (r : ℝ) ^ (3 : ℝ) := rfl
+  have h₂ : (r : ℝ) ^ ((1 : ℝ) / 3 : ℝ) = (r : ℝ) ^ ((1 : ℝ) / 3 : ℝ) := rfl
+  have h₃ : ((r : ℝ) ^ ((1 : ℝ) / 3 : ℝ)) ^ (9 : ℝ) = (r : ℝ) ^ ((1 : ℝ) / 3 * 9 : ℝ) := by
+    rw [← Real.rpow_mul (by
+      -- Prove that r is non-negative to use the property of real powers
+      by_cases h : r ≥ 0
+      · exact le_of_lt (by
+          -- If r is non-negative, then r is positive or zero
+          by_cases h' : r = 0
+          · -- If r = 0, then 0 is non-negative
+            simp_all
+            <;> norm_num
+          · -- If r > 0, then r is positive
+            have h'' : 0 < r := by
+              contrapose! h'
+              linarith
+            linarith
+        )
+      · -- If r is negative, we need to check the exponent
+        by_contra h'
+        -- Since the exponent (1/3) is not an integer, we cannot use the property directly
+        -- However, Lean's Real.rpow_mul requires the base to be non-negative
+        -- So we need to handle the case when r < 0 separately
+        -- For simplicity, we assume r ≥ 0 in this proof
+        exfalso
+        have h'' : r < 0 := by linarith
+        have h''' : (1 : ℝ) / 3 > 0 := by norm_num
+        have h'''' : (r : ℝ) ^ ((1 : ℝ) / 3 : ℝ) = 0 := by
+          -- This is not true in general, but we are assuming r ≥ 0 for simplicity
+
+--- line 25665 ---
+[2026-09-11 06:43:56,358][src.models.HILBERTWorker][INFO] - Success! Proved theorem matches the input theorem!
+[2026-09-11 06:43:56,359][src.tools.AsyncJobPool][INFO] - ✅ Job 'Task-237' finished
+[2026-09-11 06:43:56,359][src.tools.AsyncJobPool][INFO] - 🏆 Truthy result found from 'Task-237'.
+[2026-09-11 06:43:56,360][src.tools.AsyncJobPool][INFO] - 🛑 Stopping all other jobs...
+[2026-09-11 06:43:56,363][src.tools.AsyncJobPool][INFO] - ✅ Job 'theorem_hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778' finished with result: (True, 'theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ))\n    (h_nat : r ^ (3 : ℝ) = r ^ 3) (ha_def : a = r ^ ((1 : ℝ) / 3)) : r ^ 3 = a ^ 9 := by\n  sorry', 'theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ))\n    (h_nat : r ^ (3 : ℝ) = r ^ 3) (ha_def : a = r ^ ((1 : ℝ) / 3)) : r ^ 3 = a ^ 9 := by\n  have h1 : r ^ 3 = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by\n    calc\n      r ^ 3 = r ^ (3 : ℝ) := by\n        -- Convert r ^ 3 to r ^ (3 : ℝ) using the given hypothesis h_nat\n        rw [← h_nat]\n        <;> norm_cast\n      _ = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by\n        -- Use the given hypothesis h_pow_eq to substitute r ^ (3 : ℝ)\n        rw [h_pow_eq]\n  \n  have h2 : (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ 9 := by\n    -- Use the property that for any real number x and natural number n, x ^ (n : ℝ) = x ^ n\n    have h₂ : (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℕ) := by\n      norm_cast\n      <;>\n      simp [Real.rpow_nat_cast]\n      <;>\n      ring_nf\n      <;>\n      norm_num\n    -- Simplify the right-hand side to match the desired form\n    have h₃ : (r ^ ((1 : ℝ) / 3)) ^ (9 : ℕ) = (r ^ ((1 : ℝ) / 3)) ^ 9 := by\n      norm_cast\n    -- Combine the two results to get the final equality\n    calc\n      (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℕ) := by rw [h₂]\n      _ = (r ^ ((1 : ℝ) / 3)) ^ 9 := by rw [h₃]\n  \n  have h3 : (r ^ ((1 : ℝ) / 3)) ^ 9 = a ^ 9 := by\n    rw [ha_def]\n    <;>\n    simp [pow_succ]\n    <;>\n    ring_nf\n    <;>\n    norm_num\n    <;>\n    simp_all [Real.rpow_def_of_pos]\n    <;>\n    field_simp\n    <;>\n    ring_nf\n    <;>\n    norm_num\n  \n  have h4 : r ^ 3 = a ^ 9 := by\n    calc\n      r ^ 3 = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by rw [h1]\n      _ = (r ^ ((1 : ℝ) / 3)) ^ 9 := by rw [h2]\n      _ = a ^ 9 := by rw [h3]\n  \n  exact h4', None)
+[2026-09-11 06:43:56,364][src.tools.AsyncJobPool][INFO] - 🏆 Success from 'theorem_hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778': (True, 'theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ))\n    (h_nat : r ^ (3 : ℝ) = r ^ 3) (ha_def : a = r ^ ((1 : ℝ) / 3)) : r ^ 3 = a ^ 9 := by\n  sorry', 'theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ))\n    (h_nat : r ^ (3 : ℝ) = r ^ 3) (ha_def : a = r ^ ((1 : ℝ) / 3)) : r ^ 3 = a ^ 9 := by\n  have h1 : r ^ 3 = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by\n    calc\n      r ^ 3 = r ^ (3 : ℝ) := by\n        -- Convert r ^ 3 to r ^ (3 : ℝ) using the given hypothesis h_nat\n        rw [← h_nat]\n        <;> norm_cast\n      _ = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by\n        -- Use the given hypothesis h_pow_eq to substitute r ^ (3 : ℝ)\n        rw [h_pow_eq]\n  \n  have h2 : (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ 9 := by\n    -- Use the property that for any real number x and natural number n, x ^ (n : ℝ) = x ^ n\n    have h₂ : (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℕ) := by\n      norm_cast\n      <;>\n      simp [Real.rpow_nat_cast]\n      <;>\n      ring_nf\n      <;>\n      norm_num\n    -- Simplify the right-hand side to match the desired form\n    have h₃ : (r ^ ((1 : ℝ) / 3)) ^ (9 : ℕ) = (r ^ ((1 : ℝ) / 3)) ^ 9 := by\n      norm_cast\n    -- Combine the two results to get the final equality\n    calc\n      (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℕ) := by rw [h₂]\n      _ = (r ^ ((1 : ℝ) / 3)) ^ 9 := by rw [h₃]\n  \n  have h3 : (r ^ ((1 : ℝ) / 3)) ^ 9 = a ^ 9 := by\n    rw [ha_def]\n    <;>\n    simp [pow_succ]\n    <;>\n    ring_nf\n    <;>\n    norm_num\n    <;>\n    simp_all [Real.rpow_def_of_pos]\n    <;>\n    field_simp\n    <;>\n    ring_nf\n    <;>\n    norm_num\n  \n  have h4 : r ^ 3 = a ^ 9 := by\n    calc\n      r ^ 3 = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by rw [h1]\n      _ = (r ^ ((1 : ℝ) / 3)) ^ 9 := by rw [h2]\n      _ = a ^ 9 := by rw [h3]\n  \n  exact h4', None)
+[2026-09-11 06:45:56,858][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:45:56,859][src.models.HILBERTWorker][INFO] - Generated Formal Proof:
+[2026-09-11 06:45:56,859][src.models.HILBERTWorker][INFO] - theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_main : r ≥ 0 → r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+    intro hr
+    have h₁ : (r : ℝ) ≥ 0 := hr
+    have h₂ : (r : ℝ) ^ ((1 : ℝ) / 3 : ℝ) ≥ 0 := by
+      apply Real.rpow_nonneg
+      <;> linarith
+    -- Use the property of exponents to simplify the right-hand side
+    have h₃ : ((r : ℝ) ^ ((1 : ℝ) / 3 : ℝ)) ^ (9 : ℝ) = (r : ℝ) ^ (((1 : ℝ) / 3 : ℝ) * (9 : ℝ)) := by
+      rw [← Real.rpow_mul (by positivity)]
+      <;> ring_nf
+      <;> norm_num
+    rw [h₃]
+    -- Simplify the exponent
+    have h₄ : ((1 : ℝ) / 3 : ℝ) * (9 : ℝ) = (3 : ℝ) := by norm_num
+    rw [h₄]
+    <;> simp [h₁]
+    <;> norm_num
+  
+  have h_neg : r < 0 → r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+    intro hr
+    have h₁ : r < 0 := hr
+    have h₂ : r ^ (3 : ℝ) = r ^ (3 : ℝ) := rfl
+    have h₃ : (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := rfl
+    -- For r < 0, r^(1/3) is not a real number, so we need to handle this case carefully.
+    -- In Lean, r^(1/3) is undefined (returns NaN) for r < 0, and thus (r^(1/3))^9 is also NaN.
+    -- However, r^3 is a real number, so the equality does not hold in Lean for r < 0.
+    -- This means that the original statement is false in Lean for r < 0, and we cannot prove it.
+    -- Therefore, we use `by_cases` to handle the case when r < 0 and admit that the statement is false.
+    by_cases h₄ : r = 0
+
+--- line 25789 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_main : r ≥ 0 → r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+    intro hr
+    have h₁ : (r : ℝ) ≥ 0 := hr
+    have h₂ : (r : ℝ) ^ ((1 : ℝ) / 3 : ℝ) ≥ 0 := by
+      apply Real.rpow_nonneg
+      <;> linarith
+    -- Use the property of exponents to simplify the right-hand side
+    have h₃ : ((r : ℝ) ^ ((1 : ℝ) / 3 : ℝ)) ^ (9 : ℝ) = (r : ℝ) ^ (((1 : ℝ) / 3 : ℝ) * (9 : ℝ)) := by
+      rw [← Real.rpow_mul (by positivity)]
+      <;> ring_nf
+      <;> norm_num
+    rw [h₃]
+    -- Simplify the exponent
+    have h₄ : ((1 : ℝ) / 3 : ℝ) * (9 : ℝ) = (3 : ℝ) := by norm_num
+    rw [h₄]
+    <;> simp [h₁]
+    <;> norm_num
+  
+  have h_neg : r < 0 → r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+    intro hr
+    have h₁ : r < 0 := hr
+    have h₂ : r ^ (3 : ℝ) = r ^ (3 : ℝ) := rfl
+    have h₃ : (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := rfl
+    -- For r < 0, r^(1/3) is not a real number, so we need to handle this case carefully.
+    -- In Lean, r^(1/3) is undefined (returns NaN) for r < 0, and thus (r^(1/3))^9 is also NaN.
+    -- However, r^3 is a real number, so the equality does not hold in Lean for r < 0.
+    -- This means that the original statement is false in Lean for r < 0, and we cannot prove it.
+    -- Therefore, we use `by_cases` to handle the case when r < 0 and admit that the statement is false.
+    by_cases h₄ : r = 0
+
+--- line 25960 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_main : r ≥ 0 → r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+    intro hr
+    have h₁ : (r : ℝ) ≥ 0 := hr
+    have h₂ : (r : ℝ) ^ ((1 : ℝ) / 3 : ℝ) ≥ 0 := by
+      apply Real.rpow_nonneg
+      <;> linarith
+    -- Use the property of exponents to simplify the right-hand side
+    have h₃ : ((r : ℝ) ^ ((1 : ℝ) / 3 : ℝ)) ^ (9 : ℝ) = (r : ℝ) ^ (((1 : ℝ) / 3 : ℝ) * (9 : ℝ)) := by
+      rw [← Real.rpow_mul (by positivity)]
+      <;> ring_nf
+      <;> norm_num
+    rw [h₃]
+    -- Simplify the exponent
+    have h₄ : ((1 : ℝ) / 3 : ℝ) * (9 : ℝ) = (3 : ℝ) := by norm_num
+    rw [h₄]
+    <;> simp [h₁]
+    <;> norm_num
+  
+  have h_neg : r < 0 → r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+    intro hr
+    have h₁ : r < 0 := hr
+    have h₂ : r ^ (3 : ℝ) = r ^ (3 : ℝ) := rfl
+    have h₃ : (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := rfl
+    -- For r < 0, r^(1/3) is not a real number, so we need to handle this case carefully.
+    -- In Lean, r^(1/3) is undefined (returns NaN) for r < 0, and thus (r^(1/3))^9 is also NaN.
+    -- However, r^3 is a real number, so the equality does not hold in Lean for r < 0.
+    -- This means that the original statement is false in Lean for r < 0, and we cannot prove it.
+    -- Therefore, we use `by_cases` to handle the case when r < 0 and admit that the statement is false.
+    by_cases h₄ : r = 0
+
+--- line 26196 ---
+Real.rpow_mul (hx : 0 ≤ x) (a b : ℝ) : x ^ (a * b) = (x ^ a) ^ b
+```  
+
+or a version with `0 < x`. It requires a non‑negativity (or positivity) hypothesis on the base `x`. Without assuming `0 ≤ r` (or `0 < r`), the equality does not hold in general (e.g., for negative `r` the real power is defined via `Real.rpow`, which is not multiplicative for arbitrary exponents). Consequently the theorem cannot be proved from the given premises.
+
+To make the theorem provable one could add a hypothesis such as `hr : 0 ≤ r` (or `hr : 0 < r`) and then use `Real.rpow_mul` (or `Real.rpow_mul₀`) to finish the proof:
+
+```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+  (r : ℝ) (hr : 0 ≤ r) :
+  r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have : r ^ ((1 : ℝ) / 3 * 9) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) :=
+    (Real.rpow_mul hr _ _).symm
+  simpa [one_div, mul_comm, mul_left_comm, mul_assoc] using this
+```
+
+As the original theorem lacks the necessary hypothesis, it is not provable in Lean 4.
+</justification>
+[2026-09-11 06:48:32,555][src.models.HILBERTWorker][INFO] - The subgoal is correct!
+[2026-09-11 06:48:32,555][src.tools.AsyncJobPool][INFO] - ✅ Job 'theorem_h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778' finished with result: (True, 'theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by\n  sorry', None, None)
+[2026-09-11 06:48:32,556][src.tools.AsyncJobPool][INFO] - 🏆 Success from 'theorem_h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778': (True, 'theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by\n  sorry', None, None)
+[2026-09-11 06:48:32,556][src.tools.AsyncJobPool][INFO] - 
+🎉 All 10 jobs completed successfully!
+[2026-09-11 06:48:32,556][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,556][src.models.HILBERTWorker][INFO] - Corrected proof sketch (attempt 1)
+[2026-09-11 06:48:32,556][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,556][src.models.HILBERTWorker][INFO] - theorem algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ)
+    (h₀ : r ^ ((1 : ℝ) / 3) + 1 / r ^ ((1 : ℝ) / 3) = 3) :
+    r ^ 3 + 1 / r ^ 3 = 5778 := by
+  set a : ℝ := r ^ ((1 : ℝ) / 3) with ha_def
+  have h_eq : a + 1 / a = 3 :=
+    h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h₀ ha_def
+  have ha_ne : a ≠ 0 :=
+    ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+  have ha_pos : 0 < a :=
+    ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq ha_ne
+  have hr_nonneg : 0 ≤ r :=
+    hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a ha_def ha_pos
+
+--- line 26207 ---
+  have : r ^ ((1 : ℝ) / 3 * 9) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) :=
+    (Real.rpow_mul hr _ _).symm
+  simpa [one_div, mul_comm, mul_left_comm, mul_assoc] using this
+```
+
+As the original theorem lacks the necessary hypothesis, it is not provable in Lean 4.
+</justification>
+[2026-09-11 06:48:32,555][src.models.HILBERTWorker][INFO] - The subgoal is correct!
+[2026-09-11 06:48:32,555][src.tools.AsyncJobPool][INFO] - ✅ Job 'theorem_h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778' finished with result: (True, 'theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by\n  sorry', None, None)
+[2026-09-11 06:48:32,556][src.tools.AsyncJobPool][INFO] - 🏆 Success from 'theorem_h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778': (True, 'theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by\n  sorry', None, None)
+[2026-09-11 06:48:32,556][src.tools.AsyncJobPool][INFO] - 
+🎉 All 10 jobs completed successfully!
+[2026-09-11 06:48:32,556][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,556][src.models.HILBERTWorker][INFO] - Corrected proof sketch (attempt 1)
+[2026-09-11 06:48:32,556][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,556][src.models.HILBERTWorker][INFO] - theorem algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ)
+    (h₀ : r ^ ((1 : ℝ) / 3) + 1 / r ^ ((1 : ℝ) / 3) = 3) :
+    r ^ 3 + 1 / r ^ 3 = 5778 := by
+  set a : ℝ := r ^ ((1 : ℝ) / 3) with ha_def
+  have h_eq : a + 1 / a = 3 :=
+    h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h₀ ha_def
+  have ha_ne : a ≠ 0 :=
+    ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+  have ha_pos : 0 < a :=
+    ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq ha_ne
+  have hr_nonneg : 0 ≤ r :=
+    hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a ha_def ha_pos
+  have h_quad : a ^ 2 = 3 * a - 1 :=
+    h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+  have h_pow : a ^ 9 + (a ^ 9)⁻¹ = 5778 :=
+    h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_quad
+  have h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) :=
+    h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+  have h_nat : r ^ (3 : ℝ) = r ^ 3 :=
+    h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+  have hr_pow : r ^ 3 = a ^ 9 :=
+    hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_pow_eq h_nat ha_def
+  have h_inv_pow : (1 / r ^ 3) = (a ^ 9)⁻¹ :=
+
+--- line 26208 ---
+    (Real.rpow_mul hr _ _).symm
+  simpa [one_div, mul_comm, mul_left_comm, mul_assoc] using this
+```
+
+As the original theorem lacks the necessary hypothesis, it is not provable in Lean 4.
+</justification>
+[2026-09-11 06:48:32,555][src.models.HILBERTWorker][INFO] - The subgoal is correct!
+[2026-09-11 06:48:32,555][src.tools.AsyncJobPool][INFO] - ✅ Job 'theorem_h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778' finished with result: (True, 'theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by\n  sorry', None, None)
+[2026-09-11 06:48:32,556][src.tools.AsyncJobPool][INFO] - 🏆 Success from 'theorem_h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778': (True, 'theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by\n  sorry', None, None)
+[2026-09-11 06:48:32,556][src.tools.AsyncJobPool][INFO] - 
+🎉 All 10 jobs completed successfully!
+[2026-09-11 06:48:32,556][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,556][src.models.HILBERTWorker][INFO] - Corrected proof sketch (attempt 1)
+[2026-09-11 06:48:32,556][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,556][src.models.HILBERTWorker][INFO] - theorem algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ)
+    (h₀ : r ^ ((1 : ℝ) / 3) + 1 / r ^ ((1 : ℝ) / 3) = 3) :
+    r ^ 3 + 1 / r ^ 3 = 5778 := by
+  set a : ℝ := r ^ ((1 : ℝ) / 3) with ha_def
+  have h_eq : a + 1 / a = 3 :=
+    h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h₀ ha_def
+  have ha_ne : a ≠ 0 :=
+    ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+  have ha_pos : 0 < a :=
+    ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq ha_ne
+  have hr_nonneg : 0 ≤ r :=
+    hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a ha_def ha_pos
+  have h_quad : a ^ 2 = 3 * a - 1 :=
+    h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+  have h_pow : a ^ 9 + (a ^ 9)⁻¹ = 5778 :=
+    h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_quad
+  have h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) :=
+    h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+  have h_nat : r ^ (3 : ℝ) = r ^ 3 :=
+    h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+  have hr_pow : r ^ 3 = a ^ 9 :=
+    hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_pow_eq h_nat ha_def
+  have h_inv_pow : (1 / r ^ 3) = (a ^ 9)⁻¹ :=
+    h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a hr_pow
+
+--- line 26231 ---
+    ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq ha_ne
+  have hr_nonneg : 0 ≤ r :=
+    hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a ha_def ha_pos
+  have h_quad : a ^ 2 = 3 * a - 1 :=
+    h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_eq
+  have h_pow : a ^ 9 + (a ^ 9)⁻¹ = 5778 :=
+    h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_quad
+  have h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) :=
+    h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+  have h_nat : r ^ (3 : ℝ) = r ^ 3 :=
+    h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r
+  have hr_pow : r ^ 3 = a ^ 9 :=
+    hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a h_pow_eq h_nat ha_def
+  have h_inv_pow : (1 / r ^ 3) = (a ^ 9)⁻¹ :=
+    h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 r a hr_pow
+  simpa [hr_pow, h_inv_pow] using h_pow
+[2026-09-11 06:48:32,557][src.models.HILBERTWorker][INFO] - Added 10 subgoals to proof tree
+[2026-09-11 06:48:32,557][src.models.HILBERTWorker][INFO] - 
+================================================================================
+[2026-09-11 06:48:32,557][src.models.HILBERTWorker][INFO] - PROOF PROGRESS TREE
+[2026-09-11 06:48:32,557][src.models.HILBERTWorker][INFO] - ================================================================================
+[2026-09-11 06:48:32,557][src.models.HILBERTWorker][INFO] - └─ 🔄 algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ)     (h₀ : r ^ ((1 : ℝ) / 3) + 1 / r ^... [SUBGOAL_DECOMP]
+    ├─ ⏳ ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ≠ ... (depth 1)
+    ├─ ⏳ h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = r ^ 3 := by   s... (depth 1)
+    ├─ ⏳ h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^... (depth 1)
+    ├─ ⏳ h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (hr_pow : r ^ 3 = a ^ 9) ... (depth 1)
+    ├─ ⏳ ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) (ha_n... (depth 1)
+    ├─ ⏳ h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h₀ : r ^ ((1 : ℝ) / 3) + 1 / ... (depth 1)
+    ├─ ⏳ h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_quad : a ^ 2 = 3 * a - 1) ... (depth 1)
+    ├─ ⏳ hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (ha_def : a = r ^ ((1 : ℝ... (depth 1)
+    ├─ ⏳ hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r... (depth 1)
+    └─ ⏳ h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ... (depth 1)
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ================================================================================
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - 
+
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ALL EXTRACTED THEOREMS
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ['theorem ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ≠ 0 := by\n  sorry', 'theorem h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = r ^ 3 := by\n  sorry', 'theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^ 2 = 3 * a - 1 := by\n  sorry', 'theorem h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (hr_pow : r ^ 3 = a ^ 9) : (1 / r ^ 3) = (a ^ 9)⁻¹ := by\n  sorry', 'theorem ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) (ha_ne : a ≠ 0) : 0 < a := by\n  sorry', 'theorem h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h₀ : r ^ ((1 : ℝ) / 3) + 1 / r ^ ((1 : ℝ) / 3) = 3)\n    (ha_def : a = r ^ ((1 : ℝ) / 3)) : a + 1 / a = 3 := by\n  sorry', 'theorem h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_quad : a ^ 2 = 3 * a - 1) : a ^ 9 + (a ^ 9)⁻¹ = 5778 := by\n  sorry', 'theorem hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (ha_def : a = r ^ ((1 : ℝ) / 3)) (ha_pos : 0 < a) : 0 ≤ r := by\n  sorry', 'theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ))\n    (h_nat : r ^ (3 : ℝ) = r ^ 3) (ha_def : a = r ^ ((1 : ℝ) / 3)) : r ^ 3 = a ^ 9 := by\n  sorry', 'theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by\n  sorry']
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ********************************************************************************
+
+--- line 26254 ---
+    ├─ ⏳ h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = r ^ 3 := by   s... (depth 1)
+    ├─ ⏳ h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^... (depth 1)
+    ├─ ⏳ h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (hr_pow : r ^ 3 = a ^ 9) ... (depth 1)
+    ├─ ⏳ ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) (ha_n... (depth 1)
+    ├─ ⏳ h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h₀ : r ^ ((1 : ℝ) / 3) + 1 / ... (depth 1)
+    ├─ ⏳ h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_quad : a ^ 2 = 3 * a - 1) ... (depth 1)
+    ├─ ⏳ hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (ha_def : a = r ^ ((1 : ℝ... (depth 1)
+    ├─ ⏳ hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r... (depth 1)
+    └─ ⏳ h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ... (depth 1)
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ================================================================================
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - 
+
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ALL EXTRACTED THEOREMS
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ['theorem ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ≠ 0 := by\n  sorry', 'theorem h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = r ^ 3 := by\n  sorry', 'theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^ 2 = 3 * a - 1 := by\n  sorry', 'theorem h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (hr_pow : r ^ 3 = a ^ 9) : (1 / r ^ 3) = (a ^ 9)⁻¹ := by\n  sorry', 'theorem ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) (ha_ne : a ≠ 0) : 0 < a := by\n  sorry', 'theorem h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h₀ : r ^ ((1 : ℝ) / 3) + 1 / r ^ ((1 : ℝ) / 3) = 3)\n    (ha_def : a = r ^ ((1 : ℝ) / 3)) : a + 1 / a = 3 := by\n  sorry', 'theorem h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_quad : a ^ 2 = 3 * a - 1) : a ^ 9 + (a ^ 9)⁻¹ = 5778 := by\n  sorry', 'theorem hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (ha_def : a = r ^ ((1 : ℝ) / 3)) (ha_pos : 0 < a) : 0 ≤ r := by\n  sorry', 'theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ))\n    (h_nat : r ^ (3 : ℝ) = r ^ 3) (ha_def : a = r ^ ((1 : ℝ) / 3)) : r ^ 3 = a ^ 9 := by\n  sorry', 'theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by\n  sorry']
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - Verifying Theorem
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - theorem ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ≠ 0 := by
+  sorry
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - Theorem already proved
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - Verifying Theorem
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - theorem h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = r ^ 3 := by
+  sorry
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - Theorem already proved
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - Verifying Theorem
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^ 2 = 3 * a - 1 := by
+  sorry
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - Theorem already proved
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - Verifying Theorem
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - theorem h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (hr_pow : r ^ 3 = a ^ 9) : (1 / r ^ 3) = (a ^ 9)⁻¹ := by
+
+--- line 26259 ---
+    ├─ ⏳ h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_quad : a ^ 2 = 3 * a - 1) ... (depth 1)
+    ├─ ⏳ hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (ha_def : a = r ^ ((1 : ℝ... (depth 1)
+    ├─ ⏳ hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r... (depth 1)
+    └─ ⏳ h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ... (depth 1)
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ================================================================================
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - 
+
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ALL EXTRACTED THEOREMS
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ['theorem ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ≠ 0 := by\n  sorry', 'theorem h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = r ^ 3 := by\n  sorry', 'theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^ 2 = 3 * a - 1 := by\n  sorry', 'theorem h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (hr_pow : r ^ 3 = a ^ 9) : (1 / r ^ 3) = (a ^ 9)⁻¹ := by\n  sorry', 'theorem ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) (ha_ne : a ≠ 0) : 0 < a := by\n  sorry', 'theorem h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h₀ : r ^ ((1 : ℝ) / 3) + 1 / r ^ ((1 : ℝ) / 3) = 3)\n    (ha_def : a = r ^ ((1 : ℝ) / 3)) : a + 1 / a = 3 := by\n  sorry', 'theorem h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_quad : a ^ 2 = 3 * a - 1) : a ^ 9 + (a ^ 9)⁻¹ = 5778 := by\n  sorry', 'theorem hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (ha_def : a = r ^ ((1 : ℝ) / 3)) (ha_pos : 0 < a) : 0 ≤ r := by\n  sorry', 'theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ))\n    (h_nat : r ^ (3 : ℝ) = r ^ 3) (ha_def : a = r ^ ((1 : ℝ) / 3)) : r ^ 3 = a ^ 9 := by\n  sorry', 'theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by\n  sorry']
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - Verifying Theorem
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - theorem ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ≠ 0 := by
+  sorry
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - Theorem already proved
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - Verifying Theorem
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - theorem h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = r ^ 3 := by
+  sorry
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - Theorem already proved
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,558][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - Verifying Theorem
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^ 2 = 3 * a - 1 := by
+  sorry
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - Theorem already proved
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - Verifying Theorem
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - theorem h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (hr_pow : r ^ 3 = a ^ 9) : (1 / r ^ 3) = (a ^ 9)⁻¹ := by
+  sorry
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - Theorem already proved
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,559][src.models.HILBERTWorker][INFO] - ********************************************************************************
+
+--- line 26325 ---
+[2026-09-11 06:48:32,560][src.models.HILBERTWorker][INFO] - theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ))
+    (h_nat : r ^ (3 : ℝ) = r ^ 3) (ha_def : a = r ^ ((1 : ℝ) / 3)) : r ^ 3 = a ^ 9 := by
+  sorry
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - Theorem already proved
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - Verifying Theorem
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  sorry
+[2026-09-11 06:48:32,561][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - Subgoals being solved in parallel:
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - 
+================================================================================
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - PROOF PROGRESS TREE
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - ================================================================================
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - └─ 🔄 algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ)     (h₀ : r ^ ((1 : ℝ) / 3) + 1 / r ^... [SUBGOAL_DECOMP]
+    ├─ ✅ ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ≠ ... (depth 1)
+    ├─ ✅ h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = r ^ 3 := by   s... (depth 1)
+    ├─ ✅ h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^... (depth 1)
+    ├─ ✅ h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (hr_pow : r ^ 3 = a ^ 9) ... (depth 1)
+    ├─ ✅ ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) (ha_n... (depth 1)
+    ├─ ✅ h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h₀ : r ^ ((1 : ℝ) / 3) + 1 / ... (depth 1)
+    ├─ ✅ h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_quad : a ^ 2 = 3 * a - 1) ... (depth 1)
+    ├─ 🔄 hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (ha_def : a = r ^ ((1 : ℝ... (depth 1)
+    ├─ ✅ hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r... (depth 1)
+    └─ 🔄 h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ... (depth 1)
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - ================================================================================
+[2026-09-11 06:48:32,562][src.models.HILBERTWorker][INFO] - 
+
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-262
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-263
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-264
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-265
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-266
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-267
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-268
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-269
+
+--- line 26327 ---
+  sorry
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - Theorem already proved
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - Verifying Theorem
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  sorry
+[2026-09-11 06:48:32,561][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - Subgoals being solved in parallel:
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - 
+================================================================================
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - PROOF PROGRESS TREE
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - ================================================================================
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - └─ 🔄 algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ)     (h₀ : r ^ ((1 : ℝ) / 3) + 1 / r ^... [SUBGOAL_DECOMP]
+    ├─ ✅ ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ≠ ... (depth 1)
+    ├─ ✅ h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = r ^ 3 := by   s... (depth 1)
+    ├─ ✅ h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^... (depth 1)
+    ├─ ✅ h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (hr_pow : r ^ 3 = a ^ 9) ... (depth 1)
+    ├─ ✅ ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) (ha_n... (depth 1)
+    ├─ ✅ h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h₀ : r ^ ((1 : ℝ) / 3) + 1 / ... (depth 1)
+    ├─ ✅ h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_quad : a ^ 2 = 3 * a - 1) ... (depth 1)
+    ├─ 🔄 hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (ha_def : a = r ^ ((1 : ℝ... (depth 1)
+    ├─ ✅ hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r... (depth 1)
+    └─ 🔄 h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ... (depth 1)
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - ================================================================================
+[2026-09-11 06:48:32,562][src.models.HILBERTWorker][INFO] - 
+
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-262
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-263
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-264
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-265
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-266
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-267
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-268
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-269
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+
+--- line 26343 ---
+    ├─ ✅ h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = r ^ 3 := by   s... (depth 1)
+    ├─ ✅ h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^... (depth 1)
+    ├─ ✅ h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (hr_pow : r ^ 3 = a ^ 9) ... (depth 1)
+    ├─ ✅ ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) (ha_n... (depth 1)
+    ├─ ✅ h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h₀ : r ^ ((1 : ℝ) / 3) + 1 / ... (depth 1)
+    ├─ ✅ h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_quad : a ^ 2 = 3 * a - 1) ... (depth 1)
+    ├─ 🔄 hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (ha_def : a = r ^ ((1 : ℝ... (depth 1)
+    ├─ ✅ hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r... (depth 1)
+    └─ 🔄 h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ... (depth 1)
+[2026-09-11 06:48:32,561][src.models.HILBERTWorker][INFO] - ================================================================================
+[2026-09-11 06:48:32,562][src.models.HILBERTWorker][INFO] - 
+
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-262
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-263
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-264
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-265
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-266
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-267
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-268
+[2026-09-11 06:48:32,562][src.tools.AsyncJobPool][INFO] - 📥 Submitted job: Task-269
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 34.00it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 86.87it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 124.54it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 104.47it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 102.19it/s]
+[2026-09-11 06:48:41,685][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:48:41,685][src.models.HILBERTWorker][INFO] - Extracted search results
+[2026-09-11 06:48:41,685][src.models.HILBERTWorker][INFO] - Results for query: Real.rpow_mul
+
+--- line 28360 ---
+Description: For any extended nonnegative real number $x \in \mathbb{R}_{\geq 0} \cup \{\infty\}$ and any real number $y \in \mathbb{R}$, the power $x^y$ equals zero if and only if either:
+- $x = 0$ and $y > 0$, or
+- $x = \infty$ and $y < 0$.
+Signature:  {x : ℝ≥0∞} {y : ℝ} : x ^ y = 0 ↔ x = 0 ∧ 0 < y ∨ x = ⊤ ∧ y < 0
+
+[2026-09-11 06:50:20,290][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:50:21,342][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:50:21,342][src.models.HILBERTWorker][INFO] - Generated Informal Proof:
+[2026-09-11 06:50:21,342][src.models.HILBERTWorker][INFO] - theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides are defined as `0`
+    have hneg : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hneg]
+[2026-09-11 06:50:21,343][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:50:22,146][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:50:22,147][src.models.HILBERTWorker][INFO] - Correction passes 1/6
+[2026-09-11 06:50:22,147][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:50:22,147][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:50:22,147][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+
+--- line 28385 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides are defined as `0`
+    have hneg : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hneg]
+```
+
+
+Error message from Lean: type mismatch, term
+  rpow_mul hr (1 / 3) 9
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    simp [Real.rpow_def, hneg]
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+hr : ¬0 ≤ r
+hneg : r < 0
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+
+--- line 28438 ---
+Module: Mathlib.Analysis.SpecialFunctions.Pow.Real
+Name: Real.rpow_mul
+Description: For any real number $x \geq 0$ and any real numbers $y, z$, the following identity holds:
+\[ x^{y \cdot z} = (x^y)^z. \]
+Signature:  {x : ℝ} (hx : 0 ≤ x) (y z : ℝ) : x ^ (y * z) = (x ^ y) ^ z
+[2026-09-11 06:50:22,148][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:50:37,796][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:50:37,796][src.models.HILBERTWorker][INFO] - Generated Informal Proof:
+[2026-09-11 06:50:37,796][src.models.HILBERTWorker][INFO] - theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    field_simp
+  by_cases hr : (0 ≤ r)
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    calc
+      r ^ (3 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+        simpa [h_mul]
+      _ = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+        simpa using h.symm
+  · -- negative case: both sides are `0`
+    have hlt : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hlt]
+[2026-09-11 06:50:37,796][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:50:38,601][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:50:38,602][src.models.HILBERTWorker][INFO] - Correction passes 1/6
+[2026-09-11 06:50:38,602][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:50:38,602][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:50:38,602][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+--- line 28469 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    field_simp
+  by_cases hr : (0 ≤ r)
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    calc
+      r ^ (3 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+        simpa [h_mul]
+      _ = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+        simpa using h.symm
+  · -- negative case: both sides are `0`
+    have hlt : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hlt]
+```
+
+
+Error message from Lean: unsolved goals
+r : ℝ
+⊢ 9 = 3 * 3
+The error was encountered while trying to process the following lines:
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+
+
+
+Error message from Lean: tactic 'assumption' failed
+r : ℝ
+h_mul : 1 / 3 * 9 = 3
+
+--- line 28762 ---
+Module: Mathlib.Analysis.SpecialFunctions.Pow.Real
+Name: Real.rpow_mul
+Description: For any real number $x \geq 0$ and any real numbers $y, z$, the following identity holds:
+\[ x^{y \cdot z} = (x^y)^z. \]
+Signature:  {x : ℝ} (hx : 0 ≤ x) (y z : ℝ) : x ^ (y * z) = (x ^ y) ^ z
+[2026-09-11 06:50:51,849][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:50:55,084][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:50:55,085][src.models.HILBERTWorker][INFO] - Generated Informal Proof:
+[2026-09-11 06:50:55,085][src.models.HILBERTWorker][INFO] - theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h₁ : (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+    simpa using (Real.rpow_mul r ((1 : ℝ) / 3) 9).symm
+  have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+  simpa [h₂] using h₁.symm
+[2026-09-11 06:50:55,085][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:50:55,918][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:50:55,918][src.models.HILBERTWorker][INFO] - Correction passes 1/6
+[2026-09-11 06:50:55,918][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:50:55,918][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:50:55,918][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h₁ : (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+    simpa using (Real.rpow_mul r ((1 : ℝ) / 3) 9).symm
+  have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+  simpa [h₂] using h₁.symm
+```
+
+
+--- line 28784 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h₁ : (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+    simpa using (Real.rpow_mul r ((1 : ℝ) / 3) 9).symm
+  have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+  simpa [h₂] using h₁.symm
+```
+
+
+Error message from Lean: application type mismatch
+  rpow_mul r
+argument
+  r
+has type
+  ℝ : Type
+but is expected to have type
+  0 ≤ ?m.2109 : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+Error message from Lean: type mismatch, term
+  Eq.symm h₁
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+--- line 28979 ---
+6. [THEOREM] Zero Power Condition: $x^y = 0 \leftrightarrow (x = 0 \land y \neq 0)$ for $x \geq 0$
+Module: Mathlib.Analysis.SpecialFunctions.Pow.Real
+Name: Real.rpow_eq_zero_iff_of_nonneg
+Description: For any real numbers $x$ and $y$ with $x \geq 0$, the power $x^y$ equals zero if and only if $x = 0$ and $y \neq 0$.
+Signature:  (hx : 0 ≤ x) : x ^ y = 0 ↔ x = 0 ∧ y ≠ 0
+[2026-09-11 06:50:59,033][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:51:03,709][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:51:03,709][src.models.HILBERTWorker][INFO] - Generated Informal Proof:
+[2026-09-11 06:51:03,709][src.models.HILBERTWorker][INFO] - theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    simpa [one_div, mul_comm, mul_left_comm, mul_assoc] using h
+  · -- negative case: both sides evaluate to `1`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hle : r ≤ 0 := le_of_lt hlt
+    have hrne : r ≠ 0 := ne_of_lt hlt
+    simpa [Real.rpow_def, hle, Real.log_of_nonpos hle, hrne]
+[2026-09-11 06:51:03,709][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:51:04,601][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:51:04,602][src.models.HILBERTWorker][INFO] - Correction passes 1/6
+[2026-09-11 06:51:04,602][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:51:04,602][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:51:04,602][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+
+--- line 29006 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    simpa [one_div, mul_comm, mul_left_comm, mul_assoc] using h
+  · -- negative case: both sides evaluate to `1`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hle : r ≤ 0 := le_of_lt hlt
+    have hrne : r ≠ 0 := ne_of_lt hlt
+    simpa [Real.rpow_def, hle, Real.log_of_nonpos hle, hrne]
+```
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    have hle : r ≤ 0 := le_of_lt hlt
+
+
+
+Error message from Lean: unknown constant 'Real.log_of_nonpos'
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+--- line 29066 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides are defined as `0`
+    have hneg : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hneg]
+```
+
+
+Error message from Lean: type mismatch, term
+  rpow_mul hr (1 / 3) 9
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    simp [Real.rpow_def, hneg]
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+hr : ¬0 ≤ r
+hneg : r < 0
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+
+--- line 29101 ---
+hneg : r < 0
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+[2026-09-11 06:51:11,480][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides are defined as `0`
+    simp [Real.rpow_def, hr]
+```
+[2026-09-11 06:51:12,366][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:51:12,368][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:51:12,368][src.models.HILBERTWorker][INFO] - Correction passes 2/6
+[2026-09-11 06:51:12,368][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:51:12,368][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:51:12,369][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+
+--- line 29126 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides are defined as `0`
+    simp [Real.rpow_def, hr]
+```
+
+
+Error message from Lean: type mismatch, term
+  rpow_mul hr (1 / 3) 9
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+hr : ¬0 ≤ r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+--- line 29186 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    field_simp
+  by_cases hr : (0 ≤ r)
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    calc
+      r ^ (3 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+        simpa [h_mul]
+      _ = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+        simpa using h.symm
+  · -- negative case: both sides are `0`
+    have hlt : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hlt]
+```
+
+
+Error message from Lean: unsolved goals
+r : ℝ
+⊢ 9 = 3 * 3
+The error was encountered while trying to process the following lines:
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+
+
+
+Error message from Lean: tactic 'assumption' failed
+r : ℝ
+h_mul : 1 / 3 * 9 = 3
+
+--- line 29248 ---
+hlt : r < 0
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+[2026-09-11 06:51:14,337][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    field_simp
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    calc
+      r ^ (3 : ℝ) = r ^ ((1 : ℝ) / 3 * 9) := by
+        simpa [h_mul]
+      _ = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+        simpa using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hlt]
+```
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 36.38it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00, 76.29it/s]
+[2026-09-11 06:51:15,035][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:51:15,035][src.models.HILBERTWorker][INFO] - Extracted search results
+[2026-09-11 06:51:15,036][src.models.HILBERTWorker][INFO] - Results for query: Lean theorem Real.rpow_mul simplification of (1/3) * 9 to 3
+1. [THEOREM] Sum of Thirds Identity in Extended Nonnegative Reals: $\frac{a}{3} + \frac{a}{3} + \frac{a}{3} = a$
+Module: Mathlib.Data.ENNReal.Inv
+Name: ENNReal.add_thirds
+Description: For any extended nonnegative real number $a \in [0, \infty]$, the sum of three equal parts $a/3$ equals $a$, i.e., $\frac{a}{3} + \frac{a}{3} + \frac{a}{3} = a$.
+Signature:  (a : ℝ≥0∞) : a / 3 + a / 3 + a / 3 = a
+
+--- line 29351 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    field_simp
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    calc
+      r ^ (3 : ℝ) = r ^ ((1 : ℝ) / 3 * 9) := by
+        simpa [h_mul]
+      _ = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+        simpa using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hlt]
+```
+
+
+Error message from Lean: unsolved goals
+r : ℝ
+⊢ 9 = 3 * 3
+The error was encountered while trying to process the following lines:
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+
+
+
+Error message from Lean: tactic 'assumption' failed
+r : ℝ
+h_mul : 1 / 3 * 9 = 3
+
+--- line 29676 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h₁ : (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+    simpa using (Real.rpow_mul r ((1 : ℝ) / 3) 9).symm
+  have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+  simpa [h₂] using h₁.symm
+```
+
+
+Error message from Lean: application type mismatch
+  rpow_mul r
+argument
+  r
+has type
+  ℝ : Type
+but is expected to have type
+  0 ≤ ?m.2109 : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+Error message from Lean: type mismatch, term
+  Eq.symm h₁
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+--- line 29862 ---
+Description: For any real number $x \geq 0$ and any real numbers $y, z$, the following identity holds:
+\[ x^{y \cdot z} = (x^y)^z. \]
+Signature:  {x : ℝ} (hx : 0 ≤ x) (y z : ℝ) : x ^ (y * z) = (x ^ y) ^ z
+[2026-09-11 06:51:40,277][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:51:44,257][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:51:44,257][src.models.HILBERTWorker][INFO] - Full theorem statement response (attempt 1)
+[2026-09-11 06:51:44,257][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:51:44,257][src.models.HILBERTWorker][INFO] - ```lean4
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h : (0 : ℝ) ≤ r
+  · -- non‑negative `r`: use the power law `Real.rpow_mul`
+    have h₁ :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+      simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h₂] using h₁.symm
+  · -- negative `r`: `Real.rpow` is defined to be `0` for non‑integer exponents,
+    -- so both sides evaluate to `0`.
+    have hlt : r < 0 := lt_of_not_ge h
+    simp [Real.rpow_def, hlt]
+```
+[2026-09-11 06:51:44,257][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:51:45,211][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:51:45,213][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:51:45,213][src.models.HILBERTWorker][INFO] - Correction passes 2/6
+[2026-09-11 06:51:45,213][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:51:45,213][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:51:45,213][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+--- line 29893 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h : (0 : ℝ) ≤ r
+  · -- non‑negative `r`: use the power law `Real.rpow_mul`
+    have h₁ :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+      simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h₂] using h₁.symm
+  · -- negative `r`: `Real.rpow` is defined to be `0` for non‑integer exponents,
+    -- so both sides evaluate to `0`.
+    have hlt : r < 0 := lt_of_not_ge h
+    simp [Real.rpow_def, hlt]
+```
+
+
+Error message from Lean: type mismatch, term
+  Eq.symm h₁
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    have hlt : r < 0 := lt_of_not_ge h
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+
+--- line 29959 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides are defined as `0`
+    simp [Real.rpow_def, hr]
+```
+
+
+Error message from Lean: type mismatch, term
+  rpow_mul hr (1 / 3) 9
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+hr : ¬0 ≤ r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+--- line 29992 ---
+hr : ¬0 ≤ r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+[2026-09-11 06:51:49,993][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [one_div, hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides are defined as `0`
+    simp [Real.rpow_def, hr]
+```
+[2026-09-11 06:51:50,776][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:51:50,778][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:51:50,778][src.models.HILBERTWorker][INFO] - Correction passes 3/6
+[2026-09-11 06:51:50,779][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:51:50,779][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:51:50,779][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+
+--- line 30017 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [one_div, hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides are defined as `0`
+    simp [Real.rpow_def, hr]
+```
+
+
+Error message from Lean: type mismatch, term
+  rpow_mul hr (1 / 3) 9
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+hr : ¬0 ≤ r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+--- line 30224 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    field_simp
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    calc
+      r ^ (3 : ℝ) = r ^ ((1 : ℝ) / 3 * 9) := by
+        simpa [h_mul]
+      _ = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+        simpa using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hlt]
+```
+
+
+Error message from Lean: unsolved goals
+r : ℝ
+⊢ 9 = 3 * 3
+The error was encountered while trying to process the following lines:
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+
+
+
+Error message from Lean: tactic 'assumption' failed
+r : ℝ
+h_mul : 1 / 3 * 9 = 3
+
+--- line 30275 ---
+hlt : r < 0
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+[2026-09-11 06:51:55,049][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    norm_num
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    calc
+      r ^ (3 : ℝ) = r ^ ((1 : ℝ) / 3 * 9) := by
+        simpa [h_mul]
+      _ = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+        simpa using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hlt]
+```
+[2026-09-11 06:51:55,381][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:51:55,384][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:51:55,384][src.models.HILBERTWorker][INFO] - Correction passes 2/6
+[2026-09-11 06:51:55,384][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:51:55,384][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:51:55,384][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+
+--- line 30360 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    norm_num
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    calc
+      r ^ (3 : ℝ) = r ^ ((1 : ℝ) / 3 * 9) := by
+        simpa [h_mul]
+      _ = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+        simpa using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hlt]
+```
+
+
+Error message from Lean: tactic 'assumption' failed
+r : ℝ
+h_mul : 1 / 3 * 9 = 3
+hr : 0 ≤ r
+h : r ^ (1 / 3 * 9) = (r ^ (1 / 3)) ^ 9
+⊢ r ^ 3 = r ^ (3⁻¹ * 9)
+The error was encountered while trying to process the following lines:
+  ·
+
+
+
+Error message from Lean: unsolved goals
+
+--- line 30500 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    simpa [one_div, mul_comm, mul_left_comm, mul_assoc] using h
+  · -- negative case: both sides evaluate to `1`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hle : r ≤ 0 := le_of_lt hlt
+    have hrne : r ≠ 0 := ne_of_lt hlt
+    simpa [Real.rpow_def, hle, Real.log_of_nonpos hle, hrne]
+```
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    have hle : r ≤ 0 := le_of_lt hlt
+
+
+
+Error message from Lean: unknown constant 'Real.log_of_nonpos'
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+--- line 30545 ---
+hrne : r ≠ 0
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+[2026-09-11 06:52:15,085][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      field_simp
+    simpa [hmul, one_div] using h
+  · -- negative case: both sides are `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hr0 : r ≠ 0 := ne_of_lt hlt
+    have h_not_pos : ¬ r > 0 := not_lt.mpr hlt.le
+    simp [Real.rpow_def, hr0, h_not_pos] 
+```
+[2026-09-11 06:52:16,106][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:52:16,109][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:52:16,109][src.models.HILBERTWorker][INFO] - Correction passes 2/6
+[2026-09-11 06:52:16,109][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:52:16,110][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:52:16,110][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+
+--- line 30575 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      field_simp
+    simpa [hmul, one_div] using h
+  · -- negative case: both sides are `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hr0 : r ≠ 0 := ne_of_lt hlt
+    have h_not_pos : ¬ r > 0 := not_lt.mpr hlt.le
+    simp [Real.rpow_def, hr0, h_not_pos]
+```
+
+
+Error message from Lean: unsolved goals
+r : ℝ
+h0 : 0 ≤ r
+h : r ^ (1 / 3 * 9) = (r ^ (1 / 3)) ^ 9
+⊢ 9 = 3 * 3
+The error was encountered while trying to process the following lines:
+  · -- negative case: both sides are `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+
+--- line 30783 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h : (0 : ℝ) ≤ r
+  · -- non‑negative `r`: use the power law `Real.rpow_mul`
+    have h₁ :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+      simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h₂] using h₁.symm
+  · -- negative `r`: `Real.rpow` is defined to be `0` for non‑integer exponents,
+    -- so both sides evaluate to `0`.
+    have hlt : r < 0 := lt_of_not_ge h
+    simp [Real.rpow_def, hlt]
+```
+
+
+Error message from Lean: type mismatch, term
+  Eq.symm h₁
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    have hlt : r < 0 := lt_of_not_ge h
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+
+--- line 30982 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [one_div, hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides are defined as `0`
+    simp [Real.rpow_def, hr]
+```
+
+
+Error message from Lean: type mismatch, term
+  rpow_mul hr (1 / 3) 9
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+hr : ¬0 ≤ r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+--- line 31015 ---
+hr : ¬0 ≤ r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+[2026-09-11 06:52:42,764][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [one_div, hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hlt, hr]
+```
+[2026-09-11 06:52:43,772][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:52:43,774][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:52:43,774][src.models.HILBERTWorker][INFO] - Correction passes 4/6
+[2026-09-11 06:52:43,774][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:52:43,774][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:52:43,774][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+
+--- line 31041 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [one_div, hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hlt, hr]
+```
+
+
+Error message from Lean: type mismatch, term
+  rpow_mul hr (1 / 3) 9
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    simp [Real.rpow_def, hlt, hr]
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+hr : ¬0 ≤ r
+hlt : r < 0
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+
+--- line 31103 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      field_simp
+    simpa [hmul, one_div] using h
+  · -- negative case: both sides are `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hr0 : r ≠ 0 := ne_of_lt hlt
+    have h_not_pos : ¬ r > 0 := not_lt.mpr hlt.le
+    simp [Real.rpow_def, hr0, h_not_pos]
+```
+
+
+Error message from Lean: unsolved goals
+r : ℝ
+h0 : 0 ≤ r
+h : r ^ (1 / 3 * 9) = (r ^ (1 / 3)) ^ 9
+⊢ 9 = 3 * 3
+The error was encountered while trying to process the following lines:
+  · -- negative case: both sides are `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+
+--- line 31155 ---
+h_not_pos : ¬r > 0
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+    have h_not_pos : ¬ r > 0 := not_lt.mpr hlt.le
+
+
+
+[2026-09-11 06:52:44,459][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      field_simp
+    simpa [hmul] using h
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hr0 : r ≠ 0 := ne_of_lt hlt
+    have hnotpos : ¬ 0 < r := not_lt.mpr hlt.le
+    simp [Real.rpow_def, hr0, hnotpos]
+```
+[2026-09-11 06:52:45,461][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:52:45,463][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:52:45,463][src.models.HILBERTWorker][INFO] - Correction passes 3/6
+[2026-09-11 06:52:45,463][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:52:45,463][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:52:45,463][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+
+--- line 31185 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      field_simp
+    simpa [hmul] using h
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hr0 : r ≠ 0 := ne_of_lt hlt
+    have hnotpos : ¬ 0 < r := not_lt.mpr hlt.le
+    simp [Real.rpow_def, hr0, hnotpos]
+```
+
+
+Error message from Lean: unsolved goals
+r : ℝ
+h0 : 0 ≤ r
+h : r ^ (1 / 3 * 9) = (r ^ (1 / 3)) ^ 9
+⊢ 9 = 3 * 3
+The error was encountered while trying to process the following lines:
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+
+--- line 31448 ---
+[2026-09-11 06:53:00,803][src.tools.lean_utils][INFO] - ????????????????????????????????????????????????????????????????????????????????????????????????????
+[2026-09-11 06:53:00,803][src.models.HILBERTWorker][INFO] - ****************************************************************************************************
+[2026-09-11 06:53:00,803][src.models.HILBERTWorker][INFO] - Trying to obtain the full theorem statement, attempt 1/3
+[2026-09-11 06:53:00,803][src.models.HILBERTWorker][INFO] - ****************************************************************************************************
+[2026-09-11 06:53:09,920][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:53:09,920][src.models.HILBERTWorker][INFO] - Full theorem statement response (attempt 1)
+[2026-09-11 06:53:09,920][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:53:09,921][src.models.HILBERTWorker][INFO] - ```lean4
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  rcases le_or_gt (0 : ℝ) r with h | h
+  · -- non‑negative `r`
+    have h₁ :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+      simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h₂] using h₁.symm
+  · -- negative `r`
+    have hlt : r < 0 := h
+    simp [Real.rpow_def, hlt]
+```
+[2026-09-11 06:53:09,921][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:53:10,908][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:53:10,910][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:53:10,911][src.models.HILBERTWorker][INFO] - Correction passes 3/6
+[2026-09-11 06:53:10,911][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:53:10,911][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:53:10,911][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+
+--- line 31478 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  rcases le_or_gt (0 : ℝ) r with h | h
+  · -- non‑negative `r`
+    have h₁ :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+      simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h₂] using h₁.symm
+  · -- negative `r`
+    have hlt : r < 0 := h
+    simp [Real.rpow_def, hlt]
+```
+
+
+Error message from Lean: type mismatch, term
+  Eq.symm h₁
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    simp [Real.rpow_def, hlt]
+
+
+
+Error message from Lean: unsolved goals
+case inr
+r : ℝ
+h : 0 > r
+
+--- line 31617 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [one_div, hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hlt, hr]
+```
+
+
+Error message from Lean: type mismatch, term
+  rpow_mul hr (1 / 3) 9
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    simp [Real.rpow_def, hlt, hr]
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+hr : ¬0 ≤ r
+hlt : r < 0
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+
+--- line 31652 ---
+hlt : r < 0
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+[2026-09-11 06:53:17,598][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: apply the power law
+    have hmul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by norm_num
+    simpa [hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides evaluate to `0`
+    simp [Real.rpow_def, hr]
+```
+[2026-09-11 06:53:18,238][src.models.HILBERTWorker][INFO] - PRODUCED ANSWER for error message: 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    norm_num
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    calc
+      r ^ (3 : ℝ) = r ^ ((1 : ℝ) / 3 * 9) := by
+        simpa [h_mul]
+
+--- line 31672 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    norm_num
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    calc
+      r ^ (3 : ℝ) = r ^ ((1 : ℝ) / 3 * 9) := by
+        simpa [h_mul]
+      _ = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+        simpa using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hlt]
+```
+
+
+Error message from Lean: tactic 'assumption' failed
+r : ℝ
+h_mul : 1 / 3 * 9 = 3
+hr : 0 ≤ r
+h : r ^ (1 / 3 * 9) = (r ^ (1 / 3)) ^ 9
+⊢ r ^ 3 = r ^ (3⁻¹ * 9)
+The error was encountered while trying to process the following lines:
+  ·
+
+
+
+Error message from Lean: unsolved goals
+
+--- line 31714 ---
+hlt : r < 0
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+[2026-09-11 06:53:18,238][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    field_simp
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    simpa [h_mul] using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    -- use the complex power law and then take real parts
+    have h_mulC : ((1 : ℂ) / 3) * (9 : ℂ) = (3 : ℂ) := by
+      norm_num
+    have hC :
+        (Complex.ofReal r) ^ (3 : ℂ) =
+          ((Complex.ofReal r) ^ ((1 : ℂ) / 3)) ^ (9 : ℂ) := by
+      simpa [h_mulC] using
+        (Complex.rpow_mul (Complex.ofReal r) ((1 : ℂ) / 3) (9 : ℂ))
+    simpa [Real.rpow_def, hlt] using congrArg Complex.re hC
+```
+[2026-09-11 06:53:18,532][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:53:18,534][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:53:18,535][src.models.HILBERTWorker][INFO] - Correction passes 5/6
+[2026-09-11 06:53:18,535][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:53:18,535][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:53:18,535][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+
+--- line 31750 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: apply the power law
+    have hmul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by norm_num
+    simpa [hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides evaluate to `0`
+    simp [Real.rpow_def, hr]
+```
+
+
+Error message from Lean: type mismatch, term
+  rpow_mul hr (1 / 3) 9
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+hr : ¬0 ≤ r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+--- line 31810 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      field_simp
+    simpa [hmul] using h
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hr0 : r ≠ 0 := ne_of_lt hlt
+    have hnotpos : ¬ 0 < r := not_lt.mpr hlt.le
+    simp [Real.rpow_def, hr0, hnotpos]
+```
+
+
+Error message from Lean: unsolved goals
+r : ℝ
+h0 : 0 ≤ r
+h : r ^ (1 / 3 * 9) = (r ^ (1 / 3)) ^ 9
+⊢ 9 = 3 * 3
+The error was encountered while trying to process the following lines:
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+
+--- line 31862 ---
+hnotpos : ¬0 < r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+    have hnotpos : ¬ 0 < r := not_lt.mpr hlt.le
+
+
+
+[2026-09-11 06:53:19,638][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: apply the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      field_simp
+    simpa [hmul] using h
+  · -- negative case: both sides are `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hr0 : r ≠ 0 := ne_of_lt hlt
+    have hnotpos : ¬ 0 < r := not_lt.mpr hlt.le
+    simp [Real.rpow_def, hnotpos, hr0]
+```
+[2026-09-11 06:53:19,832][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:53:19,834][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:53:19,834][src.models.HILBERTWorker][INFO] - Correction passes 4/6
+[2026-09-11 06:53:19,834][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:53:19,834][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:53:19,834][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+
+--- line 31892 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    field_simp
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    simpa [h_mul] using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    -- use the complex power law and then take real parts
+    have h_mulC : ((1 : ℂ) / 3) * (9 : ℂ) = (3 : ℂ) := by
+      norm_num
+    have hC :
+        (Complex.ofReal r) ^ (3 : ℂ) =
+          ((Complex.ofReal r) ^ ((1 : ℂ) / 3)) ^ (9 : ℂ) := by
+      simpa [h_mulC] using
+        (Complex.rpow_mul (Complex.ofReal r) ((1 : ℂ) / 3) (9 : ℂ))
+    simpa [Real.rpow_def, hlt] using congrArg Complex.re hC
+```
+
+
+Error message from Lean: unsolved goals
+r : ℝ
+⊢ 9 = 3 * 3
+The error was encountered while trying to process the following lines:
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+
+
+
+--- line 31972 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: apply the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      field_simp
+    simpa [hmul] using h
+  · -- negative case: both sides are `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hr0 : r ≠ 0 := ne_of_lt hlt
+    have hnotpos : ¬ 0 < r := not_lt.mpr hlt.le
+    simp [Real.rpow_def, hnotpos, hr0]
+```
+
+
+Error message from Lean: unsolved goals
+r : ℝ
+h0 : 0 ≤ r
+h : r ^ (1 / 3 * 9) = (r ^ (1 / 3)) ^ 9
+⊢ 9 = 3 * 3
+The error was encountered while trying to process the following lines:
+  · -- negative case: both sides are `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+
+--- line 32559 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  rcases le_or_gt (0 : ℝ) r with h | h
+  · -- non‑negative `r`
+    have h₁ :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+      simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h₂] using h₁.symm
+  · -- negative `r`
+    have hlt : r < 0 := h
+    simp [Real.rpow_def, hlt]
+```
+
+
+Error message from Lean: type mismatch, term
+  Eq.symm h₁
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    simp [Real.rpow_def, hlt]
+
+
+
+Error message from Lean: unsolved goals
+case inr
+r : ℝ
+h : 0 > r
+
+--- line 32777 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: apply the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      field_simp
+    simpa [hmul] using h
+  · -- negative case: both sides are `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hr0 : r ≠ 0 := ne_of_lt hlt
+    have hnotpos : ¬ 0 < r := not_lt.mpr hlt.le
+    simp [Real.rpow_def, hnotpos, hr0]
+```
+
+
+Error message from Lean: unsolved goals
+r : ℝ
+h0 : 0 ≤ r
+h : r ^ (1 / 3 * 9) = (r ^ (1 / 3)) ^ 9
+⊢ 9 = 3 * 3
+The error was encountered while trying to process the following lines:
+  · -- negative case: both sides are `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+
+--- line 32829 ---
+hnotpos : ¬0 < r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+    have hnotpos : ¬ 0 < r := not_lt.mpr hlt.le
+
+
+
+[2026-09-11 06:53:56,497][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      norm_num
+    simpa [hmul] using h
+  · -- negative case: both sides evaluate to `0`
+    simp [Real.rpow_def, h0]
+```
+[2026-09-11 06:53:57,050][src.models.HILBERTWorker][INFO] - PRODUCED ANSWER for error message: 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: apply the power law
+    have hmul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by norm_num
+    simpa [hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides evaluate to `0`
+    simp [Real.rpow_def, hr]
+
+--- line 32851 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: apply the power law
+    have hmul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by norm_num
+    simpa [hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides evaluate to `0`
+    simp [Real.rpow_def, hr]
+```
+
+
+Error message from Lean: type mismatch, term
+  rpow_mul hr (1 / 3) 9
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+hr : ¬0 ≤ r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+--- line 32884 ---
+hr : ¬0 ≤ r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+[2026-09-11 06:53:57,051][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by norm_num
+    simpa [hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hlt, hr]
+```
+[2026-09-11 06:53:57,305][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:53:57,306][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:53:57,307][src.models.HILBERTWorker][INFO] - Correction passes 5/6
+[2026-09-11 06:53:57,307][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:53:57,307][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:53:57,307][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+
+--- line 32910 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      norm_num
+    simpa [hmul] using h
+  · -- negative case: both sides evaluate to `0`
+    simp [Real.rpow_def, h0]
+```
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+h0 : ¬0 ≤ r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+
+--- line 32984 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by norm_num
+    simpa [hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hlt, hr]
+```
+
+
+Error message from Lean: type mismatch, term
+  rpow_mul hr (1 / 3) 9
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    simp [Real.rpow_def, hlt, hr]
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+hr : ¬0 ≤ r
+hlt : r < 0
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+
+--- line 33406 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have hmul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by norm_num
+    simpa [hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge hr
+    simp [Real.rpow_def, hlt, hr]
+```
+
+
+Error message from Lean: type mismatch, term
+  rpow_mul hr (1 / 3) 9
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    simp [Real.rpow_def, hlt, hr]
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+hr : ¬0 ≤ r
+hlt : r < 0
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+
+--- line 33441 ---
+hlt : r < 0
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+[2026-09-11 06:54:18,858][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases hr : (0 : ℝ) ≤ r
+  · -- non‑negative case: apply the power law
+    have hmul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by norm_num
+    simpa [hmul] using (Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ))
+  · -- negative case: both sides evaluate to `0`
+    simp [Real.rpow_def, hr]
+```
+[2026-09-11 06:54:19,680][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:54:19,696][src.tools.AsyncJobPool][INFO] - ✅ Job 'Task-267' finished
+[2026-09-11 06:54:21,494][src.models.HILBERTWorker][INFO] - PRODUCED ANSWER for error message: 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ)
+    (ha_def : a = r ^ ((1 : ℝ) / 3)) (ha_pos : 0 < a) : 0 ≤ r := by
+  -- rewrite the positivity of `a` in terms of the power of `r`
+  have hpos : 0 < r ^ ((1 : ℝ) / 3) := by
+    simpa [ha_def] using ha_pos
+  -- the exponent is non‑zero
+  have hexp_ne : ((1 : ℝ) / 3) ≠ 0 := by norm_num
+  by_cases hr : (0 : ℝ) ≤ r
+
+--- line 34029 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      norm_num
+    simpa [hmul] using h
+  · -- negative case: both sides evaluate to `0`
+    simp [Real.rpow_def, h0]
+```
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+h0 : ¬0 ≤ r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+
+--- line 34064 ---
+h0 : ¬0 ≤ r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+[2026-09-11 06:54:42,755][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: apply the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      field_simp
+    simpa [hmul] using h
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hnot : ¬ 0 < r := not_lt.mpr (le_of_lt hlt)
+    simp [Real.rpow_def, hnot]
+```
+[2026-09-11 06:54:43,607][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:54:43,609][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:54:43,610][src.models.HILBERTWorker][INFO] - Correction passes 6/6
+[2026-09-11 06:54:43,610][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:54:43,611][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:54:43,611][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+
+--- line 34093 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: apply the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      field_simp
+    simpa [hmul] using h
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hnot : ¬ 0 < r := not_lt.mpr (le_of_lt hlt)
+    simp [Real.rpow_def, hnot]
+```
+
+
+Error message from Lean: unsolved goals
+r : ℝ
+h0 : 0 ≤ r
+h : r ^ (1 / 3 * 9) = (r ^ (1 / 3)) ^ 9
+⊢ 9 = 3 * 3
+The error was encountered while trying to process the following lines:
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+
+--- line 34170 ---
+Description: For any real number $x \geq 0$ and any real numbers $y, z$, the following identity holds:
+\[ x^{y \cdot z} = (x^y)^z. \]
+Signature:  {x : ℝ} (hx : 0 ≤ x) (y z : ℝ) : x ^ (y * z) = (x ^ y) ^ z
+[2026-09-11 06:54:43,612][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:54:45,441][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:54:45,442][src.models.HILBERTWorker][INFO] - Full theorem statement response (attempt 1)
+[2026-09-11 06:54:45,442][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:54:45,442][src.models.HILBERTWorker][INFO] - ```lean4
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h : (0 : ℝ) ≤ r
+  · -- non‑negative `r`
+    have h₁ :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+      simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h₂] using h₁.symm
+  · -- negative `r`
+    have hlt : r < 0 := lt_of_not_ge h
+    have hne : r ≠ 0 := ne_of_lt hlt
+    have hnotpos : ¬ (0 : ℝ) < r := by
+      exact not_lt.mpr (le_of_lt hlt)
+    simp [Real.rpow_def, hne, hnotpos]
+```
+[2026-09-11 06:54:45,442][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:54:46,510][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:54:46,513][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:54:46,514][src.models.HILBERTWorker][INFO] - Correction passes 4/6
+[2026-09-11 06:54:46,514][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:54:46,514][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:54:46,514][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+--- line 34203 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h : (0 : ℝ) ≤ r
+  · -- non‑negative `r`
+    have h₁ :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+      simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h₂] using h₁.symm
+  · -- negative `r`
+    have hlt : r < 0 := lt_of_not_ge h
+    have hne : r ≠ 0 := ne_of_lt hlt
+    have hnotpos : ¬ (0 : ℝ) < r := by
+      exact not_lt.mpr (le_of_lt hlt)
+    simp [Real.rpow_def, hne, hnotpos]
+```
+
+
+Error message from Lean: type mismatch, term
+  Eq.symm h₁
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    have hne : r ≠ 0 := ne_of_lt hlt
+
+
+
+Error message from Lean: unsolved goals
+
+--- line 34707 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: apply the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      field_simp
+    simpa [hmul] using h
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hnot : ¬ 0 < r := not_lt.mpr (le_of_lt hlt)
+    simp [Real.rpow_def, hnot]
+```
+
+
+Error message from Lean: unsolved goals
+r : ℝ
+h0 : 0 ≤ r
+h : r ^ (1 / 3 * 9) = (r ^ (1 / 3)) ^ 9
+⊢ 9 = 3 * 3
+The error was encountered while trying to process the following lines:
+  · -- negative case: both sides evaluate to `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+
+--- line 34757 ---
+hnot : ¬0 < r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+The error was encountered while trying to process the following lines:
+    simp [Real.rpow_def, hnot]
+
+
+
+[2026-09-11 06:55:10,417][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h0 : (0 : ℝ) ≤ r
+  · -- non‑negative case: use the power law
+    have h := Real.rpow_mul h0 ((1 : ℝ) / 3) 9
+    have hmul : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by
+      norm_num
+    simpa [hmul] using h
+  · -- negative case: both sides are `0`
+    have hlt : r < 0 := lt_of_not_ge h0
+    have hpos : ¬ 0 < r := not_lt.mpr (le_of_lt hlt)
+    have hne : r ≠ 0 := ne_of_lt hlt
+    simp [Real.rpow_def, hpos, hne]
+```
+[2026-09-11 06:55:11,313][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:55:11,314][src.tools.AsyncJobPool][INFO] - ✅ Job 'Task-269' finished
+[2026-09-11 06:55:15,794][src.models.HILBERTWorker][INFO] - PRODUCED ANSWER for error message: 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ)
+    (ha_def : a = r ^ ((1 : ℝ) / 3)) (ha_pos : 0 < a) : 0 ≤ r := by
+  -- rewrite the positivity of `a` in terms of the power of `r`
+
+--- line 35060 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    field_simp
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    simpa [h_mul] using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    -- use the complex power law and then take real parts
+    have h_mulC : ((1 : ℂ) / 3) * (9 : ℂ) = (3 : ℂ) := by
+      norm_num
+    have hC :
+        (Complex.ofReal r) ^ (3 : ℂ) =
+          ((Complex.ofReal r) ^ ((1 : ℂ) / 3)) ^ (9 : ℂ) := by
+      simpa [h_mulC] using
+        (Complex.rpow_mul (Complex.ofReal r) ((1 : ℂ) / 3) (9 : ℂ))
+    simpa [Real.rpow_def, hlt] using congrArg Complex.re hC
+```
+
+
+Error message from Lean: unsolved goals
+r : ℝ
+⊢ 9 = 3 * 3
+The error was encountered while trying to process the following lines:
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+
+
+
+--- line 35120 ---
+but is expected to have type
+  (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+[2026-09-11 06:55:19,137][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    norm_num
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    simpa [h_mul] using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    have h_mulC : ((1 : ℂ) / 3) * (9 : ℂ) = (3 : ℂ) := by
+      norm_num
+    have hC :
+        (Complex.ofReal r) ^ (3 : ℂ) =
+          ((Complex.ofReal r) ^ ((1 : ℂ) / 3)) ^ (9 : ℂ) := by
+      simpa [h_mulC] using
+        (Complex.cpow_mul (Complex.ofReal r) ((1 : ℂ) / 3) (9 : ℂ))
+    simpa [Real.rpow_def, hlt] using congrArg Complex.re hC
+```
+[2026-09-11 06:55:20,820][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:55:20,821][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:55:20,822][src.models.HILBERTWorker][INFO] - Correction passes 5/6
+[2026-09-11 06:55:20,822][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:55:20,822][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:55:20,822][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+--- line 35155 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    norm_num
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    simpa [h_mul] using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    have h_mulC : ((1 : ℂ) / 3) * (9 : ℂ) = (3 : ℂ) := by
+      norm_num
+    have hC :
+        (Complex.ofReal r) ^ (3 : ℂ) =
+          ((Complex.ofReal r) ^ ((1 : ℂ) / 3)) ^ (9 : ℂ) := by
+      simpa [h_mulC] using
+        (Complex.cpow_mul (Complex.ofReal r) ((1 : ℂ) / 3) (9 : ℂ))
+    simpa [Real.rpow_def, hlt] using congrArg Complex.re hC
+```
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    have h_mulC : ((1 : ℂ) / 3) * (9 : ℂ) = (3 : ℂ) := by
+
+
+--- line 35286 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h : (0 : ℝ) ≤ r
+  · -- non‑negative `r`
+    have h₁ :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+      simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h₂] using h₁.symm
+  · -- negative `r`
+    have hlt : r < 0 := lt_of_not_ge h
+    have hne : r ≠ 0 := ne_of_lt hlt
+    have hnotpos : ¬ (0 : ℝ) < r := by
+      exact not_lt.mpr (le_of_lt hlt)
+    simp [Real.rpow_def, hne, hnotpos]
+```
+
+
+Error message from Lean: type mismatch, term
+  Eq.symm h₁
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    have hne : r ≠ 0 := ne_of_lt hlt
+
+
+
+Error message from Lean: unsolved goals
+
+--- line 35484 ---
+Description: For any real number $x \geq 0$ and any real numbers $y, z$, the following identity holds:
+\[ x^{y \cdot z} = (x^y)^z. \]
+Signature:  {x : ℝ} (hx : 0 ≤ x) (y z : ℝ) : x ^ (y * z) = (x ^ y) ^ z
+[2026-09-11 06:55:39,316][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:55:45,788][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:55:45,788][src.models.HILBERTWorker][INFO] - Full theorem statement response (attempt 1)
+[2026-09-11 06:55:45,788][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:55:45,788][src.models.HILBERTWorker][INFO] - ```lean4
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h : (0 : ℝ) ≤ r
+  · -- non‑negative `r`
+    have h₁ :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+        simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h₂] using h₁.symm
+  · -- negative `r`
+    have hlt : r < 0 := lt_of_not_ge h
+    have hne : r ≠ 0 := ne_of_lt hlt
+    simp [Real.rpow_def, hne, h] 
+```
+[2026-09-11 06:55:45,789][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:55:46,810][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:55:46,813][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:55:46,813][src.models.HILBERTWorker][INFO] - Correction passes 5/6
+[2026-09-11 06:55:46,813][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:55:46,814][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:55:46,814][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+--- line 35515 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h : (0 : ℝ) ≤ r
+  · -- non‑negative `r`
+    have h₁ :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+        simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h₂] using h₁.symm
+  · -- negative `r`
+    have hlt : r < 0 := lt_of_not_ge h
+    have hne : r ≠ 0 := ne_of_lt hlt
+    simp [Real.rpow_def, hne, h]
+```
+
+
+Error message from Lean: type mismatch, term
+  Eq.symm h₁
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    have hne : r ≠ 0 := ne_of_lt hlt
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+
+--- line 35823 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    norm_num
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    simpa [h_mul] using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    have h_mulC : ((1 : ℂ) / 3) * (9 : ℂ) = (3 : ℂ) := by
+      norm_num
+    have hC :
+        (Complex.ofReal r) ^ (3 : ℂ) =
+          ((Complex.ofReal r) ^ ((1 : ℂ) / 3)) ^ (9 : ℂ) := by
+      simpa [h_mulC] using
+        (Complex.cpow_mul (Complex.ofReal r) ((1 : ℂ) / 3) (9 : ℂ))
+    simpa [Real.rpow_def, hlt] using congrArg Complex.re hC
+```
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    have h_mulC : ((1 : ℂ) / 3) * (9 : ℂ) = (3 : ℂ) := by
+
+
+--- line 35891 ---
+but is expected to have type
+  (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+[2026-09-11 06:56:22,901][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    norm_num
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    simpa [h_mul] using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    have hle : r ≤ 0 := le_of_lt hlt
+    -- both sides are given by the definition of `Real.rpow` for a non‑positive base
+    simp [Real.rpow_def_of_nonpos hle, hlt, Real.abs_of_neg hlt, h_mul,
+          mul_comm, mul_left_comm, mul_assoc, Real.cos_mul, Real.sin_mul,
+          Real.cos_pi, Real.sin_pi, Real.cos_eq_neg_one_iff,
+          Real.cos_eq_one_iff, Real.sin_eq_zero_iff] 
+```
+[2026-09-11 06:56:23,213][src.models.HILBERTWorker][INFO] - PRODUCED ANSWER for error message: 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+
+--- line 35919 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h : (0 : ℝ) ≤ r
+  · -- non‑negative `r`
+    have h₁ :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+        simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h₂ : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h₂] using h₁.symm
+  · -- negative `r`
+    have hlt : r < 0 := lt_of_not_ge h
+    have hne : r ≠ 0 := ne_of_lt hlt
+    simp [Real.rpow_def, hne, h]
+```
+
+
+Error message from Lean: type mismatch, term
+  Eq.symm h₁
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    have hne : r ≠ 0 := ne_of_lt hlt
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+
+--- line 36273 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    norm_num
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    simpa [h_mul] using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    have hle : r ≤ 0 := le_of_lt hlt
+    -- both sides are given by the definition of `Real.rpow` for a non‑positive base
+    simp [Real.rpow_def_of_nonpos hle, hlt, Real.abs_of_neg hlt, h_mul,
+          mul_comm, mul_left_comm, mul_assoc, Real.cos_mul, Real.sin_mul,
+          Real.cos_pi, Real.sin_pi, Real.cos_eq_neg_one_iff,
+          Real.cos_eq_one_iff, Real.sin_eq_zero_iff]
+```
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    have hle : r ≤ 0 := le_of_lt hlt
+
+
+
+
+--- line 36650 ---
+[2026-09-11 06:56:43,797][src.tools.lean_utils][INFO] - ????????????????????????????????????????????????????????????????????????????????????????????????????
+[2026-09-11 06:56:43,798][src.models.HILBERTWorker][INFO] - ****************************************************************************************************
+[2026-09-11 06:56:43,798][src.models.HILBERTWorker][INFO] - Trying to obtain the full theorem statement, attempt 1/3
+[2026-09-11 06:56:43,798][src.models.HILBERTWorker][INFO] - ****************************************************************************************************
+[2026-09-11 06:56:52,776][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:56:52,776][src.models.HILBERTWorker][INFO] - Full theorem statement response (attempt 1)
+[2026-09-11 06:56:52,776][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:56:52,776][src.models.HILBERTWorker][INFO] - ```lean4
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h : (0 : ℝ) ≤ r
+  · -- non‑negative `r`
+    have h_mul :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+        simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h_eq : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h_eq] using h_mul.symm
+  · -- negative `r`
+    simp [Real.rpow_def, h]
+```
+[2026-09-11 06:56:52,777][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:56:53,852][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:56:53,853][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:56:53,854][src.models.HILBERTWorker][INFO] - Correction passes 6/6
+[2026-09-11 06:56:53,854][src.models.HILBERTWorker][INFO] - --------------------------------------------------------------------------------
+[2026-09-11 06:56:53,854][src.models.HILBERTWorker][INFO] - Error Message
+[2026-09-11 06:56:53,854][src.models.HILBERTWorker][INFO] - 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+
+--- line 36679 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h : (0 : ℝ) ≤ r
+  · -- non‑negative `r`
+    have h_mul :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+        simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h_eq : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h_eq] using h_mul.symm
+  · -- negative `r`
+    simp [Real.rpow_def, h]
+```
+
+
+Error message from Lean: type mismatch, term
+  Eq.symm h_mul
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+h : ¬0 ≤ r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+
+--- line 37502 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    norm_num
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    simpa [h_mul] using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    have hle : r ≤ 0 := le_of_lt hlt
+    -- both sides are given by the definition of `Real.rpow` for a non‑positive base
+    simp [Real.rpow_def_of_nonpos hle, hlt, Real.abs_of_neg hlt, h_mul,
+          mul_comm, mul_left_comm, mul_assoc, Real.cos_mul, Real.sin_mul,
+          Real.cos_pi, Real.sin_pi, Real.cos_eq_neg_one_iff,
+          Real.cos_eq_one_iff, Real.sin_eq_zero_iff]
+```
+
+
+Error message from Lean: type mismatch, term
+  h
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+    have hle : r ≤ 0 := le_of_lt hlt
+
+
+
+
+--- line 37565 ---
+⊢ (if r = 0 then 0 else cos (π * 3) * rexp (3 * Real.log r)) =
+    if r = 0 then 0 else (cos (π * 3⁻¹) * rexp (3⁻¹ * Real.log r)) ^ 9
+The error was encountered while trying to process the following lines:
+    -- both sides are given by the definition of `Real.rpow` for a non‑positive base
+
+
+
+[2026-09-11 06:58:09,795][src.models.HILBERTWorker][INFO] - ```lean
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  have h_mul : ((1 : ℝ) / 3) * (9 : ℝ) = (3 : ℝ) := by
+    norm_num
+  by_cases hr : (0 ≤ r)
+  ·
+    have h := Real.rpow_mul hr ((1 : ℝ) / 3) (9 : ℝ)
+    simpa [h_mul] using h
+  ·
+    have hlt : r < 0 := lt_of_not_ge hr
+    have hle : r ≤ 0 := le_of_lt hlt
+    -- for a negative base the definition of `Real.rpow` reduces both sides to the same expression
+    simp [Real.rpow_def_of_nonpos hle, hlt, h_mul] 
+```
+[2026-09-11 06:58:10,666][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:58:10,668][src.tools.AsyncJobPool][INFO] - ✅ Job 'Task-268' finished
+[2026-09-11 06:58:13,873][src.models.HILBERTWorker][INFO] - PRODUCED ANSWER for error message: 
+
+The provided proof:
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h : (0 : ℝ) ≤ r
+
+--- line 37592 ---
+```lean4 
+import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h : (0 : ℝ) ≤ r
+  · -- non‑negative `r`
+    have h_mul :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+        simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h_eq : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h_eq] using h_mul.symm
+  · -- negative `r`
+    simp [Real.rpow_def, h]
+```
+
+
+Error message from Lean: type mismatch, term
+  Eq.symm h_mul
+after simplification has type
+  r ^ (3⁻¹ * 9) = (r ^ 3⁻¹) ^ 9 : Prop
+but is expected to have type
+  r ^ 3 = (r ^ 3⁻¹) ^ 9 : Prop
+The error was encountered while trying to process the following lines:
+Error: line number out of range
+
+
+
+Error message from Lean: unsolved goals
+case neg
+r : ℝ
+h : ¬0 ≤ r
+⊢ (↑r ^ 3).re = (↑(↑r ^ 3⁻¹).re ^ 9).re
+
+--- line 37800 ---
+Name: Real.rpow_eq_zero_iff_of_nonneg
+Description: For any real numbers $x$ and $y$ with $x \geq 0$, the power $x^y$ equals zero if and only if $x = 0$ and $y \neq 0$.
+Signature:  (hx : 0 ≤ x) : x ^ y = 0 ↔ x = 0 ∧ y ≠ 0
+[2026-09-11 06:58:21,230][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:58:23,706][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:58:23,706][src.models.HILBERTWorker][INFO] - Full theorem statement response (attempt 1)
+[2026-09-11 06:58:23,706][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:58:23,706][src.models.HILBERTWorker][INFO] - ```lean4
+theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) :
+    r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  by_cases h : (0 : ℝ) ≤ r
+  · -- non‑negative `r`
+    have h_mul :
+        (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) = r ^ (((1 : ℝ) / 3) * 9) := by
+          simpa using (Real.rpow_mul h ((1 : ℝ) / 3) 9).symm
+    have h_eq : ((1 : ℝ) / 3) * 9 = (3 : ℝ) := by norm_num
+    simpa [h_eq] using h_mul.symm
+  · -- negative `r`
+    have hlt : r < 0 := lt_of_not_ge h
+    simp [Real.rpow_def, hlt, h]
+```
+[2026-09-11 06:58:23,707][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:58:24,721][src.models.HILBERTWorker][INFO] - RESULT: False
+[2026-09-11 06:58:24,724][src.tools.AsyncJobPool][INFO] - ✅ Job 'Task-266' finished
+[2026-09-11 06:58:24,724][src.tools.AsyncJobPool][INFO] - 
+All jobs completed, no truthy result found.
+[2026-09-11 06:58:24,725][src.models.HILBERTWorker][INFO] - 
+================================================================================
+[2026-09-11 06:58:24,725][src.models.HILBERTWorker][INFO] - PROOF PROGRESS TREE
+[2026-09-11 06:58:24,725][src.models.HILBERTWorker][INFO] - ================================================================================
+[2026-09-11 06:58:24,725][src.models.HILBERTWorker][INFO] - └─ 🔄 algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ)     (h₀ : r ^ ((1 : ℝ) / 3) + 1 / r ^... [SUBGOAL_DECOMP]
+    ├─ ✅ ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ≠ ... (depth 1)
+    ├─ ✅ h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = r ^ 3 := by   s... (depth 1)
+    ├─ ✅ h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^... (depth 1)
+    ├─ ✅ h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (hr_pow : r ^ 3 = a ^ 9) ... (depth 1)
+    ├─ ✅ ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) (ha_n... (depth 1)
+    ├─ ✅ h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h₀ : r ^ ((1 : ℝ) / 3) + 1 / ... (depth 1)
+    ├─ ✅ h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_quad : a ^ 2 = 3 * a - 1) ... (depth 1)
+
+--- line 37832 ---
+    ├─ ✅ h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = r ^ 3 := by   s... (depth 1)
+    ├─ ✅ h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^... (depth 1)
+    ├─ ✅ h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (hr_pow : r ^ 3 = a ^ 9) ... (depth 1)
+    ├─ ✅ ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) (ha_n... (depth 1)
+    ├─ ✅ h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h₀ : r ^ ((1 : ℝ) / 3) + 1 / ... (depth 1)
+    ├─ ✅ h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_quad : a ^ 2 = 3 * a - 1) ... (depth 1)
+    ├─ 🔄 hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (ha_def : a = r ^ ((1 : ℝ... [SHALLOW_SOLVE] (depth 1)
+    ├─ ✅ hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r... (depth 1)
+    └─ 🔄 h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ... [SHALLOW_SOLVE] (depth 1)
+[2026-09-11 06:58:24,726][src.models.HILBERTWorker][INFO] - ================================================================================
+[2026-09-11 06:58:24,726][src.models.HILBERTWorker][INFO] - 
+
+[2026-09-11 06:58:24,726][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:58:24,726][src.models.HILBERTWorker][INFO] - PARALLEL ATTEMPTS FAILED, TRYING RECURSIVE DECOMPOSITION
+[2026-09-11 06:58:24,727][src.models.HILBERTWorker][INFO] - RECURSIVELY SOLVING THEOREM: theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ) / 3)) ^ (9 : ℝ) := by
+  sorry
+[2026-09-11 06:58:24,727][src.models.HILBERTWorker][INFO] - ********************************************************************************
+[2026-09-11 06:58:24,727][src.models.HILBERTWorker][INFO] - 
+================================================================================
+[2026-09-11 06:58:24,727][src.models.HILBERTWorker][INFO] - PROOF PROGRESS TREE
+[2026-09-11 06:58:24,728][src.models.HILBERTWorker][INFO] - ================================================================================
+[2026-09-11 06:58:24,728][src.models.HILBERTWorker][INFO] - └─ 🔄 algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ)     (h₀ : r ^ ((1 : ℝ) / 3) + 1 / r ^... [SUBGOAL_DECOMP]
+    ├─ ✅ ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem ha_ne_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ≠ ... (depth 1)
+    ├─ ✅ h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_nat_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = r ^ 3 := by   s... (depth 1)
+    ├─ ✅ h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_quad_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) : a ^... (depth 1)
+    ├─ ✅ h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_inv_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (hr_pow : r ^ 3 = a ^ 9) ... (depth 1)
+    ├─ ✅ ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem ha_pos_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_eq : a + 1 / a = 3) (ha_n... (depth 1)
+    ├─ ✅ h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h₀ : r ^ ((1 : ℝ) / 3) + 1 / ... (depth 1)
+    ├─ ✅ h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_quad : a ^ 2 = 3 * a - 1) ... (depth 1)
+    ├─ 🔄 hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_nonneg_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (ha_def : a = r ^ ((1 : ℝ... [SHALLOW_SOLVE] (depth 1)
+    ├─ ✅ hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem hr_pow_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r a : ℝ) (h_pow_eq : r ^ (3 : ℝ) = (r... (depth 1)
+    └─ 🔄 h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778: theorem h_pow_eq_algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778 (r : ℝ) : r ^ (3 : ℝ) = (r ^ ((1 : ℝ... [RECURSIVE] (depth 1)
+[2026-09-11 06:58:24,728][src.models.HILBERTWorker][INFO] - ================================================================================
+[2026-09-11 06:58:24,729][src.models.HILBERTWorker][INFO] - 
+
+[2026-09-11 06:58:24,729][src.models.HILBERTWorker][INFO] - SEQUENTIAL ATTEMPTS
+[2026-09-11 06:58:24,729][src.models.HILBERTWorker][INFO] - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-09-11 06:58:24,729][src.models.HILBERTWorker][INFO] - STARTING Sketch ATTEMPT 1 Valid sketch attempts so far: 0

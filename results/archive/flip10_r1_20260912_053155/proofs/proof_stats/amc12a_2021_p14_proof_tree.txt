@@ -1,0 +1,16 @@
+Proof Progress Tree for Problem: amc12a_2021_p14
+Generated at: 2026-09-07 13:26:00
+================================================================================
+
+└─ ✅ amc12a_2021_p14: theorem amc12a_2021_p14 :     ((∑ k in Finset.Icc 1 20, Real.logb (5 ^ k) (3 ^ k ^ 2)) *         ∑ k... [SUBGOAL_DECOMP]
+    ├─ ✅ h_sum2_amc12a_2021_p14: theorem h_sum2_amc12a_2021_p14     (h_term2 :       ∀ k : ℕ, (1 : ℕ) ≤ k → Real.logb (9 ^ k) (25 ^ k... (depth 1)
+    ├─ ✅ h_term1_amc12a_2021_p14: theorem h_term1_amc12a_2021_p14 (k : ℕ) (hk : (1 : ℕ) ≤ k) :     Real.logb (5 ^ k) (3 ^ k ^ 2) = (k ... (depth 1)
+    ├─ ✅ h_CD_amc12a_2021_p14: theorem h_CD_amc12a_2021_p14 :     Real.logb 5 3 * Real.logb 9 25 = (1 : ℝ) := by   sorry... (depth 1)
+    ├─ ✅ h_term2_amc12a_2021_p14: theorem h_term2_amc12a_2021_p14 (k : ℕ) (hk : (1 : ℕ) ≤ k) :     Real.logb (9 ^ k) (25 ^ k) = Real.l... (depth 1)
+    └─ ✅ h_sum1_amc12a_2021_p14: theorem h_sum1_amc12a_2021_p14     (h_term1 :       ∀ k : ℕ, (1 : ℕ) ≤ k → Real.logb (5 ^ k) (3 ^ k ... [RECURSIVE] (depth 1)
+        ├─ ✅ h_numeric_h_sum1_amc12a_2021_p14: theorem h_numeric_h_sum1_amc12a_2021_p14 :     (∑ k in Finset.Icc (1 : ℕ) 20, (k : ℝ)) = (210 : ℝ) :... (depth 2)
+        ├─ ✅ h_sum_eq_h_sum1_amc12a_2021_p14: theorem h_sum_eq_h_sum1_amc12a_2021_p14     (h_rewrite :       ∀ k ∈ Finset.Icc (1 : ℕ) 20,         ... (depth 2)
+        ├─ ✅ h_rewrite_h_sum1_amc12a_2021_p14: theorem h_rewrite_h_sum1_amc12a_2021_p14     (h_term1 :       ∀ k : ℕ, (1 : ℕ) ≤ k → Real.logb (5 ^ ... (depth 2)
+        └─ ✅ h_factor_h_sum1_amc12a_2021_p14: theorem h_factor_h_sum1_amc12a_2021_p14     (h_sum_eq :       (∑ k in Finset.Icc (1 : ℕ) 20, Real.lo... (depth 2)
+
+================================================================================

@@ -1,0 +1,17 @@
+Proof Progress Tree for Problem: algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3
+Generated at: 2026-09-08 03:24:59
+================================================================================
+
+└─ ✅ algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3: theorem algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3 (a b c : ℝ) (h₀ : a ≤ b ∧ b ≤ c)     ... [SUBGOAL_DECOMP]
+    ├─ ✅ hbc_sum_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3: theorem hbc_sum_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3 (a b c : ℝ)     (h₀ : a ≤ b ∧... (depth 1)
+    ├─ ✅ hΔ_def_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3: theorem hΔ_def_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3 (a b c : ℝ)     (h₀ : a ≤ b ∧ ... (depth 1)
+    ├─ ✅ hc_le_four_thirds_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3: theorem hc_le_four_thirds_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3 (a b c : ℝ)     (h₀... (depth 1)
+    ├─ ✅ hbc_prod_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3: theorem hbc_prod_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3 (a b c : ℝ)     (h₀ : a ≤ b ... (depth 1)
+    ├─ ✅ ha_le_one_third_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3: theorem ha_le_one_third_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3 (a b c : ℝ)     (h₀ :... (depth 1)
+    ├─ ✅ hb_le_one_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3: theorem hb_le_one_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3 (a b c : ℝ)     (h₀ : a ≤ b... (depth 1)
+    ├─ ✅ ha_nonneg_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3: theorem ha_nonneg_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3 (a b c : ℝ)     (h₀ : a ≤ b... (depth 1)
+    ├─ ✅ hΔ_nonneg_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3: theorem hΔ_nonneg_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3 (a b c : ℝ)     (h₀ : a ≤ b... (depth 1)
+    ├─ ✅ hb_ge_one_third_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3: theorem hb_ge_one_third_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3 (a b c : ℝ)     (h₀ :... (depth 1)
+    └─ ✅ hc_ge_one_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3: theorem hc_ge_one_algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3 (a b c : ℝ)     (h₀ : a ≤ b... (depth 1)
+
+================================================================================
