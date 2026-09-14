@@ -1,0 +1,13 @@
+Proof Progress Tree for Problem: mathd_numbertheory_341
+Generated at: 2026-09-07 18:06:04
+================================================================================
+
+└─ ✅ mathd_numbertheory_341: theorem mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)     (h₁ : Nat.digits 10 (5 ^... [SUBGOAL_DECOMP]
+    ├─ ✅ ha_mathd_numbertheory_341: theorem ha_mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)     (h₁ : Nat.digits 10 (... (depth 1)
+    ├─ ✅ hc_mathd_numbertheory_341: theorem hc_mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)     (h₁ : Nat.digits 10 (... (depth 1)
+    ├─ ✅ hlist_mathd_numbertheory_341: theorem hlist_mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)     (h₁ : Nat.digits 1... (depth 1)
+    ├─ ✅ hdigits_mathd_numbertheory_341: theorem hdigits_mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)     (h₁ : Nat.digits... (depth 1)
+    ├─ ✅ hb_mathd_numbertheory_341: theorem hb_mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)     (h₁ : Nat.digits 10 (... (depth 1)
+    └─ ✅ hmod_mathd_numbertheory_341: theorem hmod_mathd_numbertheory_341 (a b c : ℕ) (h₀ : a ≤ 9 ∧ b ≤ 9 ∧ c ≤ 9)     (h₁ : Nat.digits 10... (depth 1)
+
+================================================================================

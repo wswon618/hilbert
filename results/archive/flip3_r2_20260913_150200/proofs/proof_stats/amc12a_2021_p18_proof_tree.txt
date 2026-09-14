@@ -1,0 +1,21 @@
+Proof Progress Tree for Problem: amc12a_2021_p18
+Generated at: 2026-09-07 12:59:16
+================================================================================
+
+└─ ✅ amc12a_2021_p18: theorem amc12a_2021_p18 (f : ℚ → ℝ) (h₀ : ∀ x > 0, ∀ y > 0, f (x * y) = f x + f y)     (h₁ : ∀ p, Na... [SUBGOAL_DECOMP]
+    ├─ ✅ h_one_amc12a_2021_p18: theorem h_one_amc12a_2021_p18 (f : ℚ → ℝ)     (h₀ : ∀ x > 0, ∀ y > 0, f (x * y) = f x + f y)     (h₁... (depth 1)
+    ├─ ✅ h_neg_amc12a_2021_p18: theorem h_neg_amc12a_2021_p18 (f : ℚ → ℝ)     (h₀ : ∀ x > 0, ∀ y > 0, f (x * y) = f x + f y)     (h₁... (depth 1)
+    ├─ ✅ h_one_div_prime_amc12a_2021_p18: theorem h_one_div_prime_amc12a_2021_p18 (f : ℚ → ℝ)     (h₀ : ∀ x > 0, ∀ y > 0, f (x * y) = f x + f ... (depth 1)
+    ├─ ✅ h_five_eleven_amc12a_2021_p18: theorem h_five_eleven_amc12a_2021_p18 (f : ℚ → ℝ)     (h₀ : ∀ x > 0, ∀ y > 0, f (x * y) = f x + f y)... [RECURSIVE] (depth 1)
+    │   ├─ ✅ h_pos5_h_five_eleven_amc12a_2021_p18: theorem h_pos5_h_five_eleven_amc12a_2021_p18 : (0 : ℚ) < (5 : ℚ) := by   sorry... (depth 2)
+    │   ├─ ✅ h_pos11_inv_h_five_eleven_amc12a_2021_p18: theorem h_pos11_inv_h_five_eleven_amc12a_2021_p18 : (0 : ℚ) < ((11 : ℚ)⁻¹) := by   sorry... (depth 2)
+    │   ├─ ✅ h_arith_h_five_eleven_amc12a_2021_p18: theorem h_arith_h_five_eleven_amc12a_2021_p18 : (5 : ℝ) + (-(11 : ℝ)) = (-6 : ℝ) := by   sorry... (depth 2)
+    │   ├─ ✅ h_eq_mul_h_five_eleven_amc12a_2021_p18: theorem h_eq_mul_h_five_eleven_amc12a_2021_p18 : (5 : ℚ) / (11 : ℚ) = (5 : ℚ) * ((11 : ℚ)⁻¹) := by  ... (depth 2)
+    │   ├─ ✅ h_f11_inv_h_five_eleven_amc12a_2021_p18: theorem h_f11_inv_h_five_eleven_amc12a_2021_p18 (f : ℚ → ℝ)     (h_one_div_prime : ∀ (p : ℕ) (hp : N... (depth 2)
+    │   ├─ ✅ h_f_mul_h_five_eleven_amc12a_2021_p18: theorem h_f_mul_h_five_eleven_amc12a_2021_p18 (f : ℚ → ℝ)     (h₀ : ∀ x > (0 : ℚ), ∀ y > (0 : ℚ), f ... (depth 2)
+    │   ├─ ✅ h_f5_h_five_eleven_amc12a_2021_p18: theorem h_f5_h_five_eleven_amc12a_2021_p18 (f : ℚ → ℝ)     (h₁ : ∀ p, Nat.Prime p → f p = p) :     f... (depth 2)
+    │   ├─ ✅ h_val_h_five_eleven_amc12a_2021_p18: theorem h_val_h_five_eleven_amc12a_2021_p18 (f : ℚ → ℝ)     (h_eq_div : (5 /. (11 : ℕ)) = (5 : ℚ) / ... (depth 2)
+    │   └─ ✅ h_eq_div_h_five_eleven_amc12a_2021_p18: theorem h_eq_div_h_five_eleven_amc12a_2021_p18 : (5 /. (11 : ℕ)) = (5 : ℚ) / (11 : ℚ) := by   sorry... [SHALLOW_SOLVE] (depth 2)
+    └─ ✅ h_twentyfive_eleven_amc12a_2021_p18: theorem h_twentyfive_eleven_amc12a_2021_p18 (f : ℚ → ℝ)     (h₀ : ∀ x > 0, ∀ y > 0, f (x * y) = f x ... (depth 1)
+
+================================================================================

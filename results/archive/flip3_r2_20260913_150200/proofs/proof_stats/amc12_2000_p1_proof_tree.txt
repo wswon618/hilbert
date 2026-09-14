@@ -1,0 +1,32 @@
+Proof Progress Tree for Problem: amc12_2000_p1
+Generated at: 2026-09-12 05:21:34
+================================================================================
+
+└─ ✅ amc12_2000_p1: theorem amc12_2000_p1 (i m o : ℕ) (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i * m * o = 2001) :     i + m +... [SUBGOAL_DECOMP]
+    ├─ ✅ h_factor_amc12_2000_p1: theorem h_factor_amc12_2000_p1 : (2001 : ℕ) = 3 * 23 * 29 := by   sorry... (depth 1)
+    ├─ ✅ h_i_dvd_amc12_2000_p1: theorem h_i_dvd_amc12_2000_p1 (i m o : ℕ) (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i * m * o = 2001)     (... (depth 1)
+    ├─ ✅ h_m_dvd_amc12_2000_p1: theorem h_m_dvd_amc12_2000_p1 (i m o : ℕ) (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i * m * o = 2001)     (... (depth 1)
+    ├─ ✅ h_o_dvd_amc12_2000_p1: theorem h_o_dvd_amc12_2000_p1 (i m o : ℕ) (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i * m * o = 2001)     (... (depth 1)
+    ├─ ✅ h_one_or_none_amc12_2000_p1: theorem h_one_or_none_amc12_2000_p1 (i m o : ℕ) (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i * m * o = 2001)... (depth 1)
+    ├─ ✅ h_final_amc12_2000_p1: theorem h_final_amc12_2000_p1 (i m o : ℕ) (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i * m * o = 2001)     (... (depth 1)
+    ├─ ✅ h_divisors_amc12_2000_p1: theorem h_divisors_amc12_2000_p1 (i m o : ℕ) (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i * m * o = 2001)   ... (depth 1)
+    ├─ ✅ h_case_one_amc12_2000_p1: theorem h_case_one_amc12_2000_p1 (i m o : ℕ) (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i * m * o = 2001) : ... (depth 1)
+    └─ ✅ h_case_none_amc12_2000_p1: theorem h_case_none_amc12_2000_p1 (i m o : ℕ) (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i * m * o = 2001) :... [RECURSIVE] (depth 1)
+        ├─ ✅ hgt_i_h_case_none_amc12_2000_p1: theorem hgt_i_h_case_none_amc12_2000_p1 (i m o : ℕ) (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i * m * o = 2... (depth 2)
+        ├─ ✅ hgt_m_h_case_none_amc12_2000_p1: theorem hgt_m_h_case_none_amc12_2000_p1 (i m o : ℕ) (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i * m * o = 2... (depth 2)
+        ├─ ✅ hgt_o_h_case_none_amc12_2000_p1: theorem hgt_o_h_case_none_amc12_2000_p1 (i m o : ℕ) (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i * m * o = 2... (depth 2)
+        └─ ✅ hsum_eq_h_case_none_amc12_2000_p1: theorem hsum_eq_h_case_none_amc12_2000_p1 (i m o : ℕ) (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i * m * o =... [RECURSIVE] (depth 2)
+            ├─ ✅ hprime_m_hsum_eq_h_case_none_amc12_2000_p1: theorem hprime_m_hsum_eq_h_case_none_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ ... (depth 3)
+            ├─ ✅ hfactor_i_hsum_eq_h_case_none_amc12_2000_p1: theorem hfactor_i_hsum_eq_h_case_none_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁... (depth 3)
+            ├─ ✅ hprime_i_hsum_eq_h_case_none_amc12_2000_p1: theorem hprime_i_hsum_eq_h_case_none_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ ... [RECURSIVE] (depth 3)
+            │   ├─ ✅ hprime29_hprime_i_hsum_eq_h_case_none_amc12_2000_p1: theorem hprime29_hprime_i_hsum_eq_h_case_none_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ... (depth 4)
+            │   ├─ ✅ hprime23_hprime_i_hsum_eq_h_case_none_amc12_2000_p1: theorem hprime23_hprime_i_hsum_eq_h_case_none_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ... (depth 4)
+            │   ├─ ✅ hprime3_hprime_i_hsum_eq_h_case_none_amc12_2000_p1: theorem hprime3_hprime_i_hsum_eq_h_case_none_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠... (depth 4)
+            │   ├─ ✅ h2001_hprime_i_hsum_eq_h_case_none_amc12_2000_p1: theorem h2001_hprime_i_hsum_eq_h_case_none_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i... (depth 4)
+            │   └─ ✅ h_i_eq_hprime_i_hsum_eq_h_case_none_amc12_2000_p1: theorem h_i_eq_hprime_i_hsum_eq_h_case_none_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ ... (depth 4)
+            ├─ ✅ hprime_o_hsum_eq_h_case_none_amc12_2000_p1: theorem hprime_o_hsum_eq_h_case_none_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ ... (depth 3)
+            ├─ ✅ hfactor_o_hsum_eq_h_case_none_amc12_2000_p1: theorem hfactor_o_hsum_eq_h_case_none_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁... (depth 3)
+            ├─ ✅ hfactor_m_hsum_eq_h_case_none_amc12_2000_p1: theorem hfactor_m_hsum_eq_h_case_none_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁... (depth 3)
+            └─ ✅ hsum_hsum_eq_h_case_none_amc12_2000_p1: theorem hsum_hsum_eq_h_case_none_amc12_2000_p1 (i m o : ℕ)     (h₀ : i ≠ m ∧ m ≠ o ∧ o ≠ i) (h₁ : i ... (depth 3)
+
+================================================================================

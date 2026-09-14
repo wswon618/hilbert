@@ -1,0 +1,12 @@
+Proof Progress Tree for Problem: mathd_numbertheory_427
+Generated at: 2026-09-07 21:47:17
+================================================================================
+
+└─ ✅ mathd_numbertheory_427: theorem mathd_numbertheory_427 (a : ℕ) (h₀ : a = ∑ k in Nat.divisors 500, k) :     (∑ k in Finset.fi... [SUBGOAL_DECOMP]
+    ├─ ✅ hsumPrime_mathd_numbertheory_427: theorem hsumPrime_mathd_numbertheory_427 (a : ℕ) (hprime_factors : a.primeFactors = {2, 3, 7, 13}) :... (depth 1)
+    ├─ ✅ ha_mathd_numbertheory_427: theorem ha_mathd_numbertheory_427 (a : ℕ) (h₀ : a = ∑ k in Nat.divisors 500, k) (hsum500 : ∑ k in Na... (depth 1)
+    ├─ ✅ hsum500_mathd_numbertheory_427: theorem hsum500_mathd_numbertheory_427 : ∑ k in Nat.divisors 500, k = 1092 := by   sorry... (depth 1)
+    ├─ ✅ hprime_factors_mathd_numbertheory_427: theorem hprime_factors_mathd_numbertheory_427 (a : ℕ) (ha : a = 1092) :     a.primeFactors = {2, 3, ... [SHALLOW_SOLVE] (depth 1)
+    └─ ✅ hfilter_eq_mathd_numbertheory_427: theorem hfilter_eq_mathd_numbertheory_427 (a : ℕ) :     (∑ k in Finset.filter (fun x => Nat.Prime x)... (depth 1)
+
+================================================================================

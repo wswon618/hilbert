@@ -1,0 +1,16 @@
+Proof Progress Tree for Problem: imo_2019_p1
+Generated at: 2026-09-13 15:02:47
+================================================================================
+
+└─ ✅ imo_2019_p1: theorem imo_2019_p1 (f : ℤ → ℤ) :     (∀ a b, f (2 * a) + 2 * f b = f (f (a + b))) ↔ ∀ z, f z = 0 ∨ ... [SUBGOAL_DECOMP]
+    ├─ ✅ backward_imo_2019_p1: theorem backward_imo_2019_p1 (f : ℤ → ℤ) :     (∀ z, f z = 0 ∨ ∃ c, ∀ z, f z = 2 * z + c) →     ∀ a ... (depth 1)
+    └─ ✅ forward_imo_2019_p1: theorem forward_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f (a + b))) :     ∀... [RECURSIVE] (depth 1)
+        ├─ ✅ hf_f_forward_imo_2019_p1: theorem hf_f_forward_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f (a + b))) : ... (depth 2)
+        ├─ ✅ hf_two_forward_imo_2019_p1: theorem hf_two_forward_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f (a + b))) ... (depth 2)
+        ├─ ✅ hadd_g_forward_imo_2019_p1: theorem hadd_g_forward_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f (a + b))) ... (depth 2)
+        ├─ ✅ hadd_forward_imo_2019_p1: theorem hadd_forward_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f (a + b)))   ... (depth 2)
+        ├─ ✅ hcoeff_forward_imo_2019_p1: theorem hcoeff_forward_imo_2019_p1 (k c : ℤ)     (hcond :         ∀ a b : ℤ,           k * (2 * a) +... (depth 2)
+        ├─ ✅ hlinear_forward_imo_2019_p1: theorem hlinear_forward_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f (a + b)))... (depth 2)
+        └─ ✅ hfinal_forward_imo_2019_p1: theorem hfinal_forward_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f (a + b))) ... (depth 2)
+
+================================================================================

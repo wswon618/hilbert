@@ -1,0 +1,11 @@
+Proof Progress Tree for Problem: imo_2019_p1
+Generated at: 2026-09-12 16:33:57
+================================================================================
+
+└─ ✅ imo_2019_p1: theorem imo_2019_p1 (f : ℤ → ℤ) :     (∀ a b, f (2 * a) + 2 * f b = f (f (a + b))) ↔ ∀ z, f z = 0 ∨ ... [SUBGOAL_DECOMP]
+    ├─ ✅ hlin'_imo_2019_p1: theorem hlin'_imo_2019_p1 (f : ℤ → ℤ)     (hlin : ∃ c, ∀ z, f z = 2 * z + c) :     ∀ a b, f (2 * a) ... (depth 1)
+    ├─ ✅ h0_imo_2019_p1: theorem h0_imo_2019_p1 (f : ℤ → ℤ)     (hzero : ∀ z, f z = 0) :     ∀ a b, f (2 * a) + 2 * f b = f (... (depth 1)
+    ├─ ✅ h0or_imo_2019_p1: theorem h0or_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ z, f z = 0 ∨ ∃ c, ∀ z, f z = 2 * z + c) :     (∀ z, ... (depth 1)
+    └─ ✅ h6_imo_2019_p1: theorem h6_imo_2019_p1 (f : ℤ → ℤ)     (h : ∀ a b, f (2 * a) + 2 * f b = f (f (a + b))) :     (∀ z, ... (depth 1)
+
+================================================================================

@@ -1,0 +1,11 @@
+Proof Progress Tree for Problem: mathd_numbertheory_321
+Generated at: 2026-09-08 00:29:12
+================================================================================
+
+└─ ✅ mathd_numbertheory_321: theorem mathd_numbertheory_321 (n : ZMod 1399) (h₁ : n = 160⁻¹) : n = 1058 := by ... [SUBGOAL_DECOMP]
+    ├─ ✅ h_congr_mathd_numbertheory_321: theorem h_congr_mathd_numbertheory_321 : (160 * 1058) ≡ 1 [MOD 1399] := by   sorry... (depth 1)
+    ├─ ✅ h_mul_mathd_numbertheory_321: theorem h_mul_mathd_numbertheory_321 (h_eq :     ((160 * 1058 : ℕ) : ZMod 1399) = (1 : ZMod 1399)) :... (depth 1)
+    ├─ ✅ h_inv_mathd_numbertheory_321: theorem h_inv_mathd_numbertheory_321 (h_mul :     ((160 : ZMod 1399) * (1058 : ZMod 1399)) = (1 : ZM... [SHALLOW_SOLVE] (depth 1)
+    └─ ✅ h_eq_mathd_numbertheory_321: theorem h_eq_mathd_numbertheory_321 (h_congr : (160 * 1058) ≡ 1 [MOD 1399]) :     ((160 * 1058 : ℕ) ... [SHALLOW_SOLVE] (depth 1)
+
+================================================================================

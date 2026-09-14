@@ -1,0 +1,168 @@
+{
+  "problem_id": "numbertheory_fxeq4powxp6powxp9powx_f2powmdvdf2pown",
+  "problem_statement": "theorem numbertheory_fxeq4powxp6powxp9powx_f2powmdvdf2pown (m n : \u2115) (f : \u2115 \u2192 \u2115)\n    (h\u2080 : \u2200 x, f x = 4 ^ x + 6 ^ x + 9 ^ x) (h\u2081 : 0 < m \u2227 0 < n) (h\u2082 : m \u2264 n) :\n    f (2 ^ m) \u2223 f (2 ^ n) := by\n",
+  "start_time": 1789306649.7637513,
+  "end_time": 1789307757.308407,
+  "duration": 1107.5446557998657,
+  "final_success": true,
+  "total_attempts": 1,
+  "max_depth_reached": 0,
+  "llm_calls": [
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 152,
+      "output_tokens": 15967,
+      "cached_input_tokens": 0,
+      "call_duration": 881.1031539440155,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 152,
+      "output_tokens": 16384,
+      "cached_input_tokens": 0,
+      "call_duration": 909.5025012493134,
+      "prompt_type": "generate_proof",
+      "success": false,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 152,
+      "output_tokens": 13198,
+      "cached_input_tokens": 0,
+      "call_duration": 1031.552593946457,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    }
+  ],
+  "search_operations": [],
+  "strategy_attempts": [
+    {
+      "strategy": "formal_llm",
+      "start_time": 1789306649.7646186,
+      "end_time": 1789307757.3032095,
+      "duration": 1107.5385909080505,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "numbertheory_fxeq4powxp6powxp9powx_f2powmdvdf2pown",
+      "error_message": null
+    }
+  ],
+  "verification_operations": [
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 60.1420578956604,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 192,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: numbertheory_fxeq4powxp6powxp9powx_f2powmdvdf2pown",
+      "timestamp": 1789307591.3363848
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 75.95998311042786,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 167,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: numbertheory_fxeq4powxp6powxp9powx_f2powmdvdf2pown",
+      "timestamp": 1789307757.2814713
+    }
+  ],
+  "total_llm_calls": {
+    "prover_llm": 3
+  },
+  "total_input_tokens": {
+    "prover_llm": 456
+  },
+  "total_output_tokens": {
+    "prover_llm": 45549
+  },
+  "total_cached_input_tokens": {
+    "prover_llm": 0
+  },
+  "total_tokens": {
+    "prover_llm": 46005
+  },
+  "total_search_operations": {},
+  "search_success_rates": {},
+  "prompt_type_counts": {
+    "generate_proof": 3
+  },
+  "prompt_type_success_rates": {
+    "generate_proof": 0.6666666666666666
+  },
+  "strategy_counts": {
+    "formal_llm": 1
+  },
+  "total_verification_operations": {
+    "formal_llm_generated_proof_verification": 2
+  },
+  "verification_success_rates": {
+    "formal_llm_generated_proof_verification": 1.0
+  },
+  "verification_validity_rates": {
+    "formal_llm_generated_proof_verification": 0.5
+  },
+  "total_verification_duration": {
+    "formal_llm_generated_proof_verification": 136.10204100608826
+  },
+  "summary": {
+    "problem_id": "numbertheory_fxeq4powxp6powxp9powx_f2powmdvdf2pown",
+    "final_success": true,
+    "total_duration_seconds": 1107.5446557998657,
+    "total_attempts": 1,
+    "max_depth_reached": 0,
+    "total_llm_calls": 3,
+    "total_tokens_used": 46005,
+    "total_search_operations": 0,
+    "total_verification_operations": 2,
+    "total_verification_duration_seconds": 136.10204100608826,
+    "llm_breakdown": {
+      "prover_llm": 3
+    },
+    "token_breakdown": {
+      "prover_llm": 46005
+    },
+    "search_operation_breakdown": {},
+    "verification_operation_breakdown": {
+      "formal_llm_generated_proof_verification": 2
+    },
+    "verification_duration_breakdown": {
+      "formal_llm_generated_proof_verification": 136.10204100608826
+    },
+    "prompt_type_breakdown": {
+      "generate_proof": 3
+    },
+    "strategy_attempts": {
+      "formal_llm": 1
+    },
+    "prompt_type_success_rates": {
+      "generate_proof": 0.6666666666666666
+    },
+    "search_success_rates": {},
+    "verification_success_rates": {
+      "formal_llm_generated_proof_verification": 1.0
+    },
+    "verification_validity_rates": {
+      "formal_llm_generated_proof_verification": 0.5
+    }
+  },
+  "generated_at": "2026-09-13T13:55:57.309193"
+}

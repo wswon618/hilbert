@@ -1,0 +1,632 @@
+{
+  "problem_id": "mathd_numbertheory_341",
+  "problem_statement": "theorem mathd_numbertheory_341 (a b c : \u2115) (h\u2080 : a \u2264 9 \u2227 b \u2264 9 \u2227 c \u2264 9)\n    (h\u2081 : Nat.digits 10 (5 ^ 100 % 1000) = [c, b, a]) : a + b + c = 13 := by\n",
+  "start_time": 1788801960.442643,
+  "end_time": 1788804364.999695,
+  "duration": 2404.5570521354675,
+  "final_success": true,
+  "total_attempts": 4,
+  "max_depth_reached": 0,
+  "llm_calls": [
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 129,
+      "output_tokens": 4597,
+      "cached_input_tokens": 0,
+      "call_duration": 391.46587657928467,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 129,
+      "output_tokens": 5323,
+      "cached_input_tokens": 0,
+      "call_duration": 436.7400884628296,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 129,
+      "output_tokens": 5512,
+      "cached_input_tokens": 0,
+      "call_duration": 450.589049577713,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 129,
+      "output_tokens": 6762,
+      "cached_input_tokens": 0,
+      "call_duration": 527.0276169776917,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 401,
+      "output_tokens": 853,
+      "cached_input_tokens": 0,
+      "call_duration": 6.028546333312988,
+      "prompt_type": "search_query_generation",
+      "success": true,
+      "context": "Problem: theorem mathd_numbertheory_341 (a b c : \u2115) (h\u2080 : a \u2264 9 \u2227 b \u2264 9 \u2227 c \u2264 9)\n    (h\u2081 : Nat.digits 10 (5 ^ 100 % 1000) = [c, b, a]) : a + b + c = 13 := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 3330,
+      "output_tokens": 1047,
+      "cached_input_tokens": 0,
+      "call_duration": 7.9329001903533936,
+      "prompt_type": "search_result_selection",
+      "success": true,
+      "context": "Problem: theorem mathd_numbertheory_341 (a b c : \u2115) (h\u2080 : a \u2264 9 \u2227 b \u2264 9 \u2227 c \u2264 9)\n    (h\u2081 : Nat.digits 10 (5 ^ 100 % 1000) = [c, b, a]) : a + b + c = 13 := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 677,
+      "output_tokens": 2390,
+      "cached_input_tokens": 0,
+      "call_duration": 16.608174324035645,
+      "prompt_type": "informal_proof_sketch",
+      "success": true,
+      "context": "Problem: theorem mathd_numbertheory_341 (a b c : \u2115) (h\u2080 : a \u2264 9 \u2227 b \u2264 9 \u2227 c \u2264 9)\n    (h\u2081 : Nat.digits 10 (5 ^ 100 % 1000) = [c, b, a]) : a + b + c = 13 := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 2876,
+      "output_tokens": 906,
+      "cached_input_tokens": 0,
+      "call_duration": 6.8887035846710205,
+      "prompt_type": "lean_sketch_creation",
+      "success": true,
+      "context": "Problem: theorem mathd_numbertheory_341 (a b c : \u2115) (h\u2080 : a \u2264 9 \u2227 b \u2264 9 \u2227 c \u2264 9)\n    (h\u2081 : Nat.digits 10 (5 ^ 100 % 1000) = [c, b, a]) : a + b + c = 13 := by\n"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 1264,
+      "output_tokens": 2628,
+      "cached_input_tokens": 0,
+      "call_duration": 18.44199299812317,
+      "prompt_type": "subgoal_extraction",
+      "success": true,
+      "context": "Extracting subgoals from proof sketch"
+    },
+    {
+      "llm_type": "informal_llm",
+      "input_tokens": 1523,
+      "output_tokens": 1319,
+      "cached_input_tokens": 0,
+      "call_duration": 9.45183277130127,
+      "prompt_type": "sketch_assembly",
+      "success": true,
+      "context": "Assembling proof from sketch and theorems"
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 200,
+      "output_tokens": 234,
+      "cached_input_tokens": 0,
+      "call_duration": 820.5286946296692,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 200,
+      "output_tokens": 399,
+      "cached_input_tokens": 0,
+      "call_duration": 831.1607854366302,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 192,
+      "output_tokens": 576,
+      "cached_input_tokens": 0,
+      "call_duration": 844.3775403499603,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 146,
+      "output_tokens": 878,
+      "cached_input_tokens": 0,
+      "call_duration": 1671.01975440979,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 200,
+      "output_tokens": 1332,
+      "cached_input_tokens": 0,
+      "call_duration": 1680.9590756893158,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    },
+    {
+      "llm_type": "prover_llm",
+      "input_tokens": 144,
+      "output_tokens": 3441,
+      "cached_input_tokens": 0,
+      "call_duration": 1796.650797367096,
+      "prompt_type": "generate_proof",
+      "success": true,
+      "context": ""
+    }
+  ],
+  "search_operations": [],
+  "strategy_attempts": [
+    {
+      "strategy": "formal_llm",
+      "start_time": 1788801960.4433713,
+      "end_time": 1788802499.0761073,
+      "duration": 538.6327359676361,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "mathd_numbertheory_341",
+      "error_message": null
+    },
+    {
+      "strategy": "subgoal_decomposition",
+      "start_time": 1788802499.0781922,
+      "end_time": 1788804364.9979877,
+      "duration": 1865.919795513153,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "mathd_numbertheory_341",
+      "error_message": null
+    },
+    {
+      "strategy": "sketch_generation",
+      "start_time": 1788802513.4527695,
+      "end_time": 1788802536.9568815,
+      "duration": 23.504112005233765,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "mathd_numbertheory_341",
+      "error_message": null
+    },
+    {
+      "strategy": "sketch_assembly",
+      "start_time": 1788802556.704513,
+      "end_time": 1788802567.956375,
+      "duration": 11.251861810684204,
+      "success": true,
+      "attempts_count": 1,
+      "depth": 0,
+      "theorem_name": "mathd_numbertheory_341",
+      "error_message": null
+    }
+  ],
+  "verification_operations": [
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 7.100830078125,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 79,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: mathd_numbertheory_341",
+      "timestamp": 1788802359.021021
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 8.474629878997803,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 97,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: mathd_numbertheory_341",
+      "timestamp": 1788802405.6690779
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 4.096853971481323,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 52,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: mathd_numbertheory_341",
+      "timestamp": 1788802415.138738
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 11.599858045578003,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": false,
+      "has_error_message": true,
+      "proof_length": 64,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: mathd_numbertheory_341",
+      "timestamp": 1788802499.072806
+    },
+    {
+      "verification_type": "proof_sketch_with_sorry_verification",
+      "verification_duration": 0.8458080291748047,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 25,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Initial proof sketch compilation for: mathd_numbertheory_341",
+      "timestamp": 1788802537.8054268
+    },
+    {
+      "verification_type": "extracted_theorem_syntax_verification",
+      "verification_duration": 0.23388671875,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 11,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Syntax check for extracted theorem: hdigits",
+      "timestamp": 1788802556.498556
+    },
+    {
+      "verification_type": "extracted_theorem_syntax_verification",
+      "verification_duration": 0.3745763301849365,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 13,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Syntax check for extracted theorem: hlist",
+      "timestamp": 1788802556.6398637
+    },
+    {
+      "verification_type": "extracted_theorem_syntax_verification",
+      "verification_duration": 0.37484073638916016,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 14,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Syntax check for extracted theorem: ha",
+      "timestamp": 1788802556.640769
+    },
+    {
+      "verification_type": "extracted_theorem_syntax_verification",
+      "verification_duration": 0.3741414546966553,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 14,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Syntax check for extracted theorem: hc",
+      "timestamp": 1788802556.6413784
+    },
+    {
+      "verification_type": "extracted_theorem_syntax_verification",
+      "verification_duration": 0.43451714515686035,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 11,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Syntax check for extracted theorem: hmod",
+      "timestamp": 1788802556.698523
+    },
+    {
+      "verification_type": "extracted_theorem_syntax_verification",
+      "verification_duration": 0.43273496627807617,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 14,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Syntax check for extracted theorem: hb",
+      "timestamp": 1788802556.6993246
+    },
+    {
+      "verification_type": "sketch_assembly_with_theorems_verification",
+      "verification_duration": 1.7944462299346924,
+      "timeout": 30,
+      "is_sorry_ok": true,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 67,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Initial sketch assembly with theorems for: mathd_numbertheory_341",
+      "timestamp": 1788802567.9516616
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 0.48537588119506836,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 20,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: ha_mathd_numbertheory_341",
+      "timestamp": 1788803389.0009763
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 0.6214299201965332,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 41,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: hc_mathd_numbertheory_341",
+      "timestamp": 1788803399.836328
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 4.134345054626465,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 32,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: hlist_mathd_numbertheory_341",
+      "timestamp": 1788803416.495658
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 0.48280763626098633,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 15,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: hdigits_mathd_numbertheory_341",
+      "timestamp": 1788804239.479041
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 1.1957249641418457,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 27,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: hb_mathd_numbertheory_341",
+      "timestamp": 1788804250.1468594
+    },
+    {
+      "verification_type": "formal_llm_generated_proof_verification",
+      "verification_duration": 0.3509225845336914,
+      "timeout": 60,
+      "is_sorry_ok": false,
+      "return_error_message": true,
+      "success": true,
+      "proof_valid": true,
+      "has_error_message": false,
+      "proof_length": 15,
+      "is_batch": false,
+      "batch_size": 1,
+      "context": "Formal LLM proof for theorem: hmod_mathd_numbertheory_341",
+      "timestamp": 1788804364.9739745
+    }
+  ],
+  "total_llm_calls": {
+    "prover_llm": 10,
+    "informal_llm": 6
+  },
+  "total_input_tokens": {
+    "prover_llm": 1598,
+    "informal_llm": 10071
+  },
+  "total_output_tokens": {
+    "prover_llm": 29054,
+    "informal_llm": 9143
+  },
+  "total_cached_input_tokens": {
+    "prover_llm": 0,
+    "informal_llm": 0
+  },
+  "total_tokens": {
+    "prover_llm": 30652,
+    "informal_llm": 19214
+  },
+  "total_search_operations": {},
+  "search_success_rates": {},
+  "prompt_type_counts": {
+    "generate_proof": 10,
+    "search_query_generation": 1,
+    "search_result_selection": 1,
+    "informal_proof_sketch": 1,
+    "lean_sketch_creation": 1,
+    "subgoal_extraction": 1,
+    "sketch_assembly": 1
+  },
+  "prompt_type_success_rates": {
+    "generate_proof": 1.0,
+    "search_query_generation": 1.0,
+    "search_result_selection": 1.0,
+    "informal_proof_sketch": 1.0,
+    "lean_sketch_creation": 1.0,
+    "subgoal_extraction": 1.0,
+    "sketch_assembly": 1.0
+  },
+  "strategy_counts": {
+    "formal_llm": 1,
+    "subgoal_decomposition": 1,
+    "sketch_generation": 1,
+    "sketch_assembly": 1
+  },
+  "total_verification_operations": {
+    "formal_llm_generated_proof_verification": 10,
+    "proof_sketch_with_sorry_verification": 1,
+    "extracted_theorem_syntax_verification": 6,
+    "sketch_assembly_with_theorems_verification": 1
+  },
+  "verification_success_rates": {
+    "formal_llm_generated_proof_verification": 1.0,
+    "proof_sketch_with_sorry_verification": 1.0,
+    "extracted_theorem_syntax_verification": 1.0,
+    "sketch_assembly_with_theorems_verification": 1.0
+  },
+  "verification_validity_rates": {
+    "formal_llm_generated_proof_verification": 0.6,
+    "proof_sketch_with_sorry_verification": 1.0,
+    "extracted_theorem_syntax_verification": 1.0,
+    "sketch_assembly_with_theorems_verification": 1.0
+  },
+  "total_verification_duration": {
+    "formal_llm_generated_proof_verification": 38.54277801513672,
+    "proof_sketch_with_sorry_verification": 0.8458080291748047,
+    "extracted_theorem_syntax_verification": 2.2246973514556885,
+    "sketch_assembly_with_theorems_verification": 1.7944462299346924
+  },
+  "summary": {
+    "problem_id": "mathd_numbertheory_341",
+    "final_success": true,
+    "total_duration_seconds": 2404.5570521354675,
+    "total_attempts": 4,
+    "max_depth_reached": 0,
+    "total_llm_calls": 16,
+    "total_tokens_used": 49866,
+    "total_search_operations": 0,
+    "total_verification_operations": 18,
+    "total_verification_duration_seconds": 43.407729625701904,
+    "llm_breakdown": {
+      "prover_llm": 10,
+      "informal_llm": 6
+    },
+    "token_breakdown": {
+      "prover_llm": 30652,
+      "informal_llm": 19214
+    },
+    "search_operation_breakdown": {},
+    "verification_operation_breakdown": {
+      "formal_llm_generated_proof_verification": 10,
+      "proof_sketch_with_sorry_verification": 1,
+      "extracted_theorem_syntax_verification": 6,
+      "sketch_assembly_with_theorems_verification": 1
+    },
+    "verification_duration_breakdown": {
+      "formal_llm_generated_proof_verification": 38.54277801513672,
+      "proof_sketch_with_sorry_verification": 0.8458080291748047,
+      "extracted_theorem_syntax_verification": 2.2246973514556885,
+      "sketch_assembly_with_theorems_verification": 1.7944462299346924
+    },
+    "prompt_type_breakdown": {
+      "generate_proof": 10,
+      "search_query_generation": 1,
+      "search_result_selection": 1,
+      "informal_proof_sketch": 1,
+      "lean_sketch_creation": 1,
+      "subgoal_extraction": 1,
+      "sketch_assembly": 1
+    },
+    "strategy_attempts": {
+      "formal_llm": 1,
+      "subgoal_decomposition": 1,
+      "sketch_generation": 1,
+      "sketch_assembly": 1
+    },
+    "prompt_type_success_rates": {
+      "generate_proof": 1.0,
+      "search_query_generation": 1.0,
+      "search_result_selection": 1.0,
+      "informal_proof_sketch": 1.0,
+      "lean_sketch_creation": 1.0,
+      "subgoal_extraction": 1.0,
+      "sketch_assembly": 1.0
+    },
+    "search_success_rates": {},
+    "verification_success_rates": {
+      "formal_llm_generated_proof_verification": 1.0,
+      "proof_sketch_with_sorry_verification": 1.0,
+      "extracted_theorem_syntax_verification": 1.0,
+      "sketch_assembly_with_theorems_verification": 1.0
+    },
+    "verification_validity_rates": {
+      "formal_llm_generated_proof_verification": 0.6,
+      "proof_sketch_with_sorry_verification": 1.0,
+      "extracted_theorem_syntax_verification": 1.0,
+      "sketch_assembly_with_theorems_verification": 1.0
+    }
+  },
+  "generated_at": "2026-09-07T18:06:05.001110"
+}
